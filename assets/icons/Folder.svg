@@ -1,0 +1,4 @@
+<svg id="folder" width="80" height="67" viewBox="0 0 80 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="folder-top" d="M4 15L11 4H31L38 15" stroke="#276CE5" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="folder-main" class="switchable" d="M76 63V15H4V63H76Z" stroke="#3F4A62" stroke-width="7" stroke-linejoin="round"/>
+</svg>

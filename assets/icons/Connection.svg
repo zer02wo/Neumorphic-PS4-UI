@@ -1,0 +1,6 @@
+<svg id="connection" width="80" height="68" viewBox="0 0 80 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="connection-mid" class="reset connection-okay connection-good" d="M64.75 30.6781C51.25 17.1986 28.75 17.1986 15.25 30.6781" stroke="#276CE5" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="connection-btm" class="reset connection-weak connection-okay connection-good" d="M53.5 43.0343C45.625 35.1712 34.375 35.1712 26.5 43.0343" stroke="#276CE5" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse id="connection-circle" class="reset connection-poor connection-weak connection-okay connection-good" cx="40" cy="57.637" rx="7.875" ry="7.86302" stroke="#276CE5" stroke-width="5"/>
+<path id="connection-top" class="reset connection-good" d="M76 18.3219C56.875 -0.77396 23.125 -0.773992 4 18.3219" stroke="#276CE5" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

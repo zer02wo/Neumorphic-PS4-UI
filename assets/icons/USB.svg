@@ -1,0 +1,7 @@
+<svg id="usb" width="64" height="80" viewBox="0 0 64 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="usb-wires" class="switchable" d="M32 62V59.5M32 17V55.5M32 57.5L10 49V43M32 59.5V55.5M32 53.5L54 45V39" stroke="#3F4A62" stroke-width="7" stroke-linejoin="round"/>
+<circle id="usb-circle-l" cx="10" cy="35" r="6" fill="#276CE5" stroke="#276CE5" stroke-width="7"/>
+<circle id="usb-circle-b" class="switchable fillable" cx="32" cy="70" r="6" fill="#3F4A62" stroke="#3F4A62" stroke-width="7"/>
+<rect id="usb-square" x="48" y="25" width="12" height="12" fill="#276CE5" stroke="#276CE5" stroke-width="7" stroke-linejoin="round"/>
+<path id="usb-triangle" d="M31.9999 4L40 18H24L31.9999 4Z" fill="#276CE5" stroke="#276CE5" stroke-width="7" stroke-linejoin="round"/>
+</svg>

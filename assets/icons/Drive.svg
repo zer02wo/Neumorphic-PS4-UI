@@ -1,0 +1,5 @@
+<svg id="drive" width="80" height="72" viewBox="0 0 80 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle id="drive-button-l" cx="53" cy="55" r="4" fill="#276CE5"/>
+<circle id="drive-button-r" cx="65" cy="55" r="4" fill="#276CE5"/>
+<path id="drive-case" class="switchable" d="M5.90599 44.8984L17 4H60L74.098 44.9034M76 52C76 45 73 42 66 42H14C7 42 4 45 4 52V58C4 65 7 68 14 68H66C73 68 76 65 76 58V52Z" stroke="#3F4A62" stroke-width="7" stroke-linejoin="round"/>
+</svg>

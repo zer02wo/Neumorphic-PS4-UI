@@ -1,0 +1,7 @@
+<svg id="camera" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="camera-bl" d="M23.3333 76H10.6667C6.66667 76 4 73.3333 4 69.3333V56.6667" stroke="#276CE5" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="camera-tl" d="M23.3333 4H10.6667C6.66667 4 4 6.66666 4 10.6667V23.3333" stroke="#276CE5" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="camera-br" d="M56.6667 76H69.3333C73.3333 76 76 73.3333 76 69.3333V56.6667" stroke="#276CE5" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="camera-tr" d="M56.6667 4H69.3333C73.3333 4 76 6.66666 76 10.6667V23.3333" stroke="#276CE5" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<circle id="camera-centre" class="switchable" cx="40" cy="40" r="16" stroke="#3F4A62" stroke-width="7"/>
+</svg>

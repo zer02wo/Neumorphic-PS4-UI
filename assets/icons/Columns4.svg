@@ -1,0 +1,6 @@
+<svg id="columns-4" width="80" height="20" viewBox="0 0 80 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect id="columns-4-ll" class="switchable" x="4" y="4" width="12" height="12" stroke="#3F4A62" stroke-width="7" stroke-linejoin="round"/>
+<rect id="columns-4-ml" class="switchable" x="24" y="4" width="12" height="12" stroke="#3F4A62" stroke-width="7" stroke-linejoin="round"/>
+<rect id="columns-4-mr" class="switchable" x="44" y="4" width="12" height="12" stroke="#3F4A62" stroke-width="7" stroke-linejoin="round"/>
+<rect id="columns-4-rr" class="switchable" x="64" y="4" width="12" height="12" stroke="#3F4A62" stroke-width="7" stroke-linejoin="round"/>
+</svg>

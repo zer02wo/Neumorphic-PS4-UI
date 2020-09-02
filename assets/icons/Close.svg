@@ -1,0 +1,5 @@
+<svg id="close" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="close-diag-down" class="switchable" d="M52 28L28 52" stroke="#3F4A62" stroke-width="7" stroke-linecap="round"/>
+<path id="close-diag-up" d="M52 52L28 28" stroke="#276CE5" stroke-width="7" stroke-linecap="round"/>
+<circle id="close-ring" class="switchable" cx="40" cy="40" r="36" stroke="#3F4A62" stroke-width="7"/>
+</svg>

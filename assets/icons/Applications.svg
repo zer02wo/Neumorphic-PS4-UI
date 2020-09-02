@@ -1,0 +1,6 @@
+<svg id="applications" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect id="applications-tl" class="fillable" x="4" y="4" width="28" height="28" stroke="#276CE5" stroke-width="7" stroke-linejoin="round"/>
+<rect id="applications-tr" class="switchable" x="48" y="4" width="28" height="28" stroke="#3F4A62" stroke-width="7" stroke-linejoin="round"/>
+<rect id="applications-bl" class="switchable" x="4" y="48" width="28" height="28" stroke="#3F4A62" stroke-width="7" stroke-linejoin="round"/>
+<rect id="applications-br" class="fillable" x="48" y="48" width="28" height="28" stroke="#276CE5" stroke-width="7" stroke-linejoin="round"/>
+</svg>

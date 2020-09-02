@@ -1,0 +1,4 @@
+<svg id="message" width="80" height="80" viewBox="0 0 80 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="message-flick" d="M43 52C51 61 52 63 58 66.5C64 70 68 69 68 69C63.5 62.5 63.5 60 65 52" stroke="#276CE5" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="message-main" class="switchable" d="M43 52C43 52 13.9999 52 9.99997 52C6 52 3.99997 50 3.99997 46C3.99997 42 3.99997 14 3.99997 10C3.99997 6 6 4 9.99997 4C13.9999 4 65.9999 4 70 4C74 4 76 6 76 10C76 14 76 42 76 46C76 50 74 52 70 52C65.9999 52 65 52 65 52" stroke="#3F4A62" stroke-width="7" stroke-linecap="round"/>
+</svg>

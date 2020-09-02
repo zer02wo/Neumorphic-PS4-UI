@@ -1,0 +1,142 @@
+[
+    {
+        "name": "Horizon Zero Dawn",
+        "lastPlayed": 1597851221831,
+        "playTime": 1337,
+        "src": "assets/games-covers/HorizonZeroDawn.jfif",
+        "favourites": true,
+        "folders": ["Exclusives", "Third Person"],
+        "installed": false,
+        "purchased": true
+    },
+    {
+        "name": "InFAMOUS Remastered Collection",
+        "lastPlayed": 1597351321899,
+        "playTime": 969,
+        "src": "assets/games-covers/Infamous2.jfif",
+        "favourites": true,
+        "folders": ["Exclusives", "Third Person", "Superhero"],
+        "installed": false,
+        "purchased": false
+    },
+    {
+        "name": "Ghost of Tsushima",
+        "lastPlayed": 1597185176923,
+        "playTime": 1267,
+        "src": "assets/games-covers/GhostOfTsushima.jfif",
+        "favourites": true,
+        "folders": ["Exclusives", "Third Person", "Multiplayer"],
+        "installed": true,
+        "purchased": true
+    },
+    {
+        "name": "Marvel's Spider-Man",
+        "lastPlayed": 1596048023186,
+        "playTime": 483,
+        "src": "assets/games-covers/MarvelsSpider-Man.jfif",
+        "favourites": false,
+        "folders": ["Exclusives", "Third Person", "Superhero"],
+        "installed": true,
+        "purchased": true
+    },
+    {
+        "name": "Mortal Shell",
+        "lastPlayed": 1597795088706,
+        "playTime": 666,
+        "src": "assets/games-covers/MortalShell.jfif",
+        "favourites": true,
+        "folders": ["Third Person"],
+        "installed": false,
+        "purchased": false
+    },
+    {
+        "name": "Borderlands 3",
+        "lastPlayed": 1577459366649,
+        "playTime": 431,
+        "src": "assets/games-covers/Borderlands3.jfif",
+        "favourites": false,
+        "folders": ["First Person", "Multiplayer"],
+        "installed": true,
+        "purchased": false
+    },
+    {
+        "name": "Assassin's Creed Valhalla",
+        "lastPlayed": 0,
+        "playTime": 0,
+        "src": "assets/games-covers/AssassinsCreedValhalla.jfif",
+        "favourites": false,
+        "folders": ["Third Person", "Parkour"],
+        "installed": false,
+        "purchased": false
+    },
+    {
+        "name": "The Last of Us Part II",
+        "lastPlayed": 1592594101495,
+        "playTime": 242,
+        "src": "assets/games-covers/TheLastOfUsPartII.jfif",
+        "favourites": false,
+        "folders": ["Exclusives", "Third Person"],
+        "installed": false,
+        "purchased": false
+    },
+    {
+        "name": "Destiny 2",
+        "lastPlayed": 1580817318415,
+        "playTime": 3963,
+        "src": "assets/games-covers/Destiny2.jfif",
+        "favourites": false,
+        "folders": ["First Person", "Multiplayer"],
+        "installed": true,
+        "purchased": true
+    },
+    {
+        "name": "God of War",
+        "lastPlayed": 1525347713762,
+        "playTime": 1149,
+        "src": "assets/games-covers/GodOfWar.jfif",
+        "favourites": false,
+        "folders": ["Exclusives", "Third Person"],
+        "installed": false,
+        "purchased": true
+    },
+    {
+        "name": "Portal 2",
+        "lastPlayed": 1571343360113,
+        "playTime": 922,
+        "src": "assets/games-covers/Portal2.jfif",
+        "favourites": true,
+        "folders": ["First Person", "Multiplayer", "Puzzle"],
+        "installed": false,
+        "purchased": true
+    },
+    {
+        "name": "Mirror's Edge Catalyst",
+        "lastPlayed": 1515184773748,
+        "playTime": 154,
+        "src": "assets/games-covers/MirrorsEdgeCatalyst.jfif",
+        "favourites": false,
+        "folders": ["First Person", "Parkour"],
+        "installed": false,
+        "purchased": true
+    },
+    {
+        "name": "Need for Speed Heat",
+        "lastPlayed": 1573816005923,
+        "playTime": 425,
+        "src": "assets/games-covers/NeedForSpeedHeat.jfif",
+        "favourites": false,
+        "folders": ["Racing", "Multiplayer"],
+        "installed": false,
+        "purchased": true
+    },
+    {
+        "name": "Batman Arkham Knight",
+        "lastPlayed": 1466673669116,
+        "playTime": 912,
+        "src": "assets/games-covers/BatmanArkhamKnight.jfif",
+        "favourites": false,
+        "folders": ["Third Person", "Superhero"],
+        "installed": false,
+        "purchased": true
+    }
+]

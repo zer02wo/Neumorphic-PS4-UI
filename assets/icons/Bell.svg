@@ -1,0 +1,4 @@
+<svg id="bell" width="64" height="80" viewBox="0 0 64 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="bell-curve" class="switchable" d="M32 60H4C8 60 12 56.5614 12 52.1404V33.4737C12 24.6316 19 16.7719 26 16.7719V9.89474C26 6.63916 28.6863 4 32 4C35.3137 4 38 6.63916 38 9.89474V16.7719C45 16.7719 52 26.5965 52 33.4737V52.1404C52 56.5614 56 60 60 60H32Z" stroke="#3F4A62" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="bell-bell" d="M25 72C26.4419 74.4556 29.0376 76 32 76C34.9624 76 37.5581 74.4556 39 72" stroke="#276CE5" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

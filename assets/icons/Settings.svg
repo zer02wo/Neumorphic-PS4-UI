@@ -1,0 +1,5 @@
+<svg id="settings" width="80" height="24" viewBox="0 0 80 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle id="settings-l" class="switchable" cx="12" cy="12" r="8" stroke="#3F4A62" stroke-width="7"/>
+<circle id="settings-r" cx="68" cy="12" r="8" stroke="#276CE5" stroke-width="7"/>
+<circle id="settings-m" class="switchable" cx="40" cy="12" r="8" stroke="#3F4A62" stroke-width="7"/>
+</svg>

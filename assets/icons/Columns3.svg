@@ -1,0 +1,5 @@
+<svg id="columns-3" width="80" height="26" viewBox="0 0 80 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect id="columns-3-l" class="switchable" x="4" y="4" width="18" height="18" stroke="#3F4A62" stroke-width="7" stroke-linejoin="round"/>
+<rect id="columns-3-r" class="switchable" x="58" y="4" width="18" height="18" stroke="#3F4A62" stroke-width="7" stroke-linejoin="round"/>
+<rect id="columns-3-m" class="switchable" x="31" y="4" width="18" height="18" stroke="#3F4A62" stroke-width="7" stroke-linejoin="round"/>
+</svg>

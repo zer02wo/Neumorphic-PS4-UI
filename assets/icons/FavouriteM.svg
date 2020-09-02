@@ -1,0 +1,5 @@
+<svg id="favourite-m" width="80" height="81" viewBox="0 0 80 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="favourite-m-quaver" class="switchable" d="M24 57V28M24 28L72 16M24 28V16L72 4V16M72 45V16" stroke="#3F4A62" stroke-width="7" stroke-linejoin="round"/>
+<path id="favourite-m-heart-l" d="M6.07604 66.3238L16 76L25.924 66.3238C32.3409 59.8475 22.4169 49.5871 16 56.0633C9.58307 49.5871 -0.340909 59.8475 6.07604 66.3238Z" stroke="#276CE5" stroke-width="7"/>
+<path id="favourite-m-heart-r" d="M54.076 54.3238L64 64L73.924 54.3238C80.3409 47.8475 70.4169 37.5871 64 44.0633C57.5831 37.5871 47.6591 47.8475 54.076 54.3238Z" stroke="#276CE5" stroke-width="7"/>
+</svg>

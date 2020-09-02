@@ -1,0 +1,4 @@
+<svg id="power" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="power-line" d="M40 4V29.4118" stroke="#276CE5" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="power-circle" class="switchable" d="M16.375 16.7059C8.12993 22.9149 4 31.4064 4 42.1177C4 60.8304 20.1177 76 40 76C59.8823 76 76 60.8304 76 42.1177C76 31.4064 71.8701 22.9149 63.625 16.7059" stroke="#3F4A62" stroke-width="7" stroke-linecap="round"/>
+</svg>

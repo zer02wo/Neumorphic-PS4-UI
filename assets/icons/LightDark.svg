@@ -1,0 +1,11 @@
+<svg id="light-dark" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="light-dark-centre" d="M76 40C76 59.8823 59.8823 76 40 76C20.1177 76 4 59.8823 4 40C4 20.1177 20.1177 4 40 4C59.8823 4 76 20.1177 76 40Z" fill="url(#two_tone)"/>
+<path id="light-dark-circle" class="matchable" d="M40 76C20.1177 76 4 59.8823 4 40C4 20.1177 20.1177 4 40 4M40 76V4M40 76C59.8823 76 76 59.8823 76 40C76 20.1177 59.8823 4 40 4" stroke="#ECF0F3" stroke-width="7"/>
+<defs>
+<linearGradient id="two_tone" x1="4" y1="40" x2="76" y2="40" gradientUnits="userSpaceOnUse">
+<stop stop-color="#ECF0F3"/>
+<stop offset="0.4999" stop-color="#ECF0F3"/>
+<stop offset="0.5" stop-color="#292D32"/>
+</linearGradient>
+</defs>
+</svg>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PS4 Neumorphic UI</title>
+    <link rel="icon" type="image/svg+xml" href="assets/icons/Logo.svg">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div id="info-bar" class="neu-container flex-container">
+        <div id="general-info-container" class="flex-container">
+            <object id="logo" type="image/svg+xml" data="assets/icons/Logo.svg">Logo</object>
+            <div id="connection-container" class="flex-container">
+                <object id="connection" type="image/svg+xml" data="assets/icons/Connection.svg">Connection Strength</object>
+                <p id="download"></p>
+            </div>
+            <div id="clock-container" class="flex-container">
+                <object id="clock" type="image/svg+xml" data="assets/icons/Clock.svg">Connection Strength</object>
+                <p id="time"></p>
+            </div>
+        </div>
+        <button id="mode-change" class="flex-container">
+            <object id="modes" type="image/svg+xml" data="assets/icons/LightDark.svg">Change Mode</object>
+        </button>
+        <div id="account-container" class="flex-container">
+            <!--TODO: Add trophies level, number of messages/notifications and other quick view items-->
+            <p>Stephen Stubbs</p>
+            <div id="account-image-container" class="flex-container">
+                <div id="online-status"></div>
+                <img id="account-image" src="assets/icons/ProfilePicture.png" alt="Account Image">
+            </div>
+        </div>
+    </div>
+    <div id="navbar" class="flex-container">
+        <div class="nav-element flex-container" id="nav-library">
+            <p class="nav-title">Library</p>
+            <a class="nav-image-container neu-button" draggable="false" href="#library">
+                <object class="nav-image" type="image/svg+xml" data="assets/icons/Controller.svg">Library</object>
+            </a>
+        </div>
+        <div class="nav-element flex-container" id="nav-media">
+            <p class="nav-title">Media</p>
+            <a class="nav-image-container neu-button" draggable="false" href="#media">
+                <object class="nav-image" type="image/svg+xml" data="assets/icons/TV.svg">Media</object>
+            </a>
+        </div>
+        <div class="nav-element flex-container" id="nav-store">
+            <p class="nav-title">Store</p>
+            <a class="nav-image-container neu-button" draggable="false" href="#store">
+                <object class="nav-image" type="image/svg+xml" data="assets/icons/ShoppingBag.svg">Store</object>
+            </a>
+        </div>
+        <div class="nav-element flex-container" id="nav-capture">
+            <p class="nav-title">Social</p>
+            <a class="nav-image-container neu-button" draggable="false" href="#social">
+                <!--TODO: Change to social icon, reuse camera icon within categories list-->
+                <object class="nav-image" type="image/svg+xml" data="assets/icons/Camera.svg">Social</object>
+            </a>
+        </div>
+        <div class="nav-element flex-container" id="nav-notifications">
+            <p class="nav-title">Notifications</p>
+            <a class="nav-image-container neu-button" draggable="false" href="#notifications">
+                <object class="nav-image" type="image/svg+xml" data="assets/icons/Bell.svg">Notifications</object>
+            </a>
+        </div>
+        <div class="nav-element flex-container" id="nav-Friends">
+            <p class="nav-title">Friends</p>
+            <a class="nav-image-container neu-button" draggable="false" href="#friends">
+                <object class="nav-image" type="image/svg+xml" data="assets/icons/Friend.svg">Friends</object>
+            </a>
+        </div>
+        <div class="nav-element flex-container" id="nav-messages">
+            <p class="nav-title">Messages</p>
+            <a class="nav-image-container neu-button" draggable="false" href="#messages">
+                <object class="nav-image" type="image/svg+xml" data="assets/icons/Message.svg">Messages</object>
+            </a>
+        </div>
+        <div class="nav-element flex-container" id="nav-party">
+            <p class="nav-title">Party</p>
+            <a class="nav-image-container neu-button" draggable="false" href="#party">
+                <object class="nav-image" type="image/svg+xml" data="assets/icons/Headset.svg">Party Chat</object>
+            </a>
+        </div>
+        <div class="nav-element flex-container" id="nav-profile">
+            <p class="nav-title">Profile</p>
+            <a class="nav-image-container neu-button" draggable="false" href="#profile">
+                <object class="nav-image" type="image/svg+xml" data="assets/icons/Shapes.svg">Profile</object>
+            </a>
+        </div>
+        <div class="nav-element flex-container" id="nav-trophies">
+            <p class="nav-title">Trophies</p>
+            <a class="nav-image-container neu-button" draggable="false" href="#trophies">
+                <object class="nav-image" type="image/svg+xml" data="assets/icons/Trophy.svg">Trophies</object>
+            </a>
+        </div>
+        <div class="nav-element flex-container" id="nav-settings">
+            <p class="nav-title">Settings</p>
+            <a class="nav-image-container neu-button" draggable="false" href="#settings">
+                <object class="nav-image" type="image/svg+xml" data="assets/icons/Settings.svg">Settings</object>
+            </a>
+        </div>
+        <div class="nav-element flex-container" id="nav-power">
+            <p class="nav-title">Power</p>
+            <a class="nav-image-container neu-button" draggable="false" href="#power">
+                <object class="nav-image" type="image/svg+xml" data="assets/icons/Power.svg">Power</object>
+            </a>
+        </div>
+    </div>
+
+    <div id="main-content" class="neu-container flex-container neu-flush">
+        <div id="library" class="content-element">
+            <ul id="games-categories" class="flex-container content-categories">
+                <li id="all-games" class="games-category content-category neu-button selected">
+                    <object class="category-image" type="image/svg+xml" data="assets/icons/Applications.svg">All</object>
+                    <p class="category-title">All</p>
+                    <p class="category-count"></p>
+                </li>
+                <li id="favourites-games" class="games-category content-category neu-button">
+                    <object class="category-image" type="image/svg+xml" data="assets/icons/FavouriteG.svg">Favourites</object>
+                    <p class="category-title">Favourites</p>
+                    <p class="category-count"></p>
+                </li>
+                <li id="folders-games" class="games-category content-category neu-button">
+                    <object class="category-image" type="image/svg+xml" data="assets/icons/Folder.svg">Folders</object>
+                    <p class="category-title">Folders</p>
+                    <p class="category-count"></p>
+                </li>
+                <li id="installed-games" class="games-category content-category neu-button">
+                    <object class="category-image" type="image/svg+xml" data="assets/icons/Install.svg">Installed</object>
+                    <p class="category-title">Installed</p>
+                    <p class="category-count"></p>
+                </li>
+                <li id="purchased-games" class="games-category content-category neu-button">
+                    <object class="category-image" type="image/svg+xml" data="assets/icons/ShoppingBag.svg">Purchased</object>
+                    <p class="category-title">Purchased</p>
+                    <p class="category-count"></p>
+                </li>
+            </ul>
+            <div id="games-content" class="element-main">
+                <div id="games-sorting-container" class="flex-container">
+                    <div id="games-folder-close" class="neu-button">
+                        <object class="folder-close-image" type="image/svg+xml" data="assets/icons/Close.svg">Close Folder</object>
+                    </div>
+                    <div id="games-sorting" class="flex-container">
+                        <label class="games-columns-container neu-button flex-container">
+                            <input type="radio" name="games-columns" id="games-3-columns" value="col-3" checked="checked">
+                            <object class="games-sorting-image" type="image/svg+xml" data="assets/icons/Columns3.svg">3</object>
+                        </label>
+                        <label class="games-columns-container neu-button flex-container">
+                            <input type="radio" name="games-columns" id="games-4-columns" value="col-4">
+                            <object class="games-sorting-image" type="image/svg+xml" data="assets/icons/Columns4.svg">4</object>
+                        </label>
+                        <div id="games-ordering-container" class="neu-select-container">
+                            <div id="games-ordering" class="neu-select">
+                                <div class="neu-select-trigger flex-container"><span>Recently Played</span>
+                                    <div class="neu-select-arrow"></div>
+                                </div>
+                                <div class="neu-options">
+                                    <span class="neu-option" data-value="alphabetical">Alphabetical</span>
+                                    <span class="neu-option selected" data-value="lastPlayed">Recently Played</span>
+                                    <span class="neu-option" data-value="playTime">Time Played</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button id="games-ordering-direction" class="neu-button">
+                            <object class="games-sorting-image" type="image/svg+xml" data="assets/icons/Direction.svg">Asc/Dsc</object>
+                        </button>
+                    </div>
+                </div>
+                <ul id="games-list" class="neu-scrollable flex-container content-list"></ul>
+            </div>
+        </div>
+        <div id="media" class="content-element">
+            <ul id="media-categories" class="flex-container content-categories">
+                <li id="all-media" class="media-category content-category neu-button selected">
+                    <object class="category-image" type="image/svg+xml" data="assets/icons/Applications.svg">All</object>
+                    <p class="category-title">All</p>
+                    <p class="category-count"></p>
+                </li>
+                <li id="favourites-media" class="media-category content-category neu-button">
+                    <object class="category-image" type="image/svg+xml" data="assets/icons/FavouriteM.svg">Favourites</object>
+                    <p class="category-title">Favourites</p>
+                    <p class="category-count"></p>
+                </li>
+                <li id="folders-media" class="media-category content-category neu-button">
+                    <object class="category-image" type="image/svg+xml" data="assets/icons/Folder.svg">Folders</object>
+                    <p class="category-title">Folders</p>
+                    <p class="category-count"></p>
+                </li>
+                <li id="online-media" class="media-category content-category neu-button">
+                    <object class="category-image" type="image/svg+xml" data="assets/icons/Connection.svg">Online</object>
+                    <p class="category-title">Online</p>
+                    <p class="category-count"></p>
+                </li>
+                <li id="internal-media" class="media-category content-category neu-button">
+                    <object class="category-image" type="image/svg+xml" data="assets/icons/Drive.svg">Internal</object>
+                    <p class="category-title">Internal</p>
+                    <p class="category-count"></p>
+                </li>
+                <li id="external-media" class="media-category content-category neu-button">
+                    <object class="category-image" type="image/svg+xml" data="assets/icons/USB.svg">External</object>
+                    <p class="category-title">External</p>
+                    <p class="category-count"></p>
+                </li>
+            </ul>
+            <div id="games-content" class="element-main">
+
+            </div>
+        </div>
+        <div id="store" class="content-element">
+            <p>Store</p>
+        </div>
+        <div id="social" class="content-element">
+            <p>Social</p>
+            <!--https://images.pushsquare.com/news/2016/02/you_can_now_search_for_ps4_communities/1280x720.jpg-->
+            <!--Categories: captures/screenshots/screen recordings, in-game events, game communities (like steam), LFG-->
+        </div>
+        <div id="notifications" class="content-element">
+            <p>Notifications</p>
+        </div>
+        <div id="friends" class="content-element">
+            <p>Friends</p>
+        </div>
+        <div id="messages" class="content-element">
+            <p>Messages</p>
+        </div>
+        <div id="party" class="content-element">
+            <p>Party</p>
+        </div>
+        <div id="profile" class="content-element">
+            <p>Profile</p>
+        </div>
+        <div id="trophies" class="content-element">
+            <p>Trophies</p>
+        </div>
+        <div id="settings" class="content-element">
+            <p>Settings</p>
+        </div>
+        <div id="power" class="content-element">
+            <p>Power</p>
+        </div>
+    </div>
+</body>
+</html>

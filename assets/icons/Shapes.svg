@@ -1,0 +1,6 @@
+<svg id="shapes" width="80" height="80" viewBox="0 0 78 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="shapes-cross" d="M30 50L6 74M6 50L30 74" stroke="#276CE5" stroke-width="7" stroke-linecap="round"/>
+<circle id="shapes-circle" class="switchable" cx="18" cy="18" r="14" stroke="#3F4A62" stroke-width="7"/>
+<path id="shapes-triangle" d="M60 4L74 32.5H46L60 4Z" stroke="#276CE5" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<rect id="shapes-square" class="switchable" x="46" y="48" width="28" height="28" stroke="#3F4A62" stroke-width="7" stroke-linejoin="round"/>
+</svg>

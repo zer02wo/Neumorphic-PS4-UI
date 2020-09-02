@@ -1,0 +1,4 @@
+<svg id="shopping-bag" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="shopping-bag-bag" class="switchable" d="M12 14H68M12 14L4 76H76L68 14M12 14L20 4H60L68 14" stroke="#3F4A62" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="shopping-bag-handle" d="M58 28C58 39.0457 49.9411 48 40 48C30.0589 48 22 39.0457 22 28" stroke="#276CE5" stroke-width="7" stroke-linecap="round" stroke-linejoin="bevel"/>
+</svg>

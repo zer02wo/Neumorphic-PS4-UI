@@ -1,0 +1,6 @@
+<svg id="ethernet" width="80" height="72" viewBox="0 0 80 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="ethernet-wires" class="switchable" d="M40 36V24M40 36H64V48M40 36H16V48" stroke="#3F4A62" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<rect id="ethernet-box-t" x="28" y="4" width="24" height="18" stroke="#276CE5" stroke-width="7" stroke-linejoin="round"/>
+<path id="ethernet-box-l" d="M4 50H28V68H4V50Z" stroke="#276CE5" stroke-width="7" stroke-linejoin="round"/>
+<path id="ethernet-box-r" d="M52 50H76V68H52V50Z" stroke="#276CE5" stroke-width="7" stroke-linejoin="round"/>
+</svg>

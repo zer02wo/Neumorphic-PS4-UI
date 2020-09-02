@@ -1,0 +1,6 @@
+<svg id="headset" width="80" height="80" viewBox="0 0 85 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="headset-band" class="switchable" d="M43 76C62.8823 76 79 59.8823 79 40C79 20.1177 62.8823 4 43 4C23.1177 4 7 20.1177 7 40" stroke="#3F4A62" stroke-width="7" stroke-linecap="round"/>
+<path id="headset-mic" d="M48.1429 76H37.8571" stroke="#276CE5" stroke-width="16" stroke-linecap="round"/>
+<path id="headset-ear-l" class="switchable" d="M7 49.6429V36.7857" stroke="#3F4A62" stroke-width="13" stroke-linecap="round"/>
+<path id="headset-ear-r" class="switchable" d="M77.7143 49.6429V36.7857" stroke="#3F4A62" stroke-width="13" stroke-linecap="round"/>
+</svg>
