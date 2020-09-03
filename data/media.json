@@ -1,6 +1,380 @@
 [
     {
-        "name": "placeholder",
-        "src": "test"
+        "name": "Spotify",
+        "properties": {
+            "duration": 0,
+            "dateReleased": 0,
+            "playCount": 0
+        },
+        "src": "assets/media-covers/Spotify.png",
+        "favourites": true,
+        "folders": ["Music"],
+        "streaming": true,
+        "internal": false,
+        "external": false
+    },
+    {
+        "name": "Netflix",
+        "properties": {
+            "duration": 0,
+            "dateReleased": 0,
+            "playCount": 0
+        },
+        "src": "assets/media-covers/Netflix.png",
+        "favourites": false,
+        "folders": ["Movies", "TV"],
+        "streaming": true,
+        "internal": false,
+        "external": false
+    },
+    {
+        "name": "Prime Video",
+        "properties": {
+            "duration": 0,
+            "dateReleased": 0,
+            "playCount": 0
+        },
+        "src": "assets/media-covers/PrimeVideo.png",
+        "favourites": true,
+        "folders": ["Movies", "TV"],
+        "streaming": true,
+        "internal": false,
+        "external": false
+    },
+    {
+        "name": "Crunchyroll",
+        "properties": {
+            "duration": 0,
+            "dateReleased": 0,
+            "playCount": 0
+        },
+        "src": "assets/media-covers/Crunchyroll.png",
+        "favourites": false,
+        "folders": ["Anime"],
+        "streaming": true,
+        "internal": false,
+        "external": false
+    },
+    {
+        "name": "Twitch",
+        "properties": {
+            "duration": 0,
+            "dateReleased": 0,
+            "playCount": 0
+        },
+        "src": "assets/media-covers/Twitch.png",
+        "favourites": true,
+        "folders": ["Gaming", "Videos"],
+        "streaming": true,
+        "internal": false,
+        "external": false
+    },
+    {
+        "name": "YouTube",
+        "properties": {
+            "duration": 0,
+            "dateReleased": 0,
+            "playCount": 0
+        },
+        "src": "assets/media-covers/YouTube.png",
+        "favourites": false,
+        "folders": ["Videos"],
+        "streaming": true,
+        "internal": false,
+        "external": false
+    },
+    {
+        "name": "My Beautiful Dark Twisted Fantasy",
+        "properties": {
+            "duration": 4116,
+            "dateReleased": 1290384000000,
+            "playCount": 10
+        },
+        "src": "assets/media-covers/MyBeautifulDarkTwistedFantasy.jpg",
+        "favourites": true,
+        "folders": ["Music"],
+        "streaming": false,
+        "internal": false,
+        "external": true
+    },
+    {
+        "name": "Yeezus",
+        "properties": {
+            "duration": 2401,
+            "dateReleased": 1370649600000,
+            "playCount": 16
+        },
+        "src": "assets/media-covers/Yeezus.jpg",
+        "favourites": true,
+        "folders": ["Music"],
+        "streaming": false,
+        "internal": false,
+        "external": true
+    },
+    {
+        "name": "Kids See Ghosts",
+        "properties": {
+            "duration": 1430,
+            "dateReleased": 1529280000000,
+            "playCount": 7
+        },
+        "src": "assets/media-covers/KidsSeeGhosts.jpg",
+        "favourites": true,
+        "folders": ["Music"],
+        "streaming": false,
+        "internal": false,
+        "external": true
+    },
+    {
+        "name": "808s & Heartbreak",
+        "properties": {
+            "duration": 3118,
+            "dateReleased": 1227484800000,
+            "playCount": 3
+        },
+        "src": "assets/media-covers/808s&Heartbreak.jpg",
+        "favourites": false,
+        "folders": ["Music"],
+        "streaming": false,
+        "internal": false,
+        "external": true
+    },
+    {
+        "name": "Graduation",
+        "properties": {
+            "duration": 3072,
+            "dateReleased": 1189468800000,
+            "playCount": 6
+        },
+        "src": "assets/media-covers/Graduation.jpg",
+        "favourites": true,
+        "folders": ["Music"],
+        "streaming": false,
+        "internal": false,
+        "external": true
+    },
+    {
+        "name": "The College Dropout",
+        "properties": {
+            "duration": 4573,
+            "dateReleased": 1076371200000,
+            "playCount": 5
+        },
+        "src": "assets/media-covers/TheCollegeDropout.jpg",
+        "favourites": false,
+        "folders": ["Music"],
+        "streaming": false,
+        "internal": false,
+        "external": true
+    },
+    {
+        "name": "The Life of Pablo",
+        "properties": {
+            "duration": 3961,
+            "dateReleased": 1455408000000,
+            "playCount": 11
+        },
+        "src": "assets/media-covers/TheLifeOfPablo.jpg",
+        "favourites": false,
+        "folders": ["Music"],
+        "streaming": false,
+        "internal": false,
+        "external": true
+    },
+    {
+        "name": "Currents",
+        "properties": {
+            "duration": 3072,
+            "dateReleased": 1437091200000,
+            "playCount": 6
+        },
+        "src": "assets/media-covers/Currents.jpg",
+        "favourites": false,
+        "folders": ["Music"],
+        "streaming": false,
+        "internal": true,
+        "external": false
+    },
+    {
+        "name": "Skin",
+        "properties": {
+            "duration": 3634,
+            "dateReleased": 1464307200000,
+            "playCount": 1
+        },
+        "src": "assets/media-covers/Skin.jpg",
+        "favourites": false,
+        "folders": ["Music"],
+        "streaming": false,
+        "internal": false,
+        "external": true
+    },
+    {
+        "name": "Unknown Pleasures",
+        "properties": {
+            "duration": 2368,
+            "dateReleased": 298252800000,
+            "playCount": 1
+        },
+        "src": "assets/media-covers/UnknownPleasures.jpg",
+        "favourites": false,
+        "folders": ["Music"],
+        "streaming": false,
+        "internal": false,
+        "external": true
+    },
+    {
+        "name": "Back to the Future Part II",
+        "properties": {
+            "duration": 6480,
+            "dateReleased": 627868800000,
+            "playCount": 2
+        },
+        "src": "assets/media-covers/BackToTheFutureII.jpg",
+        "favourites": false,
+        "folders": ["Movies"],
+        "streaming": false,
+        "internal": true,
+        "external": false
+    },
+    {
+        "name": "Baby Driver",
+        "properties": {
+            "duration": 6780,
+            "dateReleased": 1498608000000,
+            "playCount": 4
+        },
+        "src": "assets/media-covers/BabyDriver.jpg",
+        "favourites": true,
+        "folders": ["Movies"],
+        "streaming": false,
+        "internal": true,
+        "external": false
+    },
+    {
+        "name": "John Wick: Chapter 3 - Parabellum",
+        "properties": {
+            "duration": 7800,
+            "dateReleased": 1498608000000,
+            "playCount": 9
+        },
+        "src": "assets/media-covers/JohnWick3.jpg",
+        "favourites": true,
+        "folders": ["Movies"],
+        "streaming": false,
+        "internal": true,
+        "external": false
+    },
+    {
+        "name": "Spirited Away",
+        "properties": {
+            "duration": 7500,
+            "dateReleased": 1063324800000,
+            "playCount": 3
+        },
+        "src": "assets/media-covers/SpiritedAWay.jpg",
+        "favourites": true,
+        "folders": ["Movies", "Anime"],
+        "streaming": false,
+        "internal": false,
+        "external": true
+    },
+    {
+        "name": "The Matrix",
+        "properties": {
+            "duration": 9000,
+            "dateReleased": 929059200000,
+            "playCount": 9
+        },
+        "src": "assets/media-covers/TheMatrix.jpg",
+        "favourites": true,
+        "folders": ["Movies"],
+        "streaming": false,
+        "internal": false,
+        "external": true
+    },
+    {
+        "name": "Game of Thrones - Season 8",
+        "properties": {
+            "duration": 25800,
+            "dateReleased": 1555200000000,
+            "playCount": 1
+        },
+        "src": "assets/media-covers/GameOfThrones.jpg",
+        "favourites": false,
+        "folders": ["TV"],
+        "streaming": false,
+        "internal": false,
+        "external": true
+    },
+    {
+        "name": "Mr Robot - Season 4",
+        "properties": {
+            "duration": 38400,
+            "dateReleased": 1570320000000,
+            "playCount": 1
+        },
+        "src": "assets/media-covers/MrRobot.jpg",
+        "favourites": true,
+        "folders": ["TV"],
+        "streaming": false,
+        "internal": true,
+        "external": false
+    },
+    {
+        "name": "Teen Titans - Season 2",
+        "properties": {
+            "duration": 17940,
+            "dateReleased": 1058572800000,
+            "playCount": 4
+        },
+        "src": "assets/media-covers/TeenTitans.jpg",
+        "favourites": true,
+        "folders": ["TV"],
+        "streaming": false,
+        "internal": false,
+        "external": true
+    },
+    {
+        "name": "Marvel Ultimate Spider-Man - Season 1",
+        "properties": {
+            "duration": 35640,
+            "dateReleased": 1333238400000,
+            "playCount": 2
+        },
+        "src": "assets/media-covers/UltimateSpiderMan.jpg",
+        "favourites": false,
+        "folders": ["TV"],
+        "streaming": false,
+        "internal": true,
+        "external": false
+    },
+    {
+        "name": "Watchmen - Season 1",
+        "properties": {
+            "duration": 32040,
+            "dateReleased": 1571529600000,
+            "playCount": 1
+        },
+        "src": "assets/media-covers/Watchmen.jpg",
+        "favourites": false,
+        "folders": ["TV"],
+        "streaming": false,
+        "internal": true,
+        "external": false
+    },
+    {
+        "name": "Westworld - Season 1",
+        "properties": {
+            "duration": 29400,
+            "dateReleased": 158423040000,
+            "playCount": 1
+        },
+        "src": "assets/media-covers/Westworld.jpg",
+        "favourites": false,
+        "folders": ["TV"],
+        "streaming": false,
+        "internal": true,
+        "external": false
     }
 ]

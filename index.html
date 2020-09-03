@@ -138,20 +138,20 @@
                 </li>
             </ul>
             <div id="games-content" class="element-main">
-                <div id="games-sorting-container" class="flex-container">
-                    <div id="games-folder-close" class="neu-button">
+                <div id="games-sorting-container" class="content-sorting-container flex-container">
+                    <div id="games-folder-close" class="content-folder-close neu-button">
                         <object class="folder-close-image" type="image/svg+xml" data="assets/icons/Close.svg">Close Folder</object>
                     </div>
-                    <div id="games-sorting" class="flex-container">
-                        <label class="games-columns-container neu-button flex-container">
-                            <input type="radio" name="games-columns" id="games-3-columns" value="col-3" checked="checked">
-                            <object class="games-sorting-image" type="image/svg+xml" data="assets/icons/Columns3.svg">3</object>
+                    <div id="games-sorting" class="content-sorting flex-container">
+                        <label class="content-columns-container neu-button flex-container">
+                            <input type="radio" name="games-columns" id="games-3-columns" class="content-columns" value="col-3" checked="checked">
+                            <object class="content-sorting-image" type="image/svg+xml" data="assets/icons/Columns3.svg">3</object>
                         </label>
-                        <label class="games-columns-container neu-button flex-container">
-                            <input type="radio" name="games-columns" id="games-4-columns" value="col-4">
-                            <object class="games-sorting-image" type="image/svg+xml" data="assets/icons/Columns4.svg">4</object>
+                        <label class="content-columns-container neu-button flex-container">
+                            <input type="radio" name="games-columns" id="games-4-columns" class="content-columns" value="col-4">
+                            <object class="content-sorting-image" type="image/svg+xml" data="assets/icons/Columns4.svg">4</object>
                         </label>
-                        <div id="games-ordering-container" class="neu-select-container">
+                        <div id="games-ordering-container" class="content-ordering-container neu-select-container">
                             <div id="games-ordering" class="neu-select">
                                 <div class="neu-select-trigger flex-container"><span>Recently Played</span>
                                     <div class="neu-select-arrow"></div>
@@ -163,8 +163,8 @@
                                 </div>
                             </div>
                         </div>
-                        <button id="games-ordering-direction" class="neu-button">
-                            <object class="games-sorting-image" type="image/svg+xml" data="assets/icons/Direction.svg">Asc/Dsc</object>
+                        <button id="games-ordering-direction" class="content-ordering-direction neu-button">
+                            <object class="content-sorting-image" type="image/svg+xml" data="assets/icons/Direction.svg">Asc/Dsc</object>
                         </button>
                     </div>
                 </div>
@@ -188,9 +188,9 @@
                     <p class="category-title">Folders</p>
                     <p class="category-count"></p>
                 </li>
-                <li id="online-media" class="media-category content-category neu-button">
-                    <object class="category-image" type="image/svg+xml" data="assets/icons/Connection.svg">Online</object>
-                    <p class="category-title">Online</p>
+                <li id="streaming-media" class="media-category content-category neu-button">
+                    <object class="category-image" type="image/svg+xml" data="assets/icons/Connection.svg">Streaming</object>
+                    <p class="category-title">Streaming</p>
                     <p class="category-count"></p>
                 </li>
                 <li id="internal-media" class="media-category content-category neu-button">
@@ -204,8 +204,39 @@
                     <p class="category-count"></p>
                 </li>
             </ul>
-            <div id="games-content" class="element-main">
-
+            <div id="media-content" class="element-main">
+                <div id="media-sorting-container" class="content-sorting-container flex-container">
+                    <div id="media-folder-close" class="content-folder-close neu-button">
+                        <object class="folder-close-image" type="image/svg+xml" data="assets/icons/Close.svg">Close Folder</object>
+                    </div>
+                    <div id="media-sorting" class="content-sorting flex-container">
+                        <label class="content-columns-container neu-button flex-container">
+                            <input type="radio" name="media-columns" id="media-3-columns" class="content-columns" value="col-3">
+                            <object class="content-sorting-image" type="image/svg+xml" data="assets/icons/Columns3.svg">3</object>
+                        </label>
+                        <label class="content-columns-container neu-button flex-container">
+                            <input type="radio" name="media-columns" id="media-4-columns" class="content-columns" value="col-4" checked="checked">
+                            <object class="content-sorting-image" type="image/svg+xml" data="assets/icons/Columns4.svg">4</object>
+                        </label>
+                        <div id="media-ordering-container" class="content-ordering-container neu-select-container">
+                            <div id="media-ordering" class="neu-select">
+                                <div class="neu-select-trigger flex-container"><span>Alphabetical</span>
+                                    <div class="neu-select-arrow"></div>
+                                </div>
+                                <div class="neu-options">
+                                    <span class="neu-option selected" data-value="alphabetical">Alphabetical</span>
+                                    <span class="neu-option" data-value="duration">Duration</span>
+                                    <span class="neu-option" data-value="playCount">Play Count</span>
+                                    <span class="neu-option" data-value="dateReleased">Release Date</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button id="media-ordering-direction" class="content-ordering-direction neu-button">
+                            <object class="content-sorting-image" type="image/svg+xml" data="assets/icons/Direction.svg">Asc/Dsc</object>
+                        </button>
+                    </div>
+                </div>
+                <ul id="media-list" class="neu-scrollable flex-container content-list"></ul>
             </div>
         </div>
         <div id="store" class="content-element">
