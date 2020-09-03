@@ -41,7 +41,7 @@ body.dark-mode {
 
 #connection-container, #clock-container {
     justify-content: space-evenly !important;
-    width: 27.5%;
+    width: 30%;
     height: 60%;
 }
 #connection, #clock {
@@ -260,8 +260,7 @@ body.dark-mode .element-main {
     background-color: #2E3238;
 }
 
-/*TODO: Simplify CSS using classes to reuse styling (i.e. games-__ becomes content-__)*/
-#games-sorting-container {
+.content-sorting-container {
     flex-direction: row;
     height: 0;
     width: 100%;
@@ -271,12 +270,12 @@ body.dark-mode .element-main {
     /*Hide content but allow SVG content documents to load*/
     visibility: hidden;
 }
-#games-content.with-sorting > #games-sorting-container {
+.element-main.with-sorting > .content-sorting-container {
     visibility: visible;
     height: 7.5%;
 }
 
-#games-folder-close {
+.content-folder-close {
     cursor: pointer;
     margin-left: 2.5%;
     /*Hide content but allow SVG content documents to load*/
@@ -286,7 +285,7 @@ body.dark-mode .element-main {
     width: 4.5vh;
     border-radius: 50%;
 }
-#games-folder-close.show {
+.content-folder-close.show {
     visibility: visible;
 }
 .folder-close-image {
@@ -296,13 +295,13 @@ body.dark-mode .element-main {
     pointer-events: none;
 }
 
-#games-sorting {
+.content-sorting {
     height: 100%;
     width: 28.33%;
     /*Display on right even when folder-close is hidden*/
     margin-left: auto;
 }
-#games-sorting .games-columns-container {
+.content-sorting .content-columns-container {
     justify-content: center;
     height: 60%;
     width: 60px;
@@ -310,38 +309,38 @@ body.dark-mode .element-main {
     cursor: pointer;
     box-shadow: 6px 6px 7px #D1D9E6, -6px -6px 7px #FFF;
 }
-#games-sorting .games-columns-container.selected {
+.content-sorting .content-columns-container.selected {
     box-shadow: inset 6px 6px 7px #D1D9E6, inset -6px -6px 7px #FFF;
 }
-body.dark-mode #games-sorting .games-columns-container {
+body.dark-mode .content-sorting .content-columns-container {
     box-shadow: 6px 6px 7px #24262B, -6px -6px 7px #30343A;
 }
-body.dark-mode #games-sorting .games-columns-container.selected {
+body.dark-mode .content-sorting .content-columns-container.selected {
     box-shadow: inset 6px 6px 7px #24262B, inset -6px -6px 7px #30343A;
 }
 
-#games-sorting input[name="games-columns"] {
+.content-columns {
     /*Hide radio buttons*/
     position: absolute;
     opacity: 0;
     width: 0;
     height: 0;
 }
-#games-sorting input[name="games-columns"] + object {
+.content-columns + object {
     height: 100%;
 }
-.games-sorting-image {
+.content-sorting-image {
     width: 80%;
     /*Prevents SVG object blocking the button*/
     pointer-events: none;
 }
 
-#games-ordering-container {
+.content-ordering-container {
     width: 45%;
     height: 70%;
 }
 
-#games-ordering-direction {
+.content-ordering-direction {
     padding-top: 1%;
     cursor: pointer;
     /*Responsive circle*/
@@ -350,14 +349,14 @@ body.dark-mode #games-sorting .games-columns-container.selected {
     border-radius: 50%;
     transition: background-color .75s, box-shadow .5s, padding .25s;
 }
-#games-ordering-direction.descending {
+.content-ordering-direction.descending {
     padding-top: 0;
     padding-bottom: 1%;
 }
-#games-ordering-direction .games-sorting-image {
+.content-ordering-direction .content-sorting-image {
     transition: transform .5s;
 }
-#games-ordering-direction.descending .games-sorting-image {
+.content-ordering-direction.descending .content-sorting-image {
     transform: rotate(180deg);
 }
 
@@ -368,24 +367,20 @@ body.dark-mode #games-sorting .games-columns-container.selected {
     height: 100%;
     overflow-y: auto;
 }
-#games-content.with-sorting > .content-list {
+.element-main.with-sorting > .content-list {
     height: 92.5%;
 }
-
-.game, .folder {
-    display: flex;
+.content, .folder {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     list-style: none;
     cursor: pointer;
     border-radius: 25px;
-    height: auto;
     margin: 2.5%;
     position: relative;
+    color: inherit;
 }
 /*Add sheen overlay on hover*/
-.game::after {
+.content::after {
     content: "";
     position: absolute;
     z-index: 2;
@@ -396,41 +391,102 @@ body.dark-mode #games-sorting .games-columns-container.selected {
     left: 0;
     background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 49%,rgba(39,108,229,0.15) 55%,rgba(39,108,229,0.2) 100%);
     opacity: 0;
-    transition: opacity .5s;
+    transition: opacity .75s;
 }
 /*Sheen transition*/
-.game:hover::after {
+.content:hover::after {
     opacity: 1;
 }
-.game img {
+.content img {
     width: 100%;
     pointer-events: none;
     border-radius: 25px;
     z-index: 2;
-}
-.game .slide-out {
+    /*Fit image to container*/
+    height: 100%;
     position: absolute;
-    top: 90%;
-    left: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 0%;
+    /*Prevent image stretching*/
+    object-fit: scale-down;
+}
+.content .slide-out {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 90%;
+    width: 0;
+    height: 0;
     background: linear-gradient(135deg, rgba(39, 108, 229, 0.25), #276CE5);
     box-shadow: 12px 12px 13px #D1D9E6;
     box-sizing: border-box;
     border-radius: 10px;
     pointer-events: none;
-    z-index: 1;
-    transition: top .5s, height .75s, opacity .35s;
+    color: transparent;
+    opacity: 0;
 }
 body.dark-mode .slide-out {
     box-shadow: 12px 12px 13px #282B30;
 }
-.game .slide-out.show {
-    top: 100%;
-    height: 9%;
+.content .slide-out.hide {
+    /*Specific hide class required to prevent slideIn animation on initial load*/
+    animation: slideIn .75s forwards;
+}
+@keyframes slideIn {
+    0% {    
+        color: inherit;
+        opacity: 1;
+        top: 100%;
+        width: 100%;
+        height: 9%;
+    }
+    10% {
+        color: transparent;
+    }
+    35% {   
+        color: transparent;
+        opacity: 1;
+        top: 100%;
+        width: 60%;
+        height: 9%;
+    }
+    100% {
+        color: transparent;
+        opacity: 0;
+        top: 90%;
+        width: 0;
+        height: 0;
+    }
+}
+.content .slide-out.show {
+    animation: slideOut .75s forwards;
+}
+@keyframes slideOut {
+    0% {
+        color: transparent;
+        opacity: 0;
+        top: 90%;
+        width: 0;
+        height: 0;
+    }
+    65% {
+        opacity: 1;
+        top: 100%;
+        width: 60%;
+        height: 9%;
+    }
+    90% {
+        color: transparent;
+    }
+    100% {  
+        color: inherit;
+        opacity: 1;
+        top: 100%;
+        width: 100%;
+        height: 9%;
+    }
 }
 
 .folder {
@@ -448,6 +504,12 @@ body.dark-mode .slide-out {
     /*Width calculation: 2.5*4=20, 100-20=80, 80/4=20*/
     width: 20%;
     font-size: 16px;
+}
+.content.col-3::before, .content.col-4::before {
+    /*Enforce 1:1 aspect ratio*/
+    content: "";
+    display: block;
+    padding-top: 100%;
 }
 
 
@@ -499,14 +561,14 @@ body.dark-mode .neu-button.selected {
 
 /*Generic neumorphic scrollbar styling*/
 .neu-scrollable::-webkit-scrollbar {
-    width: 1%;
+    width: 15px;
 }
 .neu-scrollable::-webkit-scrollbar-track {
     border-radius: 10px;
     box-shadow: inset 12px 12px 13px #D1D9E6, inset -12px -12px 13px #FFF;
     transition: box-shadow .5s;
     /*Account for rounded corners and align with rows*/
-    margin-bottom: 5%;
+    margin-bottom: 25px;
 }
 body.dark-mode .neu-scrollable::-webkit-scrollbar-track {
     box-shadow: inset 12px 12px 13px #24262B, inset -12px -12px 13px #30343A;
