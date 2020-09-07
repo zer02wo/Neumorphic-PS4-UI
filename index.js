@@ -393,7 +393,6 @@ function createContentItems(contentType, category, data) {
             contentList.appendChild(liItem);
         }
     }
-    attachContentItemHandlers(contentType);
 }
 
 function setContentItemDataset(domItem, dataItem) {
@@ -403,27 +402,6 @@ function setContentItemDataset(domItem, dataItem) {
     for(property of properties) {
         //Set dataset attribute of DOM item to data item value
         domItem.dataset[property] = dataItem.properties[property];
-    }
-}
-
-function attachContentItemHandlers(contentType) {
-    var contentList = document.getElementsByClassName(contentType);
-    for(var item of contentList) {
-        //TODO: slide-out still has bug when changing sort-mode, delete .hide after animation finishes?
-        //Detect content item hover start
-        item.addEventListener("mouseover", function(e) {
-            let target = e.target;
-            //Display slide-out item name
-            target.querySelector(".slide-out").classList.remove("hide");
-            target.querySelector(".slide-out").classList.add("show");
-        });
-        //Detect content item hover end
-        item.addEventListener("mouseout", function(e) {
-            let target = e.target;
-            //Hide slide-out item name
-            target.querySelector(".slide-out").classList.remove("show");
-            target.querySelector(".slide-out").classList.add("hide");
-        });
     }
 }
 

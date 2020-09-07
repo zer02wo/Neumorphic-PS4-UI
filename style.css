@@ -430,38 +430,8 @@ body.dark-mode .content-sorting .content-columns-container.selected {
 body.dark-mode .slide-out {
     box-shadow: 12px 12px 13px #282B30;
 }
-.content .slide-out.hide {
-    /*Specific hide class required to prevent slideIn animation on initial load*/
-    animation: slideIn .75s forwards;
-}
-@keyframes slideIn {
-    0% {    
-        color: inherit;
-        opacity: 1;
-        top: 100%;
-        width: 100%;
-        height: 9%;
-    }
-    10% {
-        color: transparent;
-    }
-    35% {   
-        color: transparent;
-        opacity: 1;
-        top: 100%;
-        width: 60%;
-        height: 9%;
-    }
-    100% {
-        color: transparent;
-        opacity: 0;
-        top: 90%;
-        width: 0;
-        height: 0;
-    }
-}
-.content .slide-out.show {
-    animation: slideOut .75s forwards;
+.content:hover .slide-out {
+    animation: slideOut .5s forwards;
 }
 @keyframes slideOut {
     0% {
