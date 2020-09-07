@@ -99,9 +99,9 @@ function displayConnection() {
     } else {
         resetConnectionColour();
         //Maximum speed limited to 10Mbps, used as scale
-        var speed = navigator.connection.downlink;
+        var speed = Math.round(navigator.connection.downlink);
         //Display download speed in div
-        document.getElementById("download").innerText = speed + " Mb/s";
+        document.getElementById("download").innerText = speed + "Mb/s";
         //Get SVG document from DOM
         var svgDoc = document.getElementById("connection").contentDocument;
         var paths;
@@ -417,6 +417,7 @@ function createContentItems(contentType, category, data) {
             contentList.appendChild(liItem);
         }
     }
+    attachContentItemHandlers(contentType);
 }
 
 function setContentItemDataset(domItem, dataItem) {
@@ -698,6 +699,34 @@ function isNonDuplicateDrive(drives, item) {
     }
     //Non duplicate drive
     return true;
+}
+
+//TODO animation bug fix 2.0
+function attachContentItemHandlers(contentType) {
+    var contentList = document.getElementsByClassName(contentType);
+    for(var item of contentList) {
+        //Detect content item hover start
+        item.addEventListener("mouseover", displayAnimation);
+        item.addEventListener("mouseout", stopAnimation);
+        let slideOut = item.querySelector(".slide-out");
+        slideOut.addEventListener("animationend", removeAnimation);
+    }
+}
+
+function displayAnimation(e) {
+    let slideOut = e.target.querySelector(".slide-out");
+    slideOut.classList.add("show");
+    //TODO need to figure out how to keep track of animation progress and send it to stop animation
+}
+
+function stopAnimation(e) {
+    let slideOut = e.target.querySelector(".slide-out");
+    slideOut.classList.replace("show", "hide");
+}
+
+function removeAnimation(e) {
+    let slideOut = e.target;
+    slideOut.classList.remove("hide");
 }
 
 //TODO Refer to below when implementing the trophies screen, to add the trophy level to the top info bar
