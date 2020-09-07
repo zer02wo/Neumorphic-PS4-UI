@@ -220,7 +220,7 @@
         "favourites": false,
         "folders": ["Music"],
         "streaming": false,
-        "internal": true,
+        "internal": false,
         "external": {
             "name": "Helios (Plex)",
             "id": "nmbsl04",
@@ -348,7 +348,7 @@
         "favourites": false,
         "folders": ["TV"],
         "streaming": false,
-        "internal": false,
+        "internal": true,
         "external": {}
     },
     {
@@ -362,7 +362,7 @@
         "favourites": true,
         "folders": ["TV"],
         "streaming": false,
-        "internal": true,
+        "internal": false,
         "external": {
             "name": "Helios (Plex)",
             "id": "nmbsl04",
