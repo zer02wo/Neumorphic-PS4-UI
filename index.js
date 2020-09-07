@@ -321,8 +321,6 @@ function displayContent(contentType, category, data) {
         case "purchased":
         case "streaming":
         case "internal":
-        //TODO: Refactor external to be a type of folder, but for external drives?
-        case "external":
             //Create content items to display in list
             createContentItems(contentType, category, data);
             //Display sorting options and perform initial sort
@@ -332,6 +330,13 @@ function displayContent(contentType, category, data) {
         case "folders":
             //Create folders to display in list
             createFolders(contentType, data);
+            //Hide sorting options
+            mainContent.classList.remove("with-sorting");
+            break;
+        //TODO: Refactor external to be a type of folder, but for external drives
+        case "external":
+            //Create drives to display in list
+            createDrives(contentType, data);
             //Hide sorting options
             mainContent.classList.remove("with-sorting");
             break;
@@ -360,6 +365,9 @@ function getContentCategoryCount(category, data) {
     } else if(category == "folders") {
         //Return total number of folders in data
         count = getContentFolderStructure(data).length;
+    } else if(category == "external") {
+        //Return total number of drives in data
+        count = getContentDriveStructure(data).length;
     } else {
         //Return items where category is true
         count = data.filter(item => item[category]).length;
@@ -446,7 +454,7 @@ function createFolders(contentType, data) {
     for(var folder of folders) {
         //Create folder element to display within list
         let liFolder = document.createElement("li");
-        let classes = ["folder", "neu-button", "col-4"];
+        let classes = ["folders", "neu-button", "col-4"];
         liFolder.classList.add(...classes);
         //Create folder image to display within element
         let folderImage = document.createElement("object");
@@ -478,7 +486,7 @@ function getContentFolderStructure(data) {
     for(var item of data) {
         for(var folder of item.folders) {
             folders.push(folder);
-        }
+        }            
     }
     //Use set to remove duplicates (spread syntax) and sort alphabetically
     return [...new Set(folders)].sort();
@@ -487,11 +495,20 @@ function getContentFolderStructure(data) {
 function contentFolderNavHandler(e) {
     var target = e.target.querySelector(".category-title").innerText;
     var contentType = e.target.parentNode.id.replace("-list", "");
-    var targetFolder = getItemsInFolder(target, contentType);
-    //Clear items/folders from display
+    //Get category of content (folders/external)
+    var selectedCategory = document.getElementById(`${contentType}-categories`).querySelector(".selected");
+    var category = selectedCategory.id.replace(`-${contentType}`, "");
+    //TODO comment
+    var targetFolder;
+    if(category == "external") {
+        targetFolder = getItemsInDrive(target, contentType);
+    } else {
+        targetFolder = getItemsInFolder(target, contentType);
+    }
+    //Clear items from display
     clearContent(`${contentType}-list`);
     //Display all items from specific folder
-    createContentItems(contentType, "folder", targetFolder);
+    createContentItems(contentType, "folders", targetFolder);
     //Sort items from specific folder
     sortItems(contentType);
     //Display sorting options
@@ -521,7 +538,10 @@ function closeFolder(e) {
     folderClose.classList.remove("show");
     //Display folder selection
     var contentType = e.target.id.replace("-folder-close", "");
-    displayContent(contentType, "folders", window[contentType]);
+    //Display content for category (folders/external)
+    var selectedCategory = document.getElementById(`${contentType}-categories`).querySelector(".selected");
+    var category = selectedCategory.id.replace(`-${contentType}`, "");
+    displayContent(contentType, category, window[contentType]);
 }
 
 function toggleSortDirection(e) {
@@ -586,4 +606,80 @@ async function initialiseMedia() {
         //Initialise checked radio button to selected
         toggleRadioSelected("media-columns");
     }
+}
+
+function createDrives(contentType, data) {
+    var drives = getContentDriveStructure(data);
+    var drivesList = document.getElementById(`${contentType}-list`);
+    for(var drive of drives) {
+        //Create drive element to display within list
+        let liDrive = document.createElement("li");
+        let classes = ["external", "neu-button", "col-4"];
+        liDrive.classList.add(...classes);
+        //Create drive image to display within element
+        let driveImage = document.createElement("object");
+        driveImage.classList.add("category-image");
+        driveImage.type = "image/svg+xml";
+        //Assign image based on external media type
+        driveImage.data = `assets/icons/${drive.type}.svg`;
+        //Create drive text to display within element
+        let driveTitle = document.createElement("p");
+        driveTitle.classList.add("category-title");
+        driveTitle.innerText = drive.name;
+        //Create drive text to display number of items
+        let driveCount = document.createElement("p");
+        driveCount.classList.add("category-count");
+        //Get number of items within drive TODO: need to refactor this function
+        driveCount.innerText = getItemsInDrive(drive.name, contentType).length;
+        //Append elements to DOM
+        liDrive.appendChild(driveImage);
+        liDrive.appendChild(driveTitle);
+        liDrive.appendChild(driveCount);
+        drivesList.appendChild(liDrive);
+        //Attach event handlers for drive navigation TODO: not sure if this needs to be refactored
+        liDrive.addEventListener("click", contentFolderNavHandler);
+    }
+}
+
+function getItemsInDrive(driveName, contentType) {
+    var targetDrive = [];
+    var items = window[contentType];
+    //For each item
+    for(var item of items) {
+        //Within target drive
+        if(item.external.name == driveName) {
+            //Add it to array
+            targetDrive.push(item);
+        }
+    }
+    return targetDrive;
+}
+
+function getContentDriveStructure(data) {
+    var drives = [];
+    //Get drive for each data item
+    for(var item of data) {
+        //External property non-empty
+        if(Object.keys(item.external).length > 0) {
+            //Append non duplicate drive
+            if(isNonDuplicateDrive(drives, item)) {
+                drives.push(item.external);
+            }
+        }
+    }
+    //Sort drives alphabetically
+    return drives.sort();
+}
+
+function isNonDuplicateDrive(drives, item) {
+    //For each drive
+    for(var drive of drives) {
+        //Check for duplicate id
+        if(drive.id == item.external.id) {
+            //Duplicate drive
+            return false;
+        }
+    }
+    //Non duplicate drive
+    return true;
 }

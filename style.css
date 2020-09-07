@@ -370,7 +370,7 @@ body.dark-mode .content-sorting .content-columns-container.selected {
 .element-main.with-sorting > .content-list {
     height: 92.5%;
 }
-.content, .folder {
+.content, .folders, .external {
     flex-direction: column;
     list-style: none;
     cursor: pointer;
@@ -459,7 +459,7 @@ body.dark-mode .slide-out {
     }
 }
 
-.folder {
+.folders, .external {
     position: relative;
     font-size: 18px;
     height: 10%;

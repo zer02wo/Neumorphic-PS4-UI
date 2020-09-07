@@ -11,7 +11,7 @@
         "folders": ["Music"],
         "streaming": true,
         "internal": false,
-        "external": false
+        "external": {}
     },
     {
         "name": "Netflix",
@@ -25,7 +25,7 @@
         "folders": ["Movies", "TV"],
         "streaming": true,
         "internal": false,
-        "external": false
+        "external": {}
     },
     {
         "name": "Prime Video",
@@ -39,7 +39,7 @@
         "folders": ["Movies", "TV"],
         "streaming": true,
         "internal": false,
-        "external": false
+        "external": {}
     },
     {
         "name": "Crunchyroll",
@@ -53,7 +53,7 @@
         "folders": ["Anime"],
         "streaming": true,
         "internal": false,
-        "external": false
+        "external": {}
     },
     {
         "name": "Twitch",
@@ -67,7 +67,7 @@
         "folders": ["Gaming", "Videos"],
         "streaming": true,
         "internal": false,
-        "external": false
+        "external": {}
     },
     {
         "name": "YouTube",
@@ -81,7 +81,7 @@
         "folders": ["Videos"],
         "streaming": true,
         "internal": false,
-        "external": false
+        "external": {}
     },
     {
         "name": "My Beautiful Dark Twisted Fantasy",
@@ -95,7 +95,11 @@
         "folders": ["Music"],
         "streaming": false,
         "internal": false,
-        "external": true
+        "external": {
+            "name": "Kanye Discography",
+            "id": "wts0zwf",
+            "type": "USB"
+        }
     },
     {
         "name": "Yeezus",
@@ -109,7 +113,11 @@
         "folders": ["Music"],
         "streaming": false,
         "internal": false,
-        "external": true
+        "external": {
+            "name": "Kanye Discography",
+            "id": "wts0zwf",
+            "type": "USB"
+        }
     },
     {
         "name": "Kids See Ghosts",
@@ -123,7 +131,11 @@
         "folders": ["Music"],
         "streaming": false,
         "internal": false,
-        "external": true
+        "external": {
+            "name": "Kanye Discography",
+            "id": "wts0zwf",
+            "type": "USB"
+        }
     },
     {
         "name": "808s & Heartbreak",
@@ -137,7 +149,11 @@
         "folders": ["Music"],
         "streaming": false,
         "internal": false,
-        "external": true
+        "external": {
+            "name": "Kanye Discography",
+            "id": "wts0zwf",
+            "type": "USB"
+        }
     },
     {
         "name": "Graduation",
@@ -151,7 +167,11 @@
         "folders": ["Music"],
         "streaming": false,
         "internal": false,
-        "external": true
+        "external": {
+            "name": "Kanye Discography",
+            "id": "wts0zwf",
+            "type": "USB"
+        }
     },
     {
         "name": "The College Dropout",
@@ -165,7 +185,11 @@
         "folders": ["Music"],
         "streaming": false,
         "internal": false,
-        "external": true
+        "external": {
+            "name": "Kanye Discography",
+            "id": "wts0zwf",
+            "type": "USB"
+        }
     },
     {
         "name": "The Life of Pablo",
@@ -179,7 +203,11 @@
         "folders": ["Music"],
         "streaming": false,
         "internal": false,
-        "external": true
+        "external": {
+            "name": "Kanye Discography",
+            "id": "wts0zwf",
+            "type": "USB"
+        }
     },
     {
         "name": "Currents",
@@ -193,7 +221,11 @@
         "folders": ["Music"],
         "streaming": false,
         "internal": true,
-        "external": false
+        "external": {
+            "name": "Helios (Plex)",
+            "id": "nmbsl04",
+            "type": "Server"
+        }
     },
     {
         "name": "Skin",
@@ -206,8 +238,8 @@
         "favourites": false,
         "folders": ["Music"],
         "streaming": false,
-        "internal": false,
-        "external": true
+        "internal": true,
+        "external": {}
     },
     {
         "name": "Unknown Pleasures",
@@ -221,7 +253,11 @@
         "folders": ["Music"],
         "streaming": false,
         "internal": false,
-        "external": true
+        "external": {
+            "name": "Helios (Plex)",
+            "id": "nmbsl04",
+            "type": "Server"
+        }
     },
     {
         "name": "Back to the Future Part II",
@@ -235,7 +271,7 @@
         "folders": ["Movies"],
         "streaming": false,
         "internal": true,
-        "external": false
+        "external": {}
     },
     {
         "name": "Baby Driver",
@@ -249,7 +285,7 @@
         "folders": ["Movies"],
         "streaming": false,
         "internal": true,
-        "external": false
+        "external": {}
     },
     {
         "name": "John Wick: Chapter 3 - Parabellum",
@@ -263,7 +299,7 @@
         "folders": ["Movies"],
         "streaming": false,
         "internal": true,
-        "external": false
+        "external": {}
     },
     {
         "name": "Spirited Away",
@@ -277,7 +313,11 @@
         "folders": ["Movies", "Anime"],
         "streaming": false,
         "internal": false,
-        "external": true
+        "external": {
+            "name": "Retro Nostalgia",
+            "id": "byax1y4",
+            "type": "Drive"
+        }
     },
     {
         "name": "The Matrix",
@@ -291,7 +331,11 @@
         "folders": ["Movies"],
         "streaming": false,
         "internal": false,
-        "external": true
+        "external": {
+            "name": "Retro Nostalgia",
+            "id": "byax1y4",
+            "type": "Drive"
+        }
     },
     {
         "name": "Game of Thrones - Season 8",
@@ -305,7 +349,7 @@
         "folders": ["TV"],
         "streaming": false,
         "internal": false,
-        "external": true
+        "external": {}
     },
     {
         "name": "Mr Robot - Season 4",
@@ -319,7 +363,11 @@
         "folders": ["TV"],
         "streaming": false,
         "internal": true,
-        "external": false
+        "external": {
+            "name": "Helios (Plex)",
+            "id": "nmbsl04",
+            "type": "Server"
+        }
     },
     {
         "name": "Teen Titans - Season 2",
@@ -333,7 +381,11 @@
         "folders": ["TV"],
         "streaming": false,
         "internal": false,
-        "external": true
+        "external": {
+            "name": "Retro Nostalgia",
+            "id": "byax1y4",
+            "type": "Drive"
+        }
     },
     {
         "name": "Marvel Ultimate Spider-Man - Season 1",
@@ -347,7 +399,7 @@
         "folders": ["TV"],
         "streaming": false,
         "internal": true,
-        "external": false
+        "external": {}
     },
     {
         "name": "Watchmen - Season 1",
@@ -361,7 +413,7 @@
         "folders": ["TV"],
         "streaming": false,
         "internal": true,
-        "external": false
+        "external": {}
     },
     {
         "name": "Westworld - Season 1",
@@ -375,6 +427,6 @@
         "folders": ["TV"],
         "streaming": false,
         "internal": true,
-        "external": false
+        "external": {}
     }
 ]
