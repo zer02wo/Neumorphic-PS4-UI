@@ -431,7 +431,7 @@ body.dark-mode .slide-out {
     box-shadow: 12px 12px 13px #282B30;
 }
 .content:hover .slide-out {
-    animation: slideOut .5s forwards;
+    animation: slideOut .625s forwards;
 }
 @keyframes slideOut {
     0% {

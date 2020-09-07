@@ -1,7 +1,9 @@
 <svg id="server" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path id="server-rack-t" class="switchable" d="M68 20.6154C68 24.3846 65.6667 26 60.2222 26H19.7778C14.3333 26 12 24.3846 12 20.6154V17.3846C12 13.6154 14.3333 12 19.7778 12H60.2222C65.6667 12 68 13.6154 68 17.3846V20.6154Z" stroke="#3F4A62" stroke-width="7" stroke-linejoin="round"/>
-<path id="server-rack-b" class="switchable" d="M68 62.6154C68 66.3846 65.6667 68 60.2222 68H19.7778C14.3333 68 12 66.3846 12 62.6154V59.3846C12 55.6154 14.3333 54 19.7778 54H60.2222C65.6667 54 68 55.6154 68 59.3846V62.6154Z" stroke="#3F4A62" stroke-width="7" stroke-linejoin="round"/>
-<path id="server-rack-m" class="switchable" d="M68 41.6154C68 45.3846 65.6667 47 60.2222 47H19.7778C14.3333 47 12 45.3846 12 41.6154V38.3846C12 34.6154 14.3333 33 19.7778 33H60.2222C65.6667 33 68 34.6154 68 38.3846V41.6154Z" stroke="#3F4A62" stroke-width="7" stroke-linejoin="round"/>
-<path id="server-case-r" d="M56 76H64C70.5 76 76 70.5 76 64V16C76 9.5 70.5 4 64 4H56" stroke="#276CE5" stroke-width="7" stroke-linecap="round"/>
-<path id="server-case-l" d="M24 76H16C9.5 76 4.00001 70.5 4.00001 64L4.00001 16C4.00001 9.5 9.5 4 16 4H24" stroke="#276CE5" stroke-width="7" stroke-linecap="round"/>
+<path id="server-rack-m" class="switchable" d="M76 50.0769C76 54.9231 73 57 66 57H14C7 57 4 54.9231 4 50.0769V45.9231C4 41.0769 7 39 14 39H66C73 39 76 41.0769 76 45.9231V50.0769Z" stroke="#3F4A62" stroke-width="7" stroke-linejoin="round"/>
+<path id="server-rack-b" class="switchable" d="M76 69.0769C76 73.9231 73 76 66 76H14C7 76 4 73.9231 4 69.0769V64.9231C4 60.0769 7 58 14 58H66C73 58 76 60.0769 76 64.9231V69.0769Z" stroke="#3F4A62" stroke-width="7" stroke-linejoin="round"/>
+<path id="server-rack-t" class="switchable" d="M76 31.0769C76 35.9231 73 38 66 38H14C7 38 4 35.9231 4 31.0769V26.9231C4 22.0769 7 20 14 20H66C73 20 76 22.0769 76 26.9231V31.0769Z" stroke="#3F4A62" stroke-width="7" stroke-linejoin="round"/>
+<path id="server-behind" class="switchable" d="M7 21L13 4H67L73 21" stroke="#3F4A62" stroke-width="7" stroke-linejoin="round"/>
+<circle id="server-light-b" cx="62" cy="67" r="4" fill="#276CE5"/>
+<circle id="server-light-m" cx="62" cy="48" r="4" fill="#276CE5"/>
+<circle id="server-light-t" cx="62" cy="29" r="4" fill="#276CE5"/>
 </svg>
