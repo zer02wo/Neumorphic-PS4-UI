@@ -1,5 +1,5 @@
 <svg id="clock" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path id="clock-hour" d="M52 44H36" stroke="#276CE5" stroke-width="7" stroke-linecap="round"/>
-<path id="clock-min" d="M36 44V24" stroke="#276CE5" stroke-width="7" stroke-linecap="round"/>
+<path id="clock-hour" class="switchable" d="M40 40V24" stroke="#3F4A62" stroke-width="7" stroke-linecap="round"/>
+<path id="clock-min" d="M40 40V20" stroke="#276CE5" stroke-width="7" stroke-linecap="round"/>
 <circle id="clock-circle" class="switchable" cx="40" cy="40" r="36" stroke="#3F4A62" stroke-width="7"/>
 </svg>

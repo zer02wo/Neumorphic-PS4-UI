@@ -61,13 +61,30 @@ function initialiseInfoBar() {
     //Attach event handler to info bar elements
     attachInfoHandlers();
 }
-//TODO: Figure out possibility of SVG analogue clock
+
 function setTime() {
+    //Display digital clock
     var clock = document.getElementById("time");
     var t = new Date();
     var h = t.getHours();
     var m = t.getMinutes();
+    var s = t.getSeconds();
     clock.innerText = (h < 10 ? "0" + h : h) + ":" + (m < 10 ? "0" + m : m);
+
+    //Display analogue clock
+    var svgDoc = document.getElementById("clock").contentDocument;
+    //Get bounding box of outer circle
+    var boundingBox = svgDoc.getElementById("clock-circle").getBBox();
+    //Get elements from SVG doc
+    var minHand = svgDoc.getElementById("clock-min");
+    var hrHand = svgDoc.getElementById("clock-hour");
+    //Calculate angles of rotation, using smaller time component to give more accurate representation
+    var minAngle = (m+(s/60)) * (360/60);
+    var hrAngle = ((h+(m/60))%12) * (360/12);
+    //Set rotation using transform attribute around calculated x and y midpoint values
+    minHand.setAttribute("transform", `rotate(${minAngle}, ${boundingBox.x + (boundingBox.width/2)}, ${boundingBox.y + (boundingBox.height/2)})`);
+    hrHand.setAttribute("transform", `rotate(${hrAngle}, ${boundingBox.x + (boundingBox.width/2)}, ${boundingBox.y + (boundingBox.height/2)})`);
+    
     //Update every second
     setTimeout(setTime, 1000);
 }
@@ -333,7 +350,6 @@ function displayContent(contentType, category, data) {
             //Hide sorting options
             mainContent.classList.remove("with-sorting");
             break;
-        //TODO: Refactor external to be a type of folder, but for external drives
         case "external":
             //Create drives to display in list
             createDrives(contentType, data);
@@ -498,7 +514,7 @@ function contentFolderNavHandler(e) {
     //Get category of content (folders/external)
     var selectedCategory = document.getElementById(`${contentType}-categories`).querySelector(".selected");
     var category = selectedCategory.id.replace(`-${contentType}`, "");
-    //TODO comment
+    //Get target folder of items
     var targetFolder;
     if(category == "external") {
         targetFolder = getItemsInDrive(target, contentType);
@@ -629,14 +645,14 @@ function createDrives(contentType, data) {
         //Create drive text to display number of items
         let driveCount = document.createElement("p");
         driveCount.classList.add("category-count");
-        //Get number of items within drive TODO: need to refactor this function
+        //Get number of items within drive
         driveCount.innerText = getItemsInDrive(drive.name, contentType).length;
         //Append elements to DOM
         liDrive.appendChild(driveImage);
         liDrive.appendChild(driveTitle);
         liDrive.appendChild(driveCount);
         drivesList.appendChild(liDrive);
-        //Attach event handlers for drive navigation TODO: not sure if this needs to be refactored
+        //Attach event handlers for drive navigation
         liDrive.addEventListener("click", contentFolderNavHandler);
     }
 }
@@ -683,3 +699,6 @@ function isNonDuplicateDrive(drives, item) {
     //Non duplicate drive
     return true;
 }
+
+//TODO Refer to below when implementing the trophies screen, to add the trophy level to the top info bar
+    //-> https://www.google.com/search?q=how+is+playstation+trophy+levels+calculated&oq=how+is+playstation+trophy+levels+calculated&aqs=chrome..69i57j0.7637j0j4&sourceid=chrome&ie=UTF-8
