@@ -411,6 +411,20 @@ body.dark-mode .content-sorting .content-columns-container.selected {
     /*Prevent image stretching*/
     object-fit: scale-down;
 }
+.content .favourite-icon-container {
+    position: absolute;
+    right: 2.5%;
+    bottom: 2.5%;
+    height: 2vw;
+    width: 2vw;
+    z-index: 3;
+}
+.content .favourite-icon {
+    height: 2vw;
+    width: 2vw;
+    /*Prevents SVG object blocking the event listener*/
+    pointer-events: none;
+}
 .content .slide-out {
     position: absolute;
     display: flex;

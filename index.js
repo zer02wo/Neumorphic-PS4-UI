@@ -449,6 +449,17 @@ function createContentItems(contentType, category, data) {
             liItemImg.src = item.src;
             liItemImg.alt = item.name;
             liItem.appendChild(liItemImg);
+            //Create favourite icon container
+            let liFavIconContainer = document.createElement("div");
+            liFavIconContainer.classList.add("favourite-icon-container");
+            liFavIconContainer.addEventListener("click", toggleFavourite);
+            liItem.appendChild(liFavIconContainer);
+            //Create favourite icon to display within container
+            let liFavIcon = document.createElement("object");
+            liFavIcon.classList.add("favourite-icon");
+            liFavIcon.type = "image/svg+xml";
+            liFavIcon.data = "assets/icons/Favourite.svg";
+            liFavIconContainer.appendChild(liFavIcon);
             //Create sliding text container to display item name
             let liSlideOut = document.createElement("div");
             liSlideOut.classList.add("slide-out");
@@ -458,6 +469,7 @@ function createContentItems(contentType, category, data) {
             contentList.appendChild(liItem);
         }
     }
+    initialiseFavouriteIconDisplay(contentList);
     attachContentItemHandlers(contentType);
 }
 
@@ -466,10 +478,69 @@ function setContentItemDataset(domItem, dataItem) {
     //Get properties of data item
     var properties = Object.keys(dataItem.properties);
     //For each item property
-    for(property of properties) {
+    for(var property of properties) {
         //Set dataset attribute of DOM item to data item value
         domItem.dataset[property] = dataItem.properties[property];
     }
+    //Set fringe case favourite property
+    domItem.dataset.favourites = dataItem.favourites;
+}
+
+//Toggle whether content item is favourited
+function toggleFavourite(e) {
+    //For each content item of content type
+    let icon = e.target.querySelector(".favourite-icon");
+    var contentType = e.target.closest(".content-list").id.replace("-list", "");
+    var targetName = e.target.parentNode.getAttribute("name");
+    for(var item of window[contentType]) {
+        //Content item matches target
+        if(item.name == targetName) {
+            //Toggle favourite value
+            item.favourites = !item.favourites;
+            //Set favourite icon style
+            if(item.favourites) {
+                setFavouriteIconOpacity(icon, "100%");
+            } else {
+                setFavouriteIconOpacity(icon, "20%");
+            }
+            //Prevent looping through extra items
+            break;
+        }
+    }
+    //Update content category count
+    displayContentCategoryCount(contentType);
+    //If displaying favourited items
+    var selectedCategory = document.getElementById(`${contentType}-categories`).querySelector(".content-category.selected");
+    if(selectedCategory.id.includes("favourites")) {
+        //Update display to account for new/removed items
+        displayContent(contentType, "favourites", window[contentType]);
+    }
+}
+
+//Sets style of favourite icons of content elements
+function initialiseFavouriteIconDisplay(contentList) {
+    //For each icon in content list
+    var icons = contentList.getElementsByClassName("favourite-icon");
+    for(var icon of icons) {
+        //If content item is favourited
+        let isFavourite = icon.closest(".content").dataset.favourites;
+        if(isFavourite == "true") {
+            //Set style when icon loads
+            icon.addEventListener("load", function(e) {
+                let icon = e.target;
+                setFavouriteIconOpacity(icon, "100%");
+            });
+        }
+    }
+}
+
+//Set opacity of favourite icon
+function setFavouriteIconOpacity(icon, opacity) {
+    //Get SVG path from content document
+    var svgDoc = icon.contentDocument;
+    let heart = svgDoc.getElementById("favourite-heart");
+    //Set fill opacity to specified value
+    heart.setAttribute("fill-opacity", opacity);
 }
 
 //Attach event handlers to content items
@@ -477,9 +548,9 @@ function attachContentItemHandlers(contentType) {
     var contentList = document.getElementsByClassName(contentType);
     for(var item of contentList) {
         //Detect content item hover start
-        item.addEventListener("mouseover", displayAnimation);
+        item.addEventListener("mouseenter", displayAnimation);
         //Detect content item hover end
-        item.addEventListener("mouseout", stopAnimation);
+        item.addEventListener("mouseleave", stopAnimation);
         //Detect slide out animation end
         let slideOut = item.querySelector(".slide-out");
         slideOut.addEventListener("animationend", removeAnimation);
@@ -801,8 +872,6 @@ function isNonDuplicateDrive(drives, item) {
     //Non duplicate drive
     return true;
 }
-
-//TODO favourites feature for content items (small heart in bottom right, when you click it, fills the border and actually updates the json data (locally, not the json file))
 
 //TODO Import trophies data from a Node wrapper API to put in JSON
 //TODO Refer to below when implementing the trophies screen, to add the trophy level to the top info bar
