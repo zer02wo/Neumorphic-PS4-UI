@@ -1,0 +1,7 @@
+<svg id="broadcast" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="broadcast-play" d="M52 40L32 51V29L52 40Z" stroke="#276CE5" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="broadcast-inner-r" class="switchable" d="M40 63.7315C53.0886 65.841 65.6537 55.2937 63.8213 40" stroke="#3F4A62" stroke-width="7" stroke-linecap="round"/>
+<path id="broadcast-inner-l" class="switchable" d="M40 16.2685C26.9114 14.159 14.3463 24.7063 16.1787 40" stroke="#3F4A62" stroke-width="7" stroke-linecap="round"/>
+<path id="broadcast-outer-r" d="M40 75.5973C59.633 78.7615 78.4806 62.9405 75.732 40" stroke="#276CE5" stroke-width="7" stroke-linecap="round"/>
+<path id="broadcast-outer-l" d="M40 4.40267C20.367 1.23847 1.51938 17.0595 4.26799 40" stroke="#276CE5" stroke-width="7" stroke-linecap="round"/>
+</svg>

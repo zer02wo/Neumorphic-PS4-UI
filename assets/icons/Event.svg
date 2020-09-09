@@ -1,0 +1,8 @@
+<svg id="event" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="event-line-l" d="M16 49V58L32 64V74" stroke="#276CE5" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="event-line-r" d="M64 49V58L48 64V74" stroke="#276CE5" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="event-line-m" d="M40 27V48" stroke="#276CE5" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<circle id="event-circle-l" class="switchable" cx="16" cy="36" r="12" stroke="#3F4A62" stroke-width="7"/>
+<circle id="event-circle-m" class="switchable" cx="40" cy="14" r="10" stroke="#3F4A62" stroke-width="7"/>
+<circle id="event-circle-r" class="switchable" cx="64" cy="36" r="12" stroke="#3F4A62" stroke-width="7"/>
+</svg>

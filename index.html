@@ -55,7 +55,7 @@
             <p class="nav-title">Social</p>
             <a class="nav-image-container neu-button" draggable="false" href="#social">
                 <!--TODO: Change to social icon, reuse camera icon within categories list-->
-                <object class="nav-image" type="image/svg+xml" data="assets/icons/Camera.svg">Social</object>
+                <object class="nav-image" type="image/svg+xml" data="assets/icons/Social.svg">Social</object>
             </a>
         </div>
         <div class="nav-element flex-container" id="nav-notifications">
@@ -107,7 +107,6 @@
             </a>
         </div>
     </div>
-
     <div id="main-content" class="neu-container flex-container neu-flush">
         <div id="library" class="content-element">
             <ul id="games-categories" class="flex-container content-categories">
@@ -243,15 +242,41 @@
             <p>Store</p>
         </div>
         <div id="social" class="content-element">
-            <p>Social</p>
-            <!--https://images.pushsquare.com/news/2016/02/you_can_now_search_for_ps4_communities/1280x720.jpg-->
-            <!--Categories: captures/screenshots/screen recordings, in-game events, game communities (like steam), LFG-->
+            <ul id="social-categories" class="flex-container content-categories">
+                <li id="all-social" class="social-category content-category neu-button selected">
+                    <object class="category-image" type="image/svg+xml" data="assets/icons/Applications.svg">All</object>
+                    <p class="category-title">All</p>
+                    <p class="category-count"></p>
+                </li>
+                <li id="broadcasts-social" class="social-category content-category neu-button">
+                    <object class="category-image" type="image/svg+xml" data="assets/icons/Broadcast.svg">Broadcasts</object>
+                    <p class="category-title">Broadcasts</p>
+                    <p class="category-count"></p>
+                </li>
+                <li id="screenshots-social" class="social-category content-category neu-button">
+                    <object class="category-image" type="image/svg+xml" data="assets/icons/Camera.svg">Screenshots</object>
+                    <p class="category-title">Screenshots</p>
+                    <p class="category-count"></p>
+                </li>
+                <li id="clips-social" class="social-category content-category neu-button">
+                    <object class="category-image" type="image/svg+xml" data="assets/icons/Video.svg">Recordings</object>
+                    <p class="category-title">Recordings</p>
+                    <p class="category-count"></p>
+                </li>
+                <li id="events-social" class="social-category content-category neu-button">
+                    <object class="category-image" type="image/svg+xml" data="assets/icons/Event.svg">Events</object>
+                    <p class="category-title">Events</p>
+                    <p class="category-count"></p>
+                </li>
+            </ul>
         </div>
         <div id="notifications" class="content-element">
             <p>Notifications</p>
         </div>
         <div id="friends" class="content-element">
             <p>Friends</p>
+            <!--TODO https://images.pushsquare.com/news/2016/02/you_can_now_search_for_ps4_communities/1280x720.jpg-->
+            <!--Categories: all, friends, friend requests, game communities (like steam), LFG-->
         </div>
         <div id="messages" class="content-element">
             <p>Messages</p>

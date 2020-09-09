@@ -1,0 +1,7 @@
+<svg id="social" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="social-line-b" d="M51.25 18.5014L26.5 32.0014" stroke="#276CE5" stroke-width="7"/>
+<path id="social-line-t" d="M51.25 59.9127L26.5 46.4127" stroke="#276CE5" stroke-width="7"/>
+<path id="social-circle-t" class="switchable" d="M49 62.5C49 55.0442 55.0442 49 62.5 49C69.9558 49 76 55.0442 76 62.5C76 69.9558 69.9558 76 62.5 76C55.0442 76 49 69.9558 49 62.5Z" stroke="#3F4A62" stroke-width="7"/>
+<path id="social-circle-l" class="switchable" d="M4 38.875C4 46.3308 10.0442 52.375 17.5 52.375C24.9558 52.375 31 46.3308 31 38.875C31 31.4192 24.9558 25.375 17.5 25.375C10.0442 25.375 4 31.4192 4 38.875Z" stroke="#3F4A62" stroke-width="7"/>
+<path id="social-circle-b" class="switchable" d="M49 17.5C49 10.0442 55.0442 4 62.5 4C69.9558 4 76 10.0442 76 17.5C76 24.9558 69.9558 31 62.5 31C55.0442 31 49 24.9558 49 17.5Z" stroke="#3F4A62" stroke-width="7"/>
+</svg>
