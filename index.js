@@ -4,6 +4,7 @@ var games, media;
 //Initialise when DOM loaded
 window.onload = function() {init();};
 
+//Initialise the user interface
 function init() {
     //Initialise custom drop down menus
     initialiseDropDowns();
@@ -17,6 +18,7 @@ function init() {
     initialiseMedia();
 }
 
+//Initialise custom drop-down components
 function initialiseDropDowns() {
     //For each custom drop-down container
     var dropDowns = document.getElementsByClassName("neu-select-container");
@@ -53,6 +55,7 @@ function initialiseDropDowns() {
     });
 }
 
+//Initialise information bar elements
 function initialiseInfoBar() {
     //Display time in clock
     setTime();
@@ -62,13 +65,16 @@ function initialiseInfoBar() {
     attachInfoHandlers();
 }
 
+//Set digital/analogue time of clocks within information bar
 function setTime() {
     //Display digital clock
     var clock = document.getElementById("time");
+    //Get time from Date object
     var t = new Date();
     var h = t.getHours();
     var m = t.getMinutes();
     var s = t.getSeconds();
+    //Display formatted digital date
     clock.innerText = (h < 10 ? "0" + h : h) + ":" + (m < 10 ? "0" + m : m);
 
     //Display analogue clock
@@ -84,11 +90,12 @@ function setTime() {
     //Set rotation using transform attribute around calculated x and y midpoint values
     minHand.setAttribute("transform", `rotate(${minAngle}, ${boundingBox.x + (boundingBox.width/2)}, ${boundingBox.y + (boundingBox.height/2)})`);
     hrHand.setAttribute("transform", `rotate(${hrAngle}, ${boundingBox.x + (boundingBox.width/2)}, ${boundingBox.y + (boundingBox.height/2)})`);
-    
-    //Update every second
+
+    //Update time every second
     setTimeout(setTime, 1000);
 }
 
+//Display connection strength/speed within information bar
 function displayConnection() {
     //Check support for NetworkInformation API
     if(navigator.connection == undefined) {
@@ -126,12 +133,20 @@ function displayConnection() {
     }
 }
 
+//Reset colours of connection strength icon
 function resetConnectionColour() {
+    //Reset colour of connection icon paths to default colour
     var svgDoc = document.getElementById("connection").contentDocument;
     var paths = svgDoc.getElementsByClassName("reset");
-    setPathStroke(paths, "#3F4A62");
+    //Default colour based on light/dark mode
+    if(document.body.classList.contains("dark-mode")) {
+        setPathStroke(paths, "#E6ECFA");
+    } else {
+        setPathStroke(paths, "#3F4A62");
+    }
 }
 
+//Attach event handlers to information bar elements
 function attachInfoHandlers() {
     //Attach click event to mode change button to toggle light/dark mode
     var modeChange = document.getElementById("mode-change");
@@ -141,6 +156,7 @@ function attachInfoHandlers() {
     onlineStatus.addEventListener("click", toggleStatus);
 }
 
+//Toggle user interface between light/dark mode stylings
 function changeMode() {
     if(document.body.classList.contains("dark-mode")) {
         //Remove dark mode from body
@@ -163,6 +179,7 @@ function changeMode() {
     }
 }
 
+//Set colour of switchable SVG elements to specified colour
 function setIconsColours(colour) {
     //Get icons
     var icons = document.getElementsByTagName("object");
@@ -182,6 +199,7 @@ function setIconsColours(colour) {
     }
 }
 
+//Set stroke colour of SVG path elements to specified colour
 function setPathStroke(paths, stroke) {
     //For each SVG path
     for(var path of paths) {
@@ -190,31 +208,39 @@ function setPathStroke(paths, stroke) {
     }
 }
 
+//Switch current class with new class for SVG path elements
 function switchPathClasses(removeClass, addClass, paths) {
+    //For each SVG path
     for(var path of paths) {
+        //Switch one class for another
         path.classList.replace(removeClass, addClass);
     }
 }
 
 //Remove child nodes from specified element
 function clearContent(elementId) {
+    //For each child element
     var elements = Array.from(document.getElementById(elementId).children);
     for(var element of elements) {
+        //Remove from DOM
         element.remove();
     }
 }
 
-
+//Toggle online status icon event
 function toggleStatus(e) {
+    //Toggle status by toggling CSS class
     var onlineStatus = e.target;
     onlineStatus.classList.toggle("offline");
 }
 
+//Initialise navigation bar elements
 function initialiseNavBar() {
     //Attach event handlers to navbar elements
     attachNavHandlers();
 }
 
+//Attach event handlers to navigation bar elements
 function attachNavHandlers() {
     //For each nav element
     var navs = document.getElementsByClassName("nav-image-container");
@@ -224,6 +250,7 @@ function attachNavHandlers() {
     }
 }
 
+//Navigation event between main content elements
 function navHandler(e) {
     var target = e.target;
     //Hide previous content from main
@@ -237,11 +264,11 @@ function navHandler(e) {
     document.querySelector(target.hash).classList.add("show");
 }
 
+//Set chosen navigation bar element to be selected
 function selectNavElement(navElement) {
     //Raise main content from flush state on first nav selection
     var mainContent = document.getElementById("main-content");
     mainContent.classList.remove("neu-flush");
-    
     //Remove previously selected nav element
     var navElements = document.getElementsByClassName("nav-element selected");
     for(var element of navElements) {
@@ -251,6 +278,7 @@ function selectNavElement(navElement) {
     navElement.parentElement.classList.add("selected");
 }
 
+//Initialise games library elements
 async function initialiseLibrary() {
     //Get games from json file
     games = await getJsonFile("games");
@@ -264,21 +292,29 @@ async function initialiseLibrary() {
     }
 }
 
+//Retrieve JSON data file of specified name
 async function getJsonFile(fileName) {
+    //Get JSON file from fetch request
     const file = await fetch(`/data/${fileName}.json`)
         .then(res => {
+            //Throw error when response not OK status
             if(res.status !== 200) {
                 throw ("Failed to fetch file. " + res.status);
             }
+            //Return response on OK status
             return res;
         })
+        //Parse JSON data
         .then(data => data.json())
+        //Log any errors to console
         .catch(err => {
             console.error("Fetch failed.", err);
         });
+    //Return parsed JSON file data
     return file;
 }
 
+//Attach event handlers to main content elements
 function attachMainContentHandlers(contentType) {
     //Navigate to category on click
     var contentCategories = document.getElementsByClassName(`${contentType}-category`);
@@ -303,8 +339,10 @@ function attachMainContentHandlers(contentType) {
     col4.onchange = toggleNumColumns;
 }
 
+//Navigation event within main content element
 function contentNavHandler(e) {
     var target = e.target;
+    //Use regex to get information from event trigger
     var contentType = target.id.replace(/[a-z]*-/, "");
     var category = target.id.replace(/-[a-z]*/, "");
     //Remove previously selected category
@@ -324,6 +362,7 @@ function contentNavHandler(e) {
     contentList.scrollTo(0, 0);
 }
 
+//Display content within main UI element
 function displayContent(contentType, category, data) {
     //Display number of items in each category
     displayContentCategoryCount(contentType);
@@ -359,6 +398,7 @@ function displayContent(contentType, category, data) {
     }
 }
 
+//Display number of items for each content category
 function displayContentCategoryCount(contentType) {
     //For each content category
     var categories = document.getElementsByClassName(`${contentType}-category`);
@@ -391,6 +431,7 @@ function getContentCategoryCount(category, data) {
     return count;
 }
 
+//Create content items to display within main element
 function createContentItems(contentType, category, data) {
     var contentList = document.getElementById(`${contentType}-list`);
     var numColumns = document.querySelector(`input[name=${contentType}-columns]:checked`).value;
@@ -420,6 +461,7 @@ function createContentItems(contentType, category, data) {
     attachContentItemHandlers(contentType);
 }
 
+//Set dataset attributes of content items
 function setContentItemDataset(domItem, dataItem) {
     //Get properties of data item
     var properties = Object.keys(dataItem.properties);
@@ -430,12 +472,51 @@ function setContentItemDataset(domItem, dataItem) {
     }
 }
 
+//Attach event handlers to content items
+function attachContentItemHandlers(contentType) {
+    var contentList = document.getElementsByClassName(contentType);
+    for(var item of contentList) {
+        //Detect content item hover start
+        item.addEventListener("mouseover", displayAnimation);
+        //Detect content item hover end
+        item.addEventListener("mouseout", stopAnimation);
+        //Detect slide out animation end
+        let slideOut = item.querySelector(".slide-out");
+        slideOut.addEventListener("animationend", removeAnimation);
+    }
+}
+
+//Content item hover event to display slide-out animation
+function displayAnimation(e) {
+    //Display animation for content item slide-out
+    let slideOut = e.target.querySelector(".slide-out");
+    slideOut.classList.add("show");
+}
+
+//Content item hover event end to display reverse slide-out animation
+function stopAnimation(e) {
+    //Display animation for content item slide-in
+    let slideOut = e.target.querySelector(".slide-out");
+    slideOut.classList.replace("show", "hide");
+}
+
+//Content item animation event end
+function removeAnimation(e) {
+    //Prevent slide-in animation on initial load/after sorting
+    let slideOut = e.target;
+    slideOut.classList.remove("hide");
+}
+
+//Content items sorting event
 function eventSort(e) {
+    //Get content type from event
     var sortingContainer = e.target.closest(".content-sorting");
     var contentType = sortingContainer.id.replace("-sorting", "");
+    //Sort items based on type of content
     sortItems(contentType);
 }
 
+//Sort content items of specific type by selected method
 function sortItems(contentType) {
     //Get scroll position of content before sorting
     var mainContent = document.getElementById(`${contentType}-list`);
@@ -465,6 +546,17 @@ function sortItems(contentType) {
     mainContent.scrollTo(0, scrollPos);
 }
 
+//Toggle direction which items are sorted
+function toggleSortDirection(e) {
+    var contentType = e.target.id.replace("-ordering-direction", "");
+    //Toggle sort direction (asc/dsc)
+    var sortDirection = document.getElementById(`${contentType}-ordering-direction`);
+    sortDirection.classList.toggle("descending");
+    //Sort items with updated direction
+    sortItems(contentType);
+}
+
+//Create folder items to navigate to content items
 function createFolders(contentType, data) {
     var folders = getContentFolderStructure(data);
     var foldersList = document.getElementById(`${contentType}-list`);
@@ -497,6 +589,7 @@ function createFolders(contentType, data) {
     }
 }
 
+//Get directory structure from specified data
 function getContentFolderStructure(data) {
     var folders = [];
     //Get folders for each data item
@@ -509,6 +602,7 @@ function getContentFolderStructure(data) {
     return [...new Set(folders)].sort();
 }
 
+//Content folder navigation event to display content items
 function contentFolderNavHandler(e) {
     var target = e.target.querySelector(".category-title").innerText;
     var contentType = e.target.parentNode.id.replace("-list", "");
@@ -535,6 +629,7 @@ function contentFolderNavHandler(e) {
     folderClose.classList.add("show");
 }
 
+//Get the content items of specified type within specified folder
 function getItemsInFolder(folder, contentType) {
     var targetFolder = [];
     var items = window[contentType];
@@ -549,6 +644,7 @@ function getItemsInFolder(folder, contentType) {
     return targetFolder;
 }
 
+//Close folder of content items
 function closeFolder(e) {
     var folderClose = e.target;
     //Hide folder close button
@@ -561,25 +657,21 @@ function closeFolder(e) {
     displayContent(contentType, category, window[contentType]);
 }
 
-function toggleSortDirection(e) {
-    var contentType = e.target.id.replace("-ordering-direction", "");
-    //Toggle sort direction
-    var sortDirection = document.getElementById(`${contentType}-ordering-direction`);
-    sortDirection.classList.toggle("descending");
-    //Sort items with updated direction
-    sortItems(contentType);
-}
-
+//Toggle number of columns displaying content items
 function toggleNumColumns(e) {
+    //For each item of content type
     var contentType = e.target.name.replace("-columns", "");
     var items = Array.from(document.getElementsByClassName(contentType));
     for(var item of items) {
+        //Toggle between 3/4 columns
         item.classList.toggle("col-3");
         item.classList.toggle("col-4");
     }
+    //Toggle selected radio button
     toggleRadioSelected(`${contentType}-columns`);
 }
 
+//Toggle radio button selected based on chosen value
 function toggleRadioSelected(name) {
     //Handle checked radio button
     var checkedPaths = getRadioPaths(true, name, "switchable");
@@ -599,19 +691,24 @@ function toggleRadioSelected(name) {
     }
 }
 
+//Get SVG paths for radio button icons
 function getRadioPaths(isChecked, name, className) {
     var radioButton;
     if(isChecked) {
+        //Checked radio button
         radioButton = document.querySelector(`input[name=${name}]:checked`).parentNode;
         radioButton.classList.add("selected");
     } else {
+        //Not checked radio button
         radioButton = document.querySelector(`input[name=${name}]:not(:checked)`).parentNode;
         radioButton.classList.remove("selected");
     }
-    var svgDoc = radioButton.children[1].contentDocument;
+    //Get SVG paths from radio button image content document
+    var svgDoc = radioButton.querySelector(".content-sorting-image").contentDocument;
     return Array.from(svgDoc.getElementsByClassName(className));
 }
 
+//Initialise media library elements
 async function initialiseMedia() {
     //Get media library from json file
     media = await getJsonFile("media");
@@ -625,6 +722,7 @@ async function initialiseMedia() {
     }
 }
 
+//Create drive items to navigate to content items
 function createDrives(contentType, data) {
     var drives = getContentDriveStructure(data);
     var drivesList = document.getElementById(`${contentType}-list`);
@@ -658,6 +756,7 @@ function createDrives(contentType, data) {
     }
 }
 
+//Get the content items of specified type within specified drive
 function getItemsInDrive(driveName, contentType) {
     var targetDrive = [];
     var items = window[contentType];
@@ -672,6 +771,7 @@ function getItemsInDrive(driveName, contentType) {
     return targetDrive;
 }
 
+//Get directory structure from specified data
 function getContentDriveStructure(data) {
     var drives = [];
     //Get drive for each data item
@@ -688,6 +788,7 @@ function getContentDriveStructure(data) {
     return drives.sort();
 }
 
+//Determine whether drive is a duplicate within drive list
 function isNonDuplicateDrive(drives, item) {
     //For each drive
     for(var drive of drives) {
@@ -701,33 +802,8 @@ function isNonDuplicateDrive(drives, item) {
     return true;
 }
 
-//TODO animation bug fix 2.0
-function attachContentItemHandlers(contentType) {
-    var contentList = document.getElementsByClassName(contentType);
-    for(var item of contentList) {
-        //Detect content item hover start
-        item.addEventListener("mouseover", displayAnimation);
-        item.addEventListener("mouseout", stopAnimation);
-        let slideOut = item.querySelector(".slide-out");
-        slideOut.addEventListener("animationend", removeAnimation);
-    }
-}
+//TODO favourites feature for content items (small heart in bottom right, when you click it, fills the border and actually updates the json data (locally, not the json file))
 
-function displayAnimation(e) {
-    let slideOut = e.target.querySelector(".slide-out");
-    slideOut.classList.add("show");
-    //TODO need to figure out how to keep track of animation progress and send it to stop animation
-}
-
-function stopAnimation(e) {
-    let slideOut = e.target.querySelector(".slide-out");
-    slideOut.classList.replace("show", "hide");
-}
-
-function removeAnimation(e) {
-    let slideOut = e.target;
-    slideOut.classList.remove("hide");
-}
-
+//TODO Import trophies data from a Node wrapper API to put in JSON
 //TODO Refer to below when implementing the trophies screen, to add the trophy level to the top info bar
     //-> https://www.google.com/search?q=how+is+playstation+trophy+levels+calculated&oq=how+is+playstation+trophy+levels+calculated&aqs=chrome..69i57j0.7637j0j4&sourceid=chrome&ie=UTF-8
