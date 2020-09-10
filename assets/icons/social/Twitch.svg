@@ -1,0 +1,5 @@
+<svg id="twitch" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="twitch-outer" class="switchable" d="M76 44.8358L57.4194 62.0299H41.1613L26.0645 76H23.7419V62.0299H4V13.6716L8.64516 4H76V44.8358Z" stroke="#3F4A62" stroke-width="7" stroke-linejoin="round"/>
+<path id="twitch-eye-r" class="switchable" d="M54.5161 38.3881V23.3433" stroke="#3F4A62" stroke-width="7" stroke-linecap="round"/>
+<path id="twitch-eye-l" class="switchable" d="M34.1936 38.3881V23.3433" stroke="#3F4A62" stroke-width="7" stroke-linecap="round"/>
+</svg>

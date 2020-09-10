@@ -1,0 +1,106 @@
+[
+    {
+        "name": "Among Us Subathon",
+        "properties": {
+            "created": 1597795200000,
+            "viewCount": 50
+        },
+        "src": "assets/social-thumbnails/AmongUs.png",
+        "folders": ["Archive"],
+        "broadcasts": true,
+        "screenshots": false,
+        "recordings": false,
+        "events": false
+    },
+    {
+        "name": "Close Encounter.png",
+        "properties": {
+            "created": 1488240000000,
+            "viewCount": 9
+        },
+        "src": "assets/social-thumbnails/HZDEncounter.png",
+        "folders": ["Favourite Moments"],
+        "broadcasts": false,
+        "screenshots": true,
+        "recordings": false,
+        "events": false
+    },
+    {
+        "name": "Fall Guys First Win.mp4",
+        "properties": {
+            "created": 1597881600000,
+            "viewCount": 2
+        },
+        "src": "assets/social-thumbnails/FGVictory.png",
+        "folders": ["Winning"],
+        "broadcasts": false,
+        "screenshots": false,
+        "recordings": true,
+        "events": false
+    },
+    {
+        "name": "Fortnite Victory Royale.mp4",
+        "properties": {
+            "created": 1513209600000,
+            "viewCount": 1
+        },
+        "src": "assets/social-thumbnails/FNVicRoyale.png",
+        "folders": ["Winning", "Archive"],
+        "broadcasts": false,
+        "screenshots": false,
+        "recordings": true,
+        "events": false
+    },
+    {
+        "name": "Destiny 2: Solstice of Heroes",
+        "properties": {
+            "created": 1592611200000,
+            "viewCount": 7777
+        },
+        "src": "assets/social-thumbnails/Destiny2SoH.png",
+        "folders": ["Favourite Moments"],
+        "broadcasts": false,
+        "screenshots": false,
+        "recordings": false,
+        "events": true
+    },
+    {
+        "name": "COD Warzone: Double XP Weekend",
+        "properties": {
+            "created": 1591747200000,
+            "viewCount": 9143
+        },
+        "src": "assets/social-thumbnails/WZ2XExp.png",
+        "folders": ["Favourite Moments"],
+        "broadcasts": false,
+        "screenshots": false,
+        "recordings": false,
+        "events": true
+    },
+    {
+        "name": "Just Hanging.png",
+        "properties": {
+            "created": 1601424000000,
+            "viewCount": 303
+        },
+        "src": "assets/social-thumbnails/SMSelfie.png",
+        "folders": ["Favourite Moments"],
+        "broadcasts": false,
+        "screenshots": true,
+        "recordings": false,
+        "events": false
+    },
+    {
+        "name": "Into The Spider Verse.png",
+        "properties": {
+            "created": 1544572800000,
+            "viewCount": 26
+        },
+        "src": "assets/social-thumbnails/SMSV.png",
+        "folders": [],
+        "broadcasts": false,
+        "screenshots": true,
+        "recordings": false,
+        "events": false       
+    }
+]

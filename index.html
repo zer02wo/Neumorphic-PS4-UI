@@ -248,6 +248,11 @@
                     <p class="category-title">All</p>
                     <p class="category-count"></p>
                 </li>
+                <li id="folders-social" class="social-category content-category neu-button">
+                    <object class="category-image" type="image/svg+xml" data="assets/icons/Folder.svg">Folders</object>
+                    <p class="category-title">Folders</p>
+                    <p class="category-count"></p>
+                </li>
                 <li id="broadcasts-social" class="social-category content-category neu-button">
                     <object class="category-image" type="image/svg+xml" data="assets/icons/Broadcast.svg">Broadcasts</object>
                     <p class="category-title">Broadcasts</p>
@@ -258,7 +263,7 @@
                     <p class="category-title">Screenshots</p>
                     <p class="category-count"></p>
                 </li>
-                <li id="clips-social" class="social-category content-category neu-button">
+                <li id="recordings-social" class="social-category content-category neu-button">
                     <object class="category-image" type="image/svg+xml" data="assets/icons/Video.svg">Recordings</object>
                     <p class="category-title">Recordings</p>
                     <p class="category-count"></p>
@@ -269,6 +274,39 @@
                     <p class="category-count"></p>
                 </li>
             </ul>
+            <div id="social-content" class="element-main">
+                <div id="social-sorting-container" class="content-sorting-container flex-container">
+                    <div id="social-folder-close" class="content-folder-close neu-button">
+                        <object class="folder-close-image" type="image/svg+xml" data="assets/icons/Close.svg">Close Folder</object>
+                    </div>
+                    <div id="social-sorting" class="content-sorting flex-container">
+                        <label class="content-columns-container neu-button flex-container">
+                            <input type="radio" name="social-columns" id="social-3-columns" class="content-columns" value="col-3" checked="checked">
+                            <object class="content-sorting-image" type="image/svg+xml" data="assets/icons/Columns3.svg">3</object>
+                        </label>
+                        <label class="content-columns-container neu-button flex-container">
+                            <input type="radio" name="social-columns" id="social-4-columns" class="content-columns" value="col-4">
+                            <object class="content-sorting-image" type="image/svg+xml" data="assets/icons/Columns4.svg">4</object>
+                        </label>
+                        <div id="social-ordering-container" class="content-ordering-container neu-select-container">
+                            <div id="social-ordering" class="neu-select">
+                                <div class="neu-select-trigger flex-container"><span>Alphabetical</span>
+                                    <div class="neu-select-arrow"></div>
+                                </div>
+                                <div class="neu-options">
+                                    <span class="neu-option selected" data-value="alphabetical">Alphabetical</span>
+                                    <span class="neu-option" data-value="created">Date Created</span>
+                                    <span class="neu-option" data-value="viewCount">View Count</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button id="social-ordering-direction" class="content-ordering-direction neu-button">
+                            <object class="content-sorting-image" type="image/svg+xml" data="assets/icons/Direction.svg">Asc/Dsc</object>
+                        </button>
+                    </div>
+                </div>
+                <ul id="social-list" class="neu-scrollable flex-container content-list"></ul>
+            </div>
         </div>
         <div id="notifications" class="content-element">
             <p>Notifications</p>

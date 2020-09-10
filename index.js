@@ -1,5 +1,5 @@
 //Global variables
-var games, media;
+var games, media, social;
 
 //Initialise when DOM loaded
 window.onload = function() {init();};
@@ -16,6 +16,8 @@ function init() {
     initialiseLibrary();
     //Initialise media library
     initialiseMedia();
+    //Initialise social elements
+    initialiseSocial();
 }
 
 //Initialise custom drop-down components
@@ -199,6 +201,18 @@ function setIconsColours(colour) {
     }
 }
 
+//Set opacity of favourite icon
+function setIconFillOpacity(icon, opacity) {
+    //Get SVG paths from content document
+    var svgDoc = icon.contentDocument;
+    var paths = svgDoc.getElementsByClassName("opacity-fillable");
+    //For each path
+    for(var path of paths) {
+        //Set fill opacity to specified value
+        path.setAttribute("fill-opacity", opacity);
+    }
+}
+
 //Set stroke colour of SVG path elements to specified colour
 function setPathStroke(paths, stroke) {
     //For each SVG path
@@ -371,18 +385,6 @@ function displayContent(contentType, category, data) {
     var contentList = contentType + "-list";
     clearContent(contentList);
     switch(category) {
-        case "all":
-        case "favourites":
-        case "installed":
-        case "purchased":
-        case "streaming":
-        case "internal":
-            //Create content items to display in list
-            createContentItems(contentType, category, data);
-            //Display sorting options and perform initial sort
-            mainContent.classList.add("with-sorting");
-            sortItems(contentType);
-            break;
         case "folders":
             //Create folders to display in list
             createFolders(contentType, data);
@@ -394,6 +396,13 @@ function displayContent(contentType, category, data) {
             createDrives(contentType, data);
             //Hide sorting options
             mainContent.classList.remove("with-sorting");
+            break;
+        default:
+            //Create content items to display in list
+            createContentItems(contentType, category, data);
+            //Display sorting options and perform initial sort
+            mainContent.classList.add("with-sorting");
+            sortItems(contentType);
             break;
     }
 }
@@ -449,17 +458,9 @@ function createContentItems(contentType, category, data) {
             liItemImg.src = item.src;
             liItemImg.alt = item.name;
             liItem.appendChild(liItemImg);
-            //Create favourite icon container
-            let liFavIconContainer = document.createElement("div");
-            liFavIconContainer.classList.add("favourite-icon-container");
-            liFavIconContainer.addEventListener("click", toggleFavourite);
-            liItem.appendChild(liFavIconContainer);
-            //Create favourite icon to display within container
-            let liFavIcon = document.createElement("object");
-            liFavIcon.classList.add("favourite-icon");
-            liFavIcon.type = "image/svg+xml";
-            liFavIcon.data = "assets/icons/Favourite.svg";
-            liFavIconContainer.appendChild(liFavIcon);
+            //Create icon container and its icons
+            let liIconContainer = createIconContainer(item);
+            liItem.appendChild(liIconContainer);
             //Create sliding text container to display item name
             let liSlideOut = document.createElement("div");
             liSlideOut.classList.add("slide-out");
@@ -469,7 +470,20 @@ function createContentItems(contentType, category, data) {
             contentList.appendChild(liItem);
         }
     }
-    initialiseFavouriteIconDisplay(contentList);
+    //Contextually initialise content items
+    initialiseContentItems(contentType, contentList);
+}
+
+//Initialise content items based on specified context
+function initialiseContentItems(contentType, contentList) {
+    if(contentType == "social") {
+        //Create social options
+        createExpandedSocialOptions();
+    } else {
+        //Initialise favourite icons
+        initialiseFavouriteIconDisplay(contentList);
+    }
+    //Attach event handlers to content items
     attachContentItemHandlers(contentType);
 }
 
@@ -483,29 +497,46 @@ function setContentItemDataset(domItem, dataItem) {
         domItem.dataset[property] = dataItem.properties[property];
     }
     //Set fringe case favourite property
-    domItem.dataset.favourites = dataItem.favourites;
+    if(Object.keys(dataItem).includes("favourites")) {
+        domItem.dataset.favourites = dataItem.favourites;
+    }
+}
+
+function createIconContainer(dataItem) {
+    var iconContainer = document.createElement("div");
+    iconContainer.classList.add("content-icon-container");
+    var src, classes;
+    if(Object.keys(dataItem).includes("favourites")) {
+        iconContainer.addEventListener("click", toggleFavourite);
+        src = "assets/icons/Favourite.svg";
+        classes = ["content-icon", "favourite-icon"];
+    } else {
+        iconContainer.addEventListener("click", expandOptions);
+        src = "assets/icons/More.svg";
+        classes = ["content-icon", "more-icon"];
+    }
+    let icon = document.createElement("object");
+    icon.classList.add(...classes);
+    icon.type = "image/svg+xml";
+    icon.data = src;
+    iconContainer.appendChild(icon);
+    return iconContainer;
 }
 
 //Toggle whether content item is favourited
 function toggleFavourite(e) {
     //For each content item of content type
-    let icon = e.target.querySelector(".favourite-icon");
+    var icon = e.target.querySelector(".favourite-icon");
     var contentType = e.target.closest(".content-list").id.replace("-list", "");
     var targetName = e.target.parentNode.getAttribute("name");
-    for(var item of window[contentType]) {
-        //Content item matches target
-        if(item.name == targetName) {
-            //Toggle favourite value
-            item.favourites = !item.favourites;
-            //Set favourite icon style
-            if(item.favourites) {
-                setFavouriteIconOpacity(icon, "100%");
-            } else {
-                setFavouriteIconOpacity(icon, "20%");
-            }
-            //Prevent looping through extra items
-            break;
-        }
+    var dataItem = getItemFromData(contentType, targetName);
+    //Toggle favourite value
+    dataItem.favourites = !dataItem.favourites;
+    //Set favourite icon style
+    if(dataItem.favourites) {
+        setIconFillOpacity(icon, "100%");
+    } else {
+        setIconFillOpacity(icon, "20%");
     }
     //Update content category count
     displayContentCategoryCount(contentType);
@@ -515,6 +546,41 @@ function toggleFavourite(e) {
         //Update display to account for new/removed items
         displayContent(contentType, "favourites", window[contentType]);
     }
+}
+
+//Expand social media sharing options for social content items
+function expandOptions(e) {
+    //Get information from event
+    var iconContainer = e.target;
+    var icon = iconContainer.querySelector(".more-icon");
+    var contentItem = iconContainer.closest(".content");
+    var expandedOptions = contentItem.querySelector(".expanded-options");
+    //Toggle icon active state
+    iconContainer.classList.toggle("active");
+    if(iconContainer.classList.contains("active")) {
+        //Fill icon to max opacity
+        setIconFillOpacity(icon, "100%");
+        //Display expanded options list
+        expandedOptions.classList.add("show");
+    } else {
+        //Reduce icon fill opacity
+        setIconFillOpacity(icon, "20%");
+        //Hide expanded options list
+        expandedOptions.classList.remove("show");
+    }
+}
+
+//Returns item from content type dataset by matching target name
+function getItemFromData(contentType, targetName) {
+    //For each item in content type data
+    for(var item of window[contentType]) {
+        //Return item if matches target name
+        if(item.name == targetName) {
+            return item;
+        }
+    }
+    //Return null if no match
+    return null;
 }
 
 //Sets style of favourite icons of content elements
@@ -528,19 +594,10 @@ function initialiseFavouriteIconDisplay(contentList) {
             //Set style when icon loads
             icon.addEventListener("load", function(e) {
                 let icon = e.target;
-                setFavouriteIconOpacity(icon, "100%");
+                setIconFillOpacity(icon, "100%");
             });
         }
     }
-}
-
-//Set opacity of favourite icon
-function setFavouriteIconOpacity(icon, opacity) {
-    //Get SVG path from content document
-    var svgDoc = icon.contentDocument;
-    let heart = svgDoc.getElementById("favourite-heart");
-    //Set fill opacity to specified value
-    heart.setAttribute("fill-opacity", opacity);
 }
 
 //Attach event handlers to content items
@@ -560,21 +617,21 @@ function attachContentItemHandlers(contentType) {
 //Content item hover event to display slide-out animation
 function displayAnimation(e) {
     //Display animation for content item slide-out
-    let slideOut = e.target.querySelector(".slide-out");
+    var slideOut = e.target.querySelector(".slide-out");
     slideOut.classList.add("show");
 }
 
 //Content item hover event end to display reverse slide-out animation
 function stopAnimation(e) {
     //Display animation for content item slide-in
-    let slideOut = e.target.querySelector(".slide-out");
+    var slideOut = e.target.querySelector(".slide-out");
     slideOut.classList.replace("show", "hide");
 }
 
 //Content item animation event end
 function removeAnimation(e) {
     //Prevent slide-in animation on initial load/after sorting
-    let slideOut = e.target;
+    var slideOut = e.target;
     slideOut.classList.remove("hide");
 }
 
@@ -871,6 +928,76 @@ function isNonDuplicateDrive(drives, item) {
     }
     //Non duplicate drive
     return true;
+}
+
+//Initialise social elements
+async function initialiseSocial() {
+    //Get social data from json file
+    social = await getJsonFile("social");
+    if(social !== undefined && social !== null) {
+        //Display "all" social on first selection
+        displayContent("social", "all", social);
+        //Attach event handlers to media elements
+        attachMainContentHandlers("social");
+        //Initialise checked radio button to selected
+        toggleRadioSelected("social-columns");
+    }
+    //TODO may display images differently, look odd in 1:1 aspect ratio, may not use column method
+}
+
+//Create expandable options element for social content items
+function createExpandedSocialOptions() {
+    //For each social content element
+    var contentList = document.getElementsByClassName("social");
+    for(var contentItem of contentList) {
+        //Get associated options to display
+        var dataItem = getItemFromData("social", contentItem.getAttribute("name"));
+        var options = getSocialOptions(dataItem);
+        //Create expandable options container element
+        var expandedOptions = document.createElement("div");
+        var expandedClasses = ["expanded-options", "flex-container", "neu-container", `op-${options.length}`];
+        expandedOptions.classList.add(...expandedClasses);
+        //For each of item's options
+        for(var option of options) {
+            //Create container element for each option
+            var optionContainer = document.createElement("div");
+            var optionClasses = ["option-container", "flex-container"]
+            optionContainer.classList.add(...optionClasses);
+            expandedOptions.appendChild(optionContainer);
+            //Create icon element for each option container
+            var optionIcon = document.createElement("object");
+            optionIcon.classList.add("option");
+            optionIcon.type = "image/svg+xml";
+            optionIcon.data = `assets/icons/social/${option}.svg`;
+            optionContainer.appendChild(optionIcon);
+        }
+        //Append options to content item
+        contentItem.appendChild(expandedOptions);
+    }
+}
+
+//Get social media sharing options based on social content type
+function getSocialOptions(item) {
+    //Livestream feature social medias
+    if(item.broadcasts) {
+        let options = ["Twitch", "YouTube", "Facebook"];
+        return options;
+    }
+    //Image feature social medias
+    if(item.screenshots) {
+        let options = ["Twitter", "Instagram", "Facebook"];
+        return options;
+    }
+    //Video feature social medias
+    if(item.recordings) {
+        let options = ["YouTube", "Twitter", "Instagram", "Facebook"];
+        return options;
+    }
+    //Text feature social medias
+    if(item.events) {
+        let options = ["Twitter", "Facebook"]
+        return options;
+    }
 }
 
 //TODO Import trophies data from a Node wrapper API to put in JSON

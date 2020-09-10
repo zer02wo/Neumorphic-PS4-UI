@@ -411,7 +411,7 @@ body.dark-mode .content-sorting .content-columns-container.selected {
     /*Prevent image stretching*/
     object-fit: scale-down;
 }
-.content .favourite-icon-container {
+.content .content-icon-container {
     position: absolute;
     right: 2.5%;
     bottom: 2.5%;
@@ -419,7 +419,7 @@ body.dark-mode .content-sorting .content-columns-container.selected {
     width: 2vw;
     z-index: 3;
 }
-.content .favourite-icon {
+.content .content-icon {
     height: 2vw;
     width: 2vw;
     /*Prevents SVG object blocking the event listener*/
@@ -497,6 +497,52 @@ body.dark-mode .slide-out {
         height: 0;
     }
 }
+.content .expanded-options {
+    justify-content: space-evenly !important;
+    position: absolute;
+    left: 2.5%;
+    bottom: 2.5%;
+    height: 2.25vw;
+    width: 0;
+    opacity: 0;
+    background: linear-gradient(135deg, rgba(39, 108, 229, 0.25), #276CE5);
+    border-radius: 15px;
+    z-index: 3;
+    transition: width .25s, opacity .15s;
+}
+.content .expanded-options.show {
+    opacity: 1;
+}
+.expanded-options.op-4.show {
+    width: 80%;
+}
+.expanded-options.op-3.show {
+    width: 60%;
+}
+.expanded-options.op-2.show {
+    width: 40%;
+}
+.expanded-options .option-container {
+    justify-content: center !important;
+    height: 2vw;
+    width: 2vw;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 50%;
+    transition: background-color .25s;
+}
+.expanded-options .option-container:hover {
+    background-color: #ECF0F3;
+}
+body.dark-mode .expanded-options .option-container:hover {
+    background-color: #292D32;
+}
+.option-container .option {
+    height: 1.5vw;
+    width: 1.5vw;
+    /*Prevents SVG overriding the cursor*/
+    pointer-events: none;
+}
 
 .folders, .external {
     position: relative;
@@ -520,8 +566,6 @@ body.dark-mode .slide-out {
     display: block;
     padding-top: 100%;
 }
-
-
 
 /*Generic flex container styling*/
 .flex-container {

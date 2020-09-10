@@ -1,0 +1,16 @@
+<svg id="more" width="88" height="88" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#dropShadow)">
+<path id="more-plus" class="opacity-fillable" d="M80 45V35C80 32.2386 77.7614 30 75 30H59C56.2386 30 54 27.7614 54 25V9C54 6.23858 51.7614 4 49 4H39C36.2386 4 34 6.23857 34 9V25C34 27.7614 31.7614 30 29 30H13C10.2386 30 8 32.2386 8 35V45C8 47.7614 10.2386 50 13 50H29C31.7614 50 34 52.2386 34 55V71C34 73.7614 36.2386 76 39 76H49C51.7614 76 54 73.7614 54 71V55C54 52.2386 56.2386 50 59 50H75C77.7614 50 80 47.7614 80 45Z" fill="#E6ECFA" fill-opacity="20%" stroke="#E6ECFA" stroke-width="7" stroke-linejoin="round"/>
+</g>
+<defs>
+<filter id="dropShadow" x="0.5" y="0.5" width="87" height="87" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+</defs>
+</svg>
