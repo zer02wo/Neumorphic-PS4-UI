@@ -156,6 +156,21 @@ function attachInfoHandlers() {
     //Attach click event to online status to toggle online/offline view
     var onlineStatus = document.getElementById("online-status");
     onlineStatus.addEventListener("click", toggleStatus);
+    //Attach click event to pull tab to toggle information bar view state
+    var pullTab = document.getElementById("pull-tab");
+    pullTab.addEventListener("click", toggleInfoBar);
+}
+
+//Toggle information bar view state on event trigger
+function toggleInfoBar(e) {
+    var pullTab = e.target;
+    var infoBar = document.getElementById("info-bar");
+    pullTab.classList.toggle("expand");
+    if(pullTab.classList.contains("expand")) {
+        infoBar.classList.add("hide");
+    } else {
+        infoBar.classList.remove("hide");
+    }
 }
 
 //Toggle user interface between light/dark mode stylings
@@ -942,7 +957,6 @@ async function initialiseSocial() {
         //Initialise checked radio button to selected
         toggleRadioSelected("social-columns");
     }
-    //TODO may display images differently, look odd in 1:1 aspect ratio, may not use column method
 }
 
 //Create expandable options element for social content items
