@@ -445,11 +445,15 @@ body.dark-mode .content-sorting .content-columns-container.selected {
     width: 2vw;
     z-index: 3;
 }
-.content .content-icon {
+.content-icon-container .content-icon {
     height: 2vw;
     width: 2vw;
     /*Prevents SVG object blocking the event listener*/
     pointer-events: none;
+    transition: transform .25s;
+}
+.content-icon-container.active .content-icon {
+    transform: rotate(-45deg);
 }
 .content .slide-out {
     position: absolute;
@@ -485,7 +489,7 @@ body.dark-mode .slide-out {
         opacity: 1;
         top: 100%;
         width: 60%;
-        height: 9%;
+        height: 4vh;
     }
     90% {
         color: transparent;
@@ -495,7 +499,7 @@ body.dark-mode .slide-out {
         opacity: 1;
         top: 100%;
         width: 100%;
-        height: 9%;
+        height: 4vh;
     }
 }
 .content .slide-out.hide {
@@ -507,13 +511,13 @@ body.dark-mode .slide-out {
         opacity: 1;
         top: 100%;
         width: 100%;
-        height: 9%;
+        height: 4vh;
     }
     35% {
         opacity: 1;
         top: 100%;
         width: 60%;
-        height: 9%;
+        height: 4vh;
     }
     100% {
         color: transparent;
@@ -531,10 +535,13 @@ body.dark-mode .slide-out {
     height: 2.25vw;
     width: 0;
     opacity: 0;
-    background: linear-gradient(135deg, rgba(39, 108, 229, 0.25), #276CE5);
+    background: linear-gradient(135deg, rgba(209, 217, 230, 0.5), #FFF);
     border-radius: 15px;
     z-index: 3;
     transition: width .25s, opacity .15s;
+}
+body.dark-mode .content .expanded-options {
+    background: linear-gradient(135deg, rgba(40, 43, 48, 0.5), #32363C);
 }
 .content .expanded-options.show {
     opacity: 1;
@@ -550,18 +557,15 @@ body.dark-mode .slide-out {
 }
 .expanded-options .option-container {
     justify-content: center !important;
-    height: 2vw;
-    width: 2vw;
+    height: 2.1vw;
+    width: 2.1vw;
     cursor: pointer;
     background-color: transparent;
     border-radius: 50%;
     transition: background-color .25s;
 }
 .expanded-options .option-container:hover {
-    background-color: #ECF0F3;
-}
-body.dark-mode .expanded-options .option-container:hover {
-    background-color: #292D32;
+    background-color: rgba(39, 109, 229, 0.8);
 }
 .option-container .option {
     height: 1.5vw;
@@ -584,13 +588,19 @@ body.dark-mode .expanded-options .option-container:hover {
 .col-4 {
     /*Width calculation: 2.5*4=20, 100-20=80, 80/4=20*/
     width: 20%;
-    font-size: 16px;
+    font-size: 18px;
 }
 .content.col-3::before, .content.col-4::before {
     /*Enforce 1:1 aspect ratio*/
     content: "";
     display: block;
     padding-top: 100%;
+}
+.content.col-3.alt::before, .content.col-4.alt::before {
+    /*Enforce 16:9 aspect ratio*/
+    content: "";
+    display: block;
+    padding-top: 56.25%;
 }
 
 /*Generic flex container styling*/

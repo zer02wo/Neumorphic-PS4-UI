@@ -969,7 +969,7 @@ function createExpandedSocialOptions() {
         var options = getSocialOptions(dataItem);
         //Create expandable options container element
         var expandedOptions = document.createElement("div");
-        var expandedClasses = ["expanded-options", "flex-container", "neu-container", `op-${options.length}`];
+        var expandedClasses = ["expanded-options", "flex-container", `op-${options.length}`];
         expandedOptions.classList.add(...expandedClasses);
         //For each of item's options
         for(var option of options) {
@@ -985,6 +985,8 @@ function createExpandedSocialOptions() {
             optionIcon.data = `assets/icons/social/${option}.svg`;
             optionContainer.appendChild(optionIcon);
         }
+        //Set alternate content style
+        contentItem.classList.add("alt");
         //Append options to content item
         contentItem.appendChild(expandedOptions);
     }
