@@ -585,12 +585,12 @@ function expandOptions(e) {
     }
 }
 
-//Returns item from content type dataset by matching target name
-function getItemFromData(contentType, targetName) {
+//Returns item from content type dataset by matching target id
+function getItemFromData(contentType, targetId) {
     //For each item in content type data
     for(var item of window[contentType]) {
-        //Return item if matches target name
-        if(item.name == targetName) {
+        //Return item if matches target id
+        if(item.id == targetId) {
             return item;
         }
     }
@@ -965,7 +965,7 @@ function createExpandedSocialOptions() {
     var contentList = document.getElementsByClassName("social");
     for(var contentItem of contentList) {
         //Get associated options to display
-        var dataItem = getItemFromData("social", contentItem.getAttribute("name"));
+        var dataItem = getItemFromData("social", contentItem.getAttribute("id"));
         var options = getSocialOptions(dataItem);
         //Create expandable options container element
         var expandedOptions = document.createElement("div");

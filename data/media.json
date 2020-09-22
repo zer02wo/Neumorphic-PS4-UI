@@ -1,6 +1,7 @@
 [
     {
         "name": "Spotify",
+        "id": "CUSA-S-00493",
         "properties": {
             "duration": 0,
             "dateReleased": 0,
@@ -15,6 +16,7 @@
     },
     {
         "name": "Netflix",
+        "id": "CUSA-S-00561",
         "properties": {
             "duration": 0,
             "dateReleased": 0,
@@ -29,6 +31,7 @@
     },
     {
         "name": "Prime Video",
+        "id": "CUSA-S-01172",
         "properties": {
             "duration": 0,
             "dateReleased": 0,
@@ -43,6 +46,7 @@
     },
     {
         "name": "Crunchyroll",
+        "id": "CUSA-S-20498",
         "properties": {
             "duration": 0,
             "dateReleased": 0,
@@ -57,6 +61,7 @@
     },
     {
         "name": "Twitch",
+        "id": "CUSA-S-03119",
         "properties": {
             "duration": 0,
             "dateReleased": 0,
@@ -71,6 +76,7 @@
     },
     {
         "name": "YouTube",
+        "id": "CUSA-S-00089",
         "properties": {
             "duration": 0,
             "dateReleased": 0,
@@ -85,6 +91,7 @@
     },
     {
         "name": "My Beautiful Dark Twisted Fantasy",
+        "id": "vbayd3a",
         "properties": {
             "duration": 4116,
             "dateReleased": 1290384000000,
@@ -103,6 +110,7 @@
     },
     {
         "name": "Yeezus",
+        "id": "lti4sx9",
         "properties": {
             "duration": 2401,
             "dateReleased": 1370649600000,
@@ -121,6 +129,7 @@
     },
     {
         "name": "Kids See Ghosts",
+        "id": "kl623oi",
         "properties": {
             "duration": 1430,
             "dateReleased": 1529280000000,
@@ -139,6 +148,7 @@
     },
     {
         "name": "808s & Heartbreak",
+        "id": "qc23fuy",
         "properties": {
             "duration": 3118,
             "dateReleased": 1227484800000,
@@ -157,6 +167,7 @@
     },
     {
         "name": "Graduation",
+        "id": "owf5w1t",
         "properties": {
             "duration": 3072,
             "dateReleased": 1189468800000,
@@ -175,6 +186,7 @@
     },
     {
         "name": "The College Dropout",
+        "id": "w3pk3w3",
         "properties": {
             "duration": 4573,
             "dateReleased": 1076371200000,
@@ -193,6 +205,7 @@
     },
     {
         "name": "The Life of Pablo",
+        "id": "ou40ks2",
         "properties": {
             "duration": 3961,
             "dateReleased": 1455408000000,
@@ -211,6 +224,7 @@
     },
     {
         "name": "Currents",
+        "id": "695nikg",
         "properties": {
             "duration": 3072,
             "dateReleased": 1437091200000,
@@ -229,6 +243,7 @@
     },
     {
         "name": "Skin",
+        "id": "riupmvc",
         "properties": {
             "duration": 3634,
             "dateReleased": 1464307200000,
@@ -243,6 +258,7 @@
     },
     {
         "name": "Unknown Pleasures",
+        "id": "wh94fbt",
         "properties": {
             "duration": 2368,
             "dateReleased": 298252800000,
@@ -261,6 +277,7 @@
     },
     {
         "name": "Back to the Future Part II",
+        "id": "hy8i9dj",
         "properties": {
             "duration": 6480,
             "dateReleased": 627868800000,
@@ -275,6 +292,7 @@
     },
     {
         "name": "Baby Driver",
+        "id": "2p9i6hr",
         "properties": {
             "duration": 6780,
             "dateReleased": 1498608000000,
@@ -289,6 +307,7 @@
     },
     {
         "name": "John Wick: Chapter 3 - Parabellum",
+        "id": "qd7kbro",
         "properties": {
             "duration": 7800,
             "dateReleased": 1498608000000,
@@ -303,6 +322,7 @@
     },
     {
         "name": "Spirited Away",
+        "id": "6m0lhs4",
         "properties": {
             "duration": 7500,
             "dateReleased": 1063324800000,
@@ -321,6 +341,7 @@
     },
     {
         "name": "The Matrix",
+        "id": "s39kbls",
         "properties": {
             "duration": 9000,
             "dateReleased": 929059200000,
@@ -339,6 +360,7 @@
     },
     {
         "name": "Game of Thrones - Season 8",
+        "id": "pfgsmf1",
         "properties": {
             "duration": 25800,
             "dateReleased": 1555200000000,
@@ -353,6 +375,7 @@
     },
     {
         "name": "Mr Robot - Season 4",
+        "id": "a6xnw80",
         "properties": {
             "duration": 38400,
             "dateReleased": 1570320000000,
@@ -371,6 +394,7 @@
     },
     {
         "name": "Teen Titans - Season 2",
+        "id": "q1ldkjf",
         "properties": {
             "duration": 17940,
             "dateReleased": 1058572800000,
@@ -389,6 +413,7 @@
     },
     {
         "name": "Marvel Ultimate Spider-Man - Season 1",
+        "id": "qwagwff",
         "properties": {
             "duration": 35640,
             "dateReleased": 1333238400000,
@@ -403,6 +428,7 @@
     },
     {
         "name": "Watchmen - Season 1",
+        "id": "z4nlyo4",
         "properties": {
             "duration": 32040,
             "dateReleased": 1571529600000,
@@ -417,6 +443,7 @@
     },
     {
         "name": "Westworld - Season 1",
+        "id": "08oopsh",
         "properties": {
             "duration": 29400,
             "dateReleased": 158423040000,

@@ -1,6 +1,7 @@
 [
     {
         "name": "Horizon Zero Dawn",
+        "id": "CUSA-07320",
         "properties": {
             "lastPlayed": 1597851221831,
             "playTime": 1337
@@ -13,6 +14,7 @@
     },
     {
         "name": "InFAMOUS Remastered Collection",
+        "id": "CUSA-00004",
         "properties": {
             "lastPlayed": 1597351321899,
             "playTime": 969
@@ -25,6 +27,7 @@
     },
     {
         "name": "Ghost of Tsushima",
+        "id": "CUSA-13323",
         "properties": {
             "lastPlayed": 1597185176923,
             "playTime": 1267
@@ -37,6 +40,7 @@
     },
     {
         "name": "Marvel's Spider-Man",
+        "id": "CUSA-11995",
         "properties": {
             "lastPlayed": 1596048023186,
             "playTime": 483
@@ -49,6 +53,7 @@
     },
     {
         "name": "Mortal Shell",
+        "id": "CUSA-20133",
         "properties": {
             "lastPlayed": 1597795088706,
             "playTime": 666
@@ -61,6 +66,7 @@
     },
     {
         "name": "Borderlands 3",
+        "id": "CUSA-08025",
         "properties": {
             "lastPlayed": 1577459366649,
             "playTime": 431
@@ -73,6 +79,7 @@
     },
     {
         "name": "Assassin's Creed Valhalla",
+        "id": "CUSA-18534",
         "properties": {
             "lastPlayed": 0,
             "playTime": 0
@@ -85,6 +92,7 @@
     },
     {
         "name": "The Last of Us Part II",
+        "id": "CUSA-10249",
         "properties": {
             "lastPlayed": 1592594101495,
             "playTime": 242
@@ -97,6 +105,7 @@
     },
     {
         "name": "Destiny 2",
+        "id": "CUSA-06172",
         "properties": {
             "lastPlayed": 1580817318415,
             "playTime": 3963
@@ -109,6 +118,7 @@
     },
     {
         "name": "God of War",
+        "id": "CUSA-07412",
         "properties": {
             "lastPlayed": 1525347713762,
             "playTime": 1149
@@ -121,6 +131,7 @@
     },
     {
         "name": "Portal 2",
+        "id": "BLES-01222",
         "properties": {
             "lastPlayed": 1571343360113,
             "playTime": 922
@@ -133,6 +144,7 @@
     },
     {
         "name": "Mirror's Edge Catalyst",
+        "id": "CUSA-01499",
         "properties": {
             "lastPlayed": 1515184773748,
             "playTime": 154
@@ -145,6 +157,7 @@
     },
     {
         "name": "Need for Speed Heat",
+        "id": "CUSA-15090",
         "properties": {
             "lastPlayed": 1573816005923,
             "playTime": 425
@@ -157,6 +170,7 @@
     },
     {
         "name": "Batman Arkham Knight",
+        "id": "CUSA-00135",
         "properties": {
             "lastPlayed": 1466673669116,
             "playTime": 912

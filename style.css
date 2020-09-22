@@ -192,7 +192,8 @@ body.dark-mode .nav-element.selected .nav-image-container {
     margin-bottom: 15px;
 }
 
-/*TODO: Figure out particle background animation of PS shapes floating around*/
+/*TODO: Figure out particle background animation of PS shapes floating around
+    PSNProfiles also has a cool shapes loading icon*/
 #main-content {
     justify-content: center;
     width: 98%;

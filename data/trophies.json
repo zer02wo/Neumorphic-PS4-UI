@@ -1,0 +1,15 @@
+[
+    {
+        "name": "test format",
+        "id": "CUSA-00001-1",
+        "properties": {
+            "dateEarned": "00000001",
+            "trophyLevel": "Platinum",
+            "percentRarity": 0.03
+        },
+        "src": "assets/trophies/gamename/trophy.png",
+        "collection": "CUSA-GAME",
+        "earned": true,
+        "hidden": true
+    }
+]
