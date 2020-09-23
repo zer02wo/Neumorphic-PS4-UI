@@ -2,7 +2,7 @@
 var games, media, social;
 
 //Initialise when DOM loaded
-//TODO: uncomment window.onload = function() {init();};
+window.onload = function() {init();};
 
 //Initialise the user interface
 function init() {
@@ -1019,6 +1019,7 @@ function getSocialOptions(item) {
     }
 }
 
-//TODO Import trophies data from a Node wrapper API to put in JSON
 //TODO Refer to below when implementing the trophies screen, to add the trophy level to the top info bar
     //-> https://www.google.com/search?q=how+is+playstation+trophy+levels+calculated&oq=how+is+playstation+trophy+levels+calculated&aqs=chrome..69i57j0.7637j0j4&sourceid=chrome&ie=UTF-8
+
+//TODO: Move trophy data into individual JSON files for peformance/readability
