@@ -546,8 +546,8 @@ function toggleFavourite(e) {
     //For each content item of content type
     var icon = e.target.querySelector(".favourite-icon");
     var contentType = e.target.closest(".content-list").id.replace("-list", "");
-    var targetName = e.target.parentNode.getAttribute("name");
-    var dataItem = getItemFromData(contentType, targetName);
+    var targetId = e.target.parentNode.dataset.id;
+    var dataItem = getItemFromData(contentType, targetId);
     //Toggle favourite value
     dataItem.favourites = !dataItem.favourites;
     //Set favourite icon style
