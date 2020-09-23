@@ -511,7 +511,10 @@ function setContentItemDataset(domItem, dataItem) {
         //Set dataset attribute of DOM item to data item value
         domItem.dataset[property] = dataItem.properties[property];
     }
-    //Set fringe case favourite property
+    //Set fringe case favourite properties
+    if(Object.keys(dataItem).includes("id")) {
+        domItem.dataset.id = dataItem.id;
+    }
     if(Object.keys(dataItem).includes("favourites")) {
         domItem.dataset.favourites = dataItem.favourites;
     }
@@ -965,7 +968,7 @@ function createExpandedSocialOptions() {
     var contentList = document.getElementsByClassName("social");
     for(var contentItem of contentList) {
         //Get associated options to display
-        var dataItem = getItemFromData("social", contentItem.getAttribute("id"));
+        var dataItem = getItemFromData("social", contentItem.dataset.id);
         var options = getSocialOptions(dataItem);
         //Create expandable options container element
         var expandedOptions = document.createElement("div");
@@ -1019,3 +1022,41 @@ function getSocialOptions(item) {
 //TODO Import trophies data from a Node wrapper API to put in JSON
 //TODO Refer to below when implementing the trophies screen, to add the trophy level to the top info bar
     //-> https://www.google.com/search?q=how+is+playstation+trophy+levels+calculated&oq=how+is+playstation+trophy+levels+calculated&aqs=chrome..69i57j0.7637j0j4&sourceid=chrome&ie=UTF-8
+
+//TODO info scraper: figure out how to get the data first, then turn it into a JSON object
+        //TODO figure out how to get document here, probably request via url??
+function scrapeInfo(gameId) {
+    var gameId = "13323";
+    var dataArray = [];
+    var table = document.getElementsByClassName("zebra")[0].children[0];
+    var counter = 1;
+    for(var child of table.children) {
+        if(counter !== 0) {
+            var title = child.querySelector(".title").innerText.trim();
+            var description = child.children[1].childNodes[3].textContent.trim();
+            if(description.charAt(description.length -1) !== ".") {
+                description = description + ".";
+            }
+            var id = "CUSA-" + gameId + "-" + counter;
+            var trophyRank = child.children[5].querySelector("img").getAttribute("title");
+            var rarity = child.querySelector(".hover-show").querySelector("nobr").textContent.replace("%", "");
+
+            var dataObject = {
+                "name": title,
+                "id": id,
+                "description": description,
+                "properties": {
+                    "dateEarned": 0,
+                    "trophyLevel": trophyRank,
+                    "percentRarity": rarity
+                },
+                "src": "assets/trophy-icons/" + gameId + "/" + counter + ".png",
+                "earned": false,
+                "hidden": false
+            }
+            dataArray.push(dataObject);
+        }
+        counter++;
+    }
+    console.log(dataArray);   
+}
