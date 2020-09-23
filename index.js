@@ -2,7 +2,7 @@
 var games, media, social;
 
 //Initialise when DOM loaded
-window.onload = function() {init();};
+//TODO: uncomment window.onload = function() {init();};
 
 //Initialise the user interface
 function init() {
@@ -1023,13 +1023,12 @@ function getSocialOptions(item) {
 //TODO Refer to below when implementing the trophies screen, to add the trophy level to the top info bar
     //-> https://www.google.com/search?q=how+is+playstation+trophy+levels+calculated&oq=how+is+playstation+trophy+levels+calculated&aqs=chrome..69i57j0.7637j0j4&sourceid=chrome&ie=UTF-8
 
-//TODO info scraper: figure out how to get the data first, then turn it into a JSON object
-        //TODO figure out how to get document here, probably request via url??
+//TODO Delete info scraper:
 function scrapeInfo(gameId) {
-    var gameId = "13323";
+    var gameId = "11995";
     var dataArray = [];
-    var table = document.getElementsByClassName("zebra")[0].children[0];
-    var counter = 1;
+    var table = document.getElementsByClassName("zebra")[2].children[0];
+    var counter = 0;
     for(var child of table.children) {
         if(counter !== 0) {
             var title = child.querySelector(".title").innerText.trim();
@@ -1059,4 +1058,17 @@ function scrapeInfo(gameId) {
         counter++;
     }
     console.log(dataArray);   
+}
+
+function downloadImage(table) {
+    var urlList = [];
+    var images = table.getElementsByClassName("trophy");
+    var counter = 1;
+    for(var image of images) {
+        var sourceSet = image.querySelector("source");
+        var source = sourceSet.getAttribute("srcset").split(",")[1].replace(" 1.1x", "").trim();
+        urlList.push(source);
+
+        counter++;
+    }
 }
