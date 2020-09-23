@@ -1,31 +1,85 @@
 [
     {
-        "id": "CUSA-00001",
+        "id": "CUSA-07320",
         "trophies": [
         {
-            "name": "test format",
-            "id": "CUSA-00001-1",
+            "name": "All trophies obtained",
+            "id": "CUSA-07320-1",
+            "description": "Obtained all Horizon Zero Dawn trophies.",
             "properties": {
-                "dateEarned": "00000001",
+                "dateEarned": "0",
                 "trophyLevel": "Platinum",
-                "percentRarity": 0.03
+                "percentRarity": 6.0
             },
-            "src": "assets/trophies/gamename/trophy.png",
-            "earned": true,
-            "hidden": true
+            "src": "assets/trophies/07320/1.png",
+            "earned": false,
+            "hidden": false
         },
         {
-            "name": "testing format",
-            "id": "CUSA-00001-2",
+            "name": "Stealth killed 10 machines",
+            "id": "CUSA-07320-2",
+            "description": "Performed a stealth kill on 10 machines.",
             "properties": {
-                "dateEarned": "00000002",
-                "trophyLevel": "Gold",
-                "percentRarity": 0.15
+                "dateEarned": "0",
+                "trophyLevel": "Bronze",
+                "percentRarity": 61.9
             },
-            "src": "assets/trophies/gamename/trophy.png",
-            "earned": true,
-            "hidden": true
-        }
+            "src": "assets/trophies/07320/2.png",
+            "earned": false,
+            "hidden": false
+        },
+        {
+            "name": "3 Strikes From Above",
+            "id": "CUSA-07320-3",
+            "description": "Killed 3 enemies using the Strike from Above skill.",
+            "properties": {
+                "dateEarned": "0",
+                "trophyLevel": "Bronze",
+                "percentRarity": 38.0
+            },
+            "src": "assets/trophies/07320/3.png",
+            "earned": false,
+            "hidden": false
+        },
+        {
+            "name": "Tore off 10 components",
+            "id": "CUSA-07320-4",
+            "description": "Detached 10 components from machines during combat.",
+            "properties": {
+                "dateEarned": "0",
+                "trophyLevel": "Bronze",
+                "percentRarity": 71.1
+            },
+            "src": "assets/trophies/07320/4.png",
+            "earned": false,
+            "hidden": false
+        },
+        {
+            "name": "10 Vulnerable machine kills",
+            "id": "CUSA-07320-5",
+            "description": "Killed 10 machines weak to Fire while burning, or weak to Freeze while frozen.",
+            "properties": {
+                "dateEarned": "0",
+                "trophyLevel": "Bronze",
+                "percentRarity": 45.4
+            },
+            "src": "assets/trophies/07320/5.png",
+            "earned": false,
+            "hidden": false
+        },
+        {
+            "name": "Tore off 5 heavy weapons",
+            "id": "CUSA-07320-6",
+            "description": "Detached 5 heavy weapons from machines during combat.",
+            "properties": {
+                "dateEarned": "0",
+                "trophyLevel": "Bronze",
+                "percentRarity": 37.6
+            },
+            "src": "assets/trophies/07320/6.png",
+            "earned": false,
+            "hidden": false
+        },
         ]
     }
 ]
