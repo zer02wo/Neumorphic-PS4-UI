@@ -1,0 +1,338 @@
+{
+    "name": "Platinum",
+    "id": "CUSA-08025-1",
+    "description": "Obtain all other trophies.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Platinum",
+        "percentRarity": "2.7"
+    },
+    "src": "assets/trophy-icons/08025/1.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Forever Alone",
+    "id": "CUSA-08025-2",
+    "description": "Beat the game without ever bonding with a shell.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Gold",
+        "percentRarity": "2.9"
+    },
+    "src": "assets/trophy-icons/08025/2.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Face Off",
+    "id": "CUSA-08025-3",
+    "description": "Defeat Hadern in the tutorial.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Gold",
+        "percentRarity": "13.2"
+    },
+    "src": "assets/trophy-icons/08025/3.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Seeker of False Truths",
+    "id": "CUSA-08025-4",
+    "description": "Unlock all secret lore.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Gold",
+        "percentRarity": "4.2"
+    },
+    "src": "assets/trophy-icons/08025/4.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Fun Guy",
+    "id": "CUSA-08025-5",
+    "description": "Pick 50 mushrooms.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "60.6"
+    },
+    "src": "assets/trophy-icons/08025/5.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Step Goal",
+    "id": "CUSA-08025-6",
+    "description": "Kill an enemy with bear trap.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "52.7"
+    },
+    "src": "assets/trophy-icons/08025/6.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Life is Suffering",
+    "id": "CUSA-08025-7",
+    "description": "Beat the game in obsidian dark form.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Gold",
+        "percentRarity": "3.0"
+    },
+    "src": "assets/trophy-icons/08025/7.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Brigand Life",
+    "id": "CUSA-08025-8",
+    "description": "Waste your life away with Baghead.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Silver",
+        "percentRarity": "29.7"
+    },
+    "src": "assets/trophy-icons/08025/8.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Bars Tended",
+    "id": "CUSA-08025-9",
+    "description": "Become familiar with all items.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Silver",
+        "percentRarity": "4.2"
+    },
+    "src": "assets/trophy-icons/08025/9.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Flesh and Instinct",
+    "id": "CUSA-08025-10",
+    "description": "Find your first Shell.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "99.9"
+    },
+    "src": "assets/trophy-icons/08025/10.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Is This a Sparta?",
+    "id": "CUSA-08025-11",
+    "description": "Kill an enemy by kicking them off a platform.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "21.3"
+    },
+    "src": "assets/trophy-icons/08025/11.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Bring the Glands Back to Me",
+    "id": "CUSA-08025-12",
+    "description": "Bring a gland to Dark Father.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "45.7"
+    },
+    "src": "assets/trophy-icons/08025/12.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "The Good Times are Killing Me",
+    "id": "CUSA-08025-13",
+    "description": "Jam with a brigand.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "25.7"
+    },
+    "src": "assets/trophy-icons/08025/13.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Sugar Baby",
+    "id": "CUSA-08025-14",
+    "description": "Spend over 50,000 Tar in the Vlas's Shop.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Silver",
+        "percentRarity": "6.6"
+    },
+    "src": "assets/trophy-icons/08025/14.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Untarnished",
+    "id": "CUSA-08025-15",
+    "description": "Parry over 100 attacks.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Silver",
+        "percentRarity": "13.1"
+    },
+    "src": "assets/trophy-icons/08025/15.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "You Seem Different...",
+    "id": "CUSA-08025-16",
+    "description": "Unlock all of the Shells in the game.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Silver",
+        "percentRarity": "50.0"
+    },
+    "src": "assets/trophy-icons/08025/16.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Different Kinds of Grisha",
+    "id": "CUSA-08025-17",
+    "description": "Defeat all different versions of Grisha in the game.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Silver",
+        "percentRarity": "32.3"
+    },
+    "src": "assets/trophy-icons/08025/17.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Crossed the Threshold",
+    "id": "CUSA-08025-18",
+    "description": "Complete Mortal Shell.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Gold",
+        "percentRarity": "28.5"
+    },
+    "src": "assets/trophy-icons/08025/18.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Faded the Fire",
+    "id": "CUSA-08025-19",
+    "description": "Defeat Imrod, the Unrepentant.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Silver",
+        "percentRarity": "43.8"
+    },
+    "src": "assets/trophy-icons/08025/19.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Matryr'd the Martyr",
+    "id": "CUSA-08025-20",
+    "description": "Defeat Tarsus, the First Martyr.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Silver",
+        "percentRarity": "42.6"
+    },
+    "src": "assets/trophy-icons/08025/20.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Tragic Loss",
+    "id": "CUSA-08025-21",
+    "description": "Defeat Crucix, the Twiceborn.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Silver",
+        "percentRarity": "36.2"
+    },
+    "src": "assets/trophy-icons/08025/21.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Felled the Glandfather",
+    "id": "CUSA-08025-22",
+    "description": "Defeat The Unchained.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Silver",
+        "percentRarity": "28.5"
+    },
+    "src": "assets/trophy-icons/08025/22.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Nailed It",
+    "id": "CUSA-08025-23",
+    "description": "Kill Two or more enemies with one shot from the balistazooka.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Silver",
+        "percentRarity": "12.2"
+    },
+    "src": "assets/trophy-icons/08025/23.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "It's a me",
+    "id": "CUSA-08025-24",
+    "description": "Kill an enemy with a hardened plunge.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "15.7"
+    },
+    "src": "assets/trophy-icons/08025/24.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "The Nihilist",
+    "id": "CUSA-08025-25",
+    "description": "Renounce humankind.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Gold",
+        "percentRarity": "9.2"
+    },
+    "src": "assets/trophy-icons/08025/25.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Purrfect",
+    "id": "CUSA-08025-26",
+    "description": "Pet Vlas's Cat.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "64.4"
+    },
+    "src": "assets/trophy-icons/08025/26.png",
+    "earned": false,
+    "hidden": false
+}
