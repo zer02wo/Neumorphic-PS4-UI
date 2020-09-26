@@ -57,7 +57,6 @@
         <div class="nav-element flex-container" id="nav-social">
             <p class="nav-title">Social</p>
             <a class="nav-image-container neu-button" draggable="false" href="#social">
-                <!--TODO: Change to social icon, reuse camera icon within categories list-->
                 <object class="nav-image" type="image/svg+xml" data="assets/icons/Social.svg">Social</object>
             </a>
         </div>
@@ -329,7 +328,39 @@
             <p>Profile</p>
         </div>
         <div id="trophies" class="content-element">
-            <p>Trophies</p>
+            <div id="trophies-content" class="element-main">
+                <div id="trophies-sorting-container" class="content-sorting-container flex-container">
+                    <div id="trophies-folder-close" class="content-folder-close neu-button">
+                        <object class="folder-close-image" type="image/svg+xml" data="assets/icons/Close.svg">Close Folder</object>
+                    </div>
+                    <div id="trophies-sorting" class="content-sorting flex-container">
+                        <label class="content-columns-container neu-button flex-container">
+                            <input type="radio" name="trophies-columns" id="trophies-3-columns" class="content-columns" value="col-3" checked="checked">
+                            <object class="content-sorting-image" type="image/svg+xml" data="assets/icons/Columns3.svg">3</object>
+                        </label>
+                        <label class="content-columns-container neu-button flex-container">
+                            <input type="radio" name="trophies-columns" id="trophies-4-columns" class="content-columns" value="col-4">
+                            <object class="content-sorting-image" type="image/svg+xml" data="assets/icons/Columns4.svg">4</object>
+                        </label>
+                        <div id="trophies-ordering-container" class="content-ordering-container neu-select-container">
+                            <div id="trophies-ordering" class="neu-select">
+                                <div class="neu-select-trigger flex-container"><span>Alphabetical</span>
+                                    <div class="neu-select-arrow"></div>
+                                </div>
+                                <div class="neu-options">
+                                    <span class="neu-option" data-value="alphabetical">Alphabetical</span>
+                                    <span class="neu-option selected" data-value="lastPlayed">Recently Played</span>
+                                    <span class="neu-option" data-value="playTime">Time Played</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button id="trophies-ordering-direction" class="content-ordering-direction neu-button">
+                            <object class="content-sorting-image" type="image/svg+xml" data="assets/icons/Direction.svg">Asc/Dsc</object>
+                        </button>
+                    </div>
+                </div>
+                <ul id="trophies-list" class="neu-scrollable flex-container content-list"></ul>
+            </div>
         </div>
         <div id="settings" class="content-element">
             <p>Settings</p>
