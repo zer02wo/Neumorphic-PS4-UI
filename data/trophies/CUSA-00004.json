@@ -1,0 +1,624 @@
+{
+    "name": "Enjoy Your Powers",
+    "id": "CUSA-00004-1",
+    "description": "Collect all trophies.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Platinum",
+        "percentRarity": "5.8"
+    },
+    "src": "assets/trophy-icons/00004/1.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Unstoppable",
+    "id": "CUSA-00004-2",
+    "description": "Finish the game on Expert difficulty.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Silver",
+        "percentRarity": "7.2"
+    },
+    "src": "assets/trophy-icons/00004/2.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Sacrifice",
+    "id": "CUSA-00004-3",
+    "description": "Risk your freedom to protect those you care about.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "79.0"
+    },
+    "src": "assets/trophy-icons/00004/3.png",
+    "earned": false,
+    "hidden": true
+},
+{
+    "name": "Ruthless",
+    "id": "CUSA-00004-4",
+    "description": "Look out for yourself, no matter the consequences.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "38.6"
+    },
+    "src": "assets/trophy-icons/00004/4.png",
+    "earned": false,
+    "hidden": true
+},
+{
+    "name": "Temperance",
+    "id": "CUSA-00004-5",
+    "description": "Practice self-control.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "52.2"
+    },
+    "src": "assets/trophy-icons/00004/5.png",
+    "earned": false,
+    "hidden": true
+},
+{
+    "name": "Malice",
+    "id": "CUSA-00004-6",
+    "description": "Get them before they get you.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "25.2"
+    },
+    "src": "assets/trophy-icons/00004/6.png",
+    "earned": false,
+    "hidden": true
+},
+{
+    "name": "Courage",
+    "id": "CUSA-00004-7",
+    "description": "Stand up for the helpless.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "44.4"
+    },
+    "src": "assets/trophy-icons/00004/7.png",
+    "earned": false,
+    "hidden": true
+},
+{
+    "name": "Contempt",
+    "id": "CUSA-00004-8",
+    "description": "Don't fear the weak.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "22.9"
+    },
+    "src": "assets/trophy-icons/00004/8.png",
+    "earned": false,
+    "hidden": true
+},
+{
+    "name": "Mercy",
+    "id": "CUSA-00004-9",
+    "description": "Everyone deserves a second chance.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "39.5"
+    },
+    "src": "assets/trophy-icons/00004/9.png",
+    "earned": false,
+    "hidden": true
+},
+{
+    "name": "Revenge",
+    "id": "CUSA-00004-10",
+    "description": "An eye for an eye, a tooth for a tooth.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "22.3"
+    },
+    "src": "assets/trophy-icons/00004/10.png",
+    "earned": false,
+    "hidden": true
+},
+{
+    "name": "Justice",
+    "id": "CUSA-00004-11",
+    "description": "Expose the corruption of the powerful.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "39.5"
+    },
+    "src": "assets/trophy-icons/00004/11.png",
+    "earned": false,
+    "hidden": true
+},
+{
+    "name": "Dominance",
+    "id": "CUSA-00004-12",
+    "description": "Show the world that nobody can protect them.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "21.1"
+    },
+    "src": "assets/trophy-icons/00004/12.png",
+    "earned": false,
+    "hidden": true
+},
+{
+    "name": "Reconciliation",
+    "id": "CUSA-00004-13",
+    "description": "Finish the story with Good Karma.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Gold",
+        "percentRarity": "38.1"
+    },
+    "src": "assets/trophy-icons/00004/13.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Rebellion",
+    "id": "CUSA-00004-14",
+    "description": "Finish the story with Evil Karma.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Gold",
+        "percentRarity": "20.6"
+    },
+    "src": "assets/trophy-icons/00004/14.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Everybody Out",
+    "id": "CUSA-00004-15",
+    "description": "Rescue 10 suspects from suspicion pens.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "50.2"
+    },
+    "src": "assets/trophy-icons/00004/15.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Spin-off",
+    "id": "CUSA-00004-16",
+    "description": "Beat down 10 sign twirlers.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "9.5"
+    },
+    "src": "assets/trophy-icons/00004/16.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Everyone's a Critic",
+    "id": "CUSA-00004-17",
+    "description": "Take out 10 street musicians.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "10.0"
+    },
+    "src": "assets/trophy-icons/00004/17.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Just Say No",
+    "id": "CUSA-00004-18",
+    "description": "Bust 10 drug dealers.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "43.4"
+    },
+    "src": "assets/trophy-icons/00004/18.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Freedom of Speech",
+    "id": "CUSA-00004-19",
+    "description": "Disrupt 10 activist rallies.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "26.3"
+    },
+    "src": "assets/trophy-icons/00004/19.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "What Did You Call Me?",
+    "id": "CUSA-00004-20",
+    "description": "Kill 10 obnoxious Akuran gang members.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "15.1"
+    },
+    "src": "assets/trophy-icons/00004/20.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Someone Your Own Size",
+    "id": "CUSA-00004-21",
+    "description": "Rescue 10 escaped conduits from angry mobs.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "27.7"
+    },
+    "src": "assets/trophy-icons/00004/21.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Walk It Off",
+    "id": "CUSA-00004-22",
+    "description": "Heal 10 wounded civilians.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "60.4"
+    },
+    "src": "assets/trophy-icons/00004/22.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Kicking and Screaming",
+    "id": "CUSA-00004-23",
+    "description": "Finish off 10 wounded enemies or civilians.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "42.4"
+    },
+    "src": "assets/trophy-icons/00004/23.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "True Hero",
+    "id": "CUSA-00004-24",
+    "description": "Achieve Level 5 Good Karma.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Silver",
+        "percentRarity": "29.4"
+    },
+    "src": "assets/trophy-icons/00004/24.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Infamous",
+    "id": "CUSA-00004-25",
+    "description": "Achieve Level 5 Evil Karma.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Silver",
+        "percentRarity": "19.8"
+    },
+    "src": "assets/trophy-icons/00004/25.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Bweep! Bweep! Bweep!",
+    "id": "CUSA-00004-26",
+    "description": "Collect half the Blast Shards.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "39.3"
+    },
+    "src": "assets/trophy-icons/00004/26.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Shardcore",
+    "id": "CUSA-00004-27",
+    "description": "Collect all the Blast Shards.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Silver",
+        "percentRarity": "21.5"
+    },
+    "src": "assets/trophy-icons/00004/27.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Nothing To See Here",
+    "id": "CUSA-00004-28",
+    "description": "Destroy half the D.U.P. security cameras.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "40.2"
+    },
+    "src": "assets/trophy-icons/00004/28.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Blinded",
+    "id": "CUSA-00004-29",
+    "description": "Destroy all of the D.U.P. security cameras.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Silver",
+        "percentRarity": "22.9"
+    },
+    "src": "assets/trophy-icons/00004/29.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Inside Track",
+    "id": "CUSA-00004-30",
+    "description": "Collect all the Informant Audio Logs.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Silver",
+        "percentRarity": "22.2"
+    },
+    "src": "assets/trophy-icons/00004/30.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Blown Cover",
+    "id": "CUSA-00004-31",
+    "description": "Defeat all the D.U.P. Secret Agents.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Silver",
+        "percentRarity": "22.1"
+    },
+    "src": "assets/trophy-icons/00004/31.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Big Brother",
+    "id": "CUSA-00004-32",
+    "description": "Destroy all the D.U.P. Hidden Cameras.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Silver",
+        "percentRarity": "22.5"
+    },
+    "src": "assets/trophy-icons/00004/32.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Coloring Inside the Lines",
+    "id": "CUSA-00004-33",
+    "description": "Complete all the Stencil Art.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Silver",
+        "percentRarity": "23.2"
+    },
+    "src": "assets/trophy-icons/00004/33.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Prank Call",
+    "id": "CUSA-00004-34",
+    "description": "Complete a District Showdown.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "49.8"
+    },
+    "src": "assets/trophy-icons/00004/34.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Hello Operator",
+    "id": "CUSA-00004-35",
+    "description": "Complete Showdowns in half of the districts.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "32.5"
+    },
+    "src": "assets/trophy-icons/00004/35.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Final Showdown",
+    "id": "CUSA-00004-36",
+    "description": "Complete all of the District Showdowns in the city.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Silver",
+        "percentRarity": "23.3"
+    },
+    "src": "assets/trophy-icons/00004/36.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "One Down",
+    "id": "CUSA-00004-37",
+    "description": "Clear the D.U.P. completely out of a district.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "36.8"
+    },
+    "src": "assets/trophy-icons/00004/37.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Home Field Advantage",
+    "id": "CUSA-00004-38",
+    "description": "Clear the D.U.P. out of half the districts in the city.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "26.0"
+    },
+    "src": "assets/trophy-icons/00004/38.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Clean Sweep",
+    "id": "CUSA-00004-39",
+    "description": "Clear the D.U.P. out of the entire city.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Silver",
+        "percentRarity": "20.5"
+    },
+    "src": "assets/trophy-icons/00004/39.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Total CARnage",
+    "id": "CUSA-00004-40",
+    "description": "Destroy 5 cars in 5 seconds.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "35.5"
+    },
+    "src": "assets/trophy-icons/00004/40.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Drop Everything",
+    "id": "CUSA-00004-41",
+    "description": "Comet Drop over 170 meters.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "9.9"
+    },
+    "src": "assets/trophy-icons/00004/41.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Keep It Up",
+    "id": "CUSA-00004-42",
+    "description": "Stay in the air for more than 45 seconds.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "11.3"
+    },
+    "src": "assets/trophy-icons/00004/42.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Put That Anywhere",
+    "id": "CUSA-00004-43",
+    "description": "Defeat 10 enemies by detonating ammo crates.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "43.3"
+    },
+    "src": "assets/trophy-icons/00004/43.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Hat Trick",
+    "id": "CUSA-00004-44",
+    "description": "Defeat an enemy using three different power sources.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "14.7"
+    },
+    "src": "assets/trophy-icons/00004/44.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Double Smoke Stack Attack",
+    "id": "CUSA-00004-45",
+    "description": "Dash through two red air vents without touching the ground and then Comet Drop on an enemy.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "10.0"
+    },
+    "src": "assets/trophy-icons/00004/45.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Cough Drop",
+    "id": "CUSA-00004-46",
+    "description": "Comet Drop on three coughing enemies.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "9.8"
+    },
+    "src": "assets/trophy-icons/00004/46.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Make Fetch Proud",
+    "id": "CUSA-00004-47",
+    "description": "Hit three weak points with Neon Beam in 6 seconds.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "51.7"
+    },
+    "src": "assets/trophy-icons/00004/47.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Excessive Force",
+    "id": "CUSA-00004-48",
+    "description": "Use a Karmic Streak attack to defeat exactly one enemy.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "42.1"
+    },
+    "src": "assets/trophy-icons/00004/48.png",
+    "earned": false,
+    "hidden": false
+}
