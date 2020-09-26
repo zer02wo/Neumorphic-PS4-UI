@@ -1,0 +1,585 @@
+{
+    "name": "Ultimate Vault Hunter",
+    "id": "CUSA-08025-1",
+    "description": "Unlock all Borderlands® 3 Trophies.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Platinum",
+        "percentRarity": "2.4"
+    },
+    "src": "assets/trophy-icons/08025/1.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "You Got Skills",
+    "id": "CUSA-08025-2",
+    "description": "Reach level 2.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "94.1"
+    },
+    "src": "assets/trophy-icons/08025/2.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Star Bound",
+    "id": "CUSA-08025-3",
+    "description": "Reach level 10.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "74.7"
+    },
+    "src": "assets/trophy-icons/08025/3.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Vaulting Your Way To The Top",
+    "id": "CUSA-08025-4",
+    "description": "Reach level 25.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Silver",
+        "percentRarity": "52.1"
+    },
+    "src": "assets/trophy-icons/08025/4.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Biggest Badass In The Borderlands",
+    "id": "CUSA-08025-5",
+    "description": "Reach level 50.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Gold",
+        "percentRarity": "28.7"
+    },
+    "src": "assets/trophy-icons/08025/5.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Bolt-Ons",
+    "id": "CUSA-08025-6",
+    "description": "Unlock 10 Character Heads or Skins.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "48.4"
+    },
+    "src": "assets/trophy-icons/08025/6.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Mechani-Cool",
+    "id": "CUSA-08025-7",
+    "description": "Unlock 10 Vehicle Parts via hijacking.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "36.8"
+    },
+    "src": "assets/trophy-icons/08025/7.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Tips Appreciated",
+    "id": "CUSA-08025-8",
+    "description": "Tip Moxxi.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "36.5"
+    },
+    "src": "assets/trophy-icons/08025/8.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "I Hope You Didn't Tea-bag",
+    "id": "CUSA-08025-9",
+    "description": "Win a duel.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "31.8"
+    },
+    "src": "assets/trophy-icons/08025/9.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Stay Away From The Light",
+    "id": "CUSA-08025-10",
+    "description": "Revive another player.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "53.3"
+    },
+    "src": "assets/trophy-icons/08025/10.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Gun Pals!",
+    "id": "CUSA-08025-11",
+    "description": "Send an item to a friend.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "14.5"
+    },
+    "src": "assets/trophy-icons/08025/11.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Dropping Loads",
+    "id": "CUSA-08025-12",
+    "description": "Win a live grenade at a Slot Machine.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "47.9"
+    },
+    "src": "assets/trophy-icons/08025/12.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Good Against Remotes Is One Thing",
+    "id": "CUSA-08025-13",
+    "description": "Get a perfect score at the Firing Range on any difficulty.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "4.8"
+    },
+    "src": "assets/trophy-icons/08025/13.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "My Name Is Earl",
+    "id": "CUSA-08025-14",
+    "description": "Buy 20 cosmetic items from Crazy Earl.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "13.5"
+    },
+    "src": "assets/trophy-icons/08025/14.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Tales From The Eridian Slab",
+    "id": "CUSA-08025-15",
+    "description": "Decipher all of the Eridian Slabs.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Silver",
+        "percentRarity": "3.8"
+    },
+    "src": "assets/trophy-icons/08025/15.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Slaughterhouse 3",
+    "id": "CUSA-08025-16",
+    "description": "Complete all the Circles of Slaughter.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "5.3"
+    },
+    "src": "assets/trophy-icons/08025/16.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "A Hundred Names For Sand",
+    "id": "CUSA-08025-17",
+    "description": "Discover all named locations on Pandora.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "4.6"
+    },
+    "src": "assets/trophy-icons/08025/17.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Swamped",
+    "id": "CUSA-08025-18",
+    "description": "Discover all named locations on Eden-6.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "5.1"
+    },
+    "src": "assets/trophy-icons/08025/18.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "City Slicker",
+    "id": "CUSA-08025-19",
+    "description": "Discover all named locations on Promethea.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "5.3"
+    },
+    "src": "assets/trophy-icons/08025/19.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Exoarchaeolo—You Get the Gist",
+    "id": "CUSA-08025-20",
+    "description": "Discover all named locations on Nekrotafeyo.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "14.4"
+    },
+    "src": "assets/trophy-icons/08025/20.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Master Of All You Survey",
+    "id": "CUSA-08025-21",
+    "description": "Discover all named locations.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Silver",
+        "percentRarity": "5.9"
+    },
+    "src": "assets/trophy-icons/08025/21.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "À La Carte",
+    "id": "CUSA-08025-22",
+    "description": "Complete 20 Side Missions.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "40.5"
+    },
+    "src": "assets/trophy-icons/08025/22.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Getting A Little On The Side",
+    "id": "CUSA-08025-23",
+    "description": "Complete all Side Missions.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Gold",
+        "percentRarity": "3.4"
+    },
+    "src": "assets/trophy-icons/08025/23.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "100 Proof",
+    "id": "CUSA-08025-24",
+    "description": "Clear all the Eridian Proving Grounds.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Silver",
+        "percentRarity": "6.9"
+    },
+    "src": "assets/trophy-icons/08025/24.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Got Big Game",
+    "id": "CUSA-08025-25",
+    "description": "Defeat all of Hammerlock's Legendary Hunts.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "10.8"
+    },
+    "src": "assets/trophy-icons/08025/25.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Zer0ed In",
+    "id": "CUSA-08025-26",
+    "description": "Defeat all of Zer0's Targets of Opportunity.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "11.7"
+    },
+    "src": "assets/trophy-icons/08025/26.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Barreled Right Over Them",
+    "id": "CUSA-08025-27",
+    "description": "Kill an enemy with an exploding barrel.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "84.0"
+    },
+    "src": "assets/trophy-icons/08025/27.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Feelin' A Little Stabby",
+    "id": "CUSA-08025-28",
+    "description": "Kill an enemy, knifing them with a gun blade.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "77.8"
+    },
+    "src": "assets/trophy-icons/08025/28.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Stick It To 'Em",
+    "id": "CUSA-08025-29",
+    "description": "Kill two or more enemies with a single sticky grenade.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "30.2"
+    },
+    "src": "assets/trophy-icons/08025/29.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "On Fleek",
+    "id": "CUSA-08025-30",
+    "description": "Equip purple-rarity gear or better in every slot.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Silver",
+        "percentRarity": "34.4"
+    },
+    "src": "assets/trophy-icons/08025/30.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Rewards Card",
+    "id": "CUSA-08025-31",
+    "description": "Earn a Loyalty Package from each weapon manufacturer.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "10.3"
+    },
+    "src": "assets/trophy-icons/08025/31.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Welcome to the Crimson Raiders",
+    "id": "CUSA-08025-32",
+    "description": "Complete mission \"Children of the Vault\".",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "90.4"
+    },
+    "src": "assets/trophy-icons/08025/32.png",
+    "earned": false,
+    "hidden": true
+},
+{
+    "name": "So Long, Pandora!",
+    "id": "CUSA-08025-33",
+    "description": "Complete mission \"Taking Flight\".",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "74.6"
+    },
+    "src": "assets/trophy-icons/08025/33.png",
+    "earned": false,
+    "hidden": true
+},
+{
+    "name": "NOG It Off",
+    "id": "CUSA-08025-34",
+    "description": "Complete mission \"Hostile Takeover\".",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "67.5"
+    },
+    "src": "assets/trophy-icons/08025/34.png",
+    "earned": false,
+    "hidden": true
+},
+{
+    "name": "I Mustache You A Question",
+    "id": "CUSA-08025-35",
+    "description": "Complete mission \"Atlas, At Last\".",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "56.8"
+    },
+    "src": "assets/trophy-icons/08025/35.png",
+    "earned": false,
+    "hidden": true
+},
+{
+    "name": "Gone From My Sight",
+    "id": "CUSA-08025-36",
+    "description": "Complete mission \"Beneath the Meridian\".",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "54.9"
+    },
+    "src": "assets/trophy-icons/08025/36.png",
+    "earned": false,
+    "hidden": true
+},
+{
+    "name": "That Was Cold",
+    "id": "CUSA-08025-37",
+    "description": "Complete mission \"Lair of the Harpy\".",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "50.9"
+    },
+    "src": "assets/trophy-icons/08025/37.png",
+    "earned": false,
+    "hidden": true
+},
+{
+    "name": "Heir To An Empty Castle",
+    "id": "CUSA-08025-38",
+    "description": "Complete mission \"Cold as the Grave\".",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "45.6"
+    },
+    "src": "assets/trophy-icons/08025/38.png",
+    "earned": false,
+    "hidden": true
+},
+{
+    "name": "Cross The Streamers",
+    "id": "CUSA-08025-39",
+    "description": "Complete mission \"Blood Drive\".",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "43.9"
+    },
+    "src": "assets/trophy-icons/08025/39.png",
+    "earned": false,
+    "hidden": true
+},
+{
+    "name": "Apocalypso!",
+    "id": "CUSA-08025-40",
+    "description": "Complete mission \"The Great Vault\".",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "41.9"
+    },
+    "src": "assets/trophy-icons/08025/40.png",
+    "earned": false,
+    "hidden": true
+},
+{
+    "name": "I Am A Goddess, A Glorious Female Warrior",
+    "id": "CUSA-08025-41",
+    "description": "Complete mission \"In the Shadow of Starlight\".",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "40.3"
+    },
+    "src": "assets/trophy-icons/08025/41.png",
+    "earned": false,
+    "hidden": true
+},
+{
+    "name": "Bye, Felicia!",
+    "id": "CUSA-08025-42",
+    "description": "Complete mission \"Divine Retribution\".",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Gold",
+        "percentRarity": "39.8"
+    },
+    "src": "assets/trophy-icons/08025/42.png",
+    "earned": false,
+    "hidden": true
+},
+{
+    "name": "Florida Man",
+    "id": "CUSA-08025-43",
+    "description": "Down yourself by grenade or explosion.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "66.2"
+    },
+    "src": "assets/trophy-icons/08025/43.png",
+    "earned": false,
+    "hidden": true
+},
+{
+    "name": "Stay Golden",
+    "id": "CUSA-08025-44",
+    "description": "Use a Golden Key.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "32.2"
+    },
+    "src": "assets/trophy-icons/08025/44.png",
+    "earned": false,
+    "hidden": true
+},
+{
+    "name": "Damn, Gina",
+    "id": "CUSA-08025-45",
+    "description": "Obtain all Vault Rewards.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Silver",
+        "percentRarity": "40.3"
+    },
+    "src": "assets/trophy-icons/08025/45.png",
+    "earned": false,
+    "hidden": true
+}
