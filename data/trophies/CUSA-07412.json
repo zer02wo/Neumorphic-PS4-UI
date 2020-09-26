@@ -1,0 +1,481 @@
+{
+    "name": "Father and Son",
+    "id": "CUSA-07412-1",
+    "description": "Obtain all other trophies.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Platinum",
+        "percentRarity": "4.9"
+    },
+    "src": "assets/trophy-icons/07412/1.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "The Journey Begins",
+    "id": "CUSA-07412-2",
+    "description": "Defend your home from The Stranger.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "90.7"
+    },
+    "src": "assets/trophy-icons/07412/2.png",
+    "earned": false,
+    "hidden": true
+},
+{
+    "name": "A New Friend",
+    "id": "CUSA-07412-3",
+    "description": "Survive the Witch’s Woods.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "79.3"
+    },
+    "src": "assets/trophy-icons/07412/3.png",
+    "earned": false,
+    "hidden": true
+},
+{
+    "name": "Feels Like Home",
+    "id": "CUSA-07412-4",
+    "description": "Allow the Light Elves to return home.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "68.1"
+    },
+    "src": "assets/trophy-icons/07412/4.png",
+    "earned": false,
+    "hidden": true
+},
+{
+    "name": "Dragon Slayer",
+    "id": "CUSA-07412-5",
+    "description": "Defeat the Dragon of the Mountain.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "62.4"
+    },
+    "src": "assets/trophy-icons/07412/5.png",
+    "earned": false,
+    "hidden": true
+},
+{
+    "name": "Troubling Consequences",
+    "id": "CUSA-07412-6",
+    "description": "Defeat Magni and Modi.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "58.9"
+    },
+    "src": "assets/trophy-icons/07412/6.png",
+    "earned": false,
+    "hidden": true
+},
+{
+    "name": "Hello, Old Friend",
+    "id": "CUSA-07412-7",
+    "description": "Retrieve the Blades of Chaos.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "58.1"
+    },
+    "src": "assets/trophy-icons/07412/7.png",
+    "earned": false,
+    "hidden": true
+},
+{
+    "name": "Promise Fulfilled",
+    "id": "CUSA-07412-8",
+    "description": "Heal Atreus.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "57.7"
+    },
+    "src": "assets/trophy-icons/07412/8.png",
+    "earned": false,
+    "hidden": true
+},
+{
+    "name": "Round 2",
+    "id": "CUSA-07412-9",
+    "description": "Rescue Atreus.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "55.4"
+    },
+    "src": "assets/trophy-icons/07412/9.png",
+    "earned": false,
+    "hidden": true
+},
+{
+    "name": "Past Haunts",
+    "id": "CUSA-07412-10",
+    "description": "Ride the ship out of Helheim.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "54.9"
+    },
+    "src": "assets/trophy-icons/07412/10.png",
+    "earned": false,
+    "hidden": true
+},
+{
+    "name": "Twilight Beckons",
+    "id": "CUSA-07412-11",
+    "description": "Defeat Baldur.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "52.3"
+    },
+    "src": "assets/trophy-icons/07412/11.png",
+    "earned": false,
+    "hidden": true
+},
+{
+    "name": "Last Wish",
+    "id": "CUSA-07412-12",
+    "description": "Spread the ashes.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Gold",
+        "percentRarity": "51.7"
+    },
+    "src": "assets/trophy-icons/07412/12.png",
+    "earned": false,
+    "hidden": true
+},
+{
+    "name": "Beneath the Surface",
+    "id": "CUSA-07412-13",
+    "description": "Explore all the Lake of Nine has to offer.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "26.3"
+    },
+    "src": "assets/trophy-icons/07412/13.png",
+    "earned": false,
+    "hidden": true
+},
+{
+    "name": "Death Happened Here",
+    "id": "CUSA-07412-14",
+    "description": "Fully explore Veithurgard.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "32.6"
+    },
+    "src": "assets/trophy-icons/07412/14.png",
+    "earned": false,
+    "hidden": true
+},
+{
+    "name": "Trilingual",
+    "id": "CUSA-07412-15",
+    "description": "Learn the languages of Muspelheim and Niflheim.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "47.3"
+    },
+    "src": "assets/trophy-icons/07412/15.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Dwarven Ingenuity",
+    "id": "CUSA-07412-16",
+    "description": "Upgrade a piece of armor.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "74.0"
+    },
+    "src": "assets/trophy-icons/07412/16.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Nice Moves",
+    "id": "CUSA-07412-17",
+    "description": "Obtain a Runic Attack Gem.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "88.1"
+    },
+    "src": "assets/trophy-icons/07412/17.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Iðunn’s Orchard",
+    "id": "CUSA-07412-18",
+    "description": "Fully upgrade your Health.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Silver",
+        "percentRarity": "25.3"
+    },
+    "src": "assets/trophy-icons/07412/18.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Quick Tempered",
+    "id": "CUSA-07412-19",
+    "description": "Fully upgrade your rage.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Silver",
+        "percentRarity": "23.5"
+    },
+    "src": "assets/trophy-icons/07412/19.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Best Dressed",
+    "id": "CUSA-07412-20",
+    "description": "Craft an outfit for Atreus.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "61.4"
+    },
+    "src": "assets/trophy-icons/07412/20.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Enchanted",
+    "id": "CUSA-07412-21",
+    "description": "Slot an Enchantment into your armor.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "75.4"
+    },
+    "src": "assets/trophy-icons/07412/21.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "All Will Fall",
+    "id": "CUSA-07412-22",
+    "description": "Kill 1,000 Enemies.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Silver",
+        "percentRarity": "34.2"
+    },
+    "src": "assets/trophy-icons/07412/22.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Dangerous Skies",
+    "id": "CUSA-07412-23",
+    "description": "Free all of the Dragons.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Silver",
+        "percentRarity": "24.7"
+    },
+    "src": "assets/trophy-icons/07412/23.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Like Oil and Water",
+    "id": "CUSA-07412-24",
+    "description": "Complete all of Brok and Sindri’s Favors.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Gold",
+        "percentRarity": "29.4"
+    },
+    "src": "assets/trophy-icons/07412/24.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Curator",
+    "id": "CUSA-07412-25",
+    "description": "Collect all of the Artifacts.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Silver",
+        "percentRarity": "6.4"
+    },
+    "src": "assets/trophy-icons/07412/25.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Allfather Blinded",
+    "id": "CUSA-07412-26",
+    "description": "Kill all of Odin’s Ravens.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Silver",
+        "percentRarity": "6.1"
+    },
+    "src": "assets/trophy-icons/07412/26.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "The Best Moves",
+    "id": "CUSA-07412-27",
+    "description": "Fully upgrade a Runic Attack.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "53.8"
+    },
+    "src": "assets/trophy-icons/07412/27.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Worthy",
+    "id": "CUSA-07412-28",
+    "description": "Fully upgrade the Leviathan Axe.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "19.8"
+    },
+    "src": "assets/trophy-icons/07412/28.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Why Fight It?",
+    "id": "CUSA-07412-29",
+    "description": "Fully upgrade the Blades of Chaos.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "20.0"
+    },
+    "src": "assets/trophy-icons/07412/29.png",
+    "earned": false,
+    "hidden": true
+},
+{
+    "name": "Path of the Zealot",
+    "id": "CUSA-07412-30",
+    "description": "Obtain Traveler armor set.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "11.6"
+    },
+    "src": "assets/trophy-icons/07412/30.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Primordial",
+    "id": "CUSA-07412-31",
+    "description": "Obtain Ancient armor set.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Bronze",
+        "percentRarity": "8.9"
+    },
+    "src": "assets/trophy-icons/07412/31.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Unfinished Business",
+    "id": "CUSA-07412-32",
+    "description": "Assist all of the wayward spirits.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Silver",
+        "percentRarity": "24.7"
+    },
+    "src": "assets/trophy-icons/07412/32.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Treasure Hunter",
+    "id": "CUSA-07412-33",
+    "description": "Use treasure maps to find all of the dig spots.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Silver",
+        "percentRarity": "6.8"
+    },
+    "src": "assets/trophy-icons/07412/33.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "The Truth",
+    "id": "CUSA-07412-34",
+    "description": "Read all of the Jötnar shrines.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Silver",
+        "percentRarity": "13.2"
+    },
+    "src": "assets/trophy-icons/07412/34.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Fire and Brimstone",
+    "id": "CUSA-07412-35",
+    "description": "Complete all of the Trials of Muspelheim.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Gold",
+        "percentRarity": "12.9"
+    },
+    "src": "assets/trophy-icons/07412/35.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Darkness and Fog",
+    "id": "CUSA-07412-36",
+    "description": "Retrieve all treasure from the Workshop’s center chamber.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Gold",
+        "percentRarity": "11.5"
+    },
+    "src": "assets/trophy-icons/07412/36.png",
+    "earned": false,
+    "hidden": false
+},
+{
+    "name": "Chooser of the Slain",
+    "id": "CUSA-07412-37",
+    "description": "Defeat the nine Valkyries.",
+    "properties": {
+        "dateEarned": 0,
+        "trophyLevel": "Gold",
+        "percentRarity": "13.2"
+    },
+    "src": "assets/trophy-icons/07412/37.png",
+    "earned": false,
+    "hidden": false
+}
