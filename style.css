@@ -398,7 +398,7 @@ body.dark-mode .content-sorting .content-columns-container.selected {
 .element-main.with-sorting > .content-list {
     height: 92.5%;
 }
-.content, .folders, .external {
+.content, .folders, .external, .trophies-row {
     flex-direction: column;
     list-style: none;
     border-radius: 25px;
@@ -581,13 +581,81 @@ body.dark-mode .content .expanded-options {
     height: 10%;
 }
 
+.trophies-row {
+    flex-direction: row;
+    justify-content: space-between !important;
+    height: 15vh;
+    overflow: hidden;
+}
+.trophies-row img {
+    height: 100%;
+}
+.trophies-row > .info-container {
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+.trophies-row h1 {
+    margin-top: 3%;
+    font-size: inherit;
+}
+.trophies-row p {
+    font-size: 18px;
+}
+.trophies-row .trophies-info-container {
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 50%;
+    width: 100%;
+}
+.trophies-info-container > p {
+    color: #276CE5;
+    font-size: 16px;
+}
+/*TODO: style progress bar and generalise to neu-progress class*/
+.trophies-info-container progress {
+    width: 85%;
+    height: 0.75vh;
+}
+.trophies-info-container progress[value] {
+    -webkit-appearance: none;
+    appearance: none;
+}
+.trophies-info-container progress::-webkit-progress-bar {
+    border-radius: 10px;
+    background-color: #ECF0F3;
+    box-shadow: inset 6px 6px 7px #D1D9E6, inset -6px -6px 7px #FFF;
+}
+body.dark-mode .trophies-info-container progress::-webkit-progress-bar {
+    background-color: #2E3238;
+    box-shadow: inset 12px 12px 13px #24262B, inset -12px -12px 13px #30343A;
+}
+.trophies-info-container progress::-webkit-progress-value {
+    border-radius: 10px;
+    background-color: #276CE5;
+}
+.trophies-stat-wrapper {
+    justify-content: space-evenly !important;
+    width: 100%;
+}
+.trophies-stat {
+    justify-content: space-evenly !important;
+    width: 17.5%;
+}
+.trophies-stat img {
+    height: 20px;
+    width: 20px;
+}
+
 .col-3 {
     /*Width calculation: 2.5*6=15, 100-15=85, 85/3=28.33*/
     width: 28.33%;
     font-size: 20px;
 }
 .col-4 {
-    /*Width calculation: 2.5*4=20, 100-20=80, 80/4=20*/
+    /*Width calculation: 2.5*8=20, 100-20=80, 80/4=20*/
     width: 20%;
     font-size: 18px;
 }

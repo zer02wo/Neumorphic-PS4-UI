@@ -415,6 +415,7 @@ function displayContent(contentType, category, data) {
             //Hide sorting options
             mainContent.classList.remove("with-sorting");
             break;
+        //TODO: may need to add one for "trophies" so that closeFolder method still works
         default:
             //Create content items to display in list
             createContentItems(contentType, category, data);
@@ -671,7 +672,7 @@ function sortItems(contentType) {
     var mainContent = document.getElementById(`${contentType}-list`);
     var scrollPos = mainContent.scrollTop;
     //Get items displayed in list
-    var itemsList = Array.from(document.getElementsByClassName(contentType));
+    var itemsList = Array.from(document.getElementById(`${contentType}-list`).children);
     //Sort items order by selected method
     var contentSortMethod = document.querySelector(`#${contentType}-ordering .neu-option.selected`).dataset.value;
     if(contentSortMethod == "alphabetical") {
@@ -810,7 +811,7 @@ function closeFolder(e) {
 function toggleNumColumns(e) {
     //For each item of content type
     var contentType = e.target.name.replace("-columns", "");
-    var items = Array.from(document.getElementsByClassName(contentType));
+    var items = Array.from(document.getElementById(`${contentType}-list`).children);
     for(var item of items) {
         //Toggle between 3/4 columns
         item.classList.toggle("col-3");
@@ -1022,29 +1023,150 @@ function getSocialOptions(item) {
     }
 }
 
-//TODO: display each game, but:
-    //-> display number of trophies earned and total percentage of earned trophies
-    //-> standard games sorting options and extra option for sorting by trophy score/percentage achieved?
-    //-> no need for categories?
+//TODO: need to do initial sorting of items
 //TODO: after selecting game, display trophies in standard order (grid of images, with details in slideout)
     //-> would need method to return to standard order (i.e. the order Sony displays them, maybe a sorting option called Sony/Developer recommended or something?)
     //-> sorting options to hide/display hidden trophies and to sort by rarity, trophy level and date earned?
-async function initialiseTrophies() {
-    //Display games to as trophy list
-        //TODO: REFACTOR THIS TO DISPLAY MORE SIMILARLY TO FOLDERS? (i.e. rows of columns)
-    displayContent("trophies", "all", games);
+function initialiseTrophies() {
+    //TODO: Display games to as trophy list
+    displayTrophyOverview();
     //TODO: attach content handlers to games that will open the relevant trophies list based off its id (getJsonFile("trophies/CUSA-12345"))
-    //Attach event handlers to library elements
     attachMainContentHandlers("trophies");
     //Initialise checked radio button to selected
     toggleRadioSelected("trophies-columns");
 }
 
+//Display overview of trophies for each game
+async function displayTrophyOverview() {
+    //Display sorting options for trophies content
+    var trophyContent = document.getElementById("trophies-content");
+    trophyContent.classList.add("with-sorting");
+    var trophyList = document.getElementById("trophies-list");
+    var numColumns = document.querySelector("input[name=trophies-columns]:checked").value;
+    //For each game in data
+    for(var item of games) {
+        //Create trophy row item
+        let liItem = document.createElement("li");
+        let classes = ["trophies-row", "neu-button", numColumns];
+        liItem.classList.add(...classes);
+        liItem.setAttribute("name", item.name);
+        //Set DOM item dataset attributes based on data item properties
+        setContentItemDataset(liItem, item)
+        //Create image to display within content item
+        let liItemImg = document.createElement("img");
+        liItemImg.src = item.src;
+        liItemImg.alt = item.name;
+        liItem.appendChild(liItemImg);
+        //Create general info container
+        let liInfoContainer = document.createElement("div");
+        liInfoContainer.classList.add("info-container", "flex-container");
+        let liTitle = document.createElement("h1");
+        liTitle.innerText = item.name;
+        liInfoContainer.appendChild(liTitle);
+        //TODO get actual trophy data and format it properly
+        let liTrophyContainer = await createTrophyContainer(item.id);
+        liInfoContainer.appendChild(liTrophyContainer);
+        //TODO add a progress bar as well based on number of completed trophies
+        liItem.appendChild(liInfoContainer);
+        //Append item to list
+        trophyList.appendChild(liItem);
+    }
+}
+
+//Create element containing an overview of trophy data
+async function createTrophyContainer(dataId) {
+    var trophyData = await getJsonFile(`trophies/${dataId}`);
+    if(trophyData !== undefined && trophyData !== null) {
+        //Get count of each trophy per rank
+        var trophyCounts = getTrophyCounts(trophyData);
+        //Create trophy container element
+        var trophyContainer = document.createElement("div");
+        trophyContainer.classList.add("trophies-info-container", "flex-container");
+        //Create text element to display numerical progression
+        var trophyPercent = document.createElement("p");
+        trophyPercent.innerText = Math.round((trophyCounts.earned / trophyCounts.total) * 100)  + "%";
+        trophyContainer.appendChild(trophyPercent);
+        //Create progress element to display total completion progress
+        var trophyProgress = document.createElement("progress");
+        trophyProgress.max = 100;
+        trophyProgress.value = (trophyCounts.earned / trophyCounts.total) * 100;
+        trophyContainer.appendChild(trophyProgress);
+        //Create trophy stat wrapper element
+        var trophyStats = document.createElement("div");
+        trophyStats.classList.add("trophies-stat-wrapper", "flex-container");
+        //Create trophy stat item for each trophy rank
+        for(var trophyRank in trophyCounts.ranks) {
+            let trophyStat = createTrophyStat(trophyRank, trophyCounts.ranks[trophyRank]);
+            trophyStats.appendChild(trophyStat);
+        }
+        trophyContainer.appendChild(trophyStats);
+        //Return trophy container element
+        return trophyContainer;
+    }
+}
+
+//Create trophy stat element to display number and icon of trophy of specified rank
+function createTrophyStat(trophyRank, trophyCount) {
+    //Create trophy stat element
+    var trophyStats = document.createElement("div");
+    trophyStats.classList.add("trophies-stat", "flex-container");
+    //Create trophy text element
+    var trophyText = document.createElement("p");
+    trophyText.innerText = trophyCount;
+    trophyStats.appendChild(trophyText);
+    //Create trophy image element
+    var trophyImg = document.createElement("img");
+    trophyImg.src = `assets/Icons/${trophyRank}Trophy.png`;
+    trophyImg.alt = trophyRank;
+    trophyStats.appendChild(trophyImg);
+    //Return trophy stat element
+    return trophyStats;
+}
+
+//Get number of each trophy rank within a list of trophies
+function getTrophyCounts(trophies) {
+    //Initialise values to 0
+    var plat = 0, gold = 0, silv = 0, brnz = 0;
+    //For each earned trophy 
+    for(var trophy of trophies) {
+        if(trophy.earned) {
+            //Increment relevant counter
+            switch(trophy.properties.trophyLevel) {
+                case "Platinum":
+                    plat++;
+                    break;
+                case "Gold":
+                    gold++;
+                    break;
+                case "Silver":
+                    silv++;
+                    break;
+                case "Bronze":
+                    brnz++;
+            }
+        }
+    }
+    //Return object containing calculated data
+    var count = {
+        "ranks": {
+            "Platinum": plat,
+            "Gold": gold,
+            "Silver": silv,
+            "Bronze": brnz
+        },
+        "earned": plat + gold + silv + brnz,
+        "total": trophies.length
+    };
+    return count;
+}
+
 //Calculate number of points associated with an array of trophy data
 function calculateTrophyPoints(trophies) {
     var trophyPoints = 0;
-    for(var trophy in trophies) {
+    //For each earned trophy 
+    for(var trophy of trophies) {
         if(trophy.earned) {
+            //Increment points by relevant amount
             switch(trophy.trophyLevel) {
                 case "Bronze":
                     trophyPoints += 15;
@@ -1061,11 +1183,13 @@ function calculateTrophyPoints(trophies) {
             }
         }
     }
+    //Return total points for game
     return trophyPoints;
 }
 
 //Calculate account trophy level based on total number of trophy points as per official levelling system
 function calculateTrophyLevel(trophyPoints) {
+    //Set trophy level based on number of calculated trophy points
     var trophyLevel;
     if(trophyPoints >= 16000) {
         //Increase by 8000 per level
@@ -1085,6 +1209,7 @@ function calculateTrophyLevel(trophyPoints) {
     } else {
         trophyLevel = 1;
     }
+    //Return trophy level
     return trophyLevel;
 }
 
