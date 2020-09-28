@@ -22,7 +22,7 @@
             "percentRarity": "84.8"
         },
         "src": "assets/trophy-icons/01222/2.png",
-        "earned": false,
+        "earned": true,
         "hidden": true
     },
     {
@@ -35,7 +35,7 @@
             "percentRarity": "71.1"
         },
         "src": "assets/trophy-icons/01222/3.png",
-        "earned": false,
+        "earned": true,
         "hidden": true
     },
     {
@@ -48,7 +48,7 @@
             "percentRarity": "60.5"
         },
         "src": "assets/trophy-icons/01222/4.png",
-        "earned": false,
+        "earned": true,
         "hidden": true
     },
     {
@@ -61,7 +61,7 @@
             "percentRarity": "56.4"
         },
         "src": "assets/trophy-icons/01222/5.png",
-        "earned": false,
+        "earned": true,
         "hidden": true
     },
     {
@@ -74,7 +74,7 @@
             "percentRarity": "46.1"
         },
         "src": "assets/trophy-icons/01222/6.png",
-        "earned": false,
+        "earned": true,
         "hidden": true
     },
     {
@@ -87,7 +87,7 @@
             "percentRarity": "40.4"
         },
         "src": "assets/trophy-icons/01222/7.png",
-        "earned": false,
+        "earned": true,
         "hidden": true
     },
     {
@@ -100,7 +100,7 @@
             "percentRarity": "34.8"
         },
         "src": "assets/trophy-icons/01222/8.png",
-        "earned": false,
+        "earned": true,
         "hidden": true
     },
     {
@@ -113,7 +113,7 @@
             "percentRarity": "33.4"
         },
         "src": "assets/trophy-icons/01222/9.png",
-        "earned": false,
+        "earned": true,
         "hidden": true
     },
     {
@@ -126,7 +126,7 @@
             "percentRarity": "32.8"
         },
         "src": "assets/trophy-icons/01222/10.png",
-        "earned": false,
+        "earned": true,
         "hidden": true
     },
     {
@@ -139,7 +139,7 @@
             "percentRarity": "32.1"
         },
         "src": "assets/trophy-icons/01222/11.png",
-        "earned": false,
+        "earned": true,
         "hidden": true
     },
     {
@@ -152,7 +152,7 @@
             "percentRarity": "29.7"
         },
         "src": "assets/trophy-icons/01222/12.png",
-        "earned": false,
+        "earned": true,
         "hidden": true
     },
     {
@@ -165,7 +165,7 @@
             "percentRarity": "26.5"
         },
         "src": "assets/trophy-icons/01222/13.png",
-        "earned": false,
+        "earned": true,
         "hidden": true
     },
     {
@@ -178,7 +178,7 @@
             "percentRarity": "25.0"
         },
         "src": "assets/trophy-icons/01222/14.png",
-        "earned": false,
+        "earned": true,
         "hidden": true
     },
     {
@@ -308,7 +308,7 @@
             "percentRarity": "68.0"
         },
         "src": "assets/trophy-icons/01222/24.png",
-        "earned": false,
+        "earned": true,
         "hidden": false
     },
     {
@@ -321,7 +321,7 @@
             "percentRarity": "29.9"
         },
         "src": "assets/trophy-icons/01222/25.png",
-        "earned": false,
+        "earned": true,
         "hidden": false
     },
     {
@@ -347,7 +347,7 @@
             "percentRarity": "32.8"
         },
         "src": "assets/trophy-icons/01222/27.png",
-        "earned": false,
+        "earned": true,
         "hidden": false
     },
     {
@@ -464,7 +464,7 @@
             "percentRarity": "34.5"
         },
         "src": "assets/trophy-icons/01222/36.png",
-        "earned": false,
+        "earned": true,
         "hidden": false
     },
     {
@@ -477,7 +477,7 @@
             "percentRarity": "25.5"
         },
         "src": "assets/trophy-icons/01222/37.png",
-        "earned": false,
+        "earned": true,
         "hidden": false
     },
     {
@@ -542,7 +542,7 @@
             "percentRarity": "49.6"
         },
         "src": "assets/trophy-icons/01222/42.png",
-        "earned": false,
+        "earned": true,
         "hidden": false
     },
     {
@@ -633,7 +633,7 @@
             "percentRarity": "35.3"
         },
         "src": "assets/trophy-icons/01222/49.png",
-        "earned": false,
+        "earned": true,
         "hidden": false
     },
     {

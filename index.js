@@ -1028,7 +1028,7 @@ function getSocialOptions(item) {
     //-> would need method to return to standard order (i.e. the order Sony displays them, maybe a sorting option called Sony/Developer recommended or something?)
     //-> sorting options to hide/display hidden trophies and to sort by rarity, trophy level and date earned?
 function initialiseTrophies() {
-    //TODO: Display games to as trophy list
+    //Display games to as trophy list
     displayTrophyOverview();
     //TODO: attach content handlers to games that will open the relevant trophies list based off its id (getJsonFile("trophies/CUSA-12345"))
     attachMainContentHandlers("trophies");
@@ -1063,10 +1063,9 @@ async function displayTrophyOverview() {
         let liTitle = document.createElement("h1");
         liTitle.innerText = item.name;
         liInfoContainer.appendChild(liTitle);
-        //TODO get actual trophy data and format it properly
+        //Create trophy container element using id to lookup data
         let liTrophyContainer = await createTrophyContainer(item.id);
         liInfoContainer.appendChild(liTrophyContainer);
-        //TODO add a progress bar as well based on number of completed trophies
         liItem.appendChild(liInfoContainer);
         //Append item to list
         trophyList.appendChild(liItem);

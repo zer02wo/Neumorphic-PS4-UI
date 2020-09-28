@@ -9,7 +9,7 @@
             "percentRarity": "6.0"
         },
         "src": "assets/trophy-icons/07320/1.png",
-        "earned": true,
+        "earned": false,
         "hidden": false
     },
     {
@@ -35,7 +35,7 @@
             "percentRarity": "38.0"
         },
         "src": "assets/trophy-icons/07320/3.png",
-        "earned": true,
+        "earned": false,
         "hidden": false
     },
     {
@@ -61,7 +61,7 @@
             "percentRarity": "45.4"
         },
         "src": "assets/trophy-icons/07320/5.png",
-        "earned": true,
+        "earned": false,
         "hidden": false
     },
     {
@@ -74,7 +74,7 @@
             "percentRarity": "37.6"
         },
         "src": "assets/trophy-icons/07320/6.png",
-        "earned": true,
+        "earned": false,
         "hidden": false
     },
     {
@@ -87,7 +87,7 @@
             "percentRarity": "33.7"
         },
         "src": "assets/trophy-icons/07320/7.png",
-        "earned": true,
+        "earned": false,
         "hidden": true
     },
     {
@@ -100,7 +100,7 @@
             "percentRarity": "48.3"
         },
         "src": "assets/trophy-icons/07320/8.png",
-        "earned": true,
+        "earned": false,
         "hidden": false
     },
     {
@@ -113,7 +113,7 @@
             "percentRarity": "6.6"
         },
         "src": "assets/trophy-icons/07320/9.png",
-        "earned": true,
+        "earned": false,
         "hidden": false
     },
     {
@@ -139,7 +139,7 @@
             "percentRarity": "29.4"
         },
         "src": "assets/trophy-icons/07320/11.png",
-        "earned": true,
+        "earned": false,
         "hidden": true
     },
     {
@@ -165,7 +165,7 @@
             "percentRarity": "33.2"
         },
         "src": "assets/trophy-icons/07320/13.png",
-        "earned": true,
+        "earned": false,
         "hidden": true
     },
     {
@@ -178,7 +178,7 @@
             "percentRarity": "26.5"
         },
         "src": "assets/trophy-icons/07320/14.png",
-        "earned": true,
+        "earned": false,
         "hidden": true
     },
     {
@@ -204,7 +204,7 @@
             "percentRarity": "45.0"
         },
         "src": "assets/trophy-icons/07320/16.png",
-        "earned": true,
+        "earned": false,
         "hidden": false
     },
     {
@@ -217,7 +217,7 @@
             "percentRarity": "30.9"
         },
         "src": "assets/trophy-icons/07320/17.png",
-        "earned": true,
+        "earned": false,
         "hidden": false
     },
     {
@@ -230,7 +230,7 @@
             "percentRarity": "21.6"
         },
         "src": "assets/trophy-icons/07320/18.png",
-        "earned": true,
+        "earned": false,
         "hidden": false
     },
     {
@@ -243,7 +243,7 @@
             "percentRarity": "16.2"
         },
         "src": "assets/trophy-icons/07320/19.png",
-        "earned": true,
+        "earned": false,
         "hidden": false
     },
     {
@@ -282,7 +282,7 @@
             "percentRarity": "49.0"
         },
         "src": "assets/trophy-icons/07320/22.png",
-        "earned": true,
+        "earned": false,
         "hidden": true
     },
     {
@@ -295,7 +295,7 @@
             "percentRarity": "29.0"
         },
         "src": "assets/trophy-icons/07320/23.png",
-        "earned": true,
+        "earned": false,
         "hidden": true
     },
     {
@@ -308,7 +308,7 @@
             "percentRarity": "21.5"
         },
         "src": "assets/trophy-icons/07320/24.png",
-        "earned": true,
+        "earned": false,
         "hidden": true
     },
     {
@@ -334,7 +334,7 @@
             "percentRarity": "29.3"
         },
         "src": "assets/trophy-icons/07320/26.png",
-        "earned": true,
+        "earned": false,
         "hidden": true
     },
     {
@@ -347,7 +347,7 @@
             "percentRarity": "18.9"
         },
         "src": "assets/trophy-icons/07320/27.png",
-        "earned": true,
+        "earned": false,
         "hidden": true
     },
     {
@@ -360,7 +360,7 @@
             "percentRarity": "24.7"
         },
         "src": "assets/trophy-icons/07320/28.png",
-        "earned": true,
+        "earned": false,
         "hidden": true
     },
     {
@@ -373,7 +373,7 @@
             "percentRarity": "13.6"
         },
         "src": "assets/trophy-icons/07320/29.png",
-        "earned": true,
+        "earned": false,
         "hidden": true
     },
     {
@@ -386,7 +386,7 @@
             "percentRarity": "13.0"
         },
         "src": "assets/trophy-icons/07320/30.png",
-        "earned": true,
+        "earned": false,
         "hidden": true
     },
     {
@@ -399,7 +399,7 @@
             "percentRarity": "15.4"
         },
         "src": "assets/trophy-icons/07320/31.png",
-        "earned": true,
+        "earned": false,
         "hidden": true
     },
     {
@@ -412,7 +412,7 @@
             "percentRarity": "25.6"
         },
         "src": "assets/trophy-icons/07320/32.png",
-        "earned": true,
+        "earned": false,
         "hidden": true
     },
     {
@@ -425,7 +425,7 @@
             "percentRarity": "38.5"
         },
         "src": "assets/trophy-icons/07320/33.png",
-        "earned": true,
+        "earned": false,
         "hidden": true
     },
     {
@@ -451,7 +451,7 @@
             "percentRarity": "25.2"
         },
         "src": "assets/trophy-icons/07320/35.png",
-        "earned": true,
+        "earned": false,
         "hidden": true
     },
     {
@@ -477,7 +477,7 @@
             "percentRarity": "12.9"
         },
         "src": "assets/trophy-icons/07320/37.png",
-        "earned": true,
+        "earned": false,
         "hidden": true
     },
     {
@@ -490,7 +490,7 @@
             "percentRarity": "12.7"
         },
         "src": "assets/trophy-icons/07320/38.png",
-        "earned": true,
+        "earned": false,
         "hidden": true
     },
     {
@@ -503,7 +503,7 @@
             "percentRarity": "13.9"
         },
         "src": "assets/trophy-icons/07320/39.png",
-        "earned": true,
+        "earned": false,
         "hidden": true
     },
     {
@@ -516,7 +516,7 @@
             "percentRarity": "15.5"
         },
         "src": "assets/trophy-icons/07320/40.png",
-        "earned": true,
+        "earned": false,
         "hidden": true
     },
     {
@@ -529,7 +529,7 @@
             "percentRarity": "24.5"
         },
         "src": "assets/trophy-icons/07320/41.png",
-        "earned": true,
+        "earned": false,
         "hidden": true
     },
     {
@@ -594,7 +594,7 @@
             "percentRarity": "46.5"
         },
         "src": "assets/trophy-icons/07320/46.png",
-        "earned": true,
+        "earned": false,
         "hidden": true
     },
     {
@@ -607,7 +607,7 @@
             "percentRarity": "40.7"
         },
         "src": "assets/trophy-icons/07320/47.png",
-        "earned": true,
+        "earned": false,
         "hidden": true
     },
     {
@@ -620,7 +620,7 @@
             "percentRarity": "39.3"
         },
         "src": "assets/trophy-icons/07320/48.png",
-        "earned": true,
+        "earned": false,
         "hidden": true
     },
     {
@@ -633,7 +633,7 @@
             "percentRarity": "38.2"
         },
         "src": "assets/trophy-icons/07320/49.png",
-        "earned": true,
+        "earned": false,
         "hidden": true
     },
     {
@@ -646,7 +646,7 @@
             "percentRarity": "37.0"
         },
         "src": "assets/trophy-icons/07320/50.png",
-        "earned": true,
+        "earned": false,
         "hidden": true
     },
     {
@@ -659,7 +659,7 @@
             "percentRarity": "10.9"
         },
         "src": "assets/trophy-icons/07320/51.png",
-        "earned": true,
+        "earned": false,
         "hidden": true
     },
     {
@@ -672,7 +672,7 @@
             "percentRarity": "34.5"
         },
         "src": "assets/trophy-icons/07320/52.png",
-        "earned": true,
+        "earned": false,
         "hidden": true
     },
     {
@@ -698,7 +698,7 @@
             "percentRarity": "41.7"
         },
         "src": "assets/trophy-icons/07320/54.png",
-        "earned": true,
+        "earned": false,
         "hidden": true
     },
     {
@@ -711,7 +711,7 @@
             "percentRarity": "25.6"
         },
         "src": "assets/trophy-icons/07320/55.png",
-        "earned": true,
+        "earned": false,
         "hidden": true
     },
     {
@@ -724,7 +724,7 @@
             "percentRarity": "22.1"
         },
         "src": "assets/trophy-icons/07320/56.png",
-        "earned": true,
+        "earned": false,
         "hidden": true
     }
 ]
