@@ -1,338 +1,340 @@
-{
-    "name": "Every Last One of Them",
-    "id": "CUSA-10249-1",
-    "description": "Collect all trophies.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Platinum",
-        "percentRarity": "4.0"
+[
+    {
+        "name": "Every Last One of Them",
+        "id": "CUSA-10249-1",
+        "description": "Collect all trophies.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Platinum",
+            "percentRarity": "4.0"
+        },
+        "src": "assets/trophy-icons/10249/1.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/10249/1.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "What I Had to Do",
-    "id": "CUSA-10249-2",
-    "description": "Complete the story.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Gold",
-        "percentRarity": "59.4"
+    {
+        "name": "What I Had to Do",
+        "id": "CUSA-10249-2",
+        "description": "Complete the story.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Gold",
+            "percentRarity": "59.4"
+        },
+        "src": "assets/trophy-icons/10249/2.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/10249/2.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "Survival Expert",
-    "id": "CUSA-10249-3",
-    "description": "Learn all player upgrades.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Gold",
-        "percentRarity": "7.4"
+    {
+        "name": "Survival Expert",
+        "id": "CUSA-10249-3",
+        "description": "Learn all player upgrades.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Gold",
+            "percentRarity": "7.4"
+        },
+        "src": "assets/trophy-icons/10249/3.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/10249/3.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "Arms Master",
-    "id": "CUSA-10249-4",
-    "description": "Fully upgrade all weapons.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Gold",
-        "percentRarity": "7.6"
+    {
+        "name": "Arms Master",
+        "id": "CUSA-10249-4",
+        "description": "Fully upgrade all weapons.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Gold",
+            "percentRarity": "7.6"
+        },
+        "src": "assets/trophy-icons/10249/4.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/10249/4.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "Archivist",
-    "id": "CUSA-10249-5",
-    "description": "Find all artifacts and journal entries.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Gold",
-        "percentRarity": "4.6"
+    {
+        "name": "Archivist",
+        "id": "CUSA-10249-5",
+        "description": "Find all artifacts and journal entries.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Gold",
+            "percentRarity": "4.6"
+        },
+        "src": "assets/trophy-icons/10249/5.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/10249/5.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "Master Set",
-    "id": "CUSA-10249-6",
-    "description": "Find all trading cards.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Gold",
-        "percentRarity": "4.7"
+    {
+        "name": "Master Set",
+        "id": "CUSA-10249-6",
+        "description": "Find all trading cards.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Gold",
+            "percentRarity": "4.7"
+        },
+        "src": "assets/trophy-icons/10249/6.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/10249/6.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "Numismatist",
-    "id": "CUSA-10249-7",
-    "description": "Find all coins.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Gold",
-        "percentRarity": "4.8"
+    {
+        "name": "Numismatist",
+        "id": "CUSA-10249-7",
+        "description": "Find all coins.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Gold",
+            "percentRarity": "4.8"
+        },
+        "src": "assets/trophy-icons/10249/7.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/10249/7.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "Prepared For the Worst",
-    "id": "CUSA-10249-8",
-    "description": "Find all workbenches.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Gold",
-        "percentRarity": "13.0"
+    {
+        "name": "Prepared For the Worst",
+        "id": "CUSA-10249-8",
+        "description": "Find all workbenches.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Gold",
+            "percentRarity": "13.0"
+        },
+        "src": "assets/trophy-icons/10249/8.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/10249/8.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "Mechanist",
-    "id": "CUSA-10249-9",
-    "description": "Fully upgrade a weapon.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Silver",
-        "percentRarity": "66.8"
+    {
+        "name": "Mechanist",
+        "id": "CUSA-10249-9",
+        "description": "Fully upgrade a weapon.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Silver",
+            "percentRarity": "66.8"
+        },
+        "src": "assets/trophy-icons/10249/9.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/10249/9.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "Specialist",
-    "id": "CUSA-10249-10",
-    "description": "Learn all player upgrades in one branch.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Silver",
-        "percentRarity": "71.9"
+    {
+        "name": "Specialist",
+        "id": "CUSA-10249-10",
+        "description": "Learn all player upgrades in one branch.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Silver",
+            "percentRarity": "71.9"
+        },
+        "src": "assets/trophy-icons/10249/10.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/10249/10.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "Safecracker",
-    "id": "CUSA-10249-11",
-    "description": "Unlock every safe.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Silver",
-        "percentRarity": "14.6"
+    {
+        "name": "Safecracker",
+        "id": "CUSA-10249-11",
+        "description": "Unlock every safe.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Silver",
+            "percentRarity": "14.6"
+        },
+        "src": "assets/trophy-icons/10249/11.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/10249/11.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "Sightseer",
-    "id": "CUSA-10249-12",
-    "description": "Visit every location in downtown Seattle.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Silver",
-        "percentRarity": "31.7"
+    {
+        "name": "Sightseer",
+        "id": "CUSA-10249-12",
+        "description": "Visit every location in downtown Seattle.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Silver",
+            "percentRarity": "31.7"
+        },
+        "src": "assets/trophy-icons/10249/12.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/10249/12.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "Journeyman",
-    "id": "CUSA-10249-13",
-    "description": "Find all training manuals.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Silver",
-        "percentRarity": "61.6"
+    {
+        "name": "Journeyman",
+        "id": "CUSA-10249-13",
+        "description": "Find all training manuals.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Silver",
+            "percentRarity": "61.6"
+        },
+        "src": "assets/trophy-icons/10249/13.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/10249/13.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "Survival Training",
-    "id": "CUSA-10249-14",
-    "description": "Learn 25 player upgrades.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Silver",
-        "percentRarity": "57.2"
+    {
+        "name": "Survival Training",
+        "id": "CUSA-10249-14",
+        "description": "Learn 25 player upgrades.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Silver",
+            "percentRarity": "57.2"
+        },
+        "src": "assets/trophy-icons/10249/14.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/10249/14.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "High Caliber",
-    "id": "CUSA-10249-15",
-    "description": "Find all weapons.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Silver",
-        "percentRarity": "62.5"
+    {
+        "name": "High Caliber",
+        "id": "CUSA-10249-15",
+        "description": "Find all weapons.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Silver",
+            "percentRarity": "62.5"
+        },
+        "src": "assets/trophy-icons/10249/15.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/10249/15.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "In the Field",
-    "id": "CUSA-10249-16",
-    "description": "Find 12 workbenches.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Silver",
-        "percentRarity": "70.6"
+    {
+        "name": "In the Field",
+        "id": "CUSA-10249-16",
+        "description": "Find 12 workbenches.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Silver",
+            "percentRarity": "70.6"
+        },
+        "src": "assets/trophy-icons/10249/16.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/10249/16.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "Tools of the Trade",
-    "id": "CUSA-10249-17",
-    "description": "Craft every item.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Bronze",
-        "percentRarity": "45.8"
+    {
+        "name": "Tools of the Trade",
+        "id": "CUSA-10249-17",
+        "description": "Craft every item.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Bronze",
+            "percentRarity": "45.8"
+        },
+        "src": "assets/trophy-icons/10249/17.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/10249/17.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "Tinkerer",
-    "id": "CUSA-10249-18",
-    "description": "Upgrade a weapon.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Bronze",
-        "percentRarity": "94.5"
+    {
+        "name": "Tinkerer",
+        "id": "CUSA-10249-18",
+        "description": "Upgrade a weapon.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Bronze",
+            "percentRarity": "94.5"
+        },
+        "src": "assets/trophy-icons/10249/18.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/10249/18.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "Apprentice",
-    "id": "CUSA-10249-19",
-    "description": "Learn a player upgrade.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Bronze",
-        "percentRarity": "92.6"
+    {
+        "name": "Apprentice",
+        "id": "CUSA-10249-19",
+        "description": "Learn a player upgrade.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Bronze",
+            "percentRarity": "92.6"
+        },
+        "src": "assets/trophy-icons/10249/19.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/10249/19.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "Starter Set",
-    "id": "CUSA-10249-20",
-    "description": "Find 5 trading cards.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Bronze",
-        "percentRarity": "88.2"
+    {
+        "name": "Starter Set",
+        "id": "CUSA-10249-20",
+        "description": "Find 5 trading cards.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Bronze",
+            "percentRarity": "88.2"
+        },
+        "src": "assets/trophy-icons/10249/20.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/10249/20.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "Mint Condition",
-    "id": "CUSA-10249-21",
-    "description": "Find 5 coins.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Bronze",
-        "percentRarity": "64.7"
+    {
+        "name": "Mint Condition",
+        "id": "CUSA-10249-21",
+        "description": "Find 5 coins.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Bronze",
+            "percentRarity": "64.7"
+        },
+        "src": "assets/trophy-icons/10249/21.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/10249/21.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "Looks Good On You",
-    "id": "CUSA-10249-22",
-    "description": "Put a hat on your companion.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Bronze",
-        "percentRarity": "24.6"
+    {
+        "name": "Looks Good On You",
+        "id": "CUSA-10249-22",
+        "description": "Put a hat on your companion.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Bronze",
+            "percentRarity": "24.6"
+        },
+        "src": "assets/trophy-icons/10249/22.png",
+        "earned": false,
+        "hidden": true
     },
-    "src": "assets/trophy-icons/10249/22.png",
-    "earned": false,
-    "hidden": true
-},
-{
-    "name": "Sharpshooter",
-    "id": "CUSA-10249-23",
-    "description": "Win the marksmanship competition.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Bronze",
-        "percentRarity": "52.3"
+    {
+        "name": "Sharpshooter",
+        "id": "CUSA-10249-23",
+        "description": "Win the marksmanship competition.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Bronze",
+            "percentRarity": "52.3"
+        },
+        "src": "assets/trophy-icons/10249/23.png",
+        "earned": false,
+        "hidden": true
     },
-    "src": "assets/trophy-icons/10249/23.png",
-    "earned": false,
-    "hidden": true
-},
-{
-    "name": "Put My Name Up",
-    "id": "CUSA-10249-24",
-    "description": "Earn the high score in the archery game.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Bronze",
-        "percentRarity": "55.0"
+    {
+        "name": "Put My Name Up",
+        "id": "CUSA-10249-24",
+        "description": "Earn the high score in the archery game.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Bronze",
+            "percentRarity": "55.0"
+        },
+        "src": "assets/trophy-icons/10249/24.png",
+        "earned": false,
+        "hidden": true
     },
-    "src": "assets/trophy-icons/10249/24.png",
-    "earned": false,
-    "hidden": true
-},
-{
-    "name": "Relic of the Sages",
-    "id": "CUSA-10249-25",
-    "description": "Find the Strange Artifact.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Bronze",
-        "percentRarity": "26.4"
+    {
+        "name": "Relic of the Sages",
+        "id": "CUSA-10249-25",
+        "description": "Find the Strange Artifact.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Bronze",
+            "percentRarity": "26.4"
+        },
+        "src": "assets/trophy-icons/10249/25.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/10249/25.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "So Great and Small",
-    "id": "CUSA-10249-26",
-    "description": "Find the Engraved Ring.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Bronze",
-        "percentRarity": "44.7"
-    },
-    "src": "assets/trophy-icons/10249/26.png",
-    "earned": false,
-    "hidden": false
-}
+    {
+        "name": "So Great and Small",
+        "id": "CUSA-10249-26",
+        "description": "Find the Engraved Ring.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Bronze",
+            "percentRarity": "44.7"
+        },
+        "src": "assets/trophy-icons/10249/26.png",
+        "earned": false,
+        "hidden": false
+    }
+]

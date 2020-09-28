@@ -1,559 +1,561 @@
-{
-    "name": "The Need For Speed",
-    "id": "CUSA-15090-1",
-    "description": "Collect all trophies.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Platinum",
-        "percentRarity": "1.6"
+[
+    {
+        "name": "The Need For Speed",
+        "id": "CUSA-15090-1",
+        "description": "Collect all trophies.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Platinum",
+            "percentRarity": "1.6"
+        },
+        "src": "assets/trophy-icons/15090/1.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/15090/1.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "Welcome to Palm City",
-    "id": "CUSA-15090-2",
-    "description": "Pick your first ride.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Bronze",
-        "percentRarity": "95.1"
+    {
+        "name": "Welcome to Palm City",
+        "id": "CUSA-15090-2",
+        "description": "Pick your first ride.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Bronze",
+            "percentRarity": "95.1"
+        },
+        "src": "assets/trophy-icons/15090/2.png",
+        "earned": false,
+        "hidden": true
     },
-    "src": "assets/trophy-icons/15090/2.png",
-    "earned": false,
-    "hidden": true
-},
-{
-    "name": "Consider Yourself Noticed",
-    "id": "CUSA-15090-3",
-    "description": "Complete Chapter 1.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Bronze",
-        "percentRarity": "69.1"
+    {
+        "name": "Consider Yourself Noticed",
+        "id": "CUSA-15090-3",
+        "description": "Complete Chapter 1.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Bronze",
+            "percentRarity": "69.1"
+        },
+        "src": "assets/trophy-icons/15090/3.png",
+        "earned": false,
+        "hidden": true
     },
-    "src": "assets/trophy-icons/15090/3.png",
-    "earned": false,
-    "hidden": true
-},
-{
-    "name": "Worlds Collide",
-    "id": "CUSA-15090-4",
-    "description": "Complete Chapter 2.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Bronze",
-        "percentRarity": "53.6"
+    {
+        "name": "Worlds Collide",
+        "id": "CUSA-15090-4",
+        "description": "Complete Chapter 2.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Bronze",
+            "percentRarity": "53.6"
+        },
+        "src": "assets/trophy-icons/15090/4.png",
+        "earned": false,
+        "hidden": true
     },
-    "src": "assets/trophy-icons/15090/4.png",
-    "earned": false,
-    "hidden": true
-},
-{
-    "name": "Home from Home",
-    "id": "CUSA-15090-5",
-    "description": "Complete Chapter 3.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Bronze",
-        "percentRarity": "43.6"
+    {
+        "name": "Home from Home",
+        "id": "CUSA-15090-5",
+        "description": "Complete Chapter 3.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Bronze",
+            "percentRarity": "43.6"
+        },
+        "src": "assets/trophy-icons/15090/5.png",
+        "earned": false,
+        "hidden": true
     },
-    "src": "assets/trophy-icons/15090/5.png",
-    "earned": false,
-    "hidden": true
-},
-{
-    "name": "Merciless",
-    "id": "CUSA-15090-6",
-    "description": "Complete Chapter 4.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Silver",
-        "percentRarity": "38.5"
+    {
+        "name": "Merciless",
+        "id": "CUSA-15090-6",
+        "description": "Complete Chapter 4.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Silver",
+            "percentRarity": "38.5"
+        },
+        "src": "assets/trophy-icons/15090/6.png",
+        "earned": false,
+        "hidden": true
     },
-    "src": "assets/trophy-icons/15090/6.png",
-    "earned": false,
-    "hidden": true
-},
-{
-    "name": "Eleven - Fifty Six",
-    "id": "CUSA-15090-7",
-    "description": "Take down 100 Cop Vehicles.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Silver",
-        "percentRarity": "17.6"
+    {
+        "name": "Eleven - Fifty Six",
+        "id": "CUSA-15090-7",
+        "description": "Take down 100 Cop Vehicles.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Silver",
+            "percentRarity": "17.6"
+        },
+        "src": "assets/trophy-icons/15090/7.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/15090/7.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "Warp Speed",
-    "id": "CUSA-15090-8",
-    "description": "Hit 240 mph using any car.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Bronze",
-        "percentRarity": "14.9"
+    {
+        "name": "Warp Speed",
+        "id": "CUSA-15090-8",
+        "description": "Hit 240 mph using any car.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Bronze",
+            "percentRarity": "14.9"
+        },
+        "src": "assets/trophy-icons/15090/8.png",
+        "earned": false,
+        "hidden": true
     },
-    "src": "assets/trophy-icons/15090/8.png",
-    "earned": false,
-    "hidden": true
-},
-{
-    "name": "The Brightest Stars",
-    "id": "CUSA-15090-9",
-    "description": "Get a 3 Star Rating on all the Activities in the game.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Silver",
-        "percentRarity": "3.1"
+    {
+        "name": "The Brightest Stars",
+        "id": "CUSA-15090-9",
+        "description": "Get a 3 Star Rating on all the Activities in the game.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Silver",
+            "percentRarity": "3.1"
+        },
+        "src": "assets/trophy-icons/15090/9.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/15090/9.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "Change My Name",
-    "id": "CUSA-15090-10",
-    "description": "Change the text on the License Plate.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Bronze",
-        "percentRarity": "53.8"
+    {
+        "name": "Change My Name",
+        "id": "CUSA-15090-10",
+        "description": "Change the text on the License Plate.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Bronze",
+            "percentRarity": "53.8"
+        },
+        "src": "assets/trophy-icons/15090/10.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/15090/10.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "Two Racers, One Event",
-    "id": "CUSA-15090-11",
-    "description": "Beat your first Crew Time Trial.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Bronze",
-        "percentRarity": "47.5"
+    {
+        "name": "Two Racers, One Event",
+        "id": "CUSA-15090-11",
+        "description": "Beat your first Crew Time Trial.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Bronze",
+            "percentRarity": "47.5"
+        },
+        "src": "assets/trophy-icons/15090/11.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/15090/11.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "A Bit Of Paradise",
-    "id": "CUSA-15090-12",
-    "description": "Smash your way through all the Billboards.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Bronze",
-        "percentRarity": "5.4"
+    {
+        "name": "A Bit Of Paradise",
+        "id": "CUSA-15090-12",
+        "description": "Smash your way through all the Billboards.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Bronze",
+            "percentRarity": "5.4"
+        },
+        "src": "assets/trophy-icons/15090/12.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/15090/12.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "I Said Right Now!",
-    "id": "CUSA-15090-13",
-    "description": "Win a race with a car at 400+ Performance Rating.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Gold",
-        "percentRarity": "22.4"
+    {
+        "name": "I Said Right Now!",
+        "id": "CUSA-15090-13",
+        "description": "Win a race with a car at 400+ Performance Rating.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Gold",
+            "percentRarity": "22.4"
+        },
+        "src": "assets/trophy-icons/15090/13.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/15090/13.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "Be The Very Best",
-    "id": "CUSA-15090-14",
-    "description": "Get all Collectibles and 3 stars on all Activities.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Gold",
-        "percentRarity": "3.0"
+    {
+        "name": "Be The Very Best",
+        "id": "CUSA-15090-14",
+        "description": "Get all Collectibles and 3 stars on all Activities.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Gold",
+            "percentRarity": "3.0"
+        },
+        "src": "assets/trophy-icons/15090/14.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/15090/14.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "Comeback Kid",
-    "id": "CUSA-15090-15",
-    "description": "Go from last to first place during the final lap of a race and win.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Bronze",
-        "percentRarity": "18.6"
+    {
+        "name": "Comeback Kid",
+        "id": "CUSA-15090-15",
+        "description": "Go from last to first place during the final lap of a race and win.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Bronze",
+            "percentRarity": "18.6"
+        },
+        "src": "assets/trophy-icons/15090/15.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/15090/15.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "Carving Turns",
-    "id": "CUSA-15090-16",
-    "description": "Complete the Drift driving story.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Bronze",
-        "percentRarity": "32.5"
+    {
+        "name": "Carving Turns",
+        "id": "CUSA-15090-16",
+        "description": "Complete the Drift driving story.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Bronze",
+            "percentRarity": "32.5"
+        },
+        "src": "assets/trophy-icons/15090/16.png",
+        "earned": false,
+        "hidden": true
     },
-    "src": "assets/trophy-icons/15090/16.png",
-    "earned": false,
-    "hidden": true
-},
-{
-    "name": "Off the Grid",
-    "id": "CUSA-15090-17",
-    "description": "Complete the Off-road driving story.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Bronze",
-        "percentRarity": "21.6"
+    {
+        "name": "Off the Grid",
+        "id": "CUSA-15090-17",
+        "description": "Complete the Off-road driving story.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Bronze",
+            "percentRarity": "21.6"
+        },
+        "src": "assets/trophy-icons/15090/17.png",
+        "earned": false,
+        "hidden": true
     },
-    "src": "assets/trophy-icons/15090/17.png",
-    "earned": false,
-    "hidden": true
-},
-{
-    "name": "Friends Reunited",
-    "id": "CUSA-15090-18",
-    "description": "Complete the Race driving story.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Bronze",
-        "percentRarity": "22.0"
+    {
+        "name": "Friends Reunited",
+        "id": "CUSA-15090-18",
+        "description": "Complete the Race driving story.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Bronze",
+            "percentRarity": "22.0"
+        },
+        "src": "assets/trophy-icons/15090/18.png",
+        "earned": false,
+        "hidden": true
     },
-    "src": "assets/trophy-icons/15090/18.png",
-    "earned": false,
-    "hidden": true
-},
-{
-    "name": "Wrap It Up!",
-    "id": "CUSA-15090-19",
-    "description": "Customize a vehicle with a wrap.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Bronze",
-        "percentRarity": "73.6"
+    {
+        "name": "Wrap It Up!",
+        "id": "CUSA-15090-19",
+        "description": "Customize a vehicle with a wrap.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Bronze",
+            "percentRarity": "73.6"
+        },
+        "src": "assets/trophy-icons/15090/19.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/15090/19.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "Don't Quit Your Day Job",
-    "id": "CUSA-15090-20",
-    "description": "Complete your first Daily Challenge.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Bronze",
-        "percentRarity": "80.7"
+    {
+        "name": "Don't Quit Your Day Job",
+        "id": "CUSA-15090-20",
+        "description": "Complete your first Daily Challenge.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Bronze",
+            "percentRarity": "80.7"
+        },
+        "src": "assets/trophy-icons/15090/20.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/15090/20.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "Drift, Drift, Drift",
-    "id": "CUSA-15090-21",
-    "description": "Complete all Drift Zones.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Bronze",
-        "percentRarity": "4.3"
+    {
+        "name": "Drift, Drift, Drift",
+        "id": "CUSA-15090-21",
+        "description": "Complete all Drift Zones.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Bronze",
+            "percentRarity": "4.3"
+        },
+        "src": "assets/trophy-icons/15090/21.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/15090/21.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "Techin'",
-    "id": "CUSA-15090-22",
-    "description": "Win a race with parts equipped in both auxiliary part slots.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Bronze",
-        "percentRarity": "52.7"
+    {
+        "name": "Techin'",
+        "id": "CUSA-15090-22",
+        "description": "Win a race with parts equipped in both auxiliary part slots.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Bronze",
+            "percentRarity": "52.7"
+        },
+        "src": "assets/trophy-icons/15090/22.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/15090/22.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "Blame The Vain",
-    "id": "CUSA-15090-23",
-    "description": "Win a race with all vehicle effects slots equipped.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Bronze",
-        "percentRarity": "13.2"
+    {
+        "name": "Blame The Vain",
+        "id": "CUSA-15090-23",
+        "description": "Win a race with all vehicle effects slots equipped.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Bronze",
+            "percentRarity": "13.2"
+        },
+        "src": "assets/trophy-icons/15090/23.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/15090/23.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "Travis, Who?",
-    "id": "CUSA-15090-24",
-    "description": "Escape 100 Cop Chases.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Silver",
-        "percentRarity": "30.6"
+    {
+        "name": "Travis, Who?",
+        "id": "CUSA-15090-24",
+        "description": "Escape 100 Cop Chases.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Silver",
+            "percentRarity": "30.6"
+        },
+        "src": "assets/trophy-icons/15090/24.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/15090/24.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "Benefits Are Nice",
-    "id": "CUSA-15090-25",
-    "description": "Complete 25 events online with other players.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Silver",
-        "percentRarity": "17.5"
+    {
+        "name": "Benefits Are Nice",
+        "id": "CUSA-15090-25",
+        "description": "Complete 25 events online with other players.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Silver",
+            "percentRarity": "17.5"
+        },
+        "src": "assets/trophy-icons/15090/25.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/15090/25.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "You have friends?",
-    "id": "CUSA-15090-26",
-    "description": "Complete 5 events online with other players.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Bronze",
-        "percentRarity": "27.4"
+    {
+        "name": "You have friends?",
+        "id": "CUSA-15090-26",
+        "description": "Complete 5 events online with other players.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Bronze",
+            "percentRarity": "27.4"
+        },
+        "src": "assets/trophy-icons/15090/26.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/15090/26.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "Get Shrimpin'",
-    "id": "CUSA-15090-27",
-    "description": "Collect all the Flamingos.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Bronze",
-        "percentRarity": "4.5"
+    {
+        "name": "Get Shrimpin'",
+        "id": "CUSA-15090-27",
+        "description": "Collect all the Flamingos.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Bronze",
+            "percentRarity": "4.5"
+        },
+        "src": "assets/trophy-icons/15090/27.png",
+        "earned": false,
+        "hidden": true
     },
-    "src": "assets/trophy-icons/15090/27.png",
-    "earned": false,
-    "hidden": true
-},
-{
-    "name": "At The Last Second",
-    "id": "CUSA-15090-28",
-    "description": "Repair critical damage at a Gas Station at night.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Bronze",
-        "percentRarity": "69.4"
+    {
+        "name": "At The Last Second",
+        "id": "CUSA-15090-28",
+        "description": "Repair critical damage at a Gas Station at night.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Bronze",
+            "percentRarity": "69.4"
+        },
+        "src": "assets/trophy-icons/15090/28.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/15090/28.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "Graffer",
-    "id": "CUSA-15090-29",
-    "description": "Collect all Street Art.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Bronze",
-        "percentRarity": "4.4"
+    {
+        "name": "Graffer",
+        "id": "CUSA-15090-29",
+        "description": "Collect all Street Art.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Bronze",
+            "percentRarity": "4.4"
+        },
+        "src": "assets/trophy-icons/15090/29.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/15090/29.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "The Most Wanted",
-    "id": "CUSA-15090-30",
-    "description": "Win a High Heat 5 race and return to garage safely.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Bronze",
-        "percentRarity": "18.0"
+    {
+        "name": "The Most Wanted",
+        "id": "CUSA-15090-30",
+        "description": "Win a High Heat 5 race and return to garage safely.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Bronze",
+            "percentRarity": "18.0"
+        },
+        "src": "assets/trophy-icons/15090/30.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/15090/30.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "Full Send",
-    "id": "CUSA-15090-31",
-    "description": "Complete all Long Jumps.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Bronze",
-        "percentRarity": "3.7"
+    {
+        "name": "Full Send",
+        "id": "CUSA-15090-31",
+        "description": "Complete all Long Jumps.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Bronze",
+            "percentRarity": "3.7"
+        },
+        "src": "assets/trophy-icons/15090/31.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/15090/31.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "All For One",
-    "id": "CUSA-15090-32",
-    "description": "Reach max Crew Level with your Crew.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Silver",
-        "percentRarity": "18.1"
+    {
+        "name": "All For One",
+        "id": "CUSA-15090-32",
+        "description": "Reach max Crew Level with your Crew.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Silver",
+            "percentRarity": "18.1"
+        },
+        "src": "assets/trophy-icons/15090/32.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/15090/32.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "Sideways Style",
-    "id": "CUSA-15090-33",
-    "description": "Win a race with handling parts for maximum drift equipped.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Bronze",
-        "percentRarity": "24.5"
+    {
+        "name": "Sideways Style",
+        "id": "CUSA-15090-33",
+        "description": "Win a race with handling parts for maximum drift equipped.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Bronze",
+            "percentRarity": "24.5"
+        },
+        "src": "assets/trophy-icons/15090/33.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/15090/33.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "The Hackney Dream",
-    "id": "CUSA-15090-34",
-    "description": "Win a race with handling parts for maximum off-road traction equipped.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Bronze",
-        "percentRarity": "20.1"
+    {
+        "name": "The Hackney Dream",
+        "id": "CUSA-15090-34",
+        "description": "Win a race with handling parts for maximum off-road traction equipped.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Bronze",
+            "percentRarity": "20.1"
+        },
+        "src": "assets/trophy-icons/15090/34.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/15090/34.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "Component Parts",
-    "id": "CUSA-15090-35",
-    "description": "Win a race with handling parts for maximum road traction equipped.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Bronze",
-        "percentRarity": "57.4"
+    {
+        "name": "Component Parts",
+        "id": "CUSA-15090-35",
+        "description": "Win a race with handling parts for maximum road traction equipped.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Bronze",
+            "percentRarity": "57.4"
+        },
+        "src": "assets/trophy-icons/15090/35.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/15090/35.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "Redline",
-    "id": "CUSA-15090-36",
-    "description": "Win a race with handling parts for maximum race equipped.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Bronze",
-        "percentRarity": "47.0"
+    {
+        "name": "Redline",
+        "id": "CUSA-15090-36",
+        "description": "Win a race with handling parts for maximum race equipped.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Bronze",
+            "percentRarity": "47.0"
+        },
+        "src": "assets/trophy-icons/15090/36.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/15090/36.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "Humble Beginnings",
-    "id": "CUSA-15090-37",
-    "description": "Reach REP Level 2.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Bronze",
-        "percentRarity": "87.4"
+    {
+        "name": "Humble Beginnings",
+        "id": "CUSA-15090-37",
+        "description": "Reach REP Level 2.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Bronze",
+            "percentRarity": "87.4"
+        },
+        "src": "assets/trophy-icons/15090/37.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/15090/37.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "Notorious",
-    "id": "CUSA-15090-38",
-    "description": "Reach REP Level 50.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Silver",
-        "percentRarity": "26.1"
+    {
+        "name": "Notorious",
+        "id": "CUSA-15090-38",
+        "description": "Reach REP Level 50.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Silver",
+            "percentRarity": "26.1"
+        },
+        "src": "assets/trophy-icons/15090/38.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/15090/38.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "Cashing In",
-    "id": "CUSA-15090-39",
-    "description": "Earn and bank 1 000 000 REP during one night.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Gold",
-        "percentRarity": "11.0"
+    {
+        "name": "Cashing In",
+        "id": "CUSA-15090-39",
+        "description": "Earn and bank 1 000 000 REP during one night.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Gold",
+            "percentRarity": "11.0"
+        },
+        "src": "assets/trophy-icons/15090/39.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/15090/39.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "Danger Zone",
-    "id": "CUSA-15090-40",
-    "description": "Complete all Speed Traps.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Bronze",
-        "percentRarity": "4.2"
+    {
+        "name": "Danger Zone",
+        "id": "CUSA-15090-40",
+        "description": "Complete all Speed Traps.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Bronze",
+            "percentRarity": "4.2"
+        },
+        "src": "assets/trophy-icons/15090/40.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/15090/40.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "Swappin'",
-    "id": "CUSA-15090-41",
-    "description": "Win a race in a vehicle with an engine swap.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Bronze",
-        "percentRarity": "43.4"
+    {
+        "name": "Swappin'",
+        "id": "CUSA-15090-41",
+        "description": "Win a race in a vehicle with an engine swap.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Bronze",
+            "percentRarity": "43.4"
+        },
+        "src": "assets/trophy-icons/15090/41.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/15090/41.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "Around The World",
-    "id": "CUSA-15090-42",
-    "description": "Win the Discovery Event.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Silver",
-        "percentRarity": "11.4"
+    {
+        "name": "Around The World",
+        "id": "CUSA-15090-42",
+        "description": "Win the Discovery Event.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Silver",
+            "percentRarity": "11.4"
+        },
+        "src": "assets/trophy-icons/15090/42.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/15090/42.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "Hear Me Roar",
-    "id": "CUSA-15090-43",
-    "description": "Win a race in a vehicle with tuned exhaust sound.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Bronze",
-        "percentRarity": "57.8"
-    },
-    "src": "assets/trophy-icons/15090/43.png",
-    "earned": false,
-    "hidden": false
-}
+    {
+        "name": "Hear Me Roar",
+        "id": "CUSA-15090-43",
+        "description": "Win a race in a vehicle with tuned exhaust sound.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Bronze",
+            "percentRarity": "57.8"
+        },
+        "src": "assets/trophy-icons/15090/43.png",
+        "earned": false,
+        "hidden": false
+    }
+]

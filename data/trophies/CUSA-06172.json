@@ -1,182 +1,184 @@
-{
-    "name": "Traveler's Chosen",
-    "id": "CUSA-06172-1",
-    "description": "Obtain all trophies in Destiny 2.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Platinum",
-        "percentRarity": "2.6"
+[
+    {
+        "name": "Traveler's Chosen",
+        "id": "CUSA-06172-1",
+        "description": "Obtain all trophies in Destiny 2.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Platinum",
+            "percentRarity": "2.6"
+        },
+        "src": "assets/trophy-icons/06172/1.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/06172/1.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "Long and Winding Road",
-    "id": "CUSA-06172-2",
-    "description": "Reach level 20.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Silver",
-        "percentRarity": "59.4"
+    {
+        "name": "Long and Winding Road",
+        "id": "CUSA-06172-2",
+        "description": "Reach level 20.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Silver",
+            "percentRarity": "59.4"
+        },
+        "src": "assets/trophy-icons/06172/2.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/06172/2.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "Zavala's Lieutenant",
-    "id": "CUSA-06172-3",
-    "description": "Acquire each Titan subclass.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Gold",
-        "percentRarity": "25.6"
+    {
+        "name": "Zavala's Lieutenant",
+        "id": "CUSA-06172-3",
+        "description": "Acquire each Titan subclass.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Gold",
+            "percentRarity": "25.6"
+        },
+        "src": "assets/trophy-icons/06172/3.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/06172/3.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "Cayde's Pathfinder",
-    "id": "CUSA-06172-4",
-    "description": "Acquire each Hunter subclass.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Gold",
-        "percentRarity": "34.6"
+    {
+        "name": "Cayde's Pathfinder",
+        "id": "CUSA-06172-4",
+        "description": "Acquire each Hunter subclass.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Gold",
+            "percentRarity": "34.6"
+        },
+        "src": "assets/trophy-icons/06172/4.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/06172/4.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "Ikora's Protégé",
-    "id": "CUSA-06172-5",
-    "description": "Acquire each Warlock subclass.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Gold",
-        "percentRarity": "27.8"
+    {
+        "name": "Ikora's Protégé",
+        "id": "CUSA-06172-5",
+        "description": "Acquire each Warlock subclass.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Gold",
+            "percentRarity": "27.8"
+        },
+        "src": "assets/trophy-icons/06172/5.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/06172/5.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "Show Me What You Got",
-    "id": "CUSA-06172-6",
-    "description": "Complete Introduction: Crucible.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Gold",
-        "percentRarity": "23.1"
+    {
+        "name": "Show Me What You Got",
+        "id": "CUSA-06172-6",
+        "description": "Complete Introduction: Crucible.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Gold",
+            "percentRarity": "23.1"
+        },
+        "src": "assets/trophy-icons/06172/6.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/06172/6.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "In A Flash",
-    "id": "CUSA-06172-7",
-    "description": "Complete a Flashpoint on Earth, Titan, Nessus, or Io.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Gold",
-        "percentRarity": "21.6"
+    {
+        "name": "In A Flash",
+        "id": "CUSA-06172-7",
+        "description": "Complete a Flashpoint on Earth, Titan, Nessus, or Io.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Gold",
+            "percentRarity": "21.6"
+        },
+        "src": "assets/trophy-icons/06172/7.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/06172/7.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "The People's Hero",
-    "id": "CUSA-06172-8",
-    "description": "Complete a Heroic public event.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Silver",
-        "percentRarity": "51.7"
+    {
+        "name": "The People's Hero",
+        "id": "CUSA-06172-8",
+        "description": "Complete a Heroic public event.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Silver",
+            "percentRarity": "51.7"
+        },
+        "src": "assets/trophy-icons/06172/8.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/06172/8.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "Heart of Darkness",
-    "id": "CUSA-06172-9",
-    "description": "Complete a Nightfall strike.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Gold",
-        "percentRarity": "22.6"
+    {
+        "name": "Heart of Darkness",
+        "id": "CUSA-06172-9",
+        "description": "Complete a Nightfall strike.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Gold",
+            "percentRarity": "22.6"
+        },
+        "src": "assets/trophy-icons/06172/9.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/06172/9.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "The Life Exotic",
-    "id": "CUSA-06172-10",
-    "description": "Collect 15 Red War exotic weapons or armor.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Gold",
-        "percentRarity": "19.3"
+    {
+        "name": "The Life Exotic",
+        "id": "CUSA-06172-10",
+        "description": "Collect 15 Red War exotic weapons or armor.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Gold",
+            "percentRarity": "19.3"
+        },
+        "src": "assets/trophy-icons/06172/10.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/06172/10.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "Challenge Accepted",
-    "id": "CUSA-06172-11",
-    "description": "Complete 30 challenges.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Gold",
-        "percentRarity": "19.3"
+    {
+        "name": "Challenge Accepted",
+        "id": "CUSA-06172-11",
+        "description": "Complete 30 challenges.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Gold",
+            "percentRarity": "19.3"
+        },
+        "src": "assets/trophy-icons/06172/11.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/06172/11.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "Belly Of The Beast",
-    "id": "CUSA-06172-12",
-    "description": "Complete the Leviathan raid.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Gold",
-        "percentRarity": "7.9"
+    {
+        "name": "Belly Of The Beast",
+        "id": "CUSA-06172-12",
+        "description": "Complete the Leviathan raid.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Gold",
+            "percentRarity": "7.9"
+        },
+        "src": "assets/trophy-icons/06172/12.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/06172/12.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "The Prestige",
-    "id": "CUSA-06172-13",
-    "description": "Complete the Leviathan raid on Prestige difficulty.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Gold",
-        "percentRarity": "3.6"
+    {
+        "name": "The Prestige",
+        "id": "CUSA-06172-13",
+        "description": "Complete the Leviathan raid on Prestige difficulty.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Gold",
+            "percentRarity": "3.6"
+        },
+        "src": "assets/trophy-icons/06172/13.png",
+        "earned": false,
+        "hidden": false
     },
-    "src": "assets/trophy-icons/06172/13.png",
-    "earned": false,
-    "hidden": false
-},
-{
-    "name": "Lest Ye Be Judged",
-    "id": "CUSA-06172-14",
-    "description": "Encounter an Agent of the Nine somewhere in the system.",
-    "properties": {
-        "dateEarned": 0,
-        "trophyLevel": "Gold",
-        "percentRarity": "14.9"
-    },
-    "src": "assets/trophy-icons/06172/14.png",
-    "earned": false,
-    "hidden": false
-}
+    {
+        "name": "Lest Ye Be Judged",
+        "id": "CUSA-06172-14",
+        "description": "Encounter an Agent of the Nine somewhere in the system.",
+        "properties": {
+            "dateEarned": 0,
+            "trophyLevel": "Gold",
+            "percentRarity": "14.9"
+        },
+        "src": "assets/trophy-icons/06172/14.png",
+        "earned": false,
+        "hidden": false
+    }
+]
