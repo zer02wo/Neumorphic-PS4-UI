@@ -1040,4 +1040,52 @@ async function initialiseTrophies() {
     toggleRadioSelected("trophies-columns");
 }
 
+//Calculate number of points associated with an array of trophy data
+function calculateTrophyPoints(trophies) {
+    var trophyPoints = 0;
+    for(var trophy in trophies) {
+        if(trophy.earned) {
+            switch(trophy.trophyLevel) {
+                case "Bronze":
+                    trophyPoints += 15;
+                    break;
+                case "Silver":
+                    trophyPoints += 30;
+                    break;
+                case "Gold":
+                    trophyPoints += 90;
+                    break;
+                case "Platinum":
+                    trophyPoints += 180;
+                    break;
+            }
+        }
+    }
+    return trophyPoints;
+}
+
+//Calculate account trophy level based on total number of trophy points as per official levelling system
+function calculateTrophyLevel(trophyPoints) {
+    var trophyLevel;
+    if(trophyPoints >= 16000) {
+        //Increase by 8000 per level
+        trophyLevel = 12 +Math.floor((trophyPoints - 16000) / 8000);
+    } else if(trophyPoints >= 4000) {
+        //Increase by 2000 per level
+        trophyLevel = 6 + Math.floor((trophyPoints - 4000) / 2000);
+    } else if(trophyPoints >= 2400) {
+        //Irregular levelling pattern beyond this point
+        trophyLevel = 5;
+    } else if(trophyPoints >= 1200) {
+        trophyLevel = 4;
+    } else if(trophyPoints >= 600) {
+        trophyLevel = 3;
+    } else if(trophyPoints >= 200) {
+        trophyLevel = 2;
+    } else {
+        trophyLevel = 1;
+    }
+    return trophyLevel;
+}
+
 //TODO Refer to above methods when implementing the trophies screen, to add the trophy level to the top info bar
