@@ -18,8 +18,6 @@ function init() {
     initialiseMedia();
     //Initialise social elements
     initialiseSocial();
-    //Initialise trophy case
-    initialiseTrophies();
 }
 
 //Initialise custom drop-down components
@@ -320,6 +318,9 @@ async function initialiseLibrary() {
         attachMainContentHandlers("games");
         //Initialise checked radio button to selected
         toggleRadioSelected("games-columns");
+
+        //Initialise trophy case using games data
+        initialiseTrophies();
     }
 }
 
@@ -1021,27 +1022,22 @@ function getSocialOptions(item) {
     }
 }
 
-//TODO: display each game as usual, but:
-    //-> display number of trophies earned and total percentage of earned trophies (probably in the slide-out?)
+//TODO: display each game, but:
+    //-> display number of trophies earned and total percentage of earned trophies
     //-> standard games sorting options and extra option for sorting by trophy score/percentage achieved?
     //-> no need for categories?
-//TODO: after selecting game, display trophies in standard order 
-    //-> would need method to return to standard order
+//TODO: after selecting game, display trophies in standard order (grid of images, with details in slideout)
+    //-> would need method to return to standard order (i.e. the order Sony displays them, maybe a sorting option called Sony/Developer recommended or something?)
     //-> sorting options to hide/display hidden trophies and to sort by rarity, trophy level and date earned?
 async function initialiseTrophies() {
-    //TODO figure out a way to wait for games to be loaded, rather than having to call it twice
-    games = await getJsonFile("games");
-    if(games !== undefined && games !== null) {
-        //Display games to as trophy list
-            //TODO: may refactor this to display as rows instead so as to not confuse the user
-        displayContent("trophies", "all", games);
-        //TODO: attach content handlers to games that will open the relevant trophies list based off its id (getJsonFile("trophies/CUSA-12345"))
-        //Attach event handlers to library elements
-        attachMainContentHandlers("trophies");
-        //Initialise checked radio button to selected
-        toggleRadioSelected("trophies-columns");
-    }
+    //Display games to as trophy list
+        //TODO: REFACTOR THIS TO DISPLAY MORE SIMILARLY TO FOLDERS? (i.e. rows of columns)
+    displayContent("trophies", "all", games);
+    //TODO: attach content handlers to games that will open the relevant trophies list based off its id (getJsonFile("trophies/CUSA-12345"))
+    //Attach event handlers to library elements
+    attachMainContentHandlers("trophies");
+    //Initialise checked radio button to selected
+    toggleRadioSelected("trophies-columns");
 }
 
-//TODO Refer to below when implementing the trophies screen, to add the trophy level to the top info bar
-    //-> https://www.google.com/search?q=how+is+playstation+trophy+levels+calculated&oq=how+is+playstation+trophy+levels+calculated&aqs=chrome..69i57j0.7637j0j4&sourceid=chrome&ie=UTF-8
+//TODO Refer to above methods when implementing the trophies screen, to add the trophy level to the top info bar
