@@ -395,7 +395,7 @@ function contentNavHandler(e) {
 }
 
 //Display content within main UI element
-function displayContent(contentType, category, data) {
+async function displayContent(contentType, category, data) {
     //Display number of items in each category
     displayContentCategoryCount(contentType);
     //Display items related to selected category
@@ -415,7 +415,13 @@ function displayContent(contentType, category, data) {
             //Hide sorting options
             mainContent.classList.remove("with-sorting");
             break;
-        //TODO: may need to add one for "trophies" so that closeFolder method still works
+        case "trophies-overview":
+            //Create trophy overview items to display in list
+            await displayTrophyOverview();
+            //Display sorting options and perform initial sort
+            mainContent.classList.add("with-sorting");
+            sortItems(contentType);
+            break;
         default:
             //Create content items to display in list
             createContentItems(contentType, category, data);
@@ -1023,13 +1029,12 @@ function getSocialOptions(item) {
     }
 }
 
-//TODO: need to do initial sorting of items
 //TODO: after selecting game, display trophies in standard order (grid of images, with details in slideout)
     //-> would need method to return to standard order (i.e. the order Sony displays them, maybe a sorting option called Sony/Developer recommended or something?)
     //-> sorting options to hide/display hidden trophies and to sort by rarity, trophy level and date earned?
 function initialiseTrophies() {
     //Display games to as trophy list
-    displayTrophyOverview();
+    displayContent("trophies", "trophies-overview", games);
     //TODO: attach content handlers to games that will open the relevant trophies list based off its id (getJsonFile("trophies/CUSA-12345"))
     attachMainContentHandlers("trophies");
     //Initialise checked radio button to selected
@@ -1039,8 +1044,6 @@ function initialiseTrophies() {
 //Display overview of trophies for each game
 async function displayTrophyOverview() {
     //Display sorting options for trophies content
-    var trophyContent = document.getElementById("trophies-content");
-    trophyContent.classList.add("with-sorting");
     var trophyList = document.getElementById("trophies-list");
     var numColumns = document.querySelector("input[name=trophies-columns]:checked").value;
     //For each game in data
@@ -1050,8 +1053,8 @@ async function displayTrophyOverview() {
         let classes = ["trophies-row", "neu-button", numColumns];
         liItem.classList.add(...classes);
         liItem.setAttribute("name", item.name);
-        //Set DOM item dataset attributes based on data item properties
-        setContentItemDataset(liItem, item)
+        //Set DOM item dataset attributes based on game data properties
+        setContentItemDataset(liItem, item);
         //Create image to display within content item
         let liItemImg = document.createElement("img");
         liItemImg.src = item.src;
@@ -1067,6 +1070,9 @@ async function displayTrophyOverview() {
         let liTrophyContainer = await createTrophyContainer(item.id);
         liInfoContainer.appendChild(liTrophyContainer);
         liItem.appendChild(liInfoContainer);
+        //Pass up dataset attribute to correct element
+        liItem.dataset.trophyProgress = liTrophyContainer.dataset.trophyProgress;
+        liTrophyContainer.removeAttribute("data-trophy-progress");
         //Append item to list
         trophyList.appendChild(liItem);
     }
@@ -1083,12 +1089,13 @@ async function createTrophyContainer(dataId) {
         trophyContainer.classList.add("trophies-info-container", "flex-container");
         //Create text element to display numerical progression
         var trophyPercent = document.createElement("p");
-        trophyPercent.innerText = Math.round((trophyCounts.earned / trophyCounts.total) * 100)  + "%";
+        var percentProgress = Math.round((trophyCounts.earned / trophyCounts.total) * 100)
+        trophyPercent.innerText =  percentProgress + "%";
         trophyContainer.appendChild(trophyPercent);
         //Create progress element to display total completion progress
         var trophyProgress = document.createElement("progress");
         trophyProgress.max = 100;
-        trophyProgress.value = (trophyCounts.earned / trophyCounts.total) * 100;
+        trophyProgress.value = percentProgress;
         trophyContainer.appendChild(trophyProgress);
         //Create trophy stat wrapper element
         var trophyStats = document.createElement("div");
@@ -1099,6 +1106,8 @@ async function createTrophyContainer(dataId) {
             trophyStats.appendChild(trophyStat);
         }
         trophyContainer.appendChild(trophyStats);
+        //Apply dataset attribute to pass up to container element (prevents secondary trophy data call)
+        trophyContainer.dataset.trophyProgress = percentProgress;
         //Return trophy container element
         return trophyContainer;
     }
@@ -1108,14 +1117,14 @@ async function createTrophyContainer(dataId) {
 function createTrophyStat(trophyRank, trophyCount) {
     //Create trophy stat element
     var trophyStats = document.createElement("div");
-    trophyStats.classList.add("trophies-stat", "flex-container");
+    trophyStats.classList.add("trophies-stat", "flex-container", trophyRank);
     //Create trophy text element
     var trophyText = document.createElement("p");
     trophyText.innerText = trophyCount;
     trophyStats.appendChild(trophyText);
     //Create trophy image element
     var trophyImg = document.createElement("img");
-    trophyImg.src = `assets/Icons/${trophyRank}Trophy.png`;
+    trophyImg.src = `assets/Icons/Trophy${trophyRank[0].toUpperCase() + trophyRank.substring(1)}.png`;
     trophyImg.alt = trophyRank;
     trophyStats.appendChild(trophyImg);
     //Return trophy stat element
@@ -1148,10 +1157,10 @@ function getTrophyCounts(trophies) {
     //Return object containing calculated data
     var count = {
         "ranks": {
-            "Platinum": plat,
-            "Gold": gold,
-            "Silver": silv,
-            "Bronze": brnz
+            "platinum": plat,
+            "gold": gold,
+            "silver": silv,
+            "bronze": brnz
         },
         "earned": plat + gold + silv + brnz,
         "total": trophies.length
