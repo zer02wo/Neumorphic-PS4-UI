@@ -598,23 +598,21 @@ body.dark-mode .content .expanded-options {
     width: 100%;
 }
 .trophies-row h1 {
-    margin-top: 3%;
+    margin-top: 5%;
     font-size: inherit;
-}
-.trophies-row p {
-    font-size: 18px;
 }
 .trophies-row .trophies-info-container {
     flex-direction: column;
     justify-content: space-evenly;
-    height: 50%;
+    height: 60%;
     width: 100%;
 }
 .trophies-info-container > p {
     color: #276CE5;
-    font-size: 16px;
+    font-size: 17px;
 }
-/*TODO: style progress bar and generalise to neu-progress class*/
+/*TODO: style progress bar and generalise to neu-progress class
+    TODO: unsure on whether or not to keep gradient*/
 .trophies-info-container progress {
     width: 85%;
     height: 0.75vh;
@@ -630,23 +628,47 @@ body.dark-mode .content .expanded-options {
 }
 body.dark-mode .trophies-info-container progress::-webkit-progress-bar {
     background-color: #2E3238;
-    box-shadow: inset 12px 12px 13px #24262B, inset -12px -12px 13px #30343A;
+    box-shadow: inset 6px 6px 7px #24262B, inset -6px -6px 7px #30343A;
 }
 .trophies-info-container progress::-webkit-progress-value {
     border-radius: 10px;
-    background-color: #276CE5;
+    background: linear-gradient(25deg, #282B30, #276CE5);
+}
+body.dark-mode .trophies-info-container progress::-webkit-progress-value {
+    background: linear-gradient(25deg, #ECF0F3, #276CE5);
 }
 .trophies-stat-wrapper {
-    justify-content: space-evenly !important;
-    width: 100%;
+    width: 85%;
+    font-size: 18px;
+}
+.trophies-stat-wrapper {
+    width: 95%;
 }
 .trophies-stat {
     justify-content: space-evenly !important;
-    width: 17.5%;
+    width: 20%;
+    /*TODO: figure out extra style with this*/
+    padding: 2px;
+    border-radius: 10px;
+    color: #000;
+    font-size: 16px;
+}
+.trophies-stat.platinum {
+    background:linear-gradient(45deg, #CECDCB, #FFF, #CECDCB);
+    color: #276CE5;
+}
+.trophies-stat.gold {
+    background:linear-gradient(45deg, #BF953F, #FCF6BA, #BF953F);
+}
+.trophies-stat.silver {
+    background:linear-gradient(45deg, #bcc6cc, #EDE, #bcc6cc);
+}
+.trophies-stat.bronze {
+    background:linear-gradient(45deg,#B89868, #D8C6AB, #B89868);
 }
 .trophies-stat img {
-    height: 20px;
-    width: 20px;
+    height: 1em;
+    width: 1em;
 }
 
 .col-3 {
