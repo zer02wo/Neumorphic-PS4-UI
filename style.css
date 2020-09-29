@@ -611,31 +611,10 @@ body.dark-mode .content .expanded-options {
     color: #276CE5;
     font-size: 17px;
 }
-/*TODO: style progress bar and generalise to neu-progress class
-    TODO: unsure on whether or not to keep gradient*/
-.trophies-info-container progress {
+
+.trophies-info-container .neu-progress {
     width: 85%;
     height: 0.75vh;
-}
-.trophies-info-container progress[value] {
-    -webkit-appearance: none;
-    appearance: none;
-}
-.trophies-info-container progress::-webkit-progress-bar {
-    border-radius: 10px;
-    background-color: #ECF0F3;
-    box-shadow: inset 6px 6px 7px #D1D9E6, inset -6px -6px 7px #FFF;
-}
-body.dark-mode .trophies-info-container progress::-webkit-progress-bar {
-    background-color: #2E3238;
-    box-shadow: inset 6px 6px 7px #24262B, inset -6px -6px 7px #30343A;
-}
-.trophies-info-container progress::-webkit-progress-value {
-    border-radius: 10px;
-    background: linear-gradient(25deg, #282B30, #276CE5);
-}
-body.dark-mode .trophies-info-container progress::-webkit-progress-value {
-    background: linear-gradient(25deg, #ECF0F3, #276CE5);
 }
 .trophies-stat-wrapper {
     width: 85%;
@@ -647,7 +626,6 @@ body.dark-mode .trophies-info-container progress::-webkit-progress-value {
 .trophies-stat {
     justify-content: space-evenly !important;
     width: 20%;
-    /*TODO: figure out extra style with this*/
     padding: 2px;
     border-radius: 10px;
     color: #000;
@@ -876,4 +854,26 @@ body.dark-mode .neu-select-arrow::before, body.dark-mode .neu-select-arrow::afte
 .open .neu-select-arrow::after {
     left: 5px;
     transform: rotate(45deg);
+}
+
+/*Generic neumorphic progress bar styling*/
+.neu-progress {
+    -webkit-appearance: none;
+    appearance: none;
+}
+.neu-progress::-webkit-progress-bar {
+    border-radius: 10px;
+    background-color: #ECF0F3;
+    box-shadow: inset 6px 6px 7px #D1D9E6, inset -6px -6px 7px #FFF;
+}
+body.dark-mode .neu-progress::-webkit-progress-bar {
+    background-color: #2E3238;
+    box-shadow: inset 6px 6px 7px #24262B, inset -6px -6px 7px #30343A;
+}
+.neu-progress::-webkit-progress-value {
+    border-radius: 10px;
+    background: linear-gradient(25deg, #282B30, #276CE5);
+}
+body.dark-mode .neu-progress::-webkit-progress-value {
+    background: linear-gradient(25deg, #ECF0F3, #276CE5);
 }

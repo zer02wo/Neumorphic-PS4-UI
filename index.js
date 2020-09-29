@@ -1094,6 +1094,7 @@ async function createTrophyContainer(dataId) {
         trophyContainer.appendChild(trophyPercent);
         //Create progress element to display total completion progress
         var trophyProgress = document.createElement("progress");
+        trophyProgress.classList.add("neu-progress");
         trophyProgress.max = 100;
         trophyProgress.value = percentProgress;
         trophyContainer.appendChild(trophyProgress);
