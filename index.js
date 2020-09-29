@@ -395,7 +395,7 @@ function contentNavHandler(e) {
 }
 
 //Display content within main UI element
-async function displayContent(contentType, category, data) {
+function displayContent(contentType, category, data) {
     //Display number of items in each category
     displayContentCategoryCount(contentType);
     //Display items related to selected category
@@ -417,10 +417,9 @@ async function displayContent(contentType, category, data) {
             break;
         case "trophies-overview":
             //Create trophy overview items to display in list
-            await displayTrophyOverview();
-            //Display sorting options and perform initial sort
+            displayTrophyOverview();
+            //Display sorting options
             mainContent.classList.add("with-sorting");
-            sortItems(contentType);
             break;
         default:
             //Create content items to display in list
@@ -1076,6 +1075,7 @@ async function displayTrophyOverview() {
         //Append item to list
         trophyList.appendChild(liItem);
     }
+    sortItems("trophies");
 }
 
 //Create element containing an overview of trophy data
