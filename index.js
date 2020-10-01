@@ -1056,8 +1056,20 @@ function getSocialOptions(item) {
 function initialiseTrophies() {
     //Display games to as trophy list
     displayContent("trophies", "trophies-overview", games);
+    //Attach handlers to close game specific trophy content
+    var folderClose = document.getElementById("trophies-folder-close");
+    folderClose.addEventListener("click", function(e) {
+        //Hide folder close button
+        e.target.classList.remove("show");
+        //Display trophy overview content
+        displayContent("trophies", "trophies-overview", games);
+    });
+    //Attach handlers to sort trophy list on click
+    attachContentSortHandler("trophies");
+    //Attach handlers to update column display style
+    attachColumnsHandler("trophies");
     //TODO: attach content handlers to games that will open the relevant trophies list based off its id (getJsonFile("trophies/CUSA-12345"))
-    attachMainContentHandlers("trophies");
+        //-> will be similar to contentFolderNavHandler method
     //Initialise checked radio button to selected
     toggleRadioSelected("trophies-columns");
 }
