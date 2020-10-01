@@ -348,14 +348,30 @@ async function getJsonFile(fileName) {
 
 //Attach event handlers to main content elements
 function attachMainContentHandlers(contentType) {
+    attachCategoryHandler(contentType);
+    attachFolderCloseHandler(contentType);
+    attachContentSortHandler(contentType);
+    attachColumnsHandler(contentType);
+}
+
+//Component of main event handlers to navigate between content categories
+function attachCategoryHandler(contentType) {
     //Navigate to category on click
     var contentCategories = document.getElementsByClassName(`${contentType}-category`);
     for (var category of contentCategories) {
         category.addEventListener("click", contentNavHandler);
     }
+}
+
+//Component of main event handlers to close folders
+function attachFolderCloseHandler(contentType) {
     //Return to folder select and hide button on click
     var folderClose = document.getElementById(`${contentType}-folder-close`);
     folderClose.addEventListener("click", closeFolder);
+}
+
+//Component of main event handlers to sort content items
+function attachContentSortHandler(contentType) {
     //Sort items on selecting dropdown value
     var itemsSortMethod = document.querySelectorAll(`#${contentType}-ordering .neu-option`);
     for(var method of itemsSortMethod) {
@@ -364,11 +380,15 @@ function attachMainContentHandlers(contentType) {
     //Change items sort direction on click
     var itemsSortDirection = document.getElementById(`${contentType}-ordering-direction`);
     itemsSortDirection.addEventListener("click", toggleSortDirection);
+}
+
+//Component of main event handlers to toggle column display
+function attachColumnsHandler(contentType) {
     //Toggle number of columns in content list
     var col3 = document.getElementById(`${contentType}-3-columns`);
-    col3.onchange = toggleNumColumns;
+    col3.addEventListener("change", toggleNumColumns);
     var col4 = document.getElementById(`${contentType}-4-columns`);
-    col4.onchange = toggleNumColumns;
+    col4.addEventListener("change", toggleNumColumns);
 }
 
 //Navigation event within main content element
@@ -393,6 +413,8 @@ function contentNavHandler(e) {
     var contentList = document.getElementById(`${contentType}-list`);
     contentList.scrollTo(0, 0);
 }
+
+
 
 //Display content within main UI element
 function displayContent(contentType, category, data) {
