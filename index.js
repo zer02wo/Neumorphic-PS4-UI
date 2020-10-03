@@ -1050,9 +1050,7 @@ function getSocialOptions(item) {
     }
 }
 
-//TODO: after selecting game, display trophies in standard order (grid of images, with details in slideout)
-    //-> would need method to return to standard order (i.e. the order Sony displays them, maybe a sorting option called Sony/Developer recommended or something?)
-    //-> sorting options to hide/display hidden trophies and to sort by rarity, trophy level and date earned?
+//Initialise trophy case elements
 function initialiseTrophies() {
     //Display games to as trophy list
     displayContent("trophies", "trophies-overview", games);
@@ -1068,8 +1066,6 @@ function initialiseTrophies() {
     attachContentSortHandler("trophies");
     //Attach handlers to update column display style
     attachColumnsHandler("trophies");
-    //TODO: attach content handlers to games that will open the relevant trophies list based off its id (getJsonFile("trophies/CUSA-12345"))
-        //-> will be similar to contentFolderNavHandler method
     //Initialise checked radio button to selected
     toggleRadioSelected("trophies-columns");
 }
@@ -1083,7 +1079,7 @@ async function displayTrophyOverview() {
     for(var item of games) {
         //Create trophy row item
         let liItem = document.createElement("li");
-        let classes = ["trophies-row", "neu-button", numColumns];
+        let classes = ["trophies", "neu-button", numColumns];
         liItem.classList.add(...classes);
         liItem.setAttribute("name", item.name);
         //Set DOM item dataset attributes based on game data properties
@@ -1093,26 +1089,28 @@ async function displayTrophyOverview() {
         liItemImg.src = item.src;
         liItemImg.alt = item.name;
         liItem.appendChild(liItemImg);
-        //Create general info container
-        let liInfoContainer = document.createElement("div");
-        liInfoContainer.classList.add("info-container", "flex-container");
+        //Create general info wrapper
+        let liInfoWrapper = document.createElement("div");
+        liInfoWrapper.classList.add("trophies-wrapper", "flex-container");
+        liItem.appendChild(liInfoWrapper);
         let liTitle = document.createElement("h1");
         liTitle.innerText = item.name;
-        liInfoContainer.appendChild(liTitle);
+        liInfoWrapper.appendChild(liTitle);
         //Create trophy container element using id to lookup data
         let liTrophyContainer = await createTrophyContainer(item.id);
-        liInfoContainer.appendChild(liTrophyContainer);
-        liItem.appendChild(liInfoContainer);
+        liInfoWrapper.appendChild(liTrophyContainer);
         //Pass up dataset attribute to correct element
         liItem.dataset.trophyProgress = liTrophyContainer.dataset.trophyProgress;
         liTrophyContainer.removeAttribute("data-trophy-progress");
         //Append item to list
         trophyList.appendChild(liItem);
+        //Attach event handler for trophy navigation
+       liItem.addEventListener("click", displayTrophyList);
     }
     sortItems("trophies");
 }
 
-//Create element containing an overview of trophy data
+//Create element containing overview of trophy data
 async function createTrophyContainer(dataId) {
     var trophyData = await getJsonFile(`trophies/${dataId}`);
     if(trophyData !== undefined && trophyData !== null) {
@@ -1158,15 +1156,22 @@ function createTrophyStat(trophyRank, trophyCount) {
     trophyText.innerText = trophyCount;
     trophyStats.appendChild(trophyText);
     //Create trophy image element
-    var trophyImg = document.createElement("img");
-    trophyImg.src = `assets/Icons/Trophy${trophyRank[0].toUpperCase() + trophyRank.substring(1)}.png`;
-    trophyImg.alt = trophyRank;
+    var trophyImg = createTrophyImg(trophyRank);
     trophyStats.appendChild(trophyImg);
     //Return trophy stat element
     return trophyStats;
 }
 
-//Get number of each trophy rank within a list of trophies
+//Creates image element of specified trophy level
+function createTrophyImg(trophyLevel) {
+    var trophyImg = document.createElement("img");
+    trophyImg.classList.add("trophies-icon");
+    trophyImg.src = `assets/icons/Trophy${trophyLevel[0].toUpperCase() + trophyLevel.substring(1)}.png`;
+    trophyImg.alt = trophyLevel;
+    return trophyImg;
+}
+
+//Get number of each trophy rank within list of trophies
 function getTrophyCounts(trophies) {
     //Initialise values to 0
     var plat = 0, gold = 0, silv = 0, brnz = 0;
@@ -1201,6 +1206,129 @@ function getTrophyCounts(trophies) {
         "total": trophies.length
     };
     return count;
+}
+
+//Display list of trophies for specific game
+async function displayTrophyList() {
+    var target = this;
+    var gameId = target.dataset.id;
+    //Get trophy data from specific game
+    var trophies = await getJsonFile(`trophies/${gameId}`);
+    //Display available trophy data
+    if(trophies.length > 1) {
+        //Clear items from display
+        clearContent("trophies-list");
+        //Display all trophies from specific game
+        createTrophyElements(trophies);
+        //Sort trophies of specific game
+        sortItems("trophies");
+        //Display folder close button
+        var folderClose = document.getElementById("trophies-folder-close");
+        folderClose.classList.add("show");
+    } else {
+        //Prevent showing unavailable trophies data
+        alert("Trophies not yet available.");
+    }
+    //TODO fix the sorting options that are displayed (then reset in custom closeFolder listener)
+        //-> default/developer recommended (i.e. the way they're listed in trophies data), rarity percent, trophy level, date earned
+}
+
+//Create detailed information elements of trophies for specific game's trophy data
+function createTrophyElements(trophies) {
+    var trophyList = document.getElementById("trophies-list");
+    var numColumns = document.querySelector("input[name=trophies-columns]:checked").value;
+    for(var trophy of trophies) {
+        //Create trophy element to display within list
+        var liTrophy = document.createElement("li");
+        var classes = ["trophies", "neu-button", numColumns];
+        liTrophy.classList.add(...classes);
+        liTrophy.setAttribute("name", trophy.name);
+        //Set DOM item dataset attributes based on trophy data properties
+        setContentItemDataset(liTrophy, trophy);
+        //Create image to display within trophy element
+        var liTrophyImg = document.createElement("img");
+        liTrophyImg.src = trophy.src;
+        liTrophyImg.alt = trophy.name;
+        liTrophy.appendChild(liTrophyImg);
+        //Create general trophy wrapper element
+        let liInfoWrapper = document.createElement("div");
+        liInfoWrapper.classList.add("trophies-wrapper", "flex-container");
+        liTrophy.appendChild(liInfoWrapper);
+        //Create header element to display trophy name
+        var liTrophyName = document.createElement("h1");
+        liTrophyName.innerText = trophy.name;
+        liInfoWrapper.appendChild(liTrophyName);
+        //Create info wrapper to display trophy details
+        var liInfoContainer = document.createElement("div");
+        liInfoContainer.classList.add("trophies-info-container", "flex-container");
+        liInfoWrapper.appendChild(liInfoContainer);
+        //Create text element to display trophy description
+        var liTrophyDesc = document.createElement("p");
+        liTrophyDesc.classList.add("trophies-description");
+        liTrophyDesc.innerText = trophy.description;
+        liInfoContainer.appendChild(liTrophyDesc);
+        //Create container to display detailed trophy information
+        var liDetailsContainer = document.createElement("div");
+        liDetailsContainer.classList.add("details-container");
+        liInfoContainer.appendChild(liDetailsContainer);
+        //Create container to display trophy rarity information
+        var liTrophyRarityContainer = document.createElement("div");
+        liTrophyRarityContainer.classList.add("flex-container");
+        liDetailsContainer.appendChild(liTrophyRarityContainer);
+        //Create wrapper to display text elements regarding trophy rarity information
+        var liTrophyRarityTextWrapper = document.createElement("div");
+        liTrophyRarityContainer.appendChild(liTrophyRarityTextWrapper);
+        //Create text element to display rarity level
+        var percentRarity = trophy.properties.percentRarity;
+        var rarityLevel = calculateTrophyRarityLevel(percentRarity);
+        var liTrophyRarityName = document.createElement("p");
+        liTrophyRarityName.innerText = rarityLevel;
+        liTrophyRarityTextWrapper.appendChild(liTrophyRarityName);
+        //Create text element to display rarity value
+        var liTrophyRarityValue = document.createElement("p");
+        liTrophyRarityValue.innerText = percentRarity + "%";
+        liTrophyRarityTextWrapper.appendChild(liTrophyRarityValue);
+        //Create image element to graphically display rarity level
+        var liTrophyRarityImage = document.createElement("img");
+        liTrophyRarityImage.src = `assets/icons/Rarity${rarityLevel}.svg`;
+        liTrophyRarityImage.alt = rarityLevel;
+        liTrophyRarityContainer.appendChild(liTrophyRarityImage);
+        //Create container to display date/time information of when a trophy was earned
+        var liTrophyDTContainer = document.createElement("div");
+        liTrophyDTContainer.classList.add("flex-container");
+        liDetailsContainer.appendChild(liTrophyDTContainer);
+        //Create image element to display trophy level
+        var liTrophyLevel = createTrophyImg(trophy.properties.trophyLevel);
+        liTrophyDTContainer.appendChild(liTrophyLevel);
+        //Create wrapper to display text elements regarding trophy date time information
+        var liTrophyDTTextWrapper = document.createElement("div");
+        liTrophyDTContainer.appendChild(liTrophyDTTextWrapper);
+        //Create text element to display date information
+        var earnedDate = new Date(trophy.properties.dateEarned);
+        var liTrophyDate = document.createElement("p");
+        liTrophyDate.innerText = earnedDate.toLocaleDateString('en-GB');
+        liTrophyDTTextWrapper.appendChild(liTrophyDate);
+        //Create text element to display time information
+        var liTrophyTime = document.createElement("p");
+        liTrophyTime.innerText = earnedDate.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })
+        liTrophyDTTextWrapper.appendChild(liTrophyTime);
+        trophyList.appendChild(liTrophy);
+        //TODO: figure out how to handle hidden trophies (on click of the trophy element?)
+    }
+}
+
+//Calculate rarity of trophy based on percentage of players that obtained it
+function calculateTrophyRarityLevel(percentRarity) {
+    //Rarity levels use Sony's official values with "gameified" names akin to Destiny
+    if(percentRarity >= 50) {
+        return "Common";
+    } else if(percentRarity >= 15) {
+        return "Rare";
+    } else if(percentRarity >= 5) {
+        return "Legendary";
+    } else {
+        return "Exotic";
+    }
 }
 
 //Calculate number of points associated with an array of trophy data
