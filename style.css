@@ -644,7 +644,7 @@ body.dark-mode .content .expanded-options {
     height: 1em;
     width: 1em;
 }
-.trophies .trophies-description {
+.trophies .description-span {
     color: inherit;
     font-size: 16px;
 }
@@ -670,6 +670,49 @@ body.dark-mode .content .expanded-options {
     width: 2em;
 }
 
+/*Hidden trophies styling*/
+.trophies.hidden {
+    background-color: #292D32;
+    color: #FFF;
+    transition: background-color 0s;
+}
+.trophies.hidden:hover {
+    background: linear-gradient(145deg, #2E3238, #32363C);
+}
+body.dark-mode .trophies.hidden {
+    background-color: #E3E6EC;
+    color: #3F4A62;
+}
+body.dark-mode  .trophies.hidden:hover {
+    background: linear-gradient(145deg, #E3E6EC, #FFF);
+}
+.trophies.hidden > img {
+    filter: blur(15px);
+}
+.trophies.hidden .date-time-wrapper {
+    display: none;
+}
+/*Replaces trophy name with pseudo content*/
+.trophies.hidden .name-span h1{
+    display: none;
+}
+.trophies.hidden .name-span::before {
+    content: "Hidden Trophy";
+}
+/*Replaces trophy description with pseudo content*/
+.trophies.hidden .description-span p {
+    display: none;
+}
+.trophies.hidden .description-span::before {
+    content: "Earn this trophy or select to reveal."
+}
+/*Unearned trophies styling*/
+.trophies.unearned > img {
+    filter: opacity(0.25);
+    border: none;
+}
+
+/*Generic content column styling*/
 .col-3 {
     /*Width calculation: 2.5*(3*2)=15, 100-15=85, 85/3=28.33*/
     width: 28.33%;
