@@ -17,7 +17,7 @@
         "id": "BLES-01222-2",
         "description": "Survive the manual override.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1307209192019,
             "trophyLevel": "Bronze",
             "percentRarity": "85.3"
         },
@@ -30,7 +30,7 @@
         "id": "BLES-01222-3",
         "description": "Reunite with GLaDOS.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1307211094563,
             "trophyLevel": "Bronze",
             "percentRarity": "76.8"
         },
@@ -43,7 +43,7 @@
         "id": "BLES-01222-4",
         "description": "Complete the first Thermal Discouragement Beam test.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1307211437804,
             "trophyLevel": "Bronze",
             "percentRarity": "74.7"
         },
@@ -56,7 +56,7 @@
         "id": "BLES-01222-5",
         "description": "Complete the first Hard-Light Surfaces test.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1307214598254,
             "trophyLevel": "Bronze",
             "percentRarity": "63.7"
         },
@@ -68,8 +68,8 @@
         "name": "SaBOTour",
         "id": "BLES-01222-6",
         "description": "Make a break for it.",
-        "properties": {
-            "dateEarned": 0,
+        "properties": { 
+            "dateEarned": 1307217548306,
             "trophyLevel": "Bronze",
             "percentRarity": "55.0"
         },
@@ -82,7 +82,7 @@
         "id": "BLES-01222-7",
         "description": "Press the button!.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1307220046891,
             "trophyLevel": "Bronze",
             "percentRarity": "53.9"
         },
@@ -95,7 +95,7 @@
         "id": "BLES-01222-8",
         "description": "Carry science forward.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1307383211119,
             "trophyLevel": "Bronze",
             "percentRarity": "47.7"
         },
@@ -108,7 +108,7 @@
         "id": "BLES-01222-9",
         "description": "Master the Repulsion Gel.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1307379144286,
             "trophyLevel": "Bronze",
             "percentRarity": "50.3"
         },
@@ -121,7 +121,7 @@
         "id": "BLES-01222-10",
         "description": "Master the Propulsion Gel.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1307386319445,
             "trophyLevel": "Bronze",
             "percentRarity": "45.8"
         },
@@ -134,7 +134,7 @@
         "id": "BLES-01222-11",
         "description": "Complete the first Conversion Gel test.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1307538985963,
             "trophyLevel": "Bronze",
             "percentRarity": "44.3"
         },
@@ -147,7 +147,7 @@
         "id": "BLES-01222-12",
         "description": "Master the Excursion Funnel.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1308238636219,
             "trophyLevel": "Bronze",
             "percentRarity": "39.5"
         },
@@ -160,7 +160,7 @@
         "id": "BLES-01222-13",
         "description": "Do the same test twice.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1307542459357,
             "trophyLevel": "Bronze",
             "percentRarity": "42.3"
         },
@@ -173,7 +173,7 @@
         "id": "BLES-01222-14",
         "description": "This is that part.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1308239830215,
             "trophyLevel": "Bronze",
             "percentRarity": "38.3"
         },
@@ -186,7 +186,7 @@
         "id": "BLES-01222-15",
         "description": "That just happened.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1308242372596,
             "trophyLevel": "Gold",
             "percentRarity": "37.7"
         },
@@ -199,7 +199,7 @@
         "id": "BLES-01222-16",
         "description": "Place a cube on a button without touching the cube.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1310117676044,
             "trophyLevel": "Silver",
             "percentRarity": "27.6"
         },
@@ -212,7 +212,7 @@
         "id": "BLES-01222-17",
         "description": "Complete Test Chamber 10 in 70 seconds.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1310297089031,
             "trophyLevel": "Silver",
             "percentRarity": "4.9"
         },
@@ -238,7 +238,7 @@
         "id": "BLES-01222-19",
         "description": "Break the rules in Test Chamber 07.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1310118361723,
             "trophyLevel": "Bronze",
             "percentRarity": "23.8"
         },
@@ -251,7 +251,7 @@
         "id": "BLES-01222-20",
         "description": "Use an Aerial Faith Plate to launch a turret.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1310286893514,
             "trophyLevel": "Bronze",
             "percentRarity": "10.7"
         },
@@ -277,7 +277,7 @@
         "id": "BLES-01222-22",
         "description": "Take GLaDOS' escape advice.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1307217589664,
             "trophyLevel": "Bronze",
             "percentRarity": "34.7"
         },
@@ -290,7 +290,7 @@
         "id": "BLES-01222-23",
         "description": "Stand in a defective turret detector.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1310298647313,
             "trophyLevel": "Bronze",
             "percentRarity": "44.8"
         },
@@ -303,7 +303,7 @@
         "id": "BLES-01222-24",
         "description": "Save a turret from redemption.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1307195610489,
             "trophyLevel": "Bronze",
             "percentRarity": "31.6"
         },
@@ -355,7 +355,7 @@
         "id": "BLES-01222-28",
         "description": "Find a hidden portrait.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1310307430703,
             "trophyLevel": "Bronze",
             "percentRarity": "13.7"
         },
@@ -394,7 +394,7 @@
         "id": "BLES-01222-31",
         "description": "Celebrate your cooperative calibration success.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1306873380444,
             "trophyLevel": "Bronze",
             "percentRarity": "60.0"
         },
@@ -407,7 +407,7 @@
         "id": "BLES-01222-32",
         "description": "Complete all test chambers in the Team Building co-op course.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1306875312970,
             "trophyLevel": "Bronze",
             "percentRarity": "47.5"
         },
@@ -420,7 +420,7 @@
         "id": "BLES-01222-33",
         "description": "Complete all test chambers in the Mass and Velocity co-op course.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1306879891295,
             "trophyLevel": "Bronze",
             "percentRarity": "32.2"
         },
@@ -433,7 +433,7 @@
         "id": "BLES-01222-34",
         "description": "Complete all test chambers in the Hard-Light Surfaces co-op course.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1310400293021,
             "trophyLevel": "Bronze",
             "percentRarity": "21.0"
         },
@@ -485,7 +485,7 @@
         "id": "BLES-01222-38",
         "description": "Perform all 8 gestures of your own volition in co-op.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1310397159641,
             "trophyLevel": "Bronze",
             "percentRarity": "18.0"
         },
@@ -563,7 +563,7 @@
         "id": "BLES-01222-44",
         "description": "Perform 2 aerial gestures before touching the ground in co-op.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1310322536835,
             "trophyLevel": "Bronze",
             "percentRarity": "16.2"
         },
@@ -641,7 +641,7 @@
         "id": "BLES-01222-50",
         "description": "Win 3 co-op games of rock-paper-scissors in a row.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1310322757914,
             "trophyLevel": "Silver",
             "percentRarity": "10.6"
         },

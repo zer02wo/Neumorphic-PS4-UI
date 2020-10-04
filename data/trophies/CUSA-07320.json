@@ -17,7 +17,7 @@
         "id": "CUSA-07320-2",
         "description": "Performed a stealth kill on 10 machines.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1514395770614,
             "trophyLevel": "Bronze",
             "percentRarity": "61.9"
         },
@@ -43,7 +43,7 @@
         "id": "CUSA-07320-4",
         "description": "Detached 10 components from machines during combat.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1514041200101,
             "trophyLevel": "Bronze",
             "percentRarity": "71.1"
         },
@@ -121,7 +121,7 @@
         "id": "CUSA-07320-10",
         "description": "Used a Weapon Coil or Outfit Weave on a modifiable weapon or outfit.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1513962228745,
             "trophyLevel": "Bronze",
             "percentRarity": "75.7"
         },
@@ -147,7 +147,7 @@
         "id": "CUSA-07320-12",
         "description": "Killed at least one of every type of Reconnaissance machine.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1514472377384,
             "trophyLevel": "Bronze",
             "percentRarity": "51.2"
         },
@@ -186,7 +186,7 @@
         "id": "CUSA-07320-15",
         "description": "Reached player level 10.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1514053700594,
             "trophyLevel": "Bronze",
             "percentRarity": "70.0"
         },
@@ -251,7 +251,7 @@
         "id": "CUSA-07320-20",
         "description": "Scaled a Tallneck and accessed its information.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1514058774636,
             "trophyLevel": "Bronze",
             "percentRarity": "62.3"
         },
@@ -264,7 +264,7 @@
         "id": "CUSA-07320-21",
         "description": "Took back a settlement from a bandit clan.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1516533741824,
             "trophyLevel": "Bronze",
             "percentRarity": "57.4"
         },
@@ -316,7 +316,7 @@
         "id": "CUSA-07320-25",
         "description": "Killed all the corrupted machines in a Corrupted Zone.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1514130911734,
             "trophyLevel": "Bronze",
             "percentRarity": "66.0"
         },
@@ -433,7 +433,7 @@
         "id": "CUSA-07320-34",
         "description": "Discovered a strange metal flower.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1514043239506,
             "trophyLevel": "Bronze",
             "percentRarity": "57.8"
         },
@@ -459,7 +459,7 @@
         "id": "CUSA-07320-36",
         "description": "Found an ancient vessel once used by the Old Ones.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1514060369841,
             "trophyLevel": "Bronze",
             "percentRarity": "64.3"
         },
@@ -537,7 +537,7 @@
         "id": "CUSA-07320-42",
         "description": "Learned to hunt and fight alongside Rost.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1513960820729,
             "trophyLevel": "Bronze",
             "percentRarity": "91.9"
         },
@@ -550,7 +550,7 @@
         "id": "CUSA-07320-43",
         "description": "Defeated the Sawtooth that threatened the Nora.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1514047976981,
             "trophyLevel": "Bronze",
             "percentRarity": "81.3"
         },
@@ -563,7 +563,7 @@
         "id": "CUSA-07320-44",
         "description": "Overcame adversity and placed first in the Proving.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1514053370367,
             "trophyLevel": "Bronze",
             "percentRarity": "78.2"
         },
@@ -576,7 +576,7 @@
         "id": "CUSA-07320-45",
         "description": "Destroyed the corruption inside the Nora valley.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1514132184143,
             "trophyLevel": "Bronze",
             "percentRarity": "61.6"
         },
@@ -680,7 +680,7 @@
         "id": "CUSA-07320-53",
         "description": "Found the Nora War-Chief and defeated the killers in the Ring of Metal.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1514120336588,
             "trophyLevel": "Bronze",
             "percentRarity": "57.5"
         },

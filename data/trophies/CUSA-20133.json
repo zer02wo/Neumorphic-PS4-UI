@@ -56,7 +56,7 @@
         "id": "CUSA-20133-5",
         "description": "Pick 50 mushrooms.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1597887302503,
             "trophyLevel": "Bronze",
             "percentRarity": "60.6"
         },
@@ -69,7 +69,7 @@
         "id": "CUSA-20133-6",
         "description": "Kill an enemy with bear trap.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1597775488837,
             "trophyLevel": "Bronze",
             "percentRarity": "52.7"
         },
@@ -95,7 +95,7 @@
         "id": "CUSA-20133-8",
         "description": "Waste your life away with Baghead.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1598002786866,
             "trophyLevel": "Silver",
             "percentRarity": "29.7"
         },
@@ -121,7 +121,7 @@
         "id": "CUSA-20133-10",
         "description": "Find your first Shell.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1597773659152,
             "trophyLevel": "Bronze",
             "percentRarity": "99.9"
         },
@@ -134,7 +134,7 @@
         "id": "CUSA-20133-11",
         "description": "Kill an enemy by kicking them off a platform.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1598015892793,
             "trophyLevel": "Bronze",
             "percentRarity": "21.3"
         },
@@ -147,7 +147,7 @@
         "id": "CUSA-20133-12",
         "description": "Bring a gland to Dark Father.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1597787141670,
             "trophyLevel": "Bronze",
             "percentRarity": "45.7"
         },
@@ -160,7 +160,7 @@
         "id": "CUSA-20133-13",
         "description": "Jam with a brigand.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1597776679743,
             "trophyLevel": "Bronze",
             "percentRarity": "25.7"
         },
@@ -186,7 +186,7 @@
         "id": "CUSA-20133-15",
         "description": "Parry over 100 attacks.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1597837761002,
             "trophyLevel": "Silver",
             "percentRarity": "13.1"
         },
@@ -199,7 +199,7 @@
         "id": "CUSA-20133-16",
         "description": "Unlock all of the Shells in the game.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1597887817511,
             "trophyLevel": "Silver",
             "percentRarity": "50.0"
         },
@@ -212,7 +212,7 @@
         "id": "CUSA-20133-17",
         "description": "Defeat all different versions of Grisha in the game.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1598015526659,
             "trophyLevel": "Silver",
             "percentRarity": "32.3"
         },
@@ -225,7 +225,7 @@
         "id": "CUSA-20133-18",
         "description": "Complete Mortal Shell.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1598003576203,
             "trophyLevel": "Gold",
             "percentRarity": "28.5"
         },
@@ -238,7 +238,7 @@
         "id": "CUSA-20133-19",
         "description": "Defeat Imrod, the Unrepentant.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1598001174136,
             "trophyLevel": "Silver",
             "percentRarity": "43.8"
         },
@@ -251,7 +251,7 @@
         "id": "CUSA-20133-20",
         "description": "Defeat Tarsus, the First Martyr.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1597786634197,
             "trophyLevel": "Silver",
             "percentRarity": "42.6"
         },
@@ -264,7 +264,7 @@
         "id": "CUSA-20133-21",
         "description": "Defeat Crucix, the Twiceborn.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1597998879204,
             "trophyLevel": "Silver",
             "percentRarity": "36.2"
         },
@@ -277,7 +277,7 @@
         "id": "CUSA-20133-22",
         "description": "Defeat The Unchained.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1598003529558,
             "trophyLevel": "Silver",
             "percentRarity": "28.5"
         },
@@ -329,7 +329,7 @@
         "id": "CUSA-20133-26",
         "description": "Pet Vlas's Cat.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1597774126715,
             "trophyLevel": "Bronze",
             "percentRarity": "64.4"
         },

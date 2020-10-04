@@ -17,7 +17,7 @@
         "id": "CUSA-13323-2",
         "description": "Recover the katana of clan Sakai.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1594899877747,
             "trophyLevel": "Bronze",
             "percentRarity": "98.4"
         },
@@ -30,7 +30,7 @@
         "id": "CUSA-13323-3",
         "description": "Break your code to help a new friend.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1594992595836,
             "trophyLevel": "Bronze",
             "percentRarity": "93.1"
         },
@@ -43,7 +43,7 @@
         "id": "CUSA-13323-4",
         "description": "Recruit the Straw Hat ronin.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1595008080305,
             "trophyLevel": "Bronze",
             "percentRarity": "79.9"
         },
@@ -56,7 +56,7 @@
         "id": "CUSA-13323-5",
         "description": "Rescue Taka from Mongol captivity.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1594987872744,
             "trophyLevel": "Bronze",
             "percentRarity": "82.0"
         },
@@ -69,7 +69,7 @@
         "id": "CUSA-13323-6",
         "description": "Free Lord Shimura from the Khan's clutches.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1595022386541,
             "trophyLevel": "Bronze",
             "percentRarity": "74.3"
         },
@@ -82,7 +82,7 @@
         "id": "CUSA-13323-7",
         "description": "Rally the peasants of Yarikawa.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1595423777119,
             "trophyLevel": "Bronze",
             "percentRarity": "58.8"
         },
@@ -95,7 +95,7 @@
         "id": "CUSA-13323-8",
         "description": "Recover your father's armor.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1595523052470,
             "trophyLevel": "Bronze",
             "percentRarity": "61.6"
         },
@@ -108,7 +108,7 @@
         "id": "CUSA-13323-9",
         "description": "Eradicate the traitors in the name of a fallen friend.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1595491044138,
             "trophyLevel": "Bronze",
             "percentRarity": "54.3"
         },
@@ -121,7 +121,7 @@
         "id": "CUSA-13323-10",
         "description": "Embrace your new identity.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1595524575619,
             "trophyLevel": "Bronze",
             "percentRarity": "53.1"
         },
@@ -134,7 +134,7 @@
         "id": "CUSA-13323-11",
         "description": "Reunite with your allies in the frozen north.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1595540302407,
             "trophyLevel": "Bronze",
             "percentRarity": "49.9"
         },
@@ -147,7 +147,7 @@
         "id": "CUSA-13323-12",
         "description": "Confront the Khan.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1595724818744,
             "trophyLevel": "Bronze",
             "percentRarity": "45.1"
         },
@@ -160,7 +160,7 @@
         "id": "CUSA-13323-13",
         "description": "Leave the past behind and accept the burden of your new mantle.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1595724818313,
             "trophyLevel": "Gold",
             "percentRarity": "44.3"
         },
@@ -173,7 +173,7 @@
         "id": "CUSA-13323-14",
         "description": "Complete all of Norio's Tales.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1595553929020,
             "trophyLevel": "Silver",
             "percentRarity": "34.0"
         },
@@ -186,7 +186,7 @@
         "id": "CUSA-13323-15",
         "description": "Complete all of Masako's Tales.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1595638512345,
             "trophyLevel": "Silver",
             "percentRarity": "37.5"
         },
@@ -199,7 +199,7 @@
         "id": "CUSA-13323-16",
         "description": "Complete all of Ishikawa's Tales.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1595665330157,
             "trophyLevel": "Silver",
             "percentRarity": "37.7"
         },
@@ -212,7 +212,7 @@
         "id": "CUSA-13323-17",
         "description": "Complete all of Yuna's Tales.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1595369708973,
             "trophyLevel": "Silver",
             "percentRarity": "45.6"
         },
@@ -225,7 +225,7 @@
         "id": "CUSA-13323-18",
         "description": "Complete all of the Mythic Tales.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1595531372376,
             "trophyLevel": "Silver",
             "percentRarity": "39.8"
         },
@@ -238,7 +238,7 @@
         "id": "CUSA-13323-19",
         "description": "Complete all Tales of Tsushima.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1595665330047,
             "trophyLevel": "Gold",
             "percentRarity": "20.8"
         },
@@ -251,7 +251,7 @@
         "id": "CUSA-13323-20",
         "description": "Defeat 20 enemies with a counterattack after a Perfect Parry.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1595279996203,
             "trophyLevel": "Bronze",
             "percentRarity": "55.8"
         },
@@ -264,7 +264,7 @@
         "id": "CUSA-13323-21",
         "description": "Shoot a Terrified enemy with an arrow while they are fleeing.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1595291934477,
             "trophyLevel": "Bronze",
             "percentRarity": "55.9"
         },
@@ -277,7 +277,7 @@
         "id": "CUSA-13323-22",
         "description": "Defeat the maximum amount of enemies within a single Standoff.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1595547481346,
             "trophyLevel": "Bronze",
             "percentRarity": "30.7"
         },
@@ -290,7 +290,7 @@
         "id": "CUSA-13323-23",
         "description": "Successfully Stagger enemies 50 times.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1594985342566,
             "trophyLevel": "Bronze",
             "percentRarity": "86.2"
         },
@@ -303,7 +303,7 @@
         "id": "CUSA-13323-24",
         "description": "Successfully complete every duel.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1595640176231,
             "trophyLevel": "Bronze",
             "percentRarity": "29.5"
         },
@@ -316,7 +316,7 @@
         "id": "CUSA-13323-25",
         "description": "Kill an enemy with fall damage by knocking them off a ledge.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1595337557682,
             "trophyLevel": "Silver",
             "percentRarity": "37.6"
         },
@@ -329,7 +329,7 @@
         "id": "CUSA-13323-26",
         "description": "Kill 20 enemies with Ghost Stance strikes.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1595551003026,
             "trophyLevel": "Bronze",
             "percentRarity": "51.4"
         },
@@ -342,7 +342,7 @@
         "id": "CUSA-13323-27",
         "description": "Build your Legend to earn the title Ghost of Tsushima.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1595534413737,
             "trophyLevel": "Bronze",
             "percentRarity": "34.0"
         },
@@ -355,7 +355,7 @@
         "id": "CUSA-13323-28",
         "description": "Learn the Stone, Water, Wind, and Moon combat stances.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1595199249533,
             "trophyLevel": "Bronze",
             "percentRarity": "72.1"
         },
@@ -368,7 +368,7 @@
         "id": "CUSA-13323-29",
         "description": "Acquire all the throwable Ghost Weapon techniques.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1595316007740,
             "trophyLevel": "Bronze",
             "percentRarity": "51.3"
         },
@@ -381,7 +381,7 @@
         "id": "CUSA-13323-30",
         "description": "Fully upgrade your sword.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1595380896502,
             "trophyLevel": "Bronze",
             "percentRarity": "42.6"
         },
@@ -394,7 +394,7 @@
         "id": "CUSA-13323-31",
         "description": "Equip a charm in all 6 slots.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1595203767672,
             "trophyLevel": "Bronze",
             "percentRarity": "53.6"
         },
@@ -407,7 +407,7 @@
         "id": "CUSA-13323-32",
         "description": "Collect 10 gifts.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1595332177106,
             "trophyLevel": "Bronze",
             "percentRarity": "63.8"
         },
@@ -420,7 +420,7 @@
         "id": "CUSA-13323-33",
         "description": "Acquire 30 pieces of Vanity Gear.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1595122840376,
             "trophyLevel": "Bronze",
             "percentRarity": "66.2"
         },
@@ -433,7 +433,7 @@
         "id": "CUSA-13323-34",
         "description": "Rekindle all the lighthouses of Tsushima.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1595633449167,
             "trophyLevel": "Bronze",
             "percentRarity": "21.6"
         },
@@ -446,7 +446,7 @@
         "id": "CUSA-13323-35",
         "description": "Discover Umugi Cove.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1595114865361,
             "trophyLevel": "Bronze",
             "percentRarity": "62.0"
         },
@@ -459,7 +459,7 @@
         "id": "CUSA-13323-36",
         "description": "Find and honor all of the Shinto Shrines on Tsushima.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1595661286542,
             "trophyLevel": "Bronze",
             "percentRarity": "22.1"
         },
@@ -485,7 +485,7 @@
         "id": "CUSA-13323-38",
         "description": "Discover a Pillar of Honor and collect its Sword Kit.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1594948271911,
             "trophyLevel": "Bronze",
             "percentRarity": "79.5"
         },
@@ -498,7 +498,7 @@
         "id": "CUSA-13323-39",
         "description": "Purchase an item from the Black and White Dye Merchants.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1595548815362,
             "trophyLevel": "Bronze",
             "percentRarity": "33.1"
         },
@@ -537,7 +537,7 @@
         "id": "CUSA-13323-42",
         "description": "Personalize a scene in Photo Mode.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1594982305939,
             "trophyLevel": "Bronze",
             "percentRarity": "82.2"
         },
@@ -550,7 +550,7 @@
         "id": "CUSA-13323-43",
         "description": "Collect 20 Records.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1595362390206,
             "trophyLevel": "Bronze",
             "percentRarity": "24.4"
         },
@@ -563,7 +563,7 @@
         "id": "CUSA-13323-44",
         "description": "Collect 20 Mongol artifacts.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1595380519320,
             "trophyLevel": "Bronze",
             "percentRarity": "40.9"
         },
@@ -589,7 +589,7 @@
         "id": "CUSA-13323-46",
         "description": "Liberate 12 occupied areas in Izuhara.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1595274430124,
             "trophyLevel": "Bronze",
             "percentRarity": "69.2"
         },
@@ -602,7 +602,7 @@
         "id": "CUSA-13323-47",
         "description": "Liberate all occupied areas in Izuhara.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1595542097411,
             "trophyLevel": "Bronze",
             "percentRarity": "48.9"
         },
@@ -615,7 +615,7 @@
         "id": "CUSA-13323-48",
         "description": "Liberate 8 occupied areas in Toyotama.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1595364635847,
             "trophyLevel": "Bronze",
             "percentRarity": "52.7"
         },
@@ -628,7 +628,7 @@
         "id": "CUSA-13323-49",
         "description": "Liberate all occupied areas in Toyotama.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1595524402546,
             "trophyLevel": "Bronze",
             "percentRarity": "36.9"
         },
@@ -641,7 +641,7 @@
         "id": "CUSA-13323-50",
         "description": "Liberate 7 occupied areas in Kamiagata.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1595615696766,
             "trophyLevel": "Bronze",
             "percentRarity": "38.3"
         },
@@ -654,7 +654,7 @@
         "id": "CUSA-13323-51",
         "description": "Liberate all occupied areas in Kamiagata.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1595660517828,
             "trophyLevel": "Bronze",
             "percentRarity": "30.3"
         },
@@ -667,7 +667,7 @@
         "id": "CUSA-13323-52",
         "description": "Liberate the entirety of Tsushima Island.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1595664119218,
             "trophyLevel": "Silver",
             "percentRarity": "30.0"
         },

@@ -17,7 +17,7 @@
         "id": "CUSA-08025-2",
         "description": "Reach level 2.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1568386204132,
             "trophyLevel": "Bronze",
             "percentRarity": "94.1"
         },
@@ -30,7 +30,7 @@
         "id": "CUSA-08025-3",
         "description": "Reach level 10.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1568396216310,
             "trophyLevel": "Bronze",
             "percentRarity": "74.7"
         },
@@ -43,7 +43,7 @@
         "id": "CUSA-08025-4",
         "description": "Reach level 25.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1568468155709,
             "trophyLevel": "Silver",
             "percentRarity": "52.1"
         },
@@ -56,7 +56,7 @@
         "id": "CUSA-08025-5",
         "description": "Reach level 50.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1568630822865,
             "trophyLevel": "Gold",
             "percentRarity": "28.7"
         },
@@ -69,7 +69,7 @@
         "id": "CUSA-08025-6",
         "description": "Unlock 10 Character Heads or Skins.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1568725928405,
             "trophyLevel": "Bronze",
             "percentRarity": "48.4"
         },
@@ -82,7 +82,7 @@
         "id": "CUSA-08025-7",
         "description": "Unlock 10 Vehicle Parts via hijacking.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1568646763538,
             "trophyLevel": "Bronze",
             "percentRarity": "36.8"
         },
@@ -95,7 +95,7 @@
         "id": "CUSA-08025-8",
         "description": "Tip Moxxi.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1568659698719,
             "trophyLevel": "Bronze",
             "percentRarity": "36.5"
         },
@@ -108,7 +108,7 @@
         "id": "CUSA-08025-9",
         "description": "Win a duel.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1568494902348,
             "trophyLevel": "Bronze",
             "percentRarity": "31.8"
         },
@@ -121,7 +121,7 @@
         "id": "CUSA-08025-10",
         "description": "Revive another player.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1568401744527,
             "trophyLevel": "Bronze",
             "percentRarity": "53.3"
         },
@@ -134,7 +134,7 @@
         "id": "CUSA-08025-11",
         "description": "Send an item to a friend.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1568825762461,
             "trophyLevel": "Bronze",
             "percentRarity": "14.5"
         },
@@ -147,7 +147,7 @@
         "id": "CUSA-08025-12",
         "description": "Win a live grenade at a Slot Machine.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1568818985173,
             "trophyLevel": "Bronze",
             "percentRarity": "47.9"
         },
@@ -160,7 +160,7 @@
         "id": "CUSA-08025-13",
         "description": "Get a perfect score at the Firing Range on any difficulty.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1568825698970,
             "trophyLevel": "Bronze",
             "percentRarity": "4.8"
         },
@@ -173,7 +173,7 @@
         "id": "CUSA-08025-14",
         "description": "Buy 20 cosmetic items from Crazy Earl.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1568724118341,
             "trophyLevel": "Bronze",
             "percentRarity": "13.5"
         },
@@ -199,7 +199,7 @@
         "id": "CUSA-08025-16",
         "description": "Complete all the Circles of Slaughter.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1569435223037,
             "trophyLevel": "Bronze",
             "percentRarity": "5.3"
         },
@@ -251,7 +251,7 @@
         "id": "CUSA-08025-20",
         "description": "Discover all named locations on Nekrotafeyo.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1568839048360,
             "trophyLevel": "Bronze",
             "percentRarity": "14.4"
         },
@@ -277,7 +277,7 @@
         "id": "CUSA-08025-22",
         "description": "Complete 20 Side Missions.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1568669498205,
             "trophyLevel": "Bronze",
             "percentRarity": "40.5"
         },
@@ -316,7 +316,7 @@
         "id": "CUSA-08025-25",
         "description": "Defeat all of Hammerlock's Legendary Hunts.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1568896329174,
             "trophyLevel": "Bronze",
             "percentRarity": "10.8"
         },
@@ -329,7 +329,7 @@
         "id": "CUSA-08025-26",
         "description": "Defeat all of Zer0's Targets of Opportunity.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1568909399009,
             "trophyLevel": "Bronze",
             "percentRarity": "11.7"
         },
@@ -342,7 +342,7 @@
         "id": "CUSA-08025-27",
         "description": "Kill an enemy with an exploding barrel.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1568392549842,
             "trophyLevel": "Bronze",
             "percentRarity": "84.0"
         },
@@ -355,7 +355,7 @@
         "id": "CUSA-08025-28",
         "description": "Kill an enemy, knifing them with a gun blade.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1568387674598,
             "trophyLevel": "Bronze",
             "percentRarity": "77.8"
         },
@@ -381,7 +381,7 @@
         "id": "CUSA-08025-30",
         "description": "Equip purple-rarity gear or better in every slot.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1568476590313,
             "trophyLevel": "Silver",
             "percentRarity": "34.4"
         },
@@ -407,7 +407,7 @@
         "id": "CUSA-08025-32",
         "description": "Complete mission \"Children of the Vault\".",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1568386548592,
             "trophyLevel": "Bronze",
             "percentRarity": "90.4"
         },
@@ -420,7 +420,7 @@
         "id": "CUSA-08025-33",
         "description": "Complete mission \"Taking Flight\".",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1568396208266,
             "trophyLevel": "Bronze",
             "percentRarity": "74.6"
         },
@@ -433,7 +433,7 @@
         "id": "CUSA-08025-34",
         "description": "Complete mission \"Hostile Takeover\".",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1568403216405,
             "trophyLevel": "Bronze",
             "percentRarity": "67.5"
         },
@@ -446,7 +446,7 @@
         "id": "CUSA-08025-35",
         "description": "Complete mission \"Atlas, At Last\".",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1568497140714,
             "trophyLevel": "Bronze",
             "percentRarity": "56.8"
         },
@@ -459,7 +459,7 @@
         "id": "CUSA-08025-36",
         "description": "Complete mission \"Beneath the Meridian\".",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1568457376838,
             "trophyLevel": "Bronze",
             "percentRarity": "54.9"
         },
@@ -472,7 +472,7 @@
         "id": "CUSA-08025-37",
         "description": "Complete mission \"Lair of the Harpy\".",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1568465116359,
             "trophyLevel": "Bronze",
             "percentRarity": "50.9"
         },
@@ -485,7 +485,7 @@
         "id": "CUSA-08025-38",
         "description": "Complete mission \"Cold as the Grave\".",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1568476750016,
             "trophyLevel": "Bronze",
             "percentRarity": "45.6"
         },
@@ -498,7 +498,7 @@
         "id": "CUSA-08025-39",
         "description": "Complete mission \"Blood Drive\".",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1568481225812,
             "trophyLevel": "Bronze",
             "percentRarity": "43.9"
         },
@@ -511,7 +511,7 @@
         "id": "CUSA-08025-40",
         "description": "Complete mission \"The Great Vault\".",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1568487521743,
             "trophyLevel": "Bronze",
             "percentRarity": "41.9"
         },
@@ -524,7 +524,7 @@
         "id": "CUSA-08025-41",
         "description": "Complete mission \"In the Shadow of Starlight\".",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1568493216552,
             "trophyLevel": "Bronze",
             "percentRarity": "40.3"
         },
@@ -537,7 +537,7 @@
         "id": "CUSA-08025-42",
         "description": "Complete mission \"Divine Retribution\".",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1568494479639,
             "trophyLevel": "Gold",
             "percentRarity": "39.8"
         },
@@ -550,7 +550,7 @@
         "id": "CUSA-08025-43",
         "description": "Down yourself by grenade or explosion.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1568409531503,
             "trophyLevel": "Bronze",
             "percentRarity": "66.2"
         },
@@ -563,7 +563,7 @@
         "id": "CUSA-08025-44",
         "description": "Use a Golden Key.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1568469790739,
             "trophyLevel": "Bronze",
             "percentRarity": "32.2"
         },
@@ -576,7 +576,7 @@
         "id": "CUSA-08025-45",
         "description": "Obtain all Vault Rewards.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1568490685544,
             "trophyLevel": "Silver",
             "percentRarity": "40.3"
         },

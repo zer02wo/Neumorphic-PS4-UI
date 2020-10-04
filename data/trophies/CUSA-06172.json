@@ -4,7 +4,7 @@
         "id": "CUSA-06172-1",
         "description": "Obtain all trophies in Destiny 2.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1527591392026,
             "trophyLevel": "Platinum",
             "percentRarity": "2.6"
         },
@@ -17,7 +17,7 @@
         "id": "CUSA-06172-2",
         "description": "Reach level 20.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1504717596496,
             "trophyLevel": "Silver",
             "percentRarity": "59.4"
         },
@@ -30,7 +30,7 @@
         "id": "CUSA-06172-3",
         "description": "Acquire each Titan subclass.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1505644638377,
             "trophyLevel": "Gold",
             "percentRarity": "25.6"
         },
@@ -43,7 +43,7 @@
         "id": "CUSA-06172-4",
         "description": "Acquire each Hunter subclass.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1504723105162,
             "trophyLevel": "Gold",
             "percentRarity": "34.6"
         },
@@ -56,7 +56,7 @@
         "id": "CUSA-06172-5",
         "description": "Acquire each Warlock subclass.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1508599870804,
             "trophyLevel": "Gold",
             "percentRarity": "27.8"
         },
@@ -69,7 +69,7 @@
         "id": "CUSA-06172-6",
         "description": "Complete Introduction: Crucible.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1504902468653,
             "trophyLevel": "Gold",
             "percentRarity": "23.1"
         },
@@ -82,7 +82,7 @@
         "id": "CUSA-06172-7",
         "description": "Complete a Flashpoint on Earth, Titan, Nessus, or Io.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1504788091591,
             "trophyLevel": "Gold",
             "percentRarity": "21.6"
         },
@@ -95,7 +95,7 @@
         "id": "CUSA-06172-8",
         "description": "Complete a Heroic public event.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1504694448528,
             "trophyLevel": "Silver",
             "percentRarity": "51.7"
         },
@@ -108,7 +108,7 @@
         "id": "CUSA-06172-9",
         "description": "Complete a Nightfall strike.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1504800971391,
             "trophyLevel": "Gold",
             "percentRarity": "22.6"
         },
@@ -121,7 +121,7 @@
         "id": "CUSA-06172-10",
         "description": "Collect 15 Red War exotic weapons or armor.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1504953673806,
             "trophyLevel": "Gold",
             "percentRarity": "19.3"
         },
@@ -134,7 +134,7 @@
         "id": "CUSA-06172-11",
         "description": "Complete 30 challenges.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1504957025399,
             "trophyLevel": "Gold",
             "percentRarity": "19.3"
         },
@@ -147,7 +147,7 @@
         "id": "CUSA-06172-12",
         "description": "Complete the Leviathan raid.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1527591392026,
             "trophyLevel": "Gold",
             "percentRarity": "7.9"
         },
@@ -160,7 +160,7 @@
         "id": "CUSA-06172-13",
         "description": "Complete the Leviathan raid on Prestige difficulty.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1506615561480,
             "trophyLevel": "Gold",
             "percentRarity": "3.6"
         },
@@ -173,7 +173,7 @@
         "id": "CUSA-06172-14",
         "description": "Encounter an Agent of the Nine somewhere in the system.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1505500965605,
             "trophyLevel": "Gold",
             "percentRarity": "14.9"
         },

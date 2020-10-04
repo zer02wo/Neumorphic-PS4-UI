@@ -17,7 +17,7 @@
         "id": "CUSA-15090-2",
         "description": "Pick your first ride.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1573258485157,
             "trophyLevel": "Bronze",
             "percentRarity": "95.1"
         },
@@ -30,7 +30,7 @@
         "id": "CUSA-15090-3",
         "description": "Complete Chapter 1.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1573236572241,
             "trophyLevel": "Bronze",
             "percentRarity": "69.1"
         },
@@ -43,7 +43,7 @@
         "id": "CUSA-15090-4",
         "description": "Complete Chapter 2.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1573336559672,
             "trophyLevel": "Bronze",
             "percentRarity": "53.6"
         },
@@ -56,7 +56,7 @@
         "id": "CUSA-15090-5",
         "description": "Complete Chapter 3.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1573741769396,
             "trophyLevel": "Bronze",
             "percentRarity": "43.6"
         },
@@ -69,7 +69,7 @@
         "id": "CUSA-15090-6",
         "description": "Complete Chapter 4.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1573746640404,
             "trophyLevel": "Silver",
             "percentRarity": "38.5"
         },
@@ -121,7 +121,7 @@
         "id": "CUSA-15090-10",
         "description": "Change the text on the License Plate.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1573174938716,
             "trophyLevel": "Bronze",
             "percentRarity": "53.8"
         },
@@ -134,7 +134,7 @@
         "id": "CUSA-15090-11",
         "description": "Beat your first Crew Time Trial.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1573306436713,
             "trophyLevel": "Bronze",
             "percentRarity": "47.5"
         },
@@ -238,7 +238,7 @@
         "id": "CUSA-15090-19",
         "description": "Customize a vehicle with a wrap.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1573255853761,
             "trophyLevel": "Bronze",
             "percentRarity": "73.6"
         },
@@ -251,7 +251,7 @@
         "id": "CUSA-15090-20",
         "description": "Complete your first Daily Challenge.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1573217005152,
             "trophyLevel": "Bronze",
             "percentRarity": "80.7"
         },
@@ -277,7 +277,7 @@
         "id": "CUSA-15090-22",
         "description": "Win a race with parts equipped in both auxiliary part slots.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1573307946314,
             "trophyLevel": "Bronze",
             "percentRarity": "52.7"
         },
@@ -355,7 +355,7 @@
         "id": "CUSA-15090-28",
         "description": "Repair critical damage at a Gas Station at night.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1573247401645,
             "trophyLevel": "Bronze",
             "percentRarity": "69.4"
         },
@@ -446,7 +446,7 @@
         "id": "CUSA-15090-35",
         "description": "Win a race with handling parts for maximum road traction equipped.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1573303692680,
             "trophyLevel": "Bronze",
             "percentRarity": "57.4"
         },
@@ -459,7 +459,7 @@
         "id": "CUSA-15090-36",
         "description": "Win a race with handling parts for maximum race equipped.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1573503503496,
             "trophyLevel": "Bronze",
             "percentRarity": "47.0"
         },
@@ -472,7 +472,7 @@
         "id": "CUSA-15090-37",
         "description": "Reach REP Level 2.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1573217004772,
             "trophyLevel": "Bronze",
             "percentRarity": "87.4"
         },
@@ -524,7 +524,7 @@
         "id": "CUSA-15090-41",
         "description": "Win a race in a vehicle with an engine swap.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1573492439346,
             "trophyLevel": "Bronze",
             "percentRarity": "43.4"
         },
@@ -550,7 +550,7 @@
         "id": "CUSA-15090-43",
         "description": "Win a race in a vehicle with tuned exhaust sound.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1573217637117,
             "trophyLevel": "Bronze",
             "percentRarity": "57.8"
         },

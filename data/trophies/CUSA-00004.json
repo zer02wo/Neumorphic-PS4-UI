@@ -4,7 +4,7 @@
         "id": "CUSA-00004-1",
         "description": "Collect all trophies.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1397327493085,
             "trophyLevel": "Platinum",
             "percentRarity": "5.8"
         },
@@ -17,7 +17,7 @@
         "id": "CUSA-00004-2",
         "description": "Finish the game on Expert difficulty.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1397327493085,
             "trophyLevel": "Silver",
             "percentRarity": "7.2"
         },
@@ -30,7 +30,7 @@
         "id": "CUSA-00004-3",
         "description": "Risk your freedom to protect those you care about.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1396714720779,
             "trophyLevel": "Bronze",
             "percentRarity": "79.0"
         },
@@ -43,7 +43,7 @@
         "id": "CUSA-00004-4",
         "description": "Look out for yourself, no matter the consequences.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1396109877326,
             "trophyLevel": "Bronze",
             "percentRarity": "38.6"
         },
@@ -56,7 +56,7 @@
         "id": "CUSA-00004-5",
         "description": "Practice self-control.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1397312149764,
             "trophyLevel": "Bronze",
             "percentRarity": "52.2"
         },
@@ -69,7 +69,7 @@
         "id": "CUSA-00004-6",
         "description": "Get them before they get you.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1396128932013,
             "trophyLevel": "Bronze",
             "percentRarity": "25.2"
         },
@@ -82,7 +82,7 @@
         "id": "CUSA-00004-7",
         "description": "Stand up for the helpless.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1397322164485,
             "trophyLevel": "Bronze",
             "percentRarity": "44.4"
         },
@@ -95,7 +95,7 @@
         "id": "CUSA-00004-8",
         "description": "Don't fear the weak.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1396281460277,
             "trophyLevel": "Bronze",
             "percentRarity": "22.9"
         },
@@ -108,7 +108,7 @@
         "id": "CUSA-00004-9",
         "description": "Everyone deserves a second chance.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1397327123604,
             "trophyLevel": "Bronze",
             "percentRarity": "39.5"
         },
@@ -121,7 +121,7 @@
         "id": "CUSA-00004-10",
         "description": "An eye for an eye, a tooth for a tooth.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1396286375481,
             "trophyLevel": "Bronze",
             "percentRarity": "22.3"
         },
@@ -134,7 +134,7 @@
         "id": "CUSA-00004-11",
         "description": "Expose the corruption of the powerful.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1397327491265,
             "trophyLevel": "Bronze",
             "percentRarity": "39.5"
         },
@@ -147,7 +147,7 @@
         "id": "CUSA-00004-12",
         "description": "Show the world that nobody can protect them.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1396286373133,
             "trophyLevel": "Bronze",
             "percentRarity": "21.1"
         },
@@ -160,7 +160,7 @@
         "id": "CUSA-00004-13",
         "description": "Finish the story with Good Karma.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1397327491687,
             "trophyLevel": "Gold",
             "percentRarity": "38.1"
         },
@@ -173,7 +173,7 @@
         "id": "CUSA-00004-14",
         "description": "Finish the story with Evil Karma.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1396286783100,
             "trophyLevel": "Gold",
             "percentRarity": "20.6"
         },
@@ -186,7 +186,7 @@
         "id": "CUSA-00004-15",
         "description": "Rescue 10 suspects from suspicion pens.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1397149918365,
             "trophyLevel": "Bronze",
             "percentRarity": "50.2"
         },
@@ -199,7 +199,7 @@
         "id": "CUSA-00004-16",
         "description": "Beat down 10 sign twirlers.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1396187163447,
             "trophyLevel": "Bronze",
             "percentRarity": "9.5"
         },
@@ -212,7 +212,7 @@
         "id": "CUSA-00004-17",
         "description": "Take out 10 street musicians.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1396193399678,
             "trophyLevel": "Bronze",
             "percentRarity": "10.0"
         },
@@ -225,7 +225,7 @@
         "id": "CUSA-00004-18",
         "description": "Bust 10 drug dealers.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1397149836924,
             "trophyLevel": "Bronze",
             "percentRarity": "43.4"
         },
@@ -238,7 +238,7 @@
         "id": "CUSA-00004-19",
         "description": "Disrupt 10 activist rallies.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1396115371898,
             "trophyLevel": "Bronze",
             "percentRarity": "26.3"
         },
@@ -251,7 +251,7 @@
         "id": "CUSA-00004-20",
         "description": "Kill 10 obnoxious Akuran gang members.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1396137152639,
             "trophyLevel": "Bronze",
             "percentRarity": "15.1"
         },
@@ -264,7 +264,7 @@
         "id": "CUSA-00004-21",
         "description": "Rescue 10 escaped conduits from angry mobs.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1397317532746,
             "trophyLevel": "Bronze",
             "percentRarity": "27.7"
         },
@@ -277,7 +277,7 @@
         "id": "CUSA-00004-22",
         "description": "Heal 10 wounded civilians.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1397149877460,
             "trophyLevel": "Bronze",
             "percentRarity": "60.4"
         },
@@ -290,7 +290,7 @@
         "id": "CUSA-00004-23",
         "description": "Finish off 10 wounded enemies or civilians.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1396111868294,
             "trophyLevel": "Bronze",
             "percentRarity": "42.4"
         },
@@ -303,7 +303,7 @@
         "id": "CUSA-00004-24",
         "description": "Achieve Level 5 Good Karma.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1397320328807,
             "trophyLevel": "Silver",
             "percentRarity": "29.4"
         },
@@ -316,7 +316,7 @@
         "id": "CUSA-00004-25",
         "description": "Achieve Level 5 Evil Karma.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1396130600328,
             "trophyLevel": "Silver",
             "percentRarity": "19.8"
         },
@@ -329,7 +329,7 @@
         "id": "CUSA-00004-26",
         "description": "Collect half the Blast Shards.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1396125258033,
             "trophyLevel": "Bronze",
             "percentRarity": "39.3"
         },
@@ -342,7 +342,7 @@
         "id": "CUSA-00004-27",
         "description": "Collect all the Blast Shards.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1396284897624,
             "trophyLevel": "Silver",
             "percentRarity": "21.5"
         },
@@ -355,7 +355,7 @@
         "id": "CUSA-00004-28",
         "description": "Destroy half the D.U.P. security cameras.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1396125686935,
             "trophyLevel": "Bronze",
             "percentRarity": "40.2"
         },
@@ -368,7 +368,7 @@
         "id": "CUSA-00004-29",
         "description": "Destroy all of the D.U.P. security cameras.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1396191532811,
             "trophyLevel": "Silver",
             "percentRarity": "22.9"
         },
@@ -381,7 +381,7 @@
         "id": "CUSA-00004-30",
         "description": "Collect all the Informant Audio Logs.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1396193024133,
             "trophyLevel": "Silver",
             "percentRarity": "22.2"
         },
@@ -394,7 +394,7 @@
         "id": "CUSA-00004-31",
         "description": "Defeat all the D.U.P. Secret Agents.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1396192582649,
             "trophyLevel": "Silver",
             "percentRarity": "22.1"
         },
@@ -407,7 +407,7 @@
         "id": "CUSA-00004-32",
         "description": "Destroy all the D.U.P. Hidden Cameras.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1396193083517,
             "trophyLevel": "Silver",
             "percentRarity": "22.5"
         },
@@ -420,7 +420,7 @@
         "id": "CUSA-00004-33",
         "description": "Complete all the Stencil Art.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1396193225606,
             "trophyLevel": "Silver",
             "percentRarity": "23.2"
         },
@@ -433,7 +433,7 @@
         "id": "CUSA-00004-34",
         "description": "Complete a District Showdown.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1396114306478,
             "trophyLevel": "Bronze",
             "percentRarity": "49.8"
         },
@@ -446,7 +446,7 @@
         "id": "CUSA-00004-35",
         "description": "Complete Showdowns in half of the districts.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1396131418563,
             "trophyLevel": "Bronze",
             "percentRarity": "32.5"
         },
@@ -459,7 +459,7 @@
         "id": "CUSA-00004-36",
         "description": "Complete all of the District Showdowns in the city.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1396193351746,
             "trophyLevel": "Silver",
             "percentRarity": "23.3"
         },
@@ -472,7 +472,7 @@
         "id": "CUSA-00004-37",
         "description": "Clear the D.U.P. completely out of a district.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1396114792271,
             "trophyLevel": "Bronze",
             "percentRarity": "36.8"
         },
@@ -485,7 +485,7 @@
         "id": "CUSA-00004-38",
         "description": "Clear the D.U.P. out of half the districts in the city.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1396131492062,
             "trophyLevel": "Bronze",
             "percentRarity": "26.0"
         },
@@ -498,7 +498,7 @@
         "id": "CUSA-00004-39",
         "description": "Clear the D.U.P. out of the entire city.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1396284896615,
             "trophyLevel": "Silver",
             "percentRarity": "20.5"
         },
@@ -511,7 +511,7 @@
         "id": "CUSA-00004-40",
         "description": "Destroy 5 cars in 5 seconds.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1396117748244,
             "trophyLevel": "Bronze",
             "percentRarity": "35.5"
         },
@@ -524,7 +524,7 @@
         "id": "CUSA-00004-41",
         "description": "Comet Drop over 170 meters.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1396287233939,
             "trophyLevel": "Bronze",
             "percentRarity": "9.9"
         },
@@ -537,7 +537,7 @@
         "id": "CUSA-00004-42",
         "description": "Stay in the air for more than 45 seconds.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1396281612694,
             "trophyLevel": "Bronze",
             "percentRarity": "11.3"
         },
@@ -550,7 +550,7 @@
         "id": "CUSA-00004-43",
         "description": "Defeat 10 enemies by detonating ammo crates.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1396125513275,
             "trophyLevel": "Bronze",
             "percentRarity": "43.3"
         },
@@ -563,7 +563,7 @@
         "id": "CUSA-00004-44",
         "description": "Defeat an enemy using three different power sources.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1396711272864,
             "trophyLevel": "Bronze",
             "percentRarity": "14.7"
         },
@@ -576,7 +576,7 @@
         "id": "CUSA-00004-45",
         "description": "Dash through two red air vents without touching the ground and then Comet Drop on an enemy.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1396287933002,
             "trophyLevel": "Bronze",
             "percentRarity": "10.0"
         },
@@ -589,7 +589,7 @@
         "id": "CUSA-00004-46",
         "description": "Comet Drop on three coughing enemies.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1396717767641,
             "trophyLevel": "Bronze",
             "percentRarity": "9.8"
         },
@@ -602,7 +602,7 @@
         "id": "CUSA-00004-47",
         "description": "Hit three weak points with Neon Beam in 6 seconds.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1396127802733,
             "trophyLevel": "Bronze",
             "percentRarity": "51.7"
         },
@@ -615,7 +615,7 @@
         "id": "CUSA-00004-48",
         "description": "Use a Karmic Streak attack to defeat exactly one enemy.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1396125238740,
             "trophyLevel": "Bronze",
             "percentRarity": "42.1"
         },

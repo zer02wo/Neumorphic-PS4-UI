@@ -17,7 +17,7 @@
         "id": "CUSA-00135-2",
         "description": "Fight for your sanity.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1435176428549,
             "trophyLevel": "Bronze",
             "percentRarity": "47.0"
         },
@@ -30,7 +30,7 @@
         "id": "CUSA-00135-3",
         "description": "Secure the secret base.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1435322169283,
             "trophyLevel": "Bronze",
             "percentRarity": "39.5"
         },
@@ -69,7 +69,7 @@
         "id": "CUSA-00135-6",
         "description": "Complete the trials and prove you are a worthy successor.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1435343352716,
             "trophyLevel": "Bronze",
             "percentRarity": "23.9"
         },
@@ -82,7 +82,7 @@
         "id": "CUSA-00135-7",
         "description": "Escape from ACE Chemicals.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1435161903463,
             "trophyLevel": "Bronze",
             "percentRarity": "57.1"
         },
@@ -95,7 +95,7 @@
         "id": "CUSA-00135-8",
         "description": "Win the war for Gotham.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1435341943301,
             "trophyLevel": "Bronze",
             "percentRarity": "32.7"
         },
@@ -121,7 +121,7 @@
         "id": "CUSA-00135-10",
         "description": "Return of the Dynamic Duo.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1435319394622,
             "trophyLevel": "Bronze",
             "percentRarity": "40.1"
         },
@@ -160,7 +160,7 @@
         "id": "CUSA-00135-13",
         "description": "Defend the assault on your ally's fortress.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1435327226479,
             "trophyLevel": "Bronze",
             "percentRarity": "38.5"
         },
@@ -173,7 +173,7 @@
         "id": "CUSA-00135-14",
         "description": "Destroy the first weapons cache in Gotham City.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1435174566894,
             "trophyLevel": "Bronze",
             "percentRarity": "48.2"
         },
@@ -186,7 +186,7 @@
         "id": "CUSA-00135-15",
         "description": "Freedom of the city.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1435250959333,
             "trophyLevel": "Bronze",
             "percentRarity": "41.3"
         },
@@ -199,7 +199,7 @@
         "id": "CUSA-00135-16",
         "description": "Use 100 Quick Gadgets while in free flow combat.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1435250959105,
             "trophyLevel": "Bronze",
             "percentRarity": "34.9"
         },
@@ -212,7 +212,7 @@
         "id": "CUSA-00135-17",
         "description": "Apprehend Scarecrow's senior commander.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1435358011576,
             "trophyLevel": "Bronze",
             "percentRarity": "15.8"
         },
@@ -225,7 +225,7 @@
         "id": "CUSA-00135-18",
         "description": "What is the Cloudburst?.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1435179430841,
             "trophyLevel": "Bronze",
             "percentRarity": "45.2"
         },
@@ -238,7 +238,7 @@
         "id": "CUSA-00135-19",
         "description": "Extinguish the fires in Gotham City.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1435339140735,
             "trophyLevel": "Bronze",
             "percentRarity": "27.8"
         },
@@ -251,7 +251,7 @@
         "id": "CUSA-00135-20",
         "description": "Perform 20 fear takedowns.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1435183263207,
             "trophyLevel": "Bronze",
             "percentRarity": "38.9"
         },
@@ -264,7 +264,7 @@
         "id": "CUSA-00135-21",
         "description": "Obtain a key by completing the seventh Riddler trial.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1435251732084,
             "trophyLevel": "Bronze",
             "percentRarity": "27.2"
         },
@@ -303,7 +303,7 @@
         "id": "CUSA-00135-24",
         "description": "Face off with an old friend.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1435240405016,
             "trophyLevel": "Bronze",
             "percentRarity": "34.7"
         },
@@ -316,7 +316,7 @@
         "id": "CUSA-00135-25",
         "description": "Rescue the ACE Chemical workers.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1435160064453,
             "trophyLevel": "Bronze",
             "percentRarity": "59.0"
         },
@@ -329,7 +329,7 @@
         "id": "CUSA-00135-26",
         "description": "Survive Scarecrow's ambush.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1435338308382,
             "trophyLevel": "Bronze",
             "percentRarity": "34.2"
         },
@@ -355,7 +355,7 @@
         "id": "CUSA-00135-28",
         "description": "Destroy all of the militia watchtowers.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1435354184171,
             "trophyLevel": "Bronze",
             "percentRarity": "20.1"
         },
@@ -381,7 +381,7 @@
         "id": "CUSA-00135-30",
         "description": "Defuse all of the militia explosive ordinance in Gotham City.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1435357649679,
             "trophyLevel": "Bronze",
             "percentRarity": "17.2"
         },
@@ -394,7 +394,7 @@
         "id": "CUSA-00135-31",
         "description": "Stop the bank heist on Miagani Island and lock up the master mind in GCPD.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1435183459152,
             "trophyLevel": "Bronze",
             "percentRarity": "33.3"
         },
@@ -407,7 +407,7 @@
         "id": "CUSA-00135-32",
         "description": "Even The Odds.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1435152958066,
             "trophyLevel": "Bronze",
             "percentRarity": "92.5"
         },
@@ -420,7 +420,7 @@
         "id": "CUSA-00135-33",
         "description": "Win the rumble down under.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1435335998713,
             "trophyLevel": "Bronze",
             "percentRarity": "34.6"
         },
@@ -433,7 +433,7 @@
         "id": "CUSA-00135-34",
         "description": "Initiate Knightfall Protocol.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1435516781419,
             "trophyLevel": "Gold",
             "percentRarity": "5.5"
         },
@@ -446,7 +446,7 @@
         "id": "CUSA-00135-35",
         "description": "Obtain a key by completing the ninth Riddler trial.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1435252790784,
             "trophyLevel": "Bronze",
             "percentRarity": "25.8"
         },
@@ -459,7 +459,7 @@
         "id": "CUSA-00135-36",
         "description": "Interrogate the Militia APC Driver.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1435172342496,
             "trophyLevel": "Bronze",
             "percentRarity": "49.3"
         },
@@ -472,7 +472,7 @@
         "id": "CUSA-00135-37",
         "description": "Wayne vs Crane.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1435345490369,
             "trophyLevel": "Bronze",
             "percentRarity": "31.8"
         },
@@ -485,7 +485,7 @@
         "id": "CUSA-00135-38",
         "description": "Obtain a key by completing the last Riddler trial.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1435339910917,
             "trophyLevel": "Bronze",
             "percentRarity": "24.7"
         },
@@ -498,7 +498,7 @@
         "id": "CUSA-00135-39",
         "description": "Restore power to the bridges of Gotham City.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1435164125903,
             "trophyLevel": "Bronze",
             "percentRarity": "53.8"
         },
@@ -511,7 +511,7 @@
         "id": "CUSA-00135-40",
         "description": "Obtain a key by completing the second Riddler trial.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1435165847277,
             "trophyLevel": "Bronze",
             "percentRarity": "37.4"
         },
@@ -550,7 +550,7 @@
         "id": "CUSA-00135-43",
         "description": "Obtain a key by completing the fourth Riddler trial.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1435169222444,
             "trophyLevel": "Bronze",
             "percentRarity": "33.0"
         },
@@ -576,7 +576,7 @@
         "id": "CUSA-00135-45",
         "description": "Smash 10 militia transport vehicles off the road without using the immobilizer.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1435254065103,
             "trophyLevel": "Bronze",
             "percentRarity": "26.5"
         },
@@ -589,7 +589,7 @@
         "id": "CUSA-00135-46",
         "description": "Cure the doctor.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1435333151606,
             "trophyLevel": "Bronze",
             "percentRarity": "29.4"
         },
@@ -628,7 +628,7 @@
         "id": "CUSA-00135-49",
         "description": "Deploy the Cloudburst countermeasures.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1435225691852,
             "trophyLevel": "Bronze",
             "percentRarity": "42.8"
         },
@@ -641,7 +641,7 @@
         "id": "CUSA-00135-50",
         "description": "Destroy all of the militia checkpoints.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1435354795012,
             "trophyLevel": "Bronze",
             "percentRarity": "18.1"
         },
@@ -654,7 +654,7 @@
         "id": "CUSA-00135-51",
         "description": "Obtain a key by completing the fifth Riddler trial.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1435169875589,
             "trophyLevel": "Bronze",
             "percentRarity": "31.0"
         },
@@ -667,7 +667,7 @@
         "id": "CUSA-00135-52",
         "description": "Obtain a key by completing the third Riddler trial.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1435167056377,
             "trophyLevel": "Bronze",
             "percentRarity": "35.6"
         },
@@ -680,7 +680,7 @@
         "id": "CUSA-00135-53",
         "description": "Save the sacrificial victim and lock up the executioner in GCPD.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1435340723696,
             "trophyLevel": "Bronze",
             "percentRarity": "30.6"
         },
@@ -693,7 +693,7 @@
         "id": "CUSA-00135-54",
         "description": "Scan Gotham City to pinpoint Scarecrow's location.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1435157209540,
             "trophyLevel": "Bronze",
             "percentRarity": "65.9"
         },
@@ -719,7 +719,7 @@
         "id": "CUSA-00135-56",
         "description": "Track down and apprehend the serial killer.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1435347801751,
             "trophyLevel": "Bronze",
             "percentRarity": "24.7"
         },
@@ -732,7 +732,7 @@
         "id": "CUSA-00135-57",
         "description": "Obtain a key by completing the sixth Riddler trial.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1435170816463,
             "trophyLevel": "Bronze",
             "percentRarity": "30.3"
         },
@@ -758,7 +758,7 @@
         "id": "CUSA-00135-59",
         "description": "Obtain a key by completing the eighth Riddler trial.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1435252200811,
             "trophyLevel": "Bronze",
             "percentRarity": "26.8"
         },
@@ -771,7 +771,7 @@
         "id": "CUSA-00135-60",
         "description": "Destroy all of the militia APC's.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1435316312495,
             "trophyLevel": "Bronze",
             "percentRarity": "25.1"
         },
@@ -784,7 +784,7 @@
         "id": "CUSA-00135-61",
         "description": "Successfully complete the first Riddler trial.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1435155113311,
             "trophyLevel": "Bronze",
             "percentRarity": "53.6"
         },
@@ -797,7 +797,7 @@
         "id": "CUSA-00135-62",
         "description": "Apprehend the weapons dealer and lock him up in GCPD.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1435325076607,
             "trophyLevel": "Bronze",
             "percentRarity": "29.1"
         },
@@ -810,7 +810,7 @@
         "id": "CUSA-00135-63",
         "description": "Lock up your first Supervillain in GCPD.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1435154117591,
             "trophyLevel": "Bronze",
             "percentRarity": "80.1"
         },
@@ -823,7 +823,7 @@
         "id": "CUSA-00135-64",
         "description": "Batman vs the Arkham Knight.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1435331074847,
             "trophyLevel": "Bronze",
             "percentRarity": "36.3"
         },
@@ -836,7 +836,7 @@
         "id": "CUSA-00135-65",
         "description": "Take on the heavy artillery reinforcements.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1435180272439,
             "trophyLevel": "Bronze",
             "percentRarity": "44.6"
         },

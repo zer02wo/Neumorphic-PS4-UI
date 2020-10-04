@@ -108,7 +108,7 @@
         "id": "CUSA-10249-9",
         "description": "Fully upgrade a weapon.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1597137401349,
             "trophyLevel": "Silver",
             "percentRarity": "66.8"
         },
@@ -121,7 +121,7 @@
         "id": "CUSA-10249-10",
         "description": "Learn all player upgrades in one branch.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1597172247182,
             "trophyLevel": "Silver",
             "percentRarity": "71.9"
         },
@@ -173,7 +173,7 @@
         "id": "CUSA-10249-14",
         "description": "Learn 25 player upgrades.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1597242241256,
             "trophyLevel": "Silver",
             "percentRarity": "57.2"
         },
@@ -199,7 +199,7 @@
         "id": "CUSA-10249-16",
         "description": "Find 12 workbenches.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1597153821312,
             "trophyLevel": "Silver",
             "percentRarity": "70.6"
         },
@@ -212,7 +212,7 @@
         "id": "CUSA-10249-17",
         "description": "Craft every item.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1597242334674,
             "trophyLevel": "Bronze",
             "percentRarity": "45.8"
         },
@@ -225,7 +225,7 @@
         "id": "CUSA-10249-18",
         "description": "Upgrade a weapon.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1596474304904,
             "trophyLevel": "Bronze",
             "percentRarity": "94.5"
         },
@@ -238,7 +238,7 @@
         "id": "CUSA-10249-19",
         "description": "Learn a player upgrade.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1596472550729,
             "trophyLevel": "Bronze",
             "percentRarity": "92.6"
         },
@@ -251,7 +251,7 @@
         "id": "CUSA-10249-20",
         "description": "Find 5 trading cards.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1596743429565,
             "trophyLevel": "Bronze",
             "percentRarity": "88.2"
         },
@@ -264,7 +264,7 @@
         "id": "CUSA-10249-21",
         "description": "Find 5 coins.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1597223073601,
             "trophyLevel": "Bronze",
             "percentRarity": "64.7"
         },
@@ -277,7 +277,7 @@
         "id": "CUSA-10249-22",
         "description": "Put a hat on your companion.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1597095353447,
             "trophyLevel": "Bronze",
             "percentRarity": "24.6"
         },
@@ -290,7 +290,7 @@
         "id": "CUSA-10249-23",
         "description": "Win the marksmanship competition.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1607437999459,
             "trophyLevel": "Bronze",
             "percentRarity": "52.3"
         },
@@ -303,7 +303,7 @@
         "id": "CUSA-10249-24",
         "description": "Earn the high score in the archery game.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1597240799832,
             "trophyLevel": "Bronze",
             "percentRarity": "55.0"
         },
@@ -329,7 +329,7 @@
         "id": "CUSA-10249-26",
         "description": "Find the Engraved Ring.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1596743039375,
             "trophyLevel": "Bronze",
             "percentRarity": "44.7"
         },

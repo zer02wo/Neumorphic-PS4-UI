@@ -17,7 +17,7 @@
         "id": "CUSA-01499-2",
         "description": "Resume your old life.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1501009899173,
             "trophyLevel": "Bronze",
             "percentRarity": "84.8"
         },
@@ -30,7 +30,7 @@
         "id": "CUSA-01499-3",
         "description": "Take flight with some old friends.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1501011581445,
             "trophyLevel": "Bronze",
             "percentRarity": "71.1"
         },
@@ -43,7 +43,7 @@
         "id": "CUSA-01499-4",
         "description": "Escape with a gift from an old enemy.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1501063435672,
             "trophyLevel": "Bronze",
             "percentRarity": "60.5"
         },
@@ -56,7 +56,7 @@
         "id": "CUSA-01499-5",
         "description": "First crack the shell, then crack what's inside.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1501080611531,
             "trophyLevel": "Bronze",
             "percentRarity": "56.4"
         },
@@ -69,7 +69,7 @@
         "id": "CUSA-01499-6",
         "description": "Witness a terrifying event.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1501083527894,
             "trophyLevel": "Bronze",
             "percentRarity": "46.1"
         },
@@ -82,7 +82,7 @@
         "id": "CUSA-01499-7",
         "description": "Repay Dogen.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1501103669605,
             "trophyLevel": "Bronze",
             "percentRarity": "40.4"
         },
@@ -95,7 +95,7 @@
         "id": "CUSA-01499-8",
         "description": "Avenge them.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1501063868473,
             "trophyLevel": "Bronze",
             "percentRarity": "34.8"
         },
@@ -108,7 +108,7 @@
         "id": "CUSA-01499-9",
         "description": "Seek out Black November for help.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1601805654814,
             "trophyLevel": "Bronze",
             "percentRarity": "33.4"
         },
@@ -121,7 +121,7 @@
         "id": "CUSA-01499-10",
         "description": "Send the KrugerSec turrets into the abyss.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1501183577536,
             "trophyLevel": "Bronze",
             "percentRarity": "32.8"
         },
@@ -134,7 +134,7 @@
         "id": "CUSA-01499-11",
         "description": "Resistance is futile.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1501185556719,
             "trophyLevel": "Bronze",
             "percentRarity": "32.1"
         },
@@ -147,7 +147,7 @@
         "id": "CUSA-01499-12",
         "description": "Claw back what they took from you.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1501407723643,
             "trophyLevel": "Bronze",
             "percentRarity": "29.7"
         },
@@ -160,7 +160,7 @@
         "id": "CUSA-01499-13",
         "description": "Discover the identity of Kruger's deadliest asset.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1501414559119,
             "trophyLevel": "Bronze",
             "percentRarity": "26.5"
         },
@@ -173,7 +173,7 @@
         "id": "CUSA-01499-14",
         "description": "Escape from the heart of darkness.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1501435787645,
             "trophyLevel": "Bronze",
             "percentRarity": "25.0"
         },
@@ -303,7 +303,7 @@
         "id": "CUSA-01499-24",
         "description": "Purchase Faith's second upgrade.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1501010979296,
             "trophyLevel": "Bronze",
             "percentRarity": "68.0"
         },
@@ -316,7 +316,7 @@
         "id": "CUSA-01499-25",
         "description": "Purchase half of Faith's upgrades.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1501184436053,
             "trophyLevel": "Silver",
             "percentRarity": "29.9"
         },
@@ -342,7 +342,7 @@
         "id": "CUSA-01499-27",
         "description": "Reach full focus and keep it going.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1501147137411,
             "trophyLevel": "Bronze",
             "percentRarity": "32.8"
         },
@@ -459,7 +459,7 @@
         "id": "CUSA-01499-36",
         "description": "Deliver any fragile package without any damage to it.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1501021653936,
             "trophyLevel": "Bronze",
             "percentRarity": "34.5"
         },
@@ -472,7 +472,7 @@
         "id": "CUSA-01499-37",
         "description": "Shut down any gridNode without notifying KrugerSec of your presence.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1501083039753,
             "trophyLevel": "Bronze",
             "percentRarity": "25.5"
         },
@@ -537,7 +537,7 @@
         "id": "CUSA-01499-42",
         "description": "Remove 10 electronic parts from Conglomerate terminals.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1501020014109,
             "trophyLevel": "Bronze",
             "percentRarity": "49.6"
         },
@@ -628,7 +628,7 @@
         "id": "CUSA-01499-49",
         "description": "Customize your Echo.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1501065488360,
             "trophyLevel": "Bronze",
             "percentRarity": "35.3"
         },

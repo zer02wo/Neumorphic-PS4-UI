@@ -17,7 +17,7 @@
         "id": "CUSA-07412-2",
         "description": "Defend your home from The Stranger.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1525110601670,
             "trophyLevel": "Bronze",
             "percentRarity": "90.7"
         },
@@ -30,7 +30,7 @@
         "id": "CUSA-07412-3",
         "description": "Survive the Witch’s Woods.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1525348931369,
             "trophyLevel": "Bronze",
             "percentRarity": "79.3"
         },
@@ -43,7 +43,7 @@
         "id": "CUSA-07412-4",
         "description": "Allow the Light Elves to return home.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1525361562485,
             "trophyLevel": "Bronze",
             "percentRarity": "68.1"
         },
@@ -56,7 +56,7 @@
         "id": "CUSA-07412-5",
         "description": "Defeat the Dragon of the Mountain.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1525436916714,
             "trophyLevel": "Bronze",
             "percentRarity": "62.4"
         },
@@ -69,7 +69,7 @@
         "id": "CUSA-07412-6",
         "description": "Defeat Magni and Modi.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1525471414932,
             "trophyLevel": "Bronze",
             "percentRarity": "58.9"
         },
@@ -82,7 +82,7 @@
         "id": "CUSA-07412-7",
         "description": "Retrieve the Blades of Chaos.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1525606445833,
             "trophyLevel": "Bronze",
             "percentRarity": "58.1"
         },
@@ -95,7 +95,7 @@
         "id": "CUSA-07412-8",
         "description": "Heal Atreus.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1525609312795,
             "trophyLevel": "Bronze",
             "percentRarity": "57.7"
         },
@@ -108,7 +108,7 @@
         "id": "CUSA-07412-9",
         "description": "Rescue Atreus.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1528724422014,
             "trophyLevel": "Bronze",
             "percentRarity": "55.4"
         },
@@ -121,7 +121,7 @@
         "id": "CUSA-07412-10",
         "description": "Ride the ship out of Helheim.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1528727865379,
             "trophyLevel": "Bronze",
             "percentRarity": "54.9"
         },
@@ -134,7 +134,7 @@
         "id": "CUSA-07412-11",
         "description": "Defeat Baldur.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1528747293814,
             "trophyLevel": "Bronze",
             "percentRarity": "52.3"
         },
@@ -147,7 +147,7 @@
         "id": "CUSA-07412-12",
         "description": "Spread the ashes.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1529242294455,
             "trophyLevel": "Gold",
             "percentRarity": "51.7"
         },
@@ -160,7 +160,7 @@
         "id": "CUSA-07412-13",
         "description": "Explore all the Lake of Nine has to offer.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1525605479209,
             "trophyLevel": "Bronze",
             "percentRarity": "26.3"
         },
@@ -173,7 +173,7 @@
         "id": "CUSA-07412-14",
         "description": "Fully explore Veithurgard.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1525646682739,
             "trophyLevel": "Bronze",
             "percentRarity": "32.6"
         },
@@ -186,7 +186,7 @@
         "id": "CUSA-07412-15",
         "description": "Learn the languages of Muspelheim and Niflheim.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1528723711434,
             "trophyLevel": "Bronze",
             "percentRarity": "47.3"
         },
@@ -199,7 +199,7 @@
         "id": "CUSA-07412-16",
         "description": "Upgrade a piece of armor.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1525358949640,
             "trophyLevel": "Bronze",
             "percentRarity": "74.0"
         },
@@ -212,7 +212,7 @@
         "id": "CUSA-07412-17",
         "description": "Obtain a Runic Attack Gem.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1525111492835,
             "trophyLevel": "Bronze",
             "percentRarity": "88.1"
         },
@@ -225,7 +225,7 @@
         "id": "CUSA-07412-18",
         "description": "Fully upgrade your Health.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1528719877444,
             "trophyLevel": "Silver",
             "percentRarity": "25.3"
         },
@@ -238,7 +238,7 @@
         "id": "CUSA-07412-19",
         "description": "Fully upgrade your rage.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1528726470956,
             "trophyLevel": "Silver",
             "percentRarity": "23.5"
         },
@@ -251,7 +251,7 @@
         "id": "CUSA-07412-20",
         "description": "Craft an outfit for Atreus.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1525459168717,
             "trophyLevel": "Bronze",
             "percentRarity": "61.4"
         },
@@ -264,7 +264,7 @@
         "id": "CUSA-07412-21",
         "description": "Slot an Enchantment into your armor.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1525106675372,
             "trophyLevel": "Bronze",
             "percentRarity": "75.4"
         },
@@ -277,7 +277,7 @@
         "id": "CUSA-07412-22",
         "description": "Kill 1,000 Enemies.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1528729348108,
             "trophyLevel": "Silver",
             "percentRarity": "34.2"
         },
@@ -290,7 +290,7 @@
         "id": "CUSA-07412-23",
         "description": "Free all of the Dragons.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1528740238905,
             "trophyLevel": "Silver",
             "percentRarity": "24.7"
         },
@@ -303,7 +303,7 @@
         "id": "CUSA-07412-24",
         "description": "Complete all of Brok and Sindri’s Favors.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1528741768852,
             "trophyLevel": "Gold",
             "percentRarity": "29.4"
         },
@@ -342,7 +342,7 @@
         "id": "CUSA-07412-27",
         "description": "Fully upgrade a Runic Attack.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1525470635477,
             "trophyLevel": "Bronze",
             "percentRarity": "53.8"
         },
@@ -407,7 +407,7 @@
         "id": "CUSA-07412-32",
         "description": "Assist all of the wayward spirits.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1525605524351,
             "trophyLevel": "Silver",
             "percentRarity": "24.7"
         },
@@ -433,7 +433,7 @@
         "id": "CUSA-07412-34",
         "description": "Read all of the Jötnar shrines.",
         "properties": {
-            "dateEarned": 0,
+            "dateEarned": 1529239386702,
             "trophyLevel": "Silver",
             "percentRarity": "13.2"
         },
