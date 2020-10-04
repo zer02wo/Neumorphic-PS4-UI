@@ -370,7 +370,7 @@ body.dark-mode .content-sorting .content-columns-container.selected {
 }
 
 .content-ordering-direction {
-    padding-top: 1%;
+    padding-bottom: 1%;
     /*Responsive circle*/
     height: 4.5vh;
     width: 4.5vh;
@@ -378,8 +378,8 @@ body.dark-mode .content-sorting .content-columns-container.selected {
     transition: background-color .75s, box-shadow .5s, padding .25s;
 }
 .content-ordering-direction.descending {
-    padding-top: 0;
-    padding-bottom: 1%;
+    padding-top: 1%;
+    padding-bottom: 0%;
 }
 .content-ordering-direction .content-sorting-image {
     transition: transform .5s;
@@ -707,9 +707,8 @@ body.dark-mode  .trophies.hidden:hover {
     content: "Earn this trophy or select to reveal."
 }
 /*Unearned trophies styling*/
-.trophies.unearned > img {
-    filter: opacity(0.25);
-    border: none;
+.trophies.unearned {
+    filter: opacity(0.5);
 }
 
 /*Generic content column styling*/

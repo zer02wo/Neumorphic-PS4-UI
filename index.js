@@ -698,8 +698,6 @@ function eventSort(e) {
     sortItems(contentType);
 }
 
-//TODO: fix ascending/descending to be correct way around (currently incorrect for alphabetic (arrow shows descending, but names are ascending))
-
 //Sort content items of specific type by selected method
 function sortItems(contentType) {
     //Get scroll position of content before sorting
@@ -717,10 +715,8 @@ function sortItems(contentType) {
         //Sort id by integer comparison function (only valid for trophies)
         itemsList.sort((a,b) => {
             //Get last component of each id as integer (using unary + operator)
-            var idASegments = a.dataset["id"].split("-");
-            var idA = +idASegments[idASegments.length - 1];
-            var idBSegements = b.dataset["id"].split("-");
-            var idB = +idBSegements[idBSegements.length - 1];
+            var idA = +a.dataset["id"].substring(a.dataset["id"].lastIndexOf("-") + 1);
+            var idB = +b.dataset["id"].substring(b.dataset["id"].lastIndexOf("-") + 1);
             //A < B criterion
             if(idA < idB) {
                 return -1;
@@ -746,12 +742,28 @@ function sortItems(contentType) {
             if(levelA > levelB) {
                 return 1;
             }
-            //A = B criterion
-            return 0;
+            //Sort by percentage rarity when trophy levels are equal
+            return reverseNumericSort(a, b, "percentRarity");
         });
+    } else if(contentSortMethod == "percentRarity") {
+        itemsList.sort((a,b) => reverseNumericSort(a,b, contentSortMethod));
     } else {
         //Sort by numerical comparison function
-        itemsList.sort((a,b) => b.dataset[contentSortMethod] - a.dataset[contentSortMethod]);
+        itemsList.sort((a,b) => {
+            var numA = +a.dataset[contentSortMethod];
+            var numB = +b.dataset[contentSortMethod];
+            //A < B criterion
+            if(numA < numB) {
+                return -1;
+            }
+            //A > B criterion
+            if(numA > numB) {
+                return 1;
+            }
+            //Sort alphabetically when numerical values are equal
+            return a.getAttribute("name").localeCompare(b.getAttribute("name"));
+        }
+        );
     }
     //Reverse order if descending
     var contentSortDirection = document.getElementById(`${contentType}-ordering-direction`);
@@ -765,6 +777,23 @@ function sortItems(contentType) {
     //Fixes bug where content would scroll up slightly after sorting due to appending elements
     //Scroll to original scroll position
     mainContent.scrollTo(0, scrollPos);
+}
+
+//Sort function returning descending order
+function reverseNumericSort(a, b, sortMethod) {
+    //Get numeric properties as integers from dataset
+    var propA = +a.dataset[sortMethod];
+    var propB = +b.dataset[sortMethod];
+    //A > B criterion
+    if(propA > propB) {
+        return -1;
+    }
+    //A < B criterion
+    if(propA < propB) {
+        return 1;
+    }
+    //A = B criterion
+    return 0;
 }
 
 //Toggle direction which items are sorted
@@ -1459,10 +1488,12 @@ function toggleHiddenTrophy() {
     if(target.classList.contains("hidden")) {
         //Display hidden trophy icon
         trophyIcon.src = "assets/icons/TrophyHidden.png";
+        target.classList.remove("unearned");
     } else {
         //Display actual trophy icon
         var trophyLevel = trophyIcon.alt;
         trophyIcon.src = `assets/icons/Trophy${trophyLevel}.png`;
+        target.classList.add("unearned");
     }
 }
 
@@ -1562,4 +1593,4 @@ function calculateTrophyLevel(trophyPoints) {
     return trophyLevel;
 }
 
-//TODO Refer to above methods when implementing the trophies screen, to add the trophy level to the top info bar
+//TODO Refer to above methods when implementing the trophy level icon in the top info bar
