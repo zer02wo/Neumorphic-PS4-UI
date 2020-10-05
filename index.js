@@ -323,7 +323,10 @@ async function initialiseLibrary() {
         attachMainContentHandlers("games");
         //Initialise checked radio button to selected
         toggleRadioSelected("games-columns");
-
+        //TODO: Figure out more efficient way to use game data
+            //-> Maybe separate method to initialise global variables
+        //Initialise trophy account level using games data
+        initialiseTrophyAccountLevel();
         //Initialise trophy case using games data
         initialiseTrophies();
     }
@@ -707,63 +710,68 @@ function sortItems(contentType) {
     var itemsList = Array.from(document.getElementById(`${contentType}-list`).children);
     //Sort items order by selected method
     var contentSortMethod = document.querySelector(`#${contentType}-ordering .neu-option.selected`).dataset.value;
-    console.log(contentSortMethod);
-    if(contentSortMethod == "alphabetical") {
-        //Sort name by string comparison function
-        itemsList.sort((a,b) => a.getAttribute("name").localeCompare(b.getAttribute("name")));
-    } else if(contentSortMethod == "default") {
-        //Sort id by integer comparison function (only valid for trophies)
-        itemsList.sort((a,b) => {
-            //Get last component of each id as integer (using unary + operator)
-            var idA = +a.dataset["id"].substring(a.dataset["id"].lastIndexOf("-") + 1);
-            var idB = +b.dataset["id"].substring(b.dataset["id"].lastIndexOf("-") + 1);
-            //A < B criterion
-            if(idA < idB) {
-                return -1;
-            }
-            //A > B criterion
-            if(idA > idB) {
-                return 1;
-            }
-            //A = B criterion
-            return 0;
-        });
-    } else if(contentSortMethod == "trophyLevel") {
-        //Custom sort to display in order of: Platinum > Gold > Silver > Bronze
-        itemsList.sort((a,b) => {
-            //Convert string representation of trophy level to integer
-            var levelA = convertTrophyLevelToInt(a.dataset[contentSortMethod]);
-            var levelB = convertTrophyLevelToInt(b.dataset[contentSortMethod]);
-            //A < B criterion
-            if(levelA < levelB) {
-                return -1;
-            }
-            //A > B criterion
-            if(levelA > levelB) {
-                return 1;
-            }
-            //Sort by percentage rarity when trophy levels are equal
-            return reverseNumericSort(a, b, "percentRarity");
-        });
-    } else if(contentSortMethod == "percentRarity") {
-        itemsList.sort((a,b) => reverseNumericSort(a,b, contentSortMethod));
-    } else {
-        //Sort by numerical comparison function
-        itemsList.sort((a,b) => {
-            var numA = +a.dataset[contentSortMethod];
-            var numB = +b.dataset[contentSortMethod];
-            //A < B criterion
-            if(numA < numB) {
-                return -1;
-            }
-            //A > B criterion
-            if(numA > numB) {
-                return 1;
-            }
-            //Sort alphabetically when numerical values are equal
-            return a.getAttribute("name").localeCompare(b.getAttribute("name"));
-        }
-        );
+    switch(contentSortMethod) {
+        case "alphabetical":
+            //Sort name by string comparison function
+            itemsList.sort((a,b) => a.getAttribute("name").localeCompare(b.getAttribute("name")));
+            break;
+        case "devDefault":
+            //Sort id by integer comparison function (only valid for trophies)
+            itemsList.sort((a,b) => {
+                //Get last component of each id as integer (using unary + operator)
+                var idA = +a.dataset["id"].substring(a.dataset["id"].lastIndexOf("-") + 1);
+                var idB = +b.dataset["id"].substring(b.dataset["id"].lastIndexOf("-") + 1);
+                //A < B criterion
+                if(idA < idB) {
+                    return -1;
+                }
+                //A > B criterion
+                if(idA > idB) {
+                    return 1;
+                }
+                //A = B criterion
+                return 0;
+            });
+            break;
+        case "trophyLevel": 
+            //Custom sort to display in order of: Platinum > Gold > Silver > Bronze
+            itemsList.sort((a,b) => {
+                //Convert string representation of trophy level to integer
+                var levelA = convertTrophyLevelToInt(a.dataset[contentSortMethod]);
+                var levelB = convertTrophyLevelToInt(b.dataset[contentSortMethod]);
+                //A < B criterion
+                if(levelA < levelB) {
+                    return -1;
+                }
+                //A > B criterion
+                if(levelA > levelB) {
+                    return 1;
+                }
+                //Sort by percentage rarity when trophy levels are equal
+                return reverseNumericSort(a, b, "percentRarity");
+            });
+            break;
+        case "percentRarity":
+            //Sort in reverse order (rarity measured in ascending values inherently)
+            itemsList.sort((a,b) => reverseNumericSort(a,b, contentSortMethod));
+            break;
+        default:
+            //Sort by numerical comparison function
+            itemsList.sort((a,b) => {
+                var numA = +a.dataset[contentSortMethod];
+                var numB = +b.dataset[contentSortMethod];
+                //A < B criterion
+                if(numA < numB) {
+                    return -1;
+                }
+                //A > B criterion
+                if(numA > numB) {
+                    return 1;
+                }
+                //Sort alphabetically when numerical values are equal
+                return a.getAttribute("name").localeCompare(b.getAttribute("name"));
+            });
+            break;
     }
     //Reverse order if descending
     var contentSortDirection = document.getElementById(`${contentType}-ordering-direction`);
@@ -1506,7 +1514,7 @@ function updateTrophySortingOptions() {
     var optDate = createSortingOption("dateEarned", "Date Earned", false);
     sortingOptions.appendChild(optDate);
     //Create default sorting option
-    var optDefault = createSortingOption("default", "Developer Default", true);
+    var optDefault = createSortingOption("devDefault", "Developer Default", true);
     sortingOptions.appendChild(optDefault);
     //Create level sorting option
     var optLevel = createSortingOption("trophyLevel", "Trophy Level", false);
@@ -1540,6 +1548,25 @@ function convertTrophyLevelToInt(trophyLevel) {
     }
 }
 
+//Initialise trophy account level element within information bar
+async function initialiseTrophyAccountLevel() {
+    var trophyPoints = 0;
+    //For each game in games data
+    for(var game of games) {
+        //Fetch associated trophy data
+        var gameTrophies = await getJsonFile(`trophies/${game.id}`);
+        if(gameTrophies !== undefined && gameTrophies !== null) {
+            //Increment by number of points through earned trophies
+            trophyPoints += calculateTrophyPoints(gameTrophies);
+        }
+    }
+    console.log(trophyPoints);
+    //Display trophy level in info bar element
+    var trophyLevel = calculateTrophyLevel(trophyPoints);
+    var infoBarLevel = document.getElementById("account-level-value");
+    infoBarLevel.innerText = trophyLevel;
+}
+
 //Calculate number of points associated with an array of trophy data
 function calculateTrophyPoints(trophies) {
     var trophyPoints = 0;
@@ -1547,7 +1574,7 @@ function calculateTrophyPoints(trophies) {
     for(var trophy of trophies) {
         if(trophy.earned) {
             //Increment points by relevant amount
-            switch(trophy.trophyLevel) {
+            switch(trophy.properties.trophyLevel) {
                 case "Bronze":
                     trophyPoints += 15;
                     break;
@@ -1592,5 +1619,3 @@ function calculateTrophyLevel(trophyPoints) {
     //Return trophy level
     return trophyLevel;
 }
-
-//TODO Refer to above methods when implementing the trophy level icon in the top info bar

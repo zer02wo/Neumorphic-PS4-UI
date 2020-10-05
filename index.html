@@ -24,11 +24,19 @@
             <object id="modes" type="image/svg+xml" data="assets/icons/LightDark.svg">Change Mode</object>
         </button>
         <div id="account-container" class="flex-container">
-            <!--TODO: Add trophies level, number of messages/notifications and other quick view items-->
-            <p>Stephen Stubbs</p>
-            <div id="account-image-container" class="flex-container">
+            <!--TODO: Add number of messages/notifications, number of friends online, and other quick view items-->
+            <p id="account-name">Stephen Stubbs</p>
+            <div id="account-level-container" class="account-container flex-container">
+                <div id="account-level-value-wrapper" class="account-value-wrapper flex-container">
+                    <span id="account-level-value"></span>
+                </div>
+                <div id="level-image-container" class="account-icon-container flex-container">
+                    <object id="account-level-image" class="account-icon" type="image/svg+xml" data="assets/icons/Trophy.svg">Trophy Level</object>
+                </div>
+            </div>
+            <div id="account-image-container" class="account-icon-container flex-container">
                 <div id="online-status"></div>
-                <img id="account-image" src="assets/icons/ProfilePicture.png" alt="Account Image">
+                <img id="account-image" class="account-icon" src="assets/icons/ProfilePicture.png" alt="Account Image">
             </div>
         </div>
     </div>
