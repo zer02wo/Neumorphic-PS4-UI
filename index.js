@@ -434,14 +434,9 @@ function displayContent(contentType, category, data) {
     clearContent(contentList);
     switch(category) {
         case "folders":
-            //Create folders to display in list
-            createFolders(contentType, data);
-            //Hide sorting options
-            mainContent.classList.remove("with-sorting");
-            break;
         case "external":
-            //Create drives to display in list
-            createDrives(contentType, data);
+            //Create folders to display in list
+            createFolders(contentType, category, data);
             //Hide sorting options
             mainContent.classList.remove("with-sorting");
             break;
@@ -815,28 +810,43 @@ function toggleSortDirection(e) {
 }
 
 //Create folder items to navigate to content items
-function createFolders(contentType, data) {
-    var folders = getContentFolderStructure(data);
+function createFolders(contentType, category, data) {
+    //Create dispatch object to return values based on category
+    var dispatch = {
+        "folders": {
+            "getStructure": () => {return getContentFolderStructure(data)},
+            "src": () => {return "assets/icons/Folder.svg"},
+            "title": () => {return folder},
+            "getItems": () => {return getItemsInFolder(folder, contentType).length}
+        },
+        "external": {
+            "getStructure": () => {return getContentDriveStructure(data)},
+            "src": () => {return `assets/icons/${folder.type}.svg`},
+            "title": () => {return folder.name},
+            "getItems": () => {return getItemsInDrive(folder.name, contentType).length}
+        }
+    };
+    var folders = dispatch[category].getStructure();
     var foldersList = document.getElementById(`${contentType}-list`);
     for(var folder of folders) {
         //Create folder element to display within list
         let liFolder = document.createElement("li");
-        let classes = ["folders", "neu-button", "col-4"];
+        let classes = [category, "neu-button", "col-4"];
         liFolder.classList.add(...classes);
         //Create folder image to display within element
         let folderImage = document.createElement("object");
         folderImage.classList.add("category-image");
         folderImage.type = "image/svg+xml";
-        folderImage.data = "assets/icons/Folder.svg";
+        folderImage.data = dispatch[category].src();
         //Create folder text to display within element
         let folderTitle = document.createElement("p");
         folderTitle.classList.add("category-title");
-        folderTitle.innerText = folder;
+        folderTitle.innerText = dispatch[category].title();
         //Create folder text to display number of items
         let folderCount = document.createElement("p");
         folderCount.classList.add("category-count");
         //Get number of items within folder
-        folderCount.innerText = getItemsInFolder(folder, contentType).length;
+        folderCount.innerText = dispatch[category].getItems();
         //Append elements to DOM
         liFolder.appendChild(folderImage);
         liFolder.appendChild(folderTitle);
@@ -977,40 +987,6 @@ async function initialiseMedia() {
         attachMainContentHandlers("media");
         //Initialise checked radio button to selected
         toggleRadioSelected("media-columns");
-    }
-}
-
-//Create drive items to navigate to content items
-function createDrives(contentType, data) {
-    var drives = getContentDriveStructure(data);
-    var drivesList = document.getElementById(`${contentType}-list`);
-    for(var drive of drives) {
-        //Create drive element to display within list
-        let liDrive = document.createElement("li");
-        let classes = ["external", "neu-button", "col-4"];
-        liDrive.classList.add(...classes);
-        //Create drive image to display within element
-        let driveImage = document.createElement("object");
-        driveImage.classList.add("category-image");
-        driveImage.type = "image/svg+xml";
-        //Assign image based on external media type
-        driveImage.data = `assets/icons/${drive.type}.svg`;
-        //Create drive text to display within element
-        let driveTitle = document.createElement("p");
-        driveTitle.classList.add("category-title");
-        driveTitle.innerText = drive.name;
-        //Create drive text to display number of items
-        let driveCount = document.createElement("p");
-        driveCount.classList.add("category-count");
-        //Get number of items within drive
-        driveCount.innerText = getItemsInDrive(drive.name, contentType).length;
-        //Append elements to DOM
-        liDrive.appendChild(driveImage);
-        liDrive.appendChild(driveTitle);
-        liDrive.appendChild(driveCount);
-        drivesList.appendChild(liDrive);
-        //Attach event handlers for drive navigation
-        liDrive.addEventListener("click", contentFolderNavHandler);
     }
 }
 
@@ -1634,3 +1610,9 @@ function calculateTrophyLevel(trophyPoints) {
     //Return trophy level
     return trophyLevel;
 }
+
+//TODO: Try reduce the number of elements needed for createTrophyElements
+
+//TODO: Friends category next?
+    //-> Figure out json data structure
+    //-> Display similarly to trophy overview elements with the picture on the left
