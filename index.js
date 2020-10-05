@@ -1560,11 +1560,26 @@ async function initialiseTrophyAccountLevel() {
             trophyPoints += calculateTrophyPoints(gameTrophies);
         }
     }
-    console.log(trophyPoints);
     //Display trophy level in info bar element
     var trophyLevel = calculateTrophyLevel(trophyPoints);
-    var infoBarLevel = document.getElementById("account-level-value");
-    infoBarLevel.innerText = trophyLevel;
+    var levelValue = document.getElementById("account-level-value");
+    levelValue.innerText = trophyLevel;
+    //Set icon based on calculated trophy level
+    var levelImage = document.getElementById("account-level-image");
+    switch(true) {
+        case (trophyLevel < 4):
+            levelImage.src = "assets/icons/TrophyBronze.png";
+            break;
+        case (trophyLevel < 7): 
+            levelImage.src = "assets/icons/TrophySilver.png";
+            break;
+        case (trophyLevel < 12):
+            levelImage.src = "assets/icons/TrophyGold.png";
+            break;
+        case (trophyLevel >= 12):
+            levelImage.src = "assets/icons/TrophyPlatinum.png";
+            break;
+    }
 }
 
 //Calculate number of points associated with an array of trophy data

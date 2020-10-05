@@ -63,6 +63,7 @@ body.dark-mode {
     justify-content: center !important;
     box-sizing: border-box;
     border-radius: 50%;
+    padding: 0.7vh;
     border: 3px solid #FFF;
 }
 .account-icon {
@@ -70,10 +71,6 @@ body.dark-mode {
     height: 100%;
     object-fit: contain;
     transition: border-color .75s;
-}
-object.account-icon {
-    width: 70%;
-    height: 70%;
 }
 .account-value-wrapper {
     justify-content: center !important;
@@ -106,6 +103,7 @@ body.dark-mode .account-value-wrapper {
     position: relative;
     width: 7.5vh;
     height: 7.5vh;
+    padding: 0;
 }
 
 #online-status {
@@ -114,8 +112,8 @@ body.dark-mode .account-value-wrapper {
     left: 0;
     width: 15px;
     height: 15px;
-    border: 2px solid #FFF;
     border-radius: 50%;
+    border: 2px solid #FFF;
     background: #276CE5;
     transition: border-color .5s;
     cursor: pointer;
