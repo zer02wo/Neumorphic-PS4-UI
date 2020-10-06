@@ -1,0 +1,268 @@
+[
+    {
+        "name": "Horizon Zero Dawn",
+        "id": "CUSA-07320",
+        "properties": {
+            "lastPlayed": 1597851221831,
+            "playTime": 1337
+        },
+        "trophyCounts": {
+            "levels": {
+                "platinum": 0,
+                "gold": 0,
+                "silver": 0,
+                "bronze": 15
+            },
+            "total": 56
+        },
+        "trophyPoints": 225,
+        "src": "assets/games-covers/HorizonZeroDawn.jfif"
+    },
+    {
+        "name": "InFAMOUS Remastered Collection",
+        "id": "CUSA-00004",
+        "properties": {
+            "lastPlayed": 1597351321899,
+            "playTime": 969
+        },
+        "trophyCounts": {
+            "levels": {
+                "platinum": 1,
+                "gold": 2,
+                "silver": 11,
+                "bronze": 34
+            },
+            "total": 48
+        },
+        "trophyPoints": 1200,
+        "src": "assets/games-covers/Infamous2.jfif"
+    },
+    {
+        "name": "Ghost of Tsushima",
+        "id": "CUSA-13323",
+        "properties": {
+            "lastPlayed": 1597185176923,
+            "playTime": 1267
+        },
+        "trophyCounts": {
+            "levels": {
+                "platinum": 0,
+                "gold": 2,
+                "silver": 7,
+                "bronze": 38
+            },
+            "total": 52
+        },
+        "trophyPoints": 960,
+        "src": "assets/games-covers/GhostOfTsushima.jfif"
+    },
+    {
+        "name": "Marvel's Spider-Man",
+        "id": "CUSA-11995",
+        "properties": {
+            "lastPlayed": 1596048023186,
+            "playTime": 483
+        },
+        "trophyCounts": {
+            "levels": {
+                "platinum": 0,
+                "gold": 1,
+                "silver": 10,
+                "bronze": 35
+            },
+            "total": 51
+        },
+        "trophyPoints": 915,
+        "src": "assets/games-covers/MarvelsSpider-Man.jfif"
+    },
+    {
+        "name": "Mortal Shell",
+        "id": "CUSA-20133",
+        "properties": {
+            "lastPlayed": 1597795088706,
+            "playTime": 666
+        },
+        "trophyCounts": {
+            "levels": {
+                "platinum": 0,
+                "gold": 1,
+                "silver": 8,
+                "bronze": 7
+            },
+            "total": 26
+        },
+        "trophyPoints": 435,
+        "src": "assets/games-covers/MortalShell.jfif"
+    },
+    {
+        "name": "Borderlands 3",
+        "id": "CUSA-08025",
+        "properties": {
+            "lastPlayed": 1577459366649,
+            "playTime": 431
+        },
+        "trophyCounts": {
+            "levels": {
+                "platinum": 0,
+                "gold": 2,
+                "silver": 3,
+                "bronze": 30
+            },
+            "total": 45
+        },
+        "trophyPoints": 720,
+        "src": "assets/games-covers/Borderlands3.jfif"
+    },
+    {
+        "name": "Assassin's Creed Valhalla",
+        "id": "CUSA-18534",
+        "properties": {
+            "lastPlayed": 0,
+            "playTime": 0
+        },
+        "trophyCounts": {
+            "levels": {
+                "platinum": 0,
+                "gold": 0,
+                "silver": 0,
+                "bronze": 0
+            },
+            "total": 0
+        },
+        "trophyPoints": 0,
+        "src": "assets/games-covers/AssassinsCreedValhalla.jfif"
+    },
+    {
+        "name": "The Last of Us Part II",
+        "id": "CUSA-10249",
+        "properties": {
+            "lastPlayed": 1592594101495,
+            "playTime": 242
+        },
+        "trophyCounts": {
+            "levels": {
+                "platinum": 0,
+                "gold": 0,
+                "silver": 4,
+                "bronze": 9
+            },
+            "total": 26
+        },
+        "trophyPoints": 225,
+        "src": "assets/games-covers/TheLastOfUsPartII.jfif"
+    },
+    {
+        "name": "Destiny 2",
+        "id": "CUSA-06172",
+        "properties": {
+            "lastPlayed": 1580817318415,
+            "playTime": 3963
+        },
+        "trophyCounts": {
+            "levels": {
+                "platinum": 1,
+                "gold": 11,
+                "silver": 2,
+                "bronze": 0
+            },
+            "total": 14
+        },
+        "trophyPoints": 1230,
+        "src": "assets/games-covers/Destiny2.jfif"
+    },
+    {
+        "name": "God of War",
+        "id": "CUSA-07412",
+        "properties": {
+            "lastPlayed": 1525347713762,
+            "playTime": 1149
+        },
+        "trophyCounts": {
+            "levels": {
+                "platinum": 0,
+                "gold": 2,
+                "silver": 6,
+                "bronze": 18
+            },
+            "total": 37
+        },
+        "trophyPoints": 630,
+        "src": "assets/games-covers/GodOfWar.jfif"
+    },
+    {
+        "name": "Portal 2",
+        "id": "BLES-01222",
+        "properties": {
+            "lastPlayed": 1571343360113,
+            "playTime": 922
+        },
+        "trophyCounts": {
+            "levels": {
+                "platinum": 0,
+                "gold": 1,
+                "silver": 3,
+                "bronze": 25
+            },
+            "total": 51
+        },
+        "trophyPoints": 555,
+        "src": "assets/games-covers/Portal2.jfif"
+    },
+    {
+        "name": "Mirror's Edge Catalyst",
+        "id": "CUSA-01499",
+        "properties": {
+            "lastPlayed": 1515184773748,
+            "playTime": 154
+        },
+        "trophyCounts": {
+            "levels": {
+                "platinum": 0,
+                "gold": 0,
+                "silver": 1,
+                "bronze": 19
+            },
+            "total": 50
+        },
+        "trophyPoints": 315,
+        "src": "assets/games-covers/MirrorsEdgeCatalyst.jfif"
+    },
+    {
+        "name": "Need for Speed Heat",
+        "id": "CUSA-15090",
+        "properties": {
+            "lastPlayed": 1573816005923,
+            "playTime": 425
+        },
+        "trophyCounts": {
+            "levels": {
+                "platinum": 0,
+                "gold": 0,
+                "silver": 1,
+                "bronze": 15
+            },
+            "total": 43
+        },
+        "trophyPoints": 255,
+        "src": "assets/games-covers/NeedForSpeedHeat.jfif"
+    },
+    {
+        "name": "Batman Arkham Knight",
+        "id": "CUSA-00135",
+        "properties": {
+            "lastPlayed": 1466673669116,
+            "playTime": 912
+        },
+        "trophyCounts": {
+            "levels": {
+                "platinum": 0,
+                "gold": 1,
+                "silver": 0,
+                "bronze": 47
+            },
+            "total": 65
+        },
+        "trophyPoints": 795,
+        "src": "assets/games-covers/BatmanArkhamKnight.jfif" 
+    }
+]
