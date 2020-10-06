@@ -187,19 +187,27 @@ function changeMode() {
         document.body.classList.remove("dark-mode");
         //Change SVGs to dark colours
         setIconsColours("#3F4A62");
-        //Change icon to match background color
-        var svgDoc = document.getElementById("modes").contentDocument;
-        var paths = svgDoc.getElementsByClassName("matchable");
-        setPathStroke(paths, "#ECF0F3");
+        //Change icon to match background colour
+        var modeDoc = document.getElementById("modes").contentDocument;
+        var modePaths = modeDoc.getElementsByClassName("matchable");
+        setPathStroke(modePaths, "#ECF0F3");
+        //Change icon to contrast fill colour
+        var plusDoc = document.getElementById("account-plus-image").contentDocument;
+        var plusPaths = plusDoc.getElementsByClassName("contrast");
+        setPathStroke(plusPaths, "#E6ECFA");
     } else {
         //Set body to dark mode
         document.body.classList.add("dark-mode");
         //Change SVGs to light colours
         setIconsColours("#E6ECFA");
-        //Change icon to match background color
-        var svgDoc = document.getElementById("modes").contentDocument;
-        var paths = svgDoc.getElementsByClassName("matchable");
-        setPathStroke(paths, "#292D32");
+        //Change icon to match background colour
+        var modeDoc = document.getElementById("modes").contentDocument;
+        var plusPaths = modeDoc.getElementsByClassName("matchable");
+        setPathStroke(plusPaths, "#292D32");
+        //Change icon to contrast fill colour
+        var plusDoc = document.getElementById("account-plus-image").contentDocument;
+        var plusPaths = plusDoc.getElementsByClassName("contrast");
+        setPathStroke(plusPaths, "#276CE5");
     }
 }
 

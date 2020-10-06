@@ -26,15 +26,18 @@
         <div id="account-container" class="flex-container">
             <!--TODO: Add number of messages/notifications, number of friends online, and other quick view items-->
             <p id="account-name">Stephen Stubbs</p>
+            <div id="plus-image-container" class="account-icon-container icon-container-large flex-container">
+                <object id="account-plus-image" class="account-icon" type="image/svg+xml" data="assets/icons/PSPlus.svg">PS Plus</object>
+            </div>
             <div id="account-level-container" class="account-container flex-container">
                 <div id="account-level-value-wrapper" class="account-value-wrapper flex-container">
                     <span id="account-level-value"></span>
                 </div>
-                <div id="level-image-container" class="account-icon-container flex-container">
+                <div id="level-image-container" class="account-icon-container icon-container-small flex-container">
                     <img id="account-level-image" class="account-icon" src="assets/icons/TrophyHidden.png" alt="Trophy Level">
                 </div>
             </div>
-            <div id="account-image-container" class="account-icon-container flex-container">
+            <div id="account-image-container" class="account-icon-container icon-container-large flex-container">
                 <div id="online-status"></div>
                 <img id="account-image" class="account-icon" src="assets/icons/ProfilePicture.png" alt="Account Image">
             </div>
@@ -323,7 +326,6 @@
         </div>
         <div id="friends" class="content-element">
             <p>Friends</p>
-            <!--TODO https://images.pushsquare.com/news/2016/02/you_can_now_search_for_ps4_communities/1280x720.jpg-->
             <!--Categories: all, friends, friend requests, game communities (like steam), LFG-->
         </div>
         <div id="messages" class="content-element">

@@ -66,6 +66,14 @@ body.dark-mode {
     padding: 0.7vh;
     border: 3px solid #FFF;
 }
+.icon-container-large {
+    width: 7.5vh;
+    height: 7.5vh;
+}
+.icon-container-small {
+    width: 5vh;
+    height: 5vh;
+}
 .account-icon {
     width: 100%;
     height: 100%;
@@ -94,15 +102,8 @@ body.dark-mode .account-value-wrapper {
     font-size: 18px;
 }
 
-#level-image-container {
-    width: 5vh;
-    height: 5vh;
-}
-
 #account-image-container {
     position: relative;
-    width: 7.5vh;
-    height: 7.5vh;
     padding: 0;
 }
 
