@@ -1,5 +1,5 @@
 //Global variables
-var games, media, social;
+var games, media, social, trophies;
 
 //Initialise when DOM loaded
 window.onload = function() {init();};
@@ -18,6 +18,8 @@ function init() {
     initialiseMedia();
     //Initialise social elements
     initialiseSocial();
+    //Initialise trophy case
+    initialiseTrophies();
 }
 
 //Initialise custom drop-down components
@@ -323,12 +325,6 @@ async function initialiseLibrary() {
         attachMainContentHandlers("games");
         //Initialise checked radio button to selected
         toggleRadioSelected("games-columns");
-        //TODO: Figure out more efficient way to use game data
-            //-> Maybe separate method to initialise global variables
-        //Initialise trophy account level using games data
-        initialiseTrophyAccountLevel();
-        //Initialise trophy case using games data
-        initialiseTrophies();
     }
 }
 
@@ -440,9 +436,9 @@ function displayContent(contentType, category, data) {
             //Hide sorting options
             mainContent.classList.remove("with-sorting");
             break;
-        case "trophies-overview":
+        case "trophies":
             //Create trophy overview items to display in list
-            displayTrophyOverview();
+            createTrophyOverview();
             //Display sorting options
             mainContent.classList.add("with-sorting");
             break;
@@ -1108,23 +1104,30 @@ function getSocialOptions(item) {
 }
 
 //Initialise trophy case elements
-function initialiseTrophies() {
-    //Display games to as trophy list
-    displayContent("trophies", "trophies-overview", games);
-    //Attach handlers to close game specific trophy content
-    var folderClose = document.getElementById("trophies-folder-close");
-    folderClose.addEventListener("click", function(e) {
-        //Hide folder close button
-        e.target.classList.remove("show");
-        //Display trophy overview content
-        displayContent("trophies", "trophies-overview", games);
-    });
-    //Attach handlers to sort trophy list on click
-    attachContentSortHandler("trophies");
-    //Attach handlers to update column display style
-    attachColumnsHandler("trophies");
-    //Initialise checked radio button to selected
-    toggleRadioSelected("trophies-columns");
+async function initialiseTrophies() {
+    //Get games from json file
+    trophies = await getJsonFile("trophies");
+    if(trophies !== undefined && trophies !== null) {
+        //Display games to as trophy list
+        displayContent("trophies", "trophies", trophies);
+        //Attach handlers to close game specific trophy content
+        var folderClose = document.getElementById("trophies-folder-close");
+        folderClose.addEventListener("click", function(e) {
+            //Hide folder close button
+            e.target.classList.remove("show");
+            //Display trophy overview content
+            displayContent("trophies", "trophies", trophies);
+        });
+        //Attach handlers to sort trophy list on click
+        attachContentSortHandler("trophies");
+        //Attach handlers to update column display style
+        attachColumnsHandler("trophies");
+        //Initialise checked radio button to selected
+        toggleRadioSelected("trophies-columns");
+
+        //Initialise trophy account level in information bar
+        initialiseTrophyAccountLevel();
+    }
 }
 
 
@@ -1146,12 +1149,12 @@ function createSortingOption(dataValue, textValue, isSelected) {
 }
 
 //Display overview of trophies for each game
-async function displayTrophyOverview() {
+async function createTrophyOverview() {
     //Display sorting options for trophies content
     var trophyList = document.getElementById("trophies-list");
     var numColumns = document.querySelector("input[name=trophies-columns]:checked").value;
     //For each game in data
-    for(var item of games) {
+    for(var item of trophies) {
         //Create trophy row item
         let liItem = document.createElement("li");
         let classes = ["trophies", "neu-button", numColumns];
@@ -1172,7 +1175,7 @@ async function displayTrophyOverview() {
         liTitle.innerText = item.name;
         liInfoWrapper.appendChild(liTitle);
         //Create trophy container element using id to lookup data
-        let liTrophyContainer = await createTrophyContainer(item.id);
+        let liTrophyContainer = createTrophyContainer(item.trophyCounts);
         liInfoWrapper.appendChild(liTrophyContainer);
         //Pass up dataset attribute to correct element
         liItem.dataset.trophyProgress = liTrophyContainer.dataset.trophyProgress;
@@ -1188,39 +1191,41 @@ async function displayTrophyOverview() {
 }
 
 //Create element containing overview of trophy data
-async function createTrophyContainer(dataId) {
-    var trophyData = await getJsonFile(`trophies/${dataId}`);
-    if(trophyData !== undefined && trophyData !== null) {
-        //Get count of each trophy per rank
-        var trophyCounts = getTrophyCounts(trophyData);
-        //Create trophy container element
-        var trophyContainer = document.createElement("div");
-        trophyContainer.classList.add("trophies-info-container", "flex-container");
-        //Create text element to display numerical progression
-        var trophyPercent = document.createElement("p");
-        var percentProgress = Math.round((trophyCounts.earned / trophyCounts.total) * 100)
-        trophyPercent.innerText =  percentProgress + "%";
-        trophyContainer.appendChild(trophyPercent);
-        //Create progress element to display total completion progress
-        var trophyProgress = document.createElement("progress");
-        trophyProgress.classList.add("neu-progress");
-        trophyProgress.max = 100;
-        trophyProgress.value = percentProgress;
-        trophyContainer.appendChild(trophyProgress);
-        //Create trophy stat wrapper element
-        var trophyStats = document.createElement("div");
-        trophyStats.classList.add("trophies-stat-wrapper", "flex-container");
-        //Create trophy stat item for each trophy rank
-        for(var trophyRank in trophyCounts.ranks) {
-            let trophyStat = createTrophyStat(trophyRank, trophyCounts.ranks[trophyRank]);
-            trophyStats.appendChild(trophyStat);
-        }
-        trophyContainer.appendChild(trophyStats);
-        //Apply dataset attribute to pass up to container element (prevents secondary trophy data call)
-        trophyContainer.dataset.trophyProgress = percentProgress;
-        //Return trophy container element
-        return trophyContainer;
+function createTrophyContainer(trophyCounts) {
+    var earned = 0;
+    for(var level in trophyCounts.levels) {
+        earned += trophyCounts.levels[level];
     }
+    //Create trophy container element
+    var trophyContainer = document.createElement("div");
+    trophyContainer.classList.add("trophies-info-container", "flex-container");
+    //Create text element to display numerical progression
+    var trophyPercent = document.createElement("p");
+    var percentProgress = 0;
+    if(trophyCounts.total > 0) {
+        percentProgress = Math.round((earned / trophyCounts.total) * 100);
+    }
+    trophyPercent.innerText = percentProgress + "%";
+    trophyContainer.appendChild(trophyPercent);
+    //Create progress element to display total completion progress
+    var trophyProgress = document.createElement("progress");
+    trophyProgress.classList.add("neu-progress");
+    trophyProgress.max = 100;
+    trophyProgress.value = percentProgress;
+    trophyContainer.appendChild(trophyProgress);
+    //Create trophy stat wrapper element
+    var trophyStats = document.createElement("div");
+    trophyStats.classList.add("trophies-stat-wrapper", "flex-container");
+    //Create trophy stat item for each trophy rank
+    for (var trophyLevel in trophyCounts.levels) {
+        let trophyStat = createTrophyStat(trophyLevel, trophyCounts.levels[trophyLevel]);
+        trophyStats.appendChild(trophyStat);
+    }
+    trophyContainer.appendChild(trophyStats);
+    //Apply dataset attribute to pass up to container element
+    trophyContainer.dataset.trophyProgress = percentProgress;
+    //Return trophy container element
+    return trophyContainer;
 }
 
 //Create trophy stat element to display number and icon of trophy of specified rank
@@ -1246,43 +1251,6 @@ function createTrophyImg(trophyLevel) {
     trophyImg.src = `assets/icons/Trophy${trophyLevel[0].toUpperCase() + trophyLevel.substring(1)}.png`;
     trophyImg.alt = trophyLevel;
     return trophyImg;
-}
-
-//Get number of each trophy rank within list of trophies
-function getTrophyCounts(trophies) {
-    //Initialise values to 0
-    var plat = 0, gold = 0, silv = 0, brnz = 0;
-    //For each earned trophy 
-    for(var trophy of trophies) {
-        if(trophy.earned) {
-            //Increment relevant counter
-            switch(trophy.properties.trophyLevel) {
-                case "Platinum":
-                    plat++;
-                    break;
-                case "Gold":
-                    gold++;
-                    break;
-                case "Silver":
-                    silv++;
-                    break;
-                case "Bronze":
-                    brnz++;
-            }
-        }
-    }
-    //Return object containing calculated data
-    var count = {
-        "ranks": {
-            "platinum": plat,
-            "gold": gold,
-            "silver": silv,
-            "bronze": brnz
-        },
-        "earned": plat + gold + silv + brnz,
-        "total": trophies.length
-    };
-    return count;
 }
 
 //Reset trophy sorting options for trophy overview sorting
@@ -1525,16 +1493,11 @@ function convertTrophyLevelToInt(trophyLevel) {
 }
 
 //Initialise trophy account level element within information bar
-async function initialiseTrophyAccountLevel() {
+function initialiseTrophyAccountLevel() {
     var trophyPoints = 0;
     //For each game in games data
-    for(var game of games) {
-        //Fetch associated trophy data
-        var gameTrophies = await getJsonFile(`trophies/${game.id}`);
-        if(gameTrophies !== undefined && gameTrophies !== null) {
-            //Increment by number of points through earned trophies
-            trophyPoints += calculateTrophyPoints(gameTrophies);
-        }
+    for(var item of trophies) {
+        trophyPoints += item.trophyPoints;
     }
     //Display trophy level in info bar element
     var trophyLevel = calculateTrophyLevel(trophyPoints);
@@ -1543,46 +1506,19 @@ async function initialiseTrophyAccountLevel() {
     //Set icon based on calculated trophy level
     var levelImage = document.getElementById("account-level-image");
     switch(true) {
-        case (trophyLevel < 4):
+        case (trophyLevel < 5):
             levelImage.src = "assets/icons/TrophyBronze.png";
             break;
-        case (trophyLevel < 7): 
+        case (trophyLevel < 10): 
             levelImage.src = "assets/icons/TrophySilver.png";
             break;
-        case (trophyLevel < 12):
+        case (trophyLevel < 15):
             levelImage.src = "assets/icons/TrophyGold.png";
             break;
-        case (trophyLevel >= 12):
+        case (trophyLevel >= 15):
             levelImage.src = "assets/icons/TrophyPlatinum.png";
             break;
     }
-}
-
-//Calculate number of points associated with an array of trophy data
-function calculateTrophyPoints(trophies) {
-    var trophyPoints = 0;
-    //For each earned trophy 
-    for(var trophy of trophies) {
-        if(trophy.earned) {
-            //Increment points by relevant amount
-            switch(trophy.properties.trophyLevel) {
-                case "Bronze":
-                    trophyPoints += 15;
-                    break;
-                case "Silver":
-                    trophyPoints += 30;
-                    break;
-                case "Gold":
-                    trophyPoints += 90;
-                    break;
-                case "Platinum":
-                    trophyPoints += 180;
-                    break;
-            }
-        }
-    }
-    //Return total points for game
-    return trophyPoints;
 }
 
 //Calculate account trophy level based on total number of trophy points as per official levelling system
@@ -1610,8 +1546,6 @@ function calculateTrophyLevel(trophyPoints) {
     //Return trophy level
     return trophyLevel;
 }
-
-//TODO: Try reduce the number of elements needed for createTrophyElements
 
 //TODO: Friends category next?
     //-> Figure out json data structure
