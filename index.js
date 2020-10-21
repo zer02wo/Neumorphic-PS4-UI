@@ -293,19 +293,19 @@ function attachNavHandlers() {
         contentNav.addEventListener("click", navHandler);
     }
 }
-
+//TODO: fix this along with the HTML (href="#library" for example)
 //Navigation event between main content elements
 function navHandler(e) {
-    const target = e.target;
     //Hide previous content from main
     const content = document.getElementsByClassName("show");
     for(const element of content) {
         element.classList.remove("show");
     }
     //Set nav element to selected
+    const target = e.target;
     selectNavElement(target);
     //Show current content in main
-    document.querySelector(target.hash).classList.add("show");
+    document.querySelector(target.value).classList.add("show");
 }
 
 //Set chosen navigation bar element to be selected
