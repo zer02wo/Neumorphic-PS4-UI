@@ -8,7 +8,7 @@
     <script src="index.js"></script>
 </head>
 <body>
-    <div id="info-bar" class="neu-container flex-container">
+    <header id="info-bar" class="neu-container flex-container">
         <div id="general-info-container" class="flex-container">
             <object id="logo" type="image/svg+xml" data="assets/icons/Logo.svg">Logo</object>
             <div id="connection-container" class="flex-container">
@@ -38,15 +38,15 @@
                 </div>
             </div>
             <div id="account-image-container" class="account-icon-container icon-container-large flex-container">
-                <div id="online-status"></div>
+                <button id="online-status"></button>
                 <img id="account-image" class="account-icon" src="assets/icons/ProfilePicture.png" alt="Account Image">
             </div>
         </div>
-    </div>
-    <div id="pull-tab" class="neu-button">
+    </header>
+    <button id="pull-tab" class="neu-button">
         <object id="pull-tab-image" type="image/svg+xml" data="assets/icons/Direction.svg">Pull Tab</object>
-    </div>
-    <div id="navbar" class="flex-container">
+    </button>
+    <nav id="navbar" class="flex-container">
         <div class="nav-element flex-container" id="nav-library">
             <p class="nav-title">Library</p>
             <a class="nav-image-container neu-button" draggable="false" href="#library">
@@ -119,9 +119,9 @@
                 <object class="nav-image" type="image/svg+xml" data="assets/icons/Power.svg">Power</object>
             </a>
         </div>
-    </div>
+    </nav>
     <div id="main-content" class="neu-container flex-container neu-flush">
-        <div id="library" class="content-element">
+        <section id="library" class="content-element">
             <ul id="games-categories" class="flex-container content-categories">
                 <li id="all-games" class="games-category content-category neu-button selected">
                     <object class="category-image" type="image/svg+xml" data="assets/icons/Applications.svg">All</object>
@@ -151,9 +151,9 @@
             </ul>
             <div id="games-content" class="element-main">
                 <div id="games-sorting-container" class="content-sorting-container flex-container">
-                    <div id="games-folder-close" class="content-folder-close neu-button">
+                    <button id="games-folder-close" class="content-folder-close neu-button">
                         <object class="folder-close-image" type="image/svg+xml" data="assets/icons/Close.svg">Close Folder</object>
-                    </div>
+                    </button>
                     <div id="games-sorting" class="content-sorting flex-container">
                         <label class="content-columns-container neu-button flex-container">
                             <input type="radio" name="games-columns" id="games-3-columns" class="content-columns" value="col-3" checked="checked">
@@ -182,8 +182,8 @@
                 </div>
                 <ul id="games-list" class="neu-scrollable flex-container content-list"></ul>
             </div>
-        </div>
-        <div id="media" class="content-element">
+        </section>
+        <section id="media" class="content-element">
             <ul id="media-categories" class="flex-container content-categories">
                 <li id="all-media" class="media-category content-category neu-button selected">
                     <object class="category-image" type="image/svg+xml" data="assets/icons/Applications.svg">All</object>
@@ -218,9 +218,9 @@
             </ul>
             <div id="media-content" class="element-main">
                 <div id="media-sorting-container" class="content-sorting-container flex-container">
-                    <div id="media-folder-close" class="content-folder-close neu-button">
+                    <button id="media-folder-close" class="content-folder-close neu-button">
                         <object class="folder-close-image" type="image/svg+xml" data="assets/icons/Close.svg">Close Folder</object>
-                    </div>
+                    </button>
                     <div id="media-sorting" class="content-sorting flex-container">
                         <label class="content-columns-container neu-button flex-container">
                             <input type="radio" name="media-columns" id="media-3-columns" class="content-columns" value="col-3">
@@ -250,11 +250,11 @@
                 </div>
                 <ul id="media-list" class="neu-scrollable flex-container content-list"></ul>
             </div>
-        </div>
-        <div id="store" class="content-element">
+        </section>
+        <section id="store" class="content-element">
             <p>Store</p>
-        </div>
-        <div id="social" class="content-element">
+        </section>
+        <section id="social" class="content-element">
             <ul id="social-categories" class="flex-container content-categories">
                 <li id="all-social" class="social-category content-category neu-button selected">
                     <object class="category-image" type="image/svg+xml" data="assets/icons/Applications.svg">All</object>
@@ -289,9 +289,9 @@
             </ul>
             <div id="social-content" class="element-main">
                 <div id="social-sorting-container" class="content-sorting-container flex-container">
-                    <div id="social-folder-close" class="content-folder-close neu-button">
+                    <button id="social-folder-close" class="content-folder-close neu-button">
                         <object class="folder-close-image" type="image/svg+xml" data="assets/icons/Close.svg">Close Folder</object>
-                    </div>
+                    </button>
                     <div id="social-sorting" class="content-sorting flex-container">
                         <label class="content-columns-container neu-button flex-container">
                             <input type="radio" name="social-columns" id="social-3-columns" class="content-columns" value="col-3" checked="checked">
@@ -320,29 +320,29 @@
                 </div>
                 <ul id="social-list" class="neu-scrollable flex-container content-list"></ul>
             </div>
-        </div>
-        <div id="notifications" class="content-element">
+        </section>
+        <section id="notifications" class="content-element">
             <p>Notifications</p>
-        </div>
-        <div id="friends" class="content-element">
+        </section>
+        <section id="friends" class="content-element">
             <p>Friends</p>
-            <!--Categories: all, friends, friend requests, game communities (like steam), LFG-->
-        </div>
-        <div id="messages" class="content-element">
+            <!--TODO: Categories: all, friends, friend requests, game communities (like steam), LFG-->
+        </section>
+        <section id="messages" class="content-element">
             <p>Messages</p>
-        </div>
-        <div id="party" class="content-element">
+        </section>
+        <section id="party" class="content-element">
             <p>Party</p>
-        </div>
-        <div id="profile" class="content-element">
+        </section>
+        <section id="profile" class="content-element">
             <p>Profile</p>
-        </div>
-        <div id="trophies" class="content-element">
+        </section>
+        <section id="trophies" class="content-element">
             <div id="trophies-content" class="element-main">
                 <div id="trophies-sorting-container" class="content-sorting-container flex-container">
-                    <div id="trophies-folder-close" class="content-folder-close neu-button">
+                    <button id="trophies-folder-close" class="content-folder-close neu-button">
                         <object class="folder-close-image" type="image/svg+xml" data="assets/icons/Close.svg">Close Folder</object>
-                    </div>
+                    </button>
                     <div id="trophies-sorting" class="content-sorting flex-container">
                         <label class="content-columns-container neu-button flex-container">
                             <input type="radio" name="trophies-columns" id="trophies-3-columns" class="content-columns" value="col-3" checked="checked">
@@ -372,13 +372,14 @@
                 </div>
                 <ul id="trophies-list" class="neu-scrollable flex-container content-list"></ul>
             </div>
-        </div>
-        <div id="settings" class="content-element">
+        </section>
+        <section id="settings" class="content-element">
             <p>Settings</p>
-        </div>
-        <div id="power" class="content-element">
+        </section>
+        <section id="power" class="content-element">
+            <!--TODO: power options for sleep, restart (i.e. refresh the page), shutdown (i.e. close page)-->
             <p>Power</p>
-        </div>
+        </section>
     </div>
 </body>
 </html>
