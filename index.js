@@ -1147,8 +1147,6 @@ async function initialiseTrophies() {
     }
 }
 
-
-
 //Create generic sorting option element based on specified values
 function createSortingOption(dataValue, textValue, isSelected) {
     //Create span element of specified classes
@@ -1188,6 +1186,7 @@ async function createTrophyOverview() {
         const liInfoWrapper = document.createElement("div");
         liInfoWrapper.classList.add("trophies-wrapper", "flex-container");
         liItem.appendChild(liInfoWrapper);
+        //Create title text heading
         const liTitle = document.createElement("h1");
         liTitle.innerText = item.name;
         liInfoWrapper.appendChild(liTitle);
