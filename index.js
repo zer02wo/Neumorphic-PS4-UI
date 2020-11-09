@@ -223,6 +223,15 @@ function setIconsColours(colour) {
         for(const switchable of switchables) {
             switchable.setAttribute("stroke", colour);
         }
+        //Set alternate stroke colour if contrastable
+        const contrastables = svgDoc.getElementsByClassName("contrast");
+        for(const contrastable of contrastables) {
+            if(colour == "#3F4A62") {
+                contrastable.setAttribute("stroke", "#E6ECFA");
+            } else {
+                contrastable.setAttribute("stroke", "#276CE5");
+            }
+        }
         //Set fill colour if switchable and fillable
         const fillables = svgDoc.getElementsByClassName("switchable fillable");
         for(const fillable of fillables) {
